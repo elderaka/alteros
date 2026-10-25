@@ -83,6 +83,44 @@ live profile/restart acceptance.
 
 ## Current evidence and implementation gate
 
+### Routing HUD and interaction trace (2026-10-25)
+
+The requested Minecraft-style top-left panel uses the SAME shared F5 flag.
+`ConversationRoutingDebugView` binds an Editor-authored nested Canvas/prefab at
+`Assets/AlterOS/Debugging/ConversationRoutingDebug.prefab`, under
+`AlterOSHUDCanvas/ConversationRoutingDebug` in ModelTest. The authoring menu is
+`AlterOS > Debug > Create Routing HUD`; it refuses dirty ModelTest scenes and
+preserves the previously active scene. Runtime never creates/styles/layouts UI.
+
+It shows the last submitted input, selected Topic/Scenario/outcome, first5 actual
+production-ranked candidates, each Topic ID/best matched anchor/similarity%, last
+timestamped transition, and the last failure retained until the next submission.
+Similarity is a retrieval score, NOT a calibrated confidence/probability. Values
+are clamped to[-100,100]% for display only; routing thresholds are unchanged.
+Explicit menu selections show Topic ID and `GTE bypassed` with anchor/score n/a;
+do not fabricate a top5 list or run an extra embedding for the HUD.
+
+Trace points cover submission, content preparation, semantic matching, eligibility,
+selection, Scenario effects, activity lifecycle, primitive start/finish/cancel,
+furniture reservation and movement handoff. Console prefix is `[AlterOS Trace]`,
+with local turn number and elapsed milliseconds. These additional traces, including
+raw submitted text and anchors, go to the Unity Console only while F5 is on.
+Existing stable logs remain unchanged. No per-frame Console spam, new provider
+calls, second debug flag or telemetry/database writes. The panel retains bounded
+transient data while hidden, clears it on the next request/scene lifecycle, and
+is non-interactive. Do not share debug logs containing private input without review.
+No profiles, memory stores, keys or full histories are inspected by this view.
+
+Implementation/serialized wiring and goal-level evidence are recorded in
+[[../Verification/2026-10-22 Reusable Content Implementation]].
+
+Delivered2026-10-25: prefab and ModelTest saved through Editor. Reopened scene
+has exactly one view, five required references, shared owner on both Bridge and
+HUD, top-left anchors, no rich-text interpretation/raycast interception. Isolated
+shared-flag off/on/off and synthetic content binding passed without starting
+gameplay. Focused formatter suite3/3. Normal gameplay appearance, physical F5
+dispatch and actual activity reproduction are not claimed by these checks.
+
 `DebugModeState` remains the single off-by-default state. `FurnitureHandlingController`
 owns the one ModelTest instance; `FurnitureInputController` owns the F5 action;
 the same state is passed to inventory rows, `AlterraActivityDebugView`, and

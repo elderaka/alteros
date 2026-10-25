@@ -33,6 +33,8 @@ namespace AlterOS.Activities
         private readonly HashSet<string> knownActionInvocations = new HashSet<string>(StringComparer.Ordinal);
         private ActivitySequencePrimitiveDispatcher dispatcher;
         private double nowSeconds;
+        public event Action<string> Diagnostic;
+        private void ReportDiagnostic(string detail) { Diagnostic?.Invoke(detail); }
 
         private void Awake()
         {
@@ -59,16 +61,26 @@ namespace AlterOS.Activities
             if (!isActiveAndEnabled || dispatcher == null) return Failure(request, "primitive_port_unavailable");
             if (request != null && request.identity != null && !string.IsNullOrWhiteSpace(request.identity.actionInvocationId))
                 knownActionInvocations.Add(request.identity.actionInvocationId);
-            return dispatcher.Start(request);
+            ActivityPrimitiveStartResult result = dispatcher.Start(request);
+            Diagnostic?.Invoke((request == null ? "unknown" : request.primitiveId) + " start=" + result.status +
+                " reason=" + result.reasonCode + " invocation=" + (request?.identity?.invocationId ?? "none"));
+            return result;
         }
 
         public ActivityPrimitiveCompletion Cancel(ActivityPrimitiveCancellation request)
-        { return dispatcher == null ? Cancelled(request) : dispatcher.Cancel(request); }
+        {
+            ActivityPrimitiveCompletion result = dispatcher == null ? Cancelled(request) : dispatcher.Cancel(request);
+            Diagnostic?.Invoke("cancel=" + result.status + " reason=" + result.reasonCode + " invocation=" + (result.identity?.invocationId ?? "none"));
+            return result;
+        }
 
         public ActivityPrimitiveCompletion[] Tick(double currentTimeSeconds)
         {
             nowSeconds = currentTimeSeconds;
-            return dispatcher == null ? new ActivityPrimitiveCompletion[0] : dispatcher.Tick(currentTimeSeconds);
+            ActivityPrimitiveCompletion[] results = dispatcher == null ? new ActivityPrimitiveCompletion[0] : dispatcher.Tick(currentTimeSeconds);
+            foreach (ActivityPrimitiveCompletion result in results)
+                Diagnostic?.Invoke("finish=" + result.status + " reason=" + result.reasonCode + " invocation=" + (result.identity?.invocationId ?? "none"));
+            return results;
         }
 
         public void ReleaseSequence(string actionInvocationId)
@@ -93,7 +105,11 @@ namespace AlterOS.Activities
             if (catalogue == null || catalogue.diagnostics.Any(item => item.severity == "error")) return false;
             Func<FurnitureUsePoint, bool> eligibility = point => IsFunctionEligible(catalogue, point, useId, functionId);
             FurnitureBinding binding;
-            if (!activityHost.TryReserveSequenceFurniture(useId, "", actionInvocationId, eligibility, out binding)) return false;
+            if (!activityHost.TryReserveSequenceFurniture(useId, "", actionInvocationId, eligibility, out binding))
+            {
+                Diagnostic?.Invoke("reserve failed: no eligible/reachable point use=" + useId + " function=" + functionId);
+                return false;
+            }
             token = "target." + identity.invocationId;
             if (targets.ContainsKey(token))
             {
@@ -101,6 +117,8 @@ namespace AlterOS.Activities
                 return false;
             }
             targets.Add(token, new TargetRecord(actionInvocationId, binding));
+            Diagnostic?.Invoke("reserved furniture=" + binding.point.InstanceId + " point=" + binding.point.UsePointId +
+                " use=" + useId + " function=" + functionId);
             return true;
         }
 
@@ -258,6 +276,8 @@ namespace AlterOS.Activities
                     started = owner.activityHost.TryMoveSequenceTo(moving.target.point.Approach.position);
                 }
                 if (!started) return Failure(request, "movement_unavailable");
+                owner.ReportDiagnostic("movement started primitive=" + primitiveId + " target=" +
+                    (moving.target == null ? "player" : moving.target.point.UsePointId));
                 active.Add(IdentityKey(request.identity), moving);
                 return Running(request);
             }

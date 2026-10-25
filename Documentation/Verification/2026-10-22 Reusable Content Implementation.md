@@ -14,6 +14,119 @@ the linked owner evidence first.
 
 ## Execution rulings
 
+### F5 top-left routing HUD2026-10-25
+
+- Human requested logging and Minecraft-style top-left debug UI with last input,
+  top5 resolves, Topic IDs, anchors and percentages. Main implemented bounded,
+  transient ConversationRoutingDiagnostics in the runtime assembly, Bridge debug
+  partial, UI content binder and Editor authoring tool; no new debug flag/key,
+  provider, content release, player store, or routing/scoring behavior.
+- Panel shows actual production ranked Score percentages and best anchors, selected
+  Topic/Scenario/outcome, elapsed event timing and retained last failure. Scores
+  clamp for display only and explicitly are NOT calibrated probabilities. Explicit
+  buttons show GTE bypassed/anchor n-a/score n-a, not fake0% or extra inference.
+- Bridge traces submit/preparation/matching/eligibility/selection/Scenario effects
+  and stable statuses. Scene primitive port emits start/finish/cancel, reservation
+  target/use/function and movement handoff; UI subscribes ActivityHost lifecycle.
+  Additional Console trace and bounded raw input/anchors only when shared F5 flag
+  is on, prefix[AlterOS Trace]. No frame spam or automatic contribution/DB writes.
+  Existing stable logs remain. Transient debug data is retained while hidden and
+  reset on the next request; do not share private raw input without review.
+- Editor-authoring created nested Canvas prefab
+  Assets/AlterOS/Debugging/ConversationRoutingDebug.prefab and its instance at
+  AlterOSHUDCanvas/ConversationRoutingDebug in ModelTest. Static anchors/position/
+  dimensions/style/font are serialized; runtime only binds content/visibility.
+  Overlay is noninteractive and text.richText=false. Original scene roots kept.
+  SplashScene was clean/active; ModelTest opened additively, modified/saved, closed,
+  Splash active restored. No normal startup/PlayMode/provider/profile operations.
+- Single consolidated goal-level validation: saved/reopened Editor readback found
+  one view, all5 required references, same shared F5 owner on Bridge and HUD,
+  top-left anchor, raycast=false/richText=false; synthetic shared flag off/on/off
+  and content binding passed. Report persisted in
+  C:/Users/lauda/AppData/Local/Temp/AlterOS-routing-hud-check-20261025.json.
+  ONE focused EditMode job2e48f93428dd46f59f2fc030ed2bfcac passed3/3 (0.58s):
+  top5 actual-match formatting/anchors/percentages, explicit selection without
+  stale/fake scores, bounded input and failure retained after later status.
+- Final ModelTest SHA256 DE8941847545E0E2665FF34B27090665BC1698C2EB8E8277C79EDADF4FEB14E5;
+  prefab275A19DF4D397DC45CD1007068FD1C9CAC421C48FFCC08BC1A0B663C2673A63C.
+  Normal gameplay appearance, physical F5 input, live sentence-to-HUD binding,
+  navigation, TV power and Water glass grant remain unverified. Earlier accepted
+  routing/framework suites were not repeated. Main releases source/Editor window.
+
+### Follow-up2026-10-25: action accepted then primitive permission rejection
+
+- Human still sees no TV/dispenser movement and Idle overlay. Exact Unity Console
+  now shows sequence start accepted followed immediately by finish with phase
+  primitive_capability_unavailable, outcomeFailed (2 runs). This supersedes prior
+  sequence_start_rejected. Source patches are imported; Editor is stopped, no
+  live hosts/agents in current Splash scene. No navigation-state inference from
+  those empty stopped-scene arrays.
+- Shared executor HasCapability required total supplied argument count to equal
+  permission binding count. Actual host ReserveNearest permission binds useId
+  only; the primitive descriptor also allows optional functionId. TV/drink reserve
+  supplies both and is rejected before the physical port. MoveNearPlayer likewise
+  has a descriptor-validated distance but no permission-bound arguments.
+- Removed the incorrect count equality, not permission matching. Exactly one
+  registered capability is still required; EVERY permission binding must have
+  a supplied allowed value. Primitive validation still rejects unknown/malformed
+  arguments. No capability names, furniture conditions or permissions invented.
+- Extended the existing focused installed-release regression with catalogue-derived
+  useId permissions and assertion that first primitive actually reaches the port,
+  rather than treating Start accepted as execution. Missing capability must still
+  result in zero port dispatches. Port remains synthetic/pending: NOT navigation,
+  furniture function, grant, animation or player-visible proof.
+- Normal import requested in stopped Editor; bounded Console check found0 CS
+  errors. ONE focused ConversationInteractionRegressionTests run submitted;
+  result pending. No earlier suites rerun, no scene/provider/player-store changes.
+- Consolidated result: Unity EditMode job90cbe77df851463d8a7e695deec4fff3 passed2/2,
+  22.36s. Binding-clear/equivalent-cache-key check passed; installed3 PoCs reached
+  first primitive port, missing reserve permission blocked all3. Same installed
+  release measured preparation cold9583ms vs cached0ms (timer resolution), NOT
+  total input-to-response latency. This validates imported previous source slice
+  and current permission fix together, not physical movement/navigation/functions.
+  No PlayMode started or player/provider stores used. Original UI/action behavior
+  still needs live reproduction; do not convert these results into a gameplay pass.
+
+### Latest human failure2026-10-25 20:xx: repeated TV / latency / rejected Action
+
+- Human supplied4 screenshots and reported very long typed AND menu latency,
+  every request replaying Turn on TV, then no activity. Actual existing Console
+  shows Locate highest0.954 and Fetch highest0.813; explicit TV card count1 (no
+  embedding). Activity finish phase=sequence_start_rejected/outcomeFailed for3 runs.
+  Thus button delay is not explained by embedding inference, and these failures
+  are not a provider problem (offline/no provider).
+- Root boundary1: Bridge retained activeTopicId/activeResponseId at end_scenario
+  and CompleteAuthoredScenario. PlanLocal prefers active Topic before scored
+  candidates. Source now clears those completed bindings and active Scenario
+  snapshot; explicit pending Topic also clears on Dismiss.
+- Root boundary2: every CreateRuntimeContentVocabulary made a fresh vocabulary
+  and sequence builder. RuntimeContentStore cache uses reference identity, forcing
+  full6117-dependency compiled-package reconstruction/validation on every button.
+  Source now retains the trusted catalog/builder and reuses vocabulary only when
+  all registration sets and builder identity are equal. Changes invalidate it.
+  Registered built-in actions are stable across host startup availability; runtime
+  snapshots STILL enforce current permissions/eligibility. A background warm task
+  starts at Bridge.Start; submission awaits it without blocking Unity, guards
+  duplicate preparation and presentation dismissal. No providers/player data in
+  that task. Warm timing improvement is NOT measured/claimed yet.
+- Root boundary3: ContentFlowExecutionState copied optional empty source actionRef
+  hashes into projected sequence/host-effect requests. Executor.ValidateRequest
+  requires nonempty expectedHash. Projection now uses ActionRecord.semanticHash
+  only AFTER FindAction and exact release-closure validation. Validator is not
+  weakened; wrong explicit hashes still cannot resolve.
+- Focused regression source in ConversationInteractionRegressionTests exercises
+  end_scenario -> new request binding clearance, equivalent/changed cache keys,
+  and all3 installed pinned entries -> first action request -> real executor Start.
+  It records cold/cached release preparation timing. Primitive port is synthetic;
+  NOT physical movement, furniture power, water grant or player-visible UI proof.
+  It has NOT been compiled/run yet. No broad tests, extra agents, provider calls,
+  real-profile operations or scene/PlayMode changes made.
+- Import gate: exact Editor initially ModelTest playing=true, compiling=false.
+  Human asked to stop PlayMode for import; Main did not stop it. Latest bounded
+  state/import request reports No Unity Editor instances found. Do not infer crash
+  or kill/restart it. Resume normal import then ONE consolidated relevant pass;
+  no repetition of earlier CLI/GTE/Workbench suites. Main owns this source window.
+
 ### Latest human failure correction2026-10-25: actual Submit/Present boundary
 
 - Human screenshots show all3 free-text requests reporting unavailable and TV

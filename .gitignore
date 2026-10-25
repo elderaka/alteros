@@ -19,6 +19,12 @@ Assets/StreamingAssets/TTSCache/
 Tools/SemanticLab/*.onnx
 /Tools/ContentWorkbench/Workspace/
 
+# Local provider credentials; keep shareable templates trackable.
+.env
+.env.*
+!.env.example
+!.env.sample
+
 *.csproj
 *.sln
 *.slnx

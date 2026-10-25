@@ -271,6 +271,9 @@ namespace AlterOS.Content
                     string.IsNullOrEmpty(right.expectedHash) || left.expectedHash == right.expectedHash);
         }
 
+        public ContentResult<ResolvedContentRelease> WarmExecutionRelease(ContentHostVocabulary hostVocabulary)
+        { return ResolveExecutionRelease(hostVocabulary); }
+
         private ContentResult<ResolvedContentRelease> ResolveExecutionRelease(ContentHostVocabulary hostVocabulary)
         {
             lock (executionReleaseGate)

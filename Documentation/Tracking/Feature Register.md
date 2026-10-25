@@ -5,6 +5,23 @@ reviewed: 2026-10-23
 ---
 # Feature Register
 
+2026-10-25 debug tooling: top-left F5 routing Canvas/prefab is saved in ModelTest,
+with last input, selected Topic/Scenario, top5 IDs/anchors/similarity%, elapsed
+trace and retained failure. Shared flag only; Console trace gated on F5. Focused
+formatter3/3 and reopened wiring/synthetic visibility checks passed. Normal game
+appearance/input/physical activities remain unverified. See [[Debug Mode]].
+
+2026-10-25 permission follow-up: prior slice and shared primitive permission fix
+are imported; one focused Unity job passed2/2, all3 installed PoCs cross first
+operation dispatch and missing permission still blocks. Release preparation
+9583ms cold/0ms cached; not total latency. Physical actions remain unverified.
+
+2026-10-25 follow-up failure: completed Topic binding incorrectly overrode new
+matches, fresh vocabularies defeated execution-release caching, and projected
+empty Action hashes failed executor startup. Repairs and two focused regression
+tests are SOURCE ONLY pending import; no new latency/UI/action acceptance yet.
+Latest MCP reports no connected Editor. See execution ledger before resuming.
+
 2026-10-25 actual UI correction: the human reproduced all3 PoC submission failures
 and a stuck TV favor menu despite correct route selection. Main repaired optional
 Flow-reference hash comparison, startup error propagation/retry cancellation,

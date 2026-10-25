@@ -2,6 +2,29 @@
 
 Last reviewed: 2026-10-22
 
+Debug UI addition2026-10-25: ModelTest's AlterOSHUDCanvas now contains the authored
+ConversationRoutingDebug prefab. ConversationRoutingDebugView and Bridge debug
+partial reference the existing FurnitureHandlingController.DebugMode owner; no new
+input listener/flag. Source tracks actual route matches and bounded ephemeral
+interaction traces, not another data authority. Reopened wiring/shared visibility
+check passed; focused formatter3/3. No normal gameplay acceptance is claimed.
+
+Latest permission follow-up2026-10-25 supersedes pending-import status below:
+imported all prior fixes plus primitive permission comparison correction. Actual
+logs had accepted -> primitive_capability_unavailable -> Idle, before movement.
+One focused Unity job passed2/2: all3 installed Action dispatches reach a synthetic
+port, missing permission blocks dispatch, completed binding/cache behavior passes.
+Measured release preparation cold9583ms/cached0ms, not total interaction latency.
+Physical movement/power/water effects remain unverified; no normal PlayMode started.
+
+Latest20:xx2026-10-25 failure: repeated TV response despite Locate0.954/Fetch0.813
+and sequence_start_rejected. New unimported slice clears completed Topic binding,
+retains equivalent vocabulary/builder for the release cache, warms pure release
+validation off-thread at Bridge.Start, and projects Action.semanticHash from the
+validated release into executor/host-effect refs. Focused end-to-executor regression
+source added, not run; latest MCP reports no Editor instance. No speed/gameplay
+pass claimed. Existing3/3 below predates this slice.
+
 Actual UI correction2026-10-25: correct semantic selection did not imply playback.
 The bridge rejected equivalent pinned Flow refs when the compiled entry omitted
 optional expectedHash. Both refs now resolve through RuntimeContentStore before

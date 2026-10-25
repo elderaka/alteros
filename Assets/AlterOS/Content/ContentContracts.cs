@@ -189,6 +189,13 @@ namespace AlterOS.Content
         }
 
         public bool IsActionRegistered(string id) { return Contains(actions, id); }
+        public bool HasSameRegistrationsAs(ContentHostVocabulary other)
+        {
+            return other != null && ReferenceEquals(SequenceBuilder, other.SequenceBuilder) &&
+                actions.SetEquals(other.actions) && expressions.SetEquals(other.expressions) &&
+                enumValues.SetEquals(other.enumValues) && contextFacts.SetEquals(other.contextFacts) &&
+                canonicalOwners.SetEquals(other.canonicalOwners);
+        }
         public bool IsHostEffectFunctionRegistered(string functionId, string capabilityId)
         {
             string requiredCapability;

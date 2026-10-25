@@ -549,7 +549,8 @@ namespace AlterOS.Activities
             if (matches != 1) return false;
 
             ActivitySequenceArgument[] supplied = (arguments ?? new ActivitySequenceArgument[0]).ToArray();
-            if (supplied.Length != capability.argumentBindings.Count) return false;
+            // Bindings constrain permission-sensitive arguments, not every descriptor-validated option.
+            // For example reserve_nearest scopes useId, while functionId is an optional primitive argument.
             foreach (ScenarioArgumentBinding binding in capability.argumentBindings)
             {
                 if (binding == null) return false;

@@ -15,6 +15,25 @@ Physical T/E acceptance remains open. See the
 
 ## Active work
 
+- **F5 routing HUD2026-10-25:** implementing top-left Canvas/prefab display of last
+  input, selected Topic/Scenario, top5 actual matches/IDs/anchors/similarity%, last
+  transition and retained failure. Shared flag only; explicit buttons show GTE
+  bypassed/n-a rather than invented scores. Bounded in-memory state; extra Console
+  traces only when F5 is on. No routing/provider/persistence changes. Saved to
+  ModelTest and prefab through Editor; reopened wiring and shared-flag off/on/off
+  check passed. Focused formatter suite3/3. Normal gameplay visual/input and actual
+  PoC movement remain unverified; do not rerun these completed HUD checks.
+
+- **Current movement blocker2026-10-25:** imported sequence now starts, immediately
+  fails primitive_capability_unavailable, returns Idle. Shared executor compared
+  total primitive args against only permission-bound args; optional functionId
+  made furniture reserve fail. Source correction preserves all binding checks;
+  focused installed regression now asserts first actual port dispatch and denial
+  without permission. Imported; single focused Unity job passed2/2, all3 PoCs
+  crossed the dispatch boundary. Release preparation cold9583ms vs cached0ms;
+  not total response latency. No additional suites run.
+  This is not yet physical movement or full PoC acceptance. See latest ledger.
+
 - **Latest human failure2026-10-25 20:xx:** typed Locate/Fetch still replayed TV,
   buttons were very slow, Action terminated sequence_start_rejected. Main source
   slice now clears completed Topic/response binding, reuses equivalent runtime

@@ -9,6 +9,18 @@ Open `E:\Pleiades\alteros\Documentation` as an Obsidian vault. No community plug
 
 ## Start here
 
+- **Latest movement correction2026-10-25:** actual activity logs showed accepted
+  then primitive_capability_unavailable. Executor incorrectly compared all primitive
+  parameters with only permission-bound parameters. Imported correction preserves
+  permission constraints; one focused Unity job passed2/2 across all3 installed
+  Action dispatches plus binding/cache. Physical walking remains unverified.
+
+- **Latest failure20:xx2026-10-25:** wrong repeated TV selection, slow menu and
+  sequence-start rejection remain unaccepted. New source slice repairs completed
+  Topic binding, repeated full-release rebuilds and projected Action hashes.
+  Awaiting Editor import; latest MCP reports no Editor instance. See latest ledger,
+  not earlier3/3 or4/4, for current status.
+
 - **Actual UI failure2026-10-25:** the human reproduced failure after correct
   routing. Main repaired the raw optional-hash comparison blocking all3 compiled
   Topic entries, added retry/error propagation and deferred furniture pointer

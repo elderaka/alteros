@@ -297,6 +297,7 @@ namespace AlterOS.Conversation
         public void DismissPresentation()
         {
             presentationEpoch++;
+            pendingExplicitTopicId = string.Empty;
             EndActivityExchange();
             pendingScenarioDialogue.Clear();
             scenarioDialogueActive = false;
@@ -323,15 +324,18 @@ namespace AlterOS.Conversation
         private async void SubmitAsync(string text)
         {
             if (IsTurnInFlight) { SetStatus("busy"); return; }
+            BeginRoutingDiagnostic(text);
             int epoch = presentationEpoch;
             preparingContent = true;
             try
             {
                 Task<ContentResult<ResolvedContentRelease>> warmup = EnsureContentWarmup();
+                RecordRoutingDiagnostic("content", warmup.IsCompleted ? "prepared" : "warming");
                 if (!warmup.IsCompleted) SetStatus("content_preparing");
                 ContentResult<ResolvedContentRelease> warmed = await warmup;
-                if (this == null || epoch != presentationEpoch) return;
+                if (this == null || !isActiveAndEnabled || epoch != presentationEpoch) return;
                 if (!warmed.IsReady) throw new InvalidOperationException("content_release_unavailable");
+                RecordRoutingDiagnostic("content", "ready");
             }
             catch (Exception)
             {
@@ -385,6 +389,7 @@ namespace AlterOS.Conversation
                 throw new InvalidOperationException("semantic_unavailable");
             }
             bool explicitTopicSelection = !string.IsNullOrWhiteSpace(pendingExplicitTopicId);
+            RecordRoutingDiagnostic("semantic", explicitTopicSelection ? "bypassed: explicit selection" : "query begin");
             DialogueRouteMatch[] matches = new DialogueRouteMatch[0];
             if (!explicitTopicSelection && !semantic.TryRoute(text, out matches,
                 dialogueManager != null ? dialogueManager.semanticMinimumSimilarity : TopicFamilySemanticMatcher.DefaultMinimumSimilarity))
@@ -392,9 +397,13 @@ namespace AlterOS.Conversation
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
                 LogSemanticUnavailable(semantic);
 #endif
+                RoutingDiagnostics.SetCandidates(null, null);
                 throw new InvalidOperationException("semantic_unavailable");
             }
 
+            RoutingDiagnostics.SetCandidates(matches, pendingExplicitTopicId);
+            RecordRoutingDiagnostic("semantic", explicitTopicSelection ? "explicit selection ready" : "query complete");
+            if (routingDebugModeOwner?.DebugMode?.IsEnabled == true) Debug.Log("[AlterOS Trace] " + RoutingDiagnostics.Report, this);
             DateTimeOffset nowUtc = DateTimeOffset.UtcNow;
             TopicContext context = CreateContext(nowUtc);
             ConversationRequest request = NewRequest(text, requestId);
@@ -414,6 +423,8 @@ namespace AlterOS.Conversation
             }
             TopicCandidateSet prepared = TopicCandidateRetriever.PrepareForJudgment(retrieved, topicCatalog.Catalogue,
                 topicCatalog.AuthoredInstances, context, topicHistory, nowUtc, "direct");
+            RecordRoutingDiagnostic("eligibility", string.Join(", ", prepared.cards.Take(5)
+                .Select(card => card.topicId + "=" + card.authoredAvailability)));
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log(TopicSimilarityDiagnostics.Format(prepared, onlineEnabled,
                 TopicCandidateRetriever.MinimumOnlineAuthoredSimilarity));
@@ -525,6 +536,8 @@ namespace AlterOS.Conversation
             foreach (ScenarioEffect effect in effects)
             {
                 if (effect == null) continue;
+                RecordRoutingDiagnostic("scenario_" + effect.type,
+                    "run=" + effect.runId + " step=" + effect.stepId + " outcome=" + effect.outcome);
                 if (effect.type == "show_dialogue" && effect.beat != null)
                 {
                     pendingScenarioDialogue.Enqueue(effect);
@@ -850,6 +863,8 @@ namespace AlterOS.Conversation
             foreach (ScenarioEffect effect in effects ?? new ScenarioEffect[0])
             {
                 if (effect == null) continue;
+                RecordRoutingDiagnostic("scenario_" + effect.type,
+                    "run=" + effect.runId + " step=" + effect.stepId + " outcome=" + effect.outcome);
                 if (authoredActivityScenario != null && (effect.type == "show_dialogue" || effect.type == "ask_player"))
                 {
                     pendingAuthoredActivityFollowup = effect;
@@ -1099,6 +1114,8 @@ namespace AlterOS.Conversation
         {
             if (dialogueManager == null || presentation == null || presentation.plan == null) return;
             ConversationPlan plan = presentation.plan;
+            RoutingDiagnostics.Select(plan.topicId, plan.scenarioId, plan.outcome);
+            RecordRoutingDiagnostic("selected", plan.topicId + " / " + plan.scenarioId + " / " + plan.outcome);
             if (plan.outcome == "authored")
             {
                 PresentAuthored(plan, presentation.responseId);
@@ -1122,6 +1139,7 @@ namespace AlterOS.Conversation
 
         public void Diagnostic(string stage, string code)
         {
+            RecordRoutingDiagnostic(stage, code);
             if (stage == "route")
                 RecordInteraction(new InteractionObservation
                 {
@@ -1277,7 +1295,8 @@ namespace AlterOS.Conversation
                 .Where(item => item != null).Select(item => item.capabilityId)
                 .Concat(sequenceCatalog.Primitives.All.Select(item => item.requiredCapabilityId))
                 .Concat(ContentHostEffectFunctionRegistry.RegisteredCapabilityIds)
-                .Concat(new[] { ActivityCapabilityIds.ActivitySequence });
+                .Concat(new[] { ActivityCapabilityIds.ActivitySequence, ActivityCapabilityIds.ComeHere,
+                    ActivityCapabilityIds.FollowPlayer, ActivityCapabilityIds.DrinkWater });
             IEnumerable<string> enumValues = sequenceCatalog.Primitives.All.SelectMany(item => item.arguments)
                 .SelectMany(item => item.allowedValues)
                 .Concat(sequenceCatalog.Primitives.All.SelectMany(item => item.results).SelectMany(item => item.allowedValues))
@@ -1448,6 +1467,7 @@ namespace AlterOS.Conversation
 
         private void SetStatus(string code)
         {
+            RecordRoutingDiagnostic("status", code);
             if (statusText != null) statusText.text = DisplayStatus(code);
         }
 
