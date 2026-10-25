@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_empty_input_001",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "empty_input" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "empty_input",
+      "patterns": [ "", ".", "...", "?", "??" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "empty_input", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.1, "decayHours": 4 }
+  },
+  "nodes": [
+    {
+      "id": "empty_input_001_01",
+      "speaker": "altera",
+      "text": "今の、無言のメッセージ？",
+      "translatedText": "Was that a silent message?",
+      "emotion": "curious",
+      "presentation": { "expression": "thinking", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "empty_input_001_02"
+    },
+    {
+      "id": "empty_input_001_02",
+      "speaker": "altera",
+      "text": "話したいけど言葉が出ないなら、短くていいよ。単語一つでも拾うから。",
+      "translatedText": "If you want to talk but words are not coming, short is fine. I can pick up even one word.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

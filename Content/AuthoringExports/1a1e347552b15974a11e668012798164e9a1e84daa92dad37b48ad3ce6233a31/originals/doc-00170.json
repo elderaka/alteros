@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_self_doubt_short",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i cannot do this",
+    "i can't do this",
+    "cant do this",
+    "i cannot",
+    "i can't",
+    "i am useless",
+    "i'm useless",
+    "useless",
+    "i am bad at this",
+    "i'm bad at this",
+    "i am failing",
+    "i'm failing",
+    "failing",
+    "i keep failing",
+    "i messed up"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_self_doubt_short_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_self_doubt_short_001_01",
+          "speaker": "alterra",
+          "text": "できない、って感じてるんだね。断定じゃなくて、今の感覚として受け取るよ。",
+          "displayText": "You feel like you cannot do it. I will take that as how it feels right now, not as a final fact.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_self_doubt_short_001_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_self_doubt_short_001_02",
+          "speaker": "alterra",
+          "text": "できるかどうかの前に、次の一手が見えてるかを確認しよう。",
+          "displayText": "Before deciding whether you can do it, let us check whether the next move is visible.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_self_doubt_short_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_self_doubt_short_002_01",
+          "speaker": "alterra",
+          "text": "その言い方は、少し乱暴。あなたに対して。",
+          "displayText": "That wording is a little harsh. Toward yourself.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_self_doubt_short_002_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_self_doubt_short_002_02",
+          "speaker": "alterra",
+          "text": "苦手なことがあるのと、あなたがだめなことは同じじゃない。そこは混ぜないで。",
+          "displayText": "Having something you struggle with is not the same as you being bad. Do not mix those together.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_self_doubt_short_002_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_self_doubt_short_002_03",
+          "speaker": "alterra",
+          "text": "言葉って、何度も言うと棚に固定されちゃうから。",
+          "displayText": "Words can get fixed onto the shelf if you say them too many times.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_self_doubt_short_002_04",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_self_doubt_short_002_04",
+          "speaker": "alterra",
+          "text": "今日は別のラベルにしよう。苦戦中。未整理。練習中。そっちのほうが正確。",
+          "displayText": "Today, use a different label: struggling, unsorted, practicing. Those are more accurate.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_self_doubt_short_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_self_doubt_short_003_01",
+          "speaker": "alterra",
+          "text": "失敗した感じがするんだね。まず、そこだけ切り出そう。",
+          "displayText": "It feels like you failed. First, let us separate just that piece out.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_self_doubt_short_003_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_self_doubt_short_003_02",
+          "speaker": "alterra",
+          "text": "失敗は情報になる。あなたの価値を決める判決にはしない。",
+          "displayText": "Failure can become information. We are not turning it into a verdict on your worth.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

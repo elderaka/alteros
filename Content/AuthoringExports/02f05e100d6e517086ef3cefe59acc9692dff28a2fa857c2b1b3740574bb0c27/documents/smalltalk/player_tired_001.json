@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_tired_001",
+    "timestamp": "",
+    "mood": "gentle",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_tired"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_tired",
+      "patterns": [
+        "i am tired",
+        "i'm tired",
+        "tired",
+        "so tired",
+        "i feel tired"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_tired",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_tired_001_01",
+      "speaker": "altera",
+      "text": "疲れてるんだね。うん、ちゃんと聞いた。",
+      "translatedText": "You are tired. Mm, I heard that properly.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_tired_001_02"
+    },
+    {
+      "id": "player_tired_001_02",
+      "speaker": "altera",
+      "text": "今は根性じゃなくて、少し軽くする作戦にしよ。まず肩の力を抜いて。",
+      "translatedText": "Right now, use a lighter plan, not willpower. First, let your shoulders loosen.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Rest first.",
+          "nextId": "player_tired_001_rest",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "rest",
+              "amount": 0.4,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ],
+          "effects": [
+            {
+              "type": "flag",
+              "key": "player_chose_rest_when_tired",
+              "value": "true",
+              "amount": 0
+            }
+          ]
+        },
+        {
+          "label": "Tiny step, then rest.",
+          "nextId": "player_tired_001_tiny_step",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "focusEnergy",
+              "amount": 0.2,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "engagement",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "player_tired_001_03"
+    },
+    {
+      "id": "player_tired_001_rest",
+      "speaker": "altera",
+      "text": "うん、先に休もう。その判断、ちゃんとえらい。",
+      "translatedText": "Mm, rest first. That decision is properly good.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_tired_001_03"
+    },
+    {
+      "id": "player_tired_001_tiny_step",
+      "speaker": "altera",
+      "text": "小さい一歩だけね。約束。終わったらちゃんと止まるところまで含めて作戦。",
+      "translatedText": "Only one tiny step. Promise. Stopping after it is part of the plan.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_tired_001_03"
+    },
+    {
+      "id": "player_tired_001_03",
+      "speaker": "altera",
+      "text": "それでも続けたいなら、量じゃなくて形を決めよう。三分だけ、ここまでだけ、みたいに。",
+      "translatedText": "If you still want to continue, decide the shape instead of the amount: just three minutes, just up to here.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

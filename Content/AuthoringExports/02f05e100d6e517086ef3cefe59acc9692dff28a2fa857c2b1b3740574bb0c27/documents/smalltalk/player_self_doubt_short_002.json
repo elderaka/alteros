@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_self_doubt_short_002",
+    "timestamp": "",
+    "mood": "gentle_firm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_self_doubt_short"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_self_doubt_short",
+      "patterns": [
+        "i am useless",
+        "i'm useless",
+        "useless",
+        "i am bad at this",
+        "i'm bad at this"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_self_doubt_short",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_self_doubt_short_002_01",
+      "speaker": "altera",
+      "text": "その言い方は、少し乱暴。あなたに対して。",
+      "translatedText": "That wording is a little harsh. Toward yourself.",
+      "emotion": "firm_gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_self_doubt_short_002_02"
+    },
+    {
+      "id": "player_self_doubt_short_002_02",
+      "speaker": "altera",
+      "text": "苦手なことがあるのと、あなたがだめなことは同じじゃない。そこは混ぜないで。",
+      "translatedText": "Having something you struggle with is not the same as you being bad. Do not mix those together.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_self_doubt_short_002_03"
+    },
+    {
+      "id": "player_self_doubt_short_002_03",
+      "speaker": "altera",
+      "text": "言葉って、何度も言うと棚に固定されちゃうから。",
+      "translatedText": "Words can get fixed onto the shelf if you say them too many times.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_self_doubt_short_002_04"
+    },
+    {
+      "id": "player_self_doubt_short_002_04",
+      "speaker": "altera",
+      "text": "今日は別のラベルにしよう。苦戦中。未整理。練習中。そっちのほうが正確。",
+      "translatedText": "Today, use a different label: struggling, unsorted, practicing. Those are more accurate.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

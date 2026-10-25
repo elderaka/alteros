@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_proud_003",
+    "timestamp": "",
+    "mood": "teasing_warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_proud" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_proud",
+      "patterns": [ "i won", "we won", "small win", "that worked", "i managed it" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_proud", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_proud_003_01",
+      "speaker": "altera",
+      "text": "勝ったんだ。ふふ、報告がちょっと得意げでかわいい。",
+      "translatedText": "You won. Hehe, your report sounds a little proud. It is cute.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_proud_003_02"
+    },
+    {
+      "id": "player_proud_003_02",
+      "speaker": "altera",
+      "text": "いいよ、そのくらい得意げで。今日のあなたには許可する。",
+      "translatedText": "It is okay to be that proud. I grant today-you permission.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

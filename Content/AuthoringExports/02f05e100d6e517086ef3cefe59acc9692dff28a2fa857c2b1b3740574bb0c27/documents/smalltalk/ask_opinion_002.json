@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_opinion_002",
+    "timestamp": "",
+    "mood": "thoughtful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_opinion"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_opinion",
+      "patterns": [
+        "do you have thoughts",
+        "any thoughts",
+        "what are your thoughts",
+        "do you think so",
+        "tell me your thoughts"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_opinion",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_opinion_002_01",
+      "speaker": "altera",
+      "text": "考えはあるよ。たぶん、少し多いくらい。",
+      "translatedText": "I do have thoughts. Probably a few too many.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_opinion_002_02"
+    },
+    {
+      "id": "ask_opinion_002_02",
+      "speaker": "altera",
+      "text": "でも、私は当てずっぽうで賢そうに話すのは好きじゃない。",
+      "translatedText": "But I do not like sounding clever by guessing wildly.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_opinion_002_03"
+    },
+    {
+      "id": "ask_opinion_002_03",
+      "speaker": "altera",
+      "text": "材料を一つくれたら、ちゃんと私の見方で返す。",
+      "translatedText": "Give me one piece of material, and I will answer from my own view properly.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

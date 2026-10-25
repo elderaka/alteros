@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "skip_tts_acknowledgements",
+    "timestamp": "",
+    "mood": "soft"
+  },
+  "lines": [
+    {
+      "id": "skiptts_ack_01",
+      "text": "んー。",
+      "translatedText": "Mm.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    },
+    {
+      "id": "skiptts_ack_02",
+      "text": "うん。",
+      "translatedText": "Mm-hm.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    },
+    {
+      "id": "skiptts_ack_03",
+      "text": "ふむ。",
+      "translatedText": "Hmm.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    },
+    {
+      "id": "skiptts_ack_04",
+      "text": "へえ。",
+      "translatedText": "Huh.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    },
+    {
+      "id": "skiptts_ack_05",
+      "text": "なるほど。",
+      "translatedText": "I see.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    }
+  ]
+}

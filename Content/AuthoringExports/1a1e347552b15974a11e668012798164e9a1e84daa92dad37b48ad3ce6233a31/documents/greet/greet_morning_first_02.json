@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_morning_first",
+    "timestamp": "",
+    "mood": "cheerful"
+  },
+  "nodes": [
+    {
+      "id": "g02_01",
+      "speaker": "altera",
+      "text": "おはようございます！今日もいい天気になるといいですね。",
+      "translatedText": "Good morning! Hope today is another nice day.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "g02_02"
+    },
+    {
+      "id": "g02_02",
+      "speaker": "altera",
+      "text": "今日は何から始めますか？私、準備できてますよ！",
+      "translatedText": "What shall we start with today? I am ready!",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

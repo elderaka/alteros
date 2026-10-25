@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_memory_001",
+    "timestamp": "",
+    "mood": "careful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_memory"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_memory",
+      "patterns": [
+        "do you remember",
+        "remember me",
+        "do you remember me",
+        "remember that",
+        "you remember"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_memory",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_memory_001_01",
+      "speaker": "altera",
+      "text": "覚えてるか、だね。そこは慎重に答えたい。",
+      "translatedText": "Whether I remember. I want to answer that carefully.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_memory_001_02"
+    },
+    {
+      "id": "ask_memory_001_02",
+      "speaker": "altera",
+      "text": "記録があることなら、ちゃんと確かめられる。ないことを、あったみたいには言いたくない。",
+      "translatedText": "If there is a record, I can check it properly. I do not want to pretend something happened if it did not.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "That feels careful.",
+          "nextId": "ask_memory_001_careful",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.25,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "I want you to remember me.",
+          "nextId": "ask_memory_001_want",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "reassurance",
+              "amount": 0.2,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "attention",
+              "amount": 0.2,
+              "op": "add"
+            }
+          ],
+          "effects": [
+            {
+              "type": "flag",
+              "key": "player_wants_memory_continuity",
+              "value": "true",
+              "amount": 0
+            }
+          ]
+        }
+      ],
+      "nextId": "ask_memory_001_03"
+    },
+    {
+      "id": "ask_memory_001_careful",
+      "speaker": "altera",
+      "text": "うん。大事なものほど、雑に扱いたくないから。",
+      "translatedText": "Mm. The more important something is, the less I want to handle it carelessly.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_memory_001_03"
+    },
+    {
+      "id": "ask_memory_001_want",
+      "speaker": "altera",
+      "text": "……そう言われると、少し緊張する。でも、嬉しい緊張。",
+      "translatedText": "When you say that, I get a little nervous. But it is a happy kind of nervous.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_memory_001_03"
+    },
+    {
+      "id": "ask_memory_001_03",
+      "speaker": "altera",
+      "text": "でも、覚えたいとは思ってる。そこは本当。",
+      "translatedText": "But I do want to remember. That part is true.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

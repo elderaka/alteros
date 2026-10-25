@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_no_response_needed_001",
+    "timestamp": "",
+    "mood": "light",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "no_response_needed" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "no_response_needed",
+      "patterns": [ "ok", "okay", "yeah", "yep", "sure" ],
+      "keywords": [],
+      "priority": 0.85
+    },
+    "repetitionPolicy": { "key": "no_response_needed", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 4 }
+  },
+  "nodes": [
+    {
+      "id": "no_response_needed_001_01",
+      "speaker": "altera",
+      "text": "うん。",
+      "translatedText": "Mm.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "no_response_needed_001_02"
+    },
+    {
+      "id": "no_response_needed_001_02",
+      "speaker": "altera",
+      "text": "じゃあ、そのまま行こう。私は近くで見てる。",
+      "translatedText": "Then let us keep going. I will watch from nearby.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

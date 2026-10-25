@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_tired_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_tired",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am tired",
+      "i'm tired",
+      "tired",
+      "so tired",
+      "i feel tired"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_tired_001_01",
+      "speaker": "alterra",
+      "text": "疲れてるんだね。うん、ちゃんと聞いた。",
+      "displayText": "You are tired. Mm, I heard that properly.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_tired_001_02",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_tired_001_02",
+      "speaker": "alterra",
+      "text": "今は根性じゃなくて、少し軽くする作戦にしよ。まず肩の力を抜いて。",
+      "displayText": "Right now, use a lighter plan, not willpower. First, let your shoulders loosen.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Rest first.",
+          "nextId": "player_tired_001_rest"
+        },
+        {
+          "label": "Tiny step, then rest.",
+          "nextId": "player_tired_001_tiny_step"
+        }
+      ]
+    },
+    {
+      "id": "player_tired_001_rest",
+      "speaker": "alterra",
+      "text": "うん、先に休もう。その判断、ちゃんとえらい。",
+      "displayText": "Mm, rest first. That decision is properly good.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_tired_001_03",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_tired_001_tiny_step",
+      "speaker": "alterra",
+      "text": "小さい一歩だけね。約束。終わったらちゃんと止まるところまで含めて作戦。",
+      "displayText": "Only one tiny step. Promise. Stopping after it is part of the plan.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_tired_001_03",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_tired_001_03",
+      "speaker": "alterra",
+      "text": "それでも続けたいなら、量じゃなくて形を決めよう。三分だけ、ここまでだけ、みたいに。",
+      "displayText": "If you still want to continue, decide the shape instead of the amount: just three minutes, just up to here.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

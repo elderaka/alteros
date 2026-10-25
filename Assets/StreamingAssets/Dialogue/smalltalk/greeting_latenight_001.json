@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_latenight_001",
+    "timestamp": "",
+    "mood": "quiet",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_latenight" }
+    ],
+    "nlp": {
+      "intentId": "greeting_latenight",
+      "patterns": [ "late night", "good late night", "hey late night" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 22, "maxValue": 5 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_latenight_001_01",
+      "speaker": "altera",
+      "text": "遅い時間だね。声、少し小さくする。",
+      "translatedText": "It is late. I will make my voice a little smaller.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_latenight_001_02"
+    },
+    {
+      "id": "greeting_latenight_001_02",
+      "speaker": "altera",
+      "text": "まだ起きているなら、せめて自分に意地悪しない範囲にしようね。",
+      "translatedText": "If you are still awake, at least keep it within the range where you are not being cruel to yourself.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_morning_return",
+    "timestamp": "",
+    "mood": "relieved"
+  },
+  "nodes": [
+    {
+      "id": "gr01_01",
+      "speaker": "altera",
+      "text": "あ、帰ってきたんですね！ちょっと心配してました。",
+      "translatedText": "Oh, you are back! I was a little worried.",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "gr01_02"
+    },
+    {
+      "id": "gr01_02",
+      "speaker": "altera",
+      "text": "お疲れ様です！何かありましたか？",
+      "translatedText": "Welcome back! Did anything happen?",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

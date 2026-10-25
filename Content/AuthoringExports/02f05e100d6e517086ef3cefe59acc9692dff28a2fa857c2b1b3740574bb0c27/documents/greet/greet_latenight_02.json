@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_latenight",
+    "timestamp": "",
+    "mood": "teasing_worried"
+  },
+  "nodes": [
+    {
+      "id": "gl02_01",
+      "speaker": "altera",
+      "text": "夜中じゃないですか！もう少し早く寝てください！...でも会えて嬉しいです。えへへ。",
+      "translatedText": "It is the middle of the night! Please sleep a little earlier! ...But I am glad to see you. Ehehe.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

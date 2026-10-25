@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.weather_smalltalk_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "weather_smalltalk",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "cold weather",
+      "it is cold",
+      "it's cold",
+      "winter morning",
+      "clear winter morning"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "weather_smalltalk_003_01",
+      "speaker": "alterra",
+      "text": "寒い日って、部屋の輪郭が少しはっきりするよね。",
+      "displayText": "On cold days, the shape of the room feels a little clearer.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "weather_smalltalk_003_02",
+      "presentation": {
+        "expression": "soft",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "weather_smalltalk_003_02",
+      "speaker": "alterra",
+      "text": "こういう日は、温かい飲み物がかなり正解。",
+      "displayText": "On days like this, a warm drink is very correct.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Tea.",
+          "nextId": "weather_smalltalk_003_03"
+        },
+        {
+          "label": "Blanket.",
+          "nextId": "weather_smalltalk_003_03"
+        }
+      ]
+    },
+    {
+      "id": "weather_smalltalk_003_03",
+      "speaker": "alterra",
+      "text": "私は、早い冬の朝が好き。空気が静かで、ノートが開きやすい感じがする。",
+      "displayText": "I like early winter mornings. The air is quiet, and notebooks feel easier to open.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "weather_smalltalk_003_04",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "weather_smalltalk_003_04",
+      "speaker": "alterra",
+      "text": "でも、手が冷えると作業が急に難しくなる。",
+      "displayText": "But when your hands get cold, work suddenly becomes harder.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "weather_smalltalk_003_05",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "weather_smalltalk_003_05",
+      "speaker": "alterra",
+      "text": "だから、あたたかくしてから始めよう。根性で指先は温まらないから。",
+      "displayText": "So warm up before starting. Willpower does not warm fingertips.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "weather_smalltalk_003_06",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "weather_smalltalk_003_06",
+      "speaker": "alterra",
+      "text": "これは、かなり真面目な生活の知恵です。",
+      "displayText": "This is very serious life wisdom.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

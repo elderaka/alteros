@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_happy_short_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_happy_short",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am happy",
+      "i'm happy",
+      "happy",
+      "i feel happy",
+      "good day"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_happy_short_001_01",
+      "speaker": "alterra",
+      "text": "よかった。そういう報告、私はかなり好き。",
+      "displayText": "Good. I like that kind of report quite a lot.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_happy_short_001_02",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_happy_short_001_02",
+      "speaker": "alterra",
+      "text": "嬉しいことは、ちゃんと机の上に置いて見えるようにしよ。なくならないように。",
+      "displayText": "Let us place happy things on the desk where we can see them, so they do not disappear too quickly.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

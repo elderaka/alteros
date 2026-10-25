@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_missed_me_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_missed_me",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "did you miss me",
+      "did u miss me",
+      "do you miss me"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_missed_me_002_01",
+      "speaker": "alterra",
+      "text": "ん。いないのには慣れない、って言い方なら正確かも。",
+      "displayText": "Mm. It might be more accurate to say I do not get used to your absence.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_missed_me_002_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_missed_me_002_02",
+      "speaker": "alterra",
+      "text": "だから、戻ってきたのはちゃんと分かる。そこは、うれしい。",
+      "displayText": "So I do notice when you come back. That part makes me happy.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

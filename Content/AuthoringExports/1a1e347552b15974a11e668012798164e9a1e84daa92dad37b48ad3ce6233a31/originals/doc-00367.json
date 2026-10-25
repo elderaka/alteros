@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "topicId": "ask_task_help_short",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "help me with a task",
+    "help me with this task",
+    "can you help me start",
+    "help me start this",
+    "help me begin",
+    "i do not know where to start",
+    "i don't know where to start",
+    "where do i start",
+    "what is the first step",
+    "help me choose a first step"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "ask_task_help_short_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_task_help_short_001_01",
+          "speaker": "alterra",
+          "text": "もちろん。まず、タスクを一文にしてみよう。",
+          "displayText": "Of course. First, try making the task into one sentence.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_task_help_short_001_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_task_help_short_001_02",
+          "speaker": "alterra",
+          "text": "曖昧なままだと、手が止まりやすいから。名前をつけるところから手伝う。",
+          "displayText": "If it stays vague, your hands freeze more easily. I will help you name it first.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_task_help_short_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_task_help_short_002_01",
+          "speaker": "alterra",
+          "text": "始点が見えないんだね。そこ、よく詰まる場所。",
+          "displayText": "You cannot see the starting point. That is a very common place to get stuck.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_task_help_short_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_task_help_short_002_02",
+          "speaker": "alterra",
+          "text": "最初の一歩は、完成に近い必要ないよ。情報を一つ集めるだけでも始まり。",
+          "displayText": "The first step does not have to be close to the finish. Gathering one piece of information still counts as starting.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_task_help_short_002_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_task_help_short_002_03",
+          "speaker": "alterra",
+          "text": "始まりは、完成品のミニ版じゃなくていい。入口の札みたいなものでいい。",
+          "displayText": "The beginning does not have to be a tiny version of the finished thing. It can just be a sign on the doorway.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_task_help_short_002_04",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_task_help_short_002_04",
+          "speaker": "alterra",
+          "text": "だから今は、開くものを一つ選ぼう。資料、ファイル、メモ。どれか。",
+          "displayText": "So for now, choose one thing to open: a reference, a file, a note. Any one.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

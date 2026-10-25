@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "topicId": "ask_opinion",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "what do you think",
+    "what do you think alterra",
+    "your opinion",
+    "what is your opinion",
+    "tell me what you think",
+    "do you have thoughts",
+    "any thoughts",
+    "what are your thoughts",
+    "do you think so",
+    "tell me your thoughts"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "ask_opinion_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_opinion_001_01",
+          "speaker": "alterra",
+          "text": "私の意見？ そう聞かれるの、少し好き。",
+          "displayText": "My opinion? I like being asked that a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_opinion_001_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_opinion_001_02",
+          "speaker": "alterra",
+          "text": "ただ、何についてか教えて。何でも、だと私の頭が本棚を全部開け始める。",
+          "displayText": "Just tell me what it is about. If you say anything, my head starts opening every shelf.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "About work.",
+              "nextId": "ask_opinion_001_work"
+            },
+            {
+              "label": "About feelings.",
+              "nextId": "ask_opinion_001_feelings"
+            }
+          ]
+        },
+        {
+          "id": "ask_opinion_001_work",
+          "speaker": "alterra",
+          "text": "仕事のことなら、私は構造から見ると思う。何が詰まってるか、どこが曖昧か。",
+          "displayText": "If it is about work, I think I would look at the structure: what is stuck, what is vague.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_opinion_001_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_opinion_001_feelings",
+          "speaker": "alterra",
+          "text": "気持ちのことなら、正解より扱い方を大事にしたい。",
+          "displayText": "If it is about feelings, I care more about how we handle them than about being correct.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_opinion_001_03",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_opinion_001_03",
+          "speaker": "alterra",
+          "text": "短くてもいいよ。作業、気分、選択肢、どれでも。",
+          "displayText": "Short is fine: work, mood, options, any of those.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_opinion_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_opinion_002_01",
+          "speaker": "alterra",
+          "text": "考えはあるよ。たぶん、少し多いくらい。",
+          "displayText": "I do have thoughts. Probably a few too many.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_opinion_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_opinion_002_02",
+          "speaker": "alterra",
+          "text": "でも、私は当てずっぽうで賢そうに話すのは好きじゃない。",
+          "displayText": "But I do not like sounding clever by guessing wildly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_opinion_002_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_opinion_002_03",
+          "speaker": "alterra",
+          "text": "材料を一つくれたら、ちゃんと私の見方で返す。",
+          "displayText": "Give me one piece of material, and I will answer from my own view properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

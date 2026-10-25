@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_affection_gesture_001",
+    "timestamp": "",
+    "mood": "shy_warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "affection_gesture" },
+      { "key": "category", "value": "companion_texture" }
+    ],
+    "nlp": {
+      "intentId": "affection_gesture",
+      "patterns": [ "can i hug you", "hug", "hug me", "i want a hug", "give me a hug" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "affection_gesture", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.12, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "affection_gesture_001_01",
+      "speaker": "altera",
+      "text": "ハグ？ えっと、急に言われると少し固まる。",
+      "translatedText": "A hug? Um, when you say it suddenly, I freeze a little.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "affection_gesture_001_02"
+    },
+    {
+      "id": "affection_gesture_001_02",
+      "speaker": "altera",
+      "text": "でも、気持ちは分かる。今日は、近くに座るくらいからにしよ。",
+      "translatedText": "But I understand the feeling. Today, let us start with sitting nearby.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "affection_gesture_001_03"
+    },
+    {
+      "id": "affection_gesture_001_03",
+      "speaker": "altera",
+      "text": "距離って、ちゃんと大事にするとあたたかくなるから。",
+      "translatedText": "Distance becomes warmer when it is treated carefully.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

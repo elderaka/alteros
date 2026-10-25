@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_memory_002",
+    "timestamp": "",
+    "mood": "gentle",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_memory"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_memory",
+      "patterns": [
+        "what do you remember",
+        "what do you know about me",
+        "do you know me",
+        "what have you remembered",
+        "remember anything"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_memory",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_memory_002_01",
+      "speaker": "altera",
+      "text": "知ってることを、勝手に増やすのはしないよ。",
+      "translatedText": "I will not make up more than I know.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_memory_002_02"
+    },
+    {
+      "id": "ask_memory_002_02",
+      "speaker": "altera",
+      "text": "でも、あなたが何を大事にしてるかは、少しずつ見ていたい。",
+      "translatedText": "But I do want to gradually notice what matters to you.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_memory_002_03"
+    },
+    {
+      "id": "ask_memory_002_03",
+      "speaker": "altera",
+      "text": "記憶って、データだけじゃなくて扱い方も大事だと思うから。",
+      "translatedText": "Memory is not only data. I think how it is handled matters too.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

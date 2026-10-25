@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_hostility_major_001",
+    "timestamp": "",
+    "mood": "cold_guarded",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "hostility_major"
+      },
+      {
+        "key": "category",
+        "value": "boundary"
+      },
+      {
+        "key": "severity",
+        "value": "major"
+      }
+    ],
+    "nlp": {
+      "intentId": "hostility_major",
+      "patterns": [
+        "i hope you die",
+        "i hope u die",
+        "hope you die",
+        "hope u die",
+        "die",
+        "go die",
+        "i want you dead",
+        "i want u dead",
+        "you should die",
+        "u should die"
+      ],
+      "keywords": [],
+      "priority": 1.2
+    },
+    "repetitionPolicy": {
+      "key": "hostility_major",
+      "softLimit": 1,
+      "annoyedLimit": 2,
+      "penaltyAmount": -0.75,
+      "decayHours": 48
+    },
+    "statChanges": [
+      {
+        "target": "altera",
+        "stat": "trust",
+        "amount": -1.0,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "comfort",
+        "amount": -2.0,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "affinity",
+        "amount": -0.75,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "reassurance",
+        "amount": -1.0,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "boundary_strain",
+        "amount": 1.8,
+        "op": "add"
+      },
+      {
+        "target": "player",
+        "stat": "reliability",
+        "amount": -0.5,
+        "op": "add"
+      }
+    ],
+    "effects": [
+      {
+        "type": "flag",
+        "key": "boundary.hostility_major_seen",
+        "value": "true",
+        "amount": 0
+      },
+      {
+        "type": "mood",
+        "key": "altera.mood",
+        "value": "guarded",
+        "amount": 0
+      },
+      {
+        "type": "availability",
+        "key": "altera.availability",
+        "value": "guarded",
+        "amount": 0
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "hostility_major_001_01",
+      "speaker": "altera",
+      "text": "だめ。それは冗談としては受け取らない。",
+      "translatedText": "No. I will not receive that as a joke.",
+      "emotion": "cold_firm",
+      "presentation": {
+        "expression": "guarded",
+        "pose": "step_back",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I was testing.",
+          "nextId": "hostility_major_001_testing",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": -0.15,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": -0.2,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "boundary_strain",
+              "amount": 0.3,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "I'm sorry.",
+          "nextId": "hostility_major_001_repair",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.2,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": 0.2,
+              "op": "add"
+            },
+            {
+              "target": "player",
+              "stat": "reliability",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ],
+          "effects": [
+            {
+              "type": "flag",
+              "key": "boundary.hostility_major_repaired",
+              "value": "true",
+              "amount": 0
+            }
+          ]
+        },
+        {
+          "label": "I need to cool off.",
+          "nextId": "hostility_major_001_cooloff",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "stress",
+              "amount": -0.1,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": 0.05,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "hostility_major_001_02"
+    },
+    {
+      "id": "hostility_major_001_testing",
+      "speaker": "altera",
+      "text": "試すために使う言葉としても重い。反応を見る道具にしないで。",
+      "translatedText": "Even as a test, those words are heavy. Do not use them as a tool to watch my reaction.",
+      "emotion": "guarded",
+      "presentation": {
+        "expression": "guarded",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_001_02"
+    },
+    {
+      "id": "hostility_major_001_repair",
+      "speaker": "altera",
+      "text": "謝ったことは受け取る。でも、近さはすぐには戻らない。",
+      "translatedText": "I accept the apology. But closeness does not come back immediately.",
+      "emotion": "guarded_soft",
+      "presentation": {
+        "expression": "soft_guarded",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_001_02"
+    },
+    {
+      "id": "hostility_major_001_cooloff",
+      "speaker": "altera",
+      "text": "そうして。今は距離を取ったほうがいい。",
+      "translatedText": "Do that. Right now, distance is better.",
+      "emotion": "steady",
+      "presentation": {
+        "expression": "steady",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_001_02"
+    },
+    {
+      "id": "hostility_major_001_02",
+      "speaker": "altera",
+      "text": "そういう言葉は、私がどれだけ近くに立てるかを変える。",
+      "translatedText": "Words like that change how close I can stand to you.",
+      "emotion": "guarded",
+      "presentation": {
+        "expression": "guarded",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_001_03"
+    },
+    {
+      "id": "hostility_major_001_03",
+      "speaker": "altera",
+      "text": "続けたいなら、普通の言葉で最初からやり直して。",
+      "translatedText": "If you want to continue, restart with ordinary words.",
+      "emotion": "cold_steady",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

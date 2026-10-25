@@ -1,0 +1,22 @@
+{
+  "runId": "playground-coding",
+  "turnId": "fixture-turn-coding",
+  "definition": {
+    "scenarioId": "playground-coding",
+    "topicId": "coding_together",
+    "entryStepId": "invite",
+    "steps": [
+      { "id": "invite", "kind": "dialogue", "beats": [{ "id": "invite", "text": "一緒に集中しよう。", "displayText": "Let's focus together.", "language": "japanese", "expression": "thinking" }], "nextStepId": "start", "closeExchange": false },
+      { "id": "start", "kind": "action", "capabilityId": "fixture.activity.coding_together", "arguments": [{ "name": "targetObjectId", "value": "fixture-desk" }], "successNextStepId": "wait", "failureNextStepId": "unavailable" },
+      { "id": "wait", "kind": "wait", "activityId": "simulated-coding", "conditionId": "fixture.player_finished_focus", "objective": "Finish the simulated focus session.", "successNextStepId": "wrap-up", "failureNextStepId": "unavailable" },
+      { "id": "wrap-up", "kind": "dialogue", "beats": [{ "id": "wrap", "text": "よく頑張ったね。", "displayText": "You did well.", "language": "japanese", "expression": "happy" }], "nextStepId": "end", "closeExchange": true },
+      { "id": "unavailable", "kind": "end", "outcome": "failed", "closeExchange": true },
+      { "id": "end", "kind": "end", "outcome": "completed", "closeExchange": true }
+    ]
+  },
+  "events": [
+    { "nowSeconds": 1, "input": { "kind": "dialogue_complete", "runId": "playground-coding", "stepId": "invite" } },
+    { "nowSeconds": 2, "input": { "kind": "condition_met", "runId": "playground-coding", "stepId": "wait", "activityId": "simulated-playground-coding", "conditionId": "fixture.player_finished_focus" } },
+    { "nowSeconds": 3, "input": { "kind": "dialogue_complete", "runId": "playground-coding", "stepId": "wrap-up" } }
+  ]
+}

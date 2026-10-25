@@ -1,0 +1,16 @@
+{
+  "protocolVersion": 4,
+  "type": "scenario_stage",
+  "requestId": "turn-cats-1",
+  "payload": {
+    "turnId": "turn-cats-1",
+    "turnVersion": 1,
+    "stageId": "turn-cats-1-head",
+    "stage": "head",
+    "status": "ready",
+    "usage": { "inputTokens": 5, "outputTokens": 7, "totalTokens": 12, "costUsd": null },
+    "beats": [
+      { "id": "reaction", "text": "うん。", "displayText": "Mm-hm.", "language": "japanese", "expression": "gentle" }
+    ]
+  }
+}

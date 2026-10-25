@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.empty_input_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "empty_input",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      ".",
+      "...",
+      "?",
+      "??"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "empty_input_001_01",
+      "speaker": "alterra",
+      "text": "今の、無言のメッセージ？",
+      "displayText": "Was that a silent message?",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "empty_input_001_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "empty_input_001_02",
+      "speaker": "alterra",
+      "text": "話したいけど言葉が出ないなら、短くていいよ。単語一つでも拾うから。",
+      "displayText": "If you want to talk but words are not coming, short is fine. I can pick up even one word.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

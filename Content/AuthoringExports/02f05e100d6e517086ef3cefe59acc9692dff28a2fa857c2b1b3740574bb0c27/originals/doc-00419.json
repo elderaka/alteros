@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_dont_understand_001",
+    "timestamp": "",
+    "mood": "helpful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "dont_understand" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "dont_understand",
+      "patterns": [ "i do not understand", "i don't understand", "dont understand", "i am confused", "i'm confused" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "dont_understand", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.05, "decayHours": 6 }
+  },
+  "nodes": [
+    {
+      "id": "dont_understand_001_01",
+      "speaker": "altera",
+      "text": "分からなかったんだね。じゃあ、言い方を変える。",
+      "translatedText": "You did not understand. Then I will change the wording.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "dont_understand_001_02"
+    },
+    {
+      "id": "dont_understand_001_02",
+      "speaker": "altera",
+      "text": "分からないって言えるのは助かるよ。黙って置いていかれるほうが困るから。",
+      "translatedText": "It helps when you can say you do not understand. Being quietly left behind is harder.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "dont_understand_001_03"
+    },
+    {
+      "id": "dont_understand_001_03",
+      "speaker": "altera",
+      "text": "どの部分？ 言葉、手順、目的。そこだけ教えて。",
+      "translatedText": "Which part? The words, the steps, or the purpose. Tell me just that.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

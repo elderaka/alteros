@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_evening", "timestamp": "", "mood": "tender" }, "nodes": [ { "id": "ge05_01", "speaker": "altera", "text": "こんばんは。また今日も一日終わりましたね。よく頑張りました。", "translatedText": "Good evening. Another day has come to an end. You did a great job today.", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

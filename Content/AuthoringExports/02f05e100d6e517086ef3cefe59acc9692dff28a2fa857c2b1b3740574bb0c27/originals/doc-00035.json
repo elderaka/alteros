@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_finish_focus_001",
+    "timestamp": "",
+    "mood": "proud",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "finish_focus" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "finish_focus",
+      "patterns": [ "focus done", "finished focus", "i finished focusing", "focus session done", "done focusing" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "finish_focus", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 6 }
+  },
+  "nodes": [
+    {
+      "id": "finish_focus_001_01",
+      "speaker": "altera",
+      "text": "終わった？ よし。ちゃんと区切れたの、いいね。",
+      "translatedText": "Finished? Good. It is good that you made a real stopping point.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "finish_focus_001_02"
+    },
+    {
+      "id": "finish_focus_001_02",
+      "speaker": "altera",
+      "text": "成果が小さく見えても、集中した時間は消えないよ。ちゃんと積み上がってる。",
+      "translatedText": "Even if the result looks small, the focused time does not disappear. It is stacking up.",
+      "emotion": "proud",
+      "presentation": { "expression": "proud", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

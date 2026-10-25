@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Proximity greeting pool",
+    "timestamp": "",
+    "mood": "warm",
+    "triggerConditions": []
+  },
+  "lines": [
+    {
+      "id": "greet_ambient_morning_01",
+      "text": "おはよう。来てくれたんだね。",
+      "translatedText": "Good morning. You came over.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "greeting_ambient",
+      "triggerConditions": [
+        {
+          "type": "time_range",
+          "minValue": 5,
+          "maxValue": 12
+        }
+      ]
+    },
+    {
+      "id": "greet_ambient_afternoon_01",
+      "text": "こんにちは。今日は何をしているの？",
+      "translatedText": "Hi. What are you up to today?",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "greeting_ambient",
+      "triggerConditions": [
+        {
+          "type": "time_range",
+          "minValue": 12,
+          "maxValue": 18
+        }
+      ]
+    },
+    {
+      "id": "greet_ambient_evening_01",
+      "text": "こんばんは。少しだけ話していく？",
+      "translatedText": "Good evening. Want to talk for a bit?",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "greeting_ambient",
+      "triggerConditions": [
+        {
+          "type": "time_range",
+          "minValue": 18,
+          "maxValue": 24
+        }
+      ]
+    },
+    {
+      "id": "greet_ambient_latenight_01",
+      "text": "まだ起きてたんだ。無理しすぎないでね。",
+      "translatedText": "You're still awake. Don't push yourself too hard.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "greeting_ambient",
+      "triggerConditions": [
+        {
+          "type": "time_range",
+          "minValue": 0,
+          "maxValue": 5
+        }
+      ]
+    },
+    {
+      "id": "greet_ambient_anytime_01",
+      "text": "ふふ、近くに来てくれるとうれしい。",
+      "translatedText": "Heh, I like it when you come a little closer.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "greeting_ambient",
+      "triggerConditions": []
+    }
+  ]
+}

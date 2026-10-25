@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "altera_interaction_greetings",
+    "timestamp": "",
+    "mood": "warm"
+  },
+  "nodes": [
+    {
+      "id": "greetings_intro",
+      "speaker": "altera",
+      "text": "あ、来てくれたんだ。ちょうど君のことを考えていたところ。",
+      "translatedText": "Ah, you came over. I was just thinking about you.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greetings_menu"
+    },
+    {
+      "id": "greetings_menu",
+      "speaker": "altera",
+      "text": "何か話したいことや、一緒にしたいことはある？",
+      "translatedText": "What would you like to talk about or do together?",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "What are you doing?",
+          "nextId": "greetings_doing"
+        },
+        {
+          "label": "I want to ask you a favor",
+          "nextId": "greetings_favor"
+        },
+        {
+          "label": "Let's do things together",
+          "nextId": "greetings_together"
+        },
+        {
+          "label": "Let's chat",
+          "nextId": "",
+          "action": "open_topic_input",
+          "value": "topic_input"
+        }
+      ],
+      "nextId": "",
+      "includeTopicSuggestions": true,
+      "topicSuggestionLimit": 3
+    },
+    {
+      "id": "greetings_doing",
+      "speaker": "altera",
+      "text": "今は君と過ごしているよ。何かしてみたいことはある？",
+      "translatedText": "Right now, I'm spending time with you. Is there something you'd like to do?",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Back",
+          "nextId": "greetings_menu"
+        }
+      ],
+      "nextId": ""
+    },
+    {
+      "id": "greetings_favor",
+      "speaker": "altera",
+      "text": "うん、どんなお願い？",
+      "translatedText": "Sure. What would you like me to do?",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Follow me",
+          "nextId": "",
+          "action": "activity_start",
+          "value": "movement.follow_player"
+        },
+        {
+          "label": "Back",
+          "nextId": "greetings_menu"
+        }
+      ],
+      "nextId": ""
+    },
+    {
+      "id": "greetings_together",
+      "speaker": "altera",
+      "text": "いいね。一緒に何をしようか？",
+      "translatedText": "Sounds good. What shall we do together?",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Let's get a drink",
+          "nextId": "",
+          "action": "activity_start",
+          "value": "needs.drink_water"
+        },
+        {
+          "label": "Let's do…",
+          "nextId": "",
+          "action": "open_topic_input",
+          "value": "together_input"
+        },
+        {
+          "label": "Back",
+          "nextId": "greetings_menu"
+        }
+      ],
+      "nextId": ""
+    }
+  ]
+}

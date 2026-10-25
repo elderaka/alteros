@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_afternoon", "timestamp": "", "mood": "curious" }, "nodes": [ { "id": "ga02_01", "speaker": "altera", "text": "こんにちは！ランチはもう食べましたか？", "translatedText": "Good afternoon! Have you had lunch yet?", "emotion": "neutral", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

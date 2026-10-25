@@ -1,0 +1,61 @@
+{
+  "scenarioId": "m3.come_here.test",
+  "topicId": "m3_testbox",
+  "entryStepId": "acknowledge",
+  "steps": [
+    {
+      "id": "acknowledge",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "acknowledge", "text": "うん、今そっちに行くね。", "displayText": "Sure, I'll come over.", "language": "japanese", "expression": "gentle" }
+      ],
+      "nextStepId": "come_here",
+      "closeExchange": true
+    },
+    {
+      "id": "come_here",
+      "kind": "action",
+      "capabilityId": "movement.come_here",
+      "arguments": [{ "name": "target", "value": "player" }],
+      "successNextStepId": "wait_for_arrival",
+      "failureNextStepId": "could_not_start"
+    },
+    {
+      "id": "wait_for_arrival",
+      "kind": "wait",
+      "activityId": "movement.come_here",
+      "conditionId": "m3.activity_terminal",
+      "objective": "Wait for the Come here activity to finish.",
+      "successNextStepId": "arrived",
+      "failureNextStepId": "not_arrived"
+    },
+    {
+      "id": "arrived",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "arrived", "text": "ここに着いたよ。", "displayText": "I'm here now.", "language": "japanese", "expression": "happy" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "could_not_start",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "could_not_start", "text": "今はうまく動けなかったみたい。", "displayText": "I couldn't get moving this time.", "language": "japanese", "expression": "thinking" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "not_arrived",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "not_arrived", "text": "今回はそっちまで行けなかったよ。", "displayText": "I couldn't make it over this time.", "language": "japanese", "expression": "thinking" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    { "id": "end", "kind": "end", "outcome": "completed", "closeExchange": false }
+  ]
+}

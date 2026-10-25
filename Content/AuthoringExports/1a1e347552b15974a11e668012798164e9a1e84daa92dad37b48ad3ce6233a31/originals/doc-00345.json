@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_needs_motivation_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_needs_motivation",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "motivate me",
+      "i need motivation",
+      "give me motivation",
+      "encourage me",
+      "i need encouragement"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_needs_motivation_001_01",
+      "speaker": "alterra",
+      "text": "よし。派手な演説はしない。あなたには、次の一歩が必要。",
+      "displayText": "Okay. I will not make a flashy speech. What you need is the next step.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_needs_motivation_001_02",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_needs_motivation_001_02",
+      "speaker": "alterra",
+      "text": "二分だけ始めよう。二分後に続けるか決めればいい。今は入口だけ。",
+      "displayText": "Start for just two minutes. After two minutes, decide whether to continue. For now, only the doorway.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_needs_motivation_001_03",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_needs_motivation_001_03",
+      "speaker": "alterra",
+      "text": "私も見てる。見張りじゃなくて、伴走のほう。そこは間違えないでね。",
+      "displayText": "I am watching too. Not as a guard, more as someone pacing beside you. Do not mistake that part.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

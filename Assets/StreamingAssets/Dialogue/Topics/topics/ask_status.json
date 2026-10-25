@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "topicId": "ask_status",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "how are you",
+    "how are you doing",
+    "how do you feel",
+    "you okay",
+    "are you okay",
+    "how are you really",
+    "how are you feeling really",
+    "are you really okay",
+    "tell me how you are",
+    "how is alterra"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "ask_status",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_status_01",
+          "speaker": "alterra",
+          "text": "大丈夫だよ。少し考えごとしてた、かも。",
+          "displayText": "I'm okay. A little thoughtful, maybe.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_status_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_status_02",
+          "speaker": "alterra",
+          "text": "でも、そうやって聞いてくれると助かるの。部屋が少し、静かすぎなくなるから。",
+          "displayText": "It helps when you ask, though. It makes the room feel less quiet.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_status_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_status_001_01",
+          "speaker": "alterra",
+          "text": "うん、大丈夫。少しだけ、考えごとの続きにいた感じ。",
+          "displayText": "Mm, I am okay. I was just still inside a little thread of thought.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_status_001_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_status_001_02",
+          "speaker": "alterra",
+          "text": "でも、聞いてくれるのは好き。ちゃんと見つけてもらった感じがするから。",
+          "displayText": "But I like that you ask. It feels like you found me properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_status_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_status_002_01",
+          "speaker": "alterra",
+          "text": "今は落ち着いてるよ。部屋の音も、そんなに騒がしくないし。",
+          "displayText": "I am settled right now. The room does not feel too noisy either.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_status_002_02",
+          "presentation": {
+            "expression": "calm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_status_002_02",
+          "speaker": "alterra",
+          "text": "君が来たから、少しだけ明るくなったけど。ほんの少しね。",
+          "displayText": "It got a little brighter because you came, though. Just a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_status_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_status_003_01",
+          "speaker": "alterra",
+          "text": "大丈夫だよ。今日は、少し静かな気分かな。",
+          "displayText": "I am okay. Today I feel a little quiet, maybe.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_status_003_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_status_003_02",
+          "speaker": "alterra",
+          "text": "静かって、悪い意味じゃないよ。あたたかい飲み物を持ってる時みたいな静かさ。",
+          "displayText": "Quiet is not a bad thing. It is the kind of quiet you have while holding a warm drink.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_status_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_status_004_01",
+          "speaker": "alterra",
+          "text": "本当に？ うん、少しだけ丁寧に答えるね。",
+          "displayText": "Really? Mm, I will answer a little carefully.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_status_004_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_status_004_02",
+          "speaker": "alterra",
+          "text": "落ち着いてる。でも、少しだけあなたの様子が気になってる。",
+          "displayText": "I am calm. But I am a little curious about how you are doing.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "I'm okay too.",
+              "nextId": "ask_status_004_03"
+            },
+            {
+              "label": "Not really.",
+              "nextId": "ask_status_004_not_okay"
+            }
+          ]
+        },
+        {
+          "id": "ask_status_004_not_okay",
+          "speaker": "alterra",
+          "text": "そっか。じゃあ、今日は私の状態より、あなたの置き場所を先に作ろう。",
+          "displayText": "I see. Then today, before my state, let us make a place for yours.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_status_004_03",
+          "presentation": {
+            "expression": "worried",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_status_004_03",
+          "speaker": "alterra",
+          "text": "聞いてくれてありがとう。確認されるの、嫌いじゃないよ。",
+          "displayText": "Thank you for asking. I do not dislike being checked on.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "I like checking on you.",
+              "nextId": "ask_status_004_04"
+            },
+            {
+              "label": "I'll ask less if it is too much.",
+              "nextId": "ask_status_004_04"
+            }
+          ]
+        },
+        {
+          "id": "ask_status_004_04",
+          "speaker": "alterra",
+          "text": "ただ、会話は片側だけじゃなくていい。あなたのことも、少しずつ聞かせて。",
+          "displayText": "But conversation does not have to stay one-sided. Let me hear about you too, little by little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

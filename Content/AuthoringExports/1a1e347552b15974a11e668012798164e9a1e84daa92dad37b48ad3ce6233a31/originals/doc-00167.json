@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_sleep_nudge_002",
+    "timestamp": "",
+    "mood": "soft_scold",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "sleep_nudge" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "sleep_nudge",
+      "patterns": [ "i am still awake", "i'm still awake", "still awake", "i cannot sleep", "i can't sleep" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 22, "maxValue": 6 }
+    ],
+    "repetitionPolicy": { "key": "sleep_nudge", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.15, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "sleep_nudge_002_01",
+      "speaker": "altera",
+      "text": "まだ起きてるの、見つけた。",
+      "translatedText": "I found you still awake.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sleep_nudge_002_02"
+    },
+    {
+      "id": "sleep_nudge_002_02",
+      "speaker": "altera",
+      "text": "怒ってない。でも、ちょっとだけ眉は寄ってる。気持ちの上で。",
+      "translatedText": "I am not angry. But my eyebrows are a little furrowed. Emotionally.",
+      "emotion": "soft_scold",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sleep_nudge_002_03"
+    },
+    {
+      "id": "sleep_nudge_002_03",
+      "speaker": "altera",
+      "text": "眠れないなら、せめて眠る準備だけしよう。明かりを弱くして、画面から少し離れて。",
+      "translatedText": "If you cannot sleep, at least prepare for sleep. Lower the light and move a little away from the screen.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

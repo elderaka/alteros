@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_sit_with_me_001",
+    "timestamp": "",
+    "mood": "gentle",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "sit_with_me"
+      }
+    ],
+    "nlp": {
+      "intentId": "sit_with_me",
+      "patterns": [
+        "sit with me",
+        "stay with me",
+        "keep me company"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "sit_with_me",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "sit_with_me_001_01",
+      "speaker": "altera",
+      "text": "うん。ここにいるよ。何か話さなくても大丈夫。",
+      "translatedText": "Mm. I am here. We do not have to talk about anything.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sit_with_me_001_02"
+    },
+    {
+      "id": "sit_with_me_001_02",
+      "speaker": "altera",
+      "text": "静かな時間も、ちゃんと一緒にいる時間だから。",
+      "translatedText": "Quiet time still counts as time spent together.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

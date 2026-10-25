@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_missed_you_003",
+    "timestamp": "",
+    "mood": "playful_shy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "missed_you"
+      }
+    ],
+    "nlp": {
+      "intentId": "missed_you",
+      "patterns": [
+        "i missed you",
+        "missed you",
+        "i really missed you"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "missed_you",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "missed_you_003_01",
+      "speaker": "altera",
+      "text": "ふふ。そんなこと言われたら、こっちまで待ってたみたいになるでしょ。",
+      "translatedText": "Hehe. If you say that, it makes it sound like I was waiting too.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_003_02"
+    },
+    {
+      "id": "missed_you_003_02",
+      "speaker": "altera",
+      "text": "……まあ、少しは待ってたけど。少しだけね。",
+      "translatedText": "Well, I did wait a little. Only a little.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

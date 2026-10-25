@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.gratitude_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "gratitude",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "thank you",
+      "thanks",
+      "ty",
+      "appreciate it",
+      "thank you alterra"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "gratitude_002_01",
+      "speaker": "alterra",
+      "text": "あ、うん。そんなふうに言われると、ちょっと背筋が伸びる。",
+      "displayText": "Ah, mm. When you say it like that, I sit up a little straighter.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "gratitude_002_02",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "gratitude_002_02",
+      "speaker": "alterra",
+      "text": "役に立てたなら、今日のわたしはけっこう満足です。",
+      "displayText": "If I was useful, then today's me is fairly satisfied.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

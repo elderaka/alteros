@@ -1,0 +1,1847 @@
+{
+  "schemaVersion": 1,
+  "status": "staged-not-published",
+  "sourceRoot": "Assets/StreamingAssets/Dialogue/Generic",
+  "sourceFileCount": 161,
+  "topicCount": 57,
+  "priorityLevels": [
+    0.85,
+    1.0,
+    1.1,
+    1.15,
+    1.2
+  ],
+  "mapping": [
+    {
+      "sourceFile": "affection_confession/affection_confession_001.json",
+      "legacyDialogueId": "generic.affection_confession_001",
+      "legacyRouteId": "affection_confession",
+      "topicId": "affection_confession",
+      "scenarioId": "affection_confession_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/affection_confession.json"
+    },
+    {
+      "sourceFile": "affection_gesture/affection_gesture_001.json",
+      "legacyDialogueId": "generic.affection_gesture_001",
+      "legacyRouteId": "affection_gesture",
+      "topicId": "affection_gesture",
+      "scenarioId": "affection_gesture_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/affection_gesture.json"
+    },
+    {
+      "sourceFile": "affection_gesture/affection_gesture_002.json",
+      "legacyDialogueId": "generic.affection_gesture_002",
+      "legacyRouteId": "affection_gesture",
+      "topicId": "affection_gesture",
+      "scenarioId": "affection_gesture_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/affection_gesture.json"
+    },
+    {
+      "sourceFile": "affection_gesture/affection_gesture_003.json",
+      "legacyDialogueId": "generic.affection_gesture_003",
+      "legacyRouteId": "affection_gesture",
+      "topicId": "affection_gesture",
+      "scenarioId": "affection_gesture_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/affection_gesture.json"
+    },
+    {
+      "sourceFile": "apology/apology_001.json",
+      "legacyDialogueId": "generic.apology_001",
+      "legacyRouteId": "apology",
+      "topicId": "apology",
+      "scenarioId": "apology_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/apology.json"
+    },
+    {
+      "sourceFile": "apology/apology_002.json",
+      "legacyDialogueId": "generic.apology_002",
+      "legacyRouteId": "apology",
+      "topicId": "apology",
+      "scenarioId": "apology_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/apology.json"
+    },
+    {
+      "sourceFile": "apology/apology_003.json",
+      "legacyDialogueId": "generic.apology_003",
+      "legacyRouteId": "apology",
+      "topicId": "apology",
+      "scenarioId": "apology_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/apology.json"
+    },
+    {
+      "sourceFile": "ask_activity/ask_activity.json",
+      "legacyDialogueId": "generic.ask_activity",
+      "legacyRouteId": "ask_activity",
+      "topicId": "ask_activity",
+      "scenarioId": "ask_activity",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_activity.json"
+    },
+    {
+      "sourceFile": "ask_activity/ask_activity_001.json",
+      "legacyDialogueId": "generic.ask_activity_001",
+      "legacyRouteId": "ask_activity",
+      "topicId": "ask_activity",
+      "scenarioId": "ask_activity_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_activity.json"
+    },
+    {
+      "sourceFile": "ask_activity/ask_activity_002.json",
+      "legacyDialogueId": "generic.ask_activity_002",
+      "legacyRouteId": "ask_activity",
+      "topicId": "ask_activity",
+      "scenarioId": "ask_activity_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_activity.json"
+    },
+    {
+      "sourceFile": "ask_activity/ask_activity_003.json",
+      "legacyDialogueId": "generic.ask_activity_003",
+      "legacyRouteId": "ask_activity",
+      "topicId": "ask_activity",
+      "scenarioId": "ask_activity_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_activity.json"
+    },
+    {
+      "sourceFile": "ask_activity/ask_activity_004.json",
+      "legacyDialogueId": "generic.ask_activity_004",
+      "legacyRouteId": "ask_activity",
+      "topicId": "ask_activity",
+      "scenarioId": "ask_activity_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_activity.json"
+    },
+    {
+      "sourceFile": "ask_availability/ask_availability_001.json",
+      "legacyDialogueId": "generic.ask_availability_001",
+      "legacyRouteId": "ask_availability",
+      "topicId": "ask_availability",
+      "scenarioId": "ask_availability_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_availability.json"
+    },
+    {
+      "sourceFile": "ask_availability/ask_availability_002.json",
+      "legacyDialogueId": "generic.ask_availability_002",
+      "legacyRouteId": "ask_availability",
+      "topicId": "ask_availability",
+      "scenarioId": "ask_availability_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_availability.json"
+    },
+    {
+      "sourceFile": "ask_memory/ask_memory_001.json",
+      "legacyDialogueId": "generic.ask_memory_001",
+      "legacyRouteId": "ask_memory",
+      "topicId": "ask_memory",
+      "scenarioId": "ask_memory_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_memory.json"
+    },
+    {
+      "sourceFile": "ask_memory/ask_memory_002.json",
+      "legacyDialogueId": "generic.ask_memory_002",
+      "legacyRouteId": "ask_memory",
+      "topicId": "ask_memory",
+      "scenarioId": "ask_memory_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_memory.json"
+    },
+    {
+      "sourceFile": "ask_memory/ask_memory_003.json",
+      "legacyDialogueId": "generic.ask_memory_003",
+      "legacyRouteId": "ask_memory",
+      "topicId": "ask_memory",
+      "scenarioId": "ask_memory_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_memory.json"
+    },
+    {
+      "sourceFile": "ask_missed_me/ask_missed_me_001.json",
+      "legacyDialogueId": "generic.ask_missed_me_001",
+      "legacyRouteId": "ask_missed_me",
+      "topicId": "ask_missed_me",
+      "scenarioId": "ask_missed_me_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_missed_me.json"
+    },
+    {
+      "sourceFile": "ask_missed_me/ask_missed_me_002.json",
+      "legacyDialogueId": "generic.ask_missed_me_002",
+      "legacyRouteId": "ask_missed_me",
+      "topicId": "ask_missed_me",
+      "scenarioId": "ask_missed_me_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_missed_me.json"
+    },
+    {
+      "sourceFile": "ask_missed_me/ask_missed_me_003.json",
+      "legacyDialogueId": "generic.ask_missed_me_003",
+      "legacyRouteId": "ask_missed_me",
+      "topicId": "ask_missed_me",
+      "scenarioId": "ask_missed_me_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_missed_me.json"
+    },
+    {
+      "sourceFile": "ask_name_or_identity/ask_name_or_identity_001.json",
+      "legacyDialogueId": "generic.ask_name_or_identity_001",
+      "legacyRouteId": "ask_name_or_identity",
+      "topicId": "ask_name_or_identity",
+      "scenarioId": "ask_name_or_identity_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_name_or_identity.json"
+    },
+    {
+      "sourceFile": "ask_name_or_identity/ask_name_or_identity_002.json",
+      "legacyDialogueId": "generic.ask_name_or_identity_002",
+      "legacyRouteId": "ask_name_or_identity",
+      "topicId": "ask_name_or_identity",
+      "scenarioId": "ask_name_or_identity_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_name_or_identity.json"
+    },
+    {
+      "sourceFile": "ask_opinion/ask_opinion_001.json",
+      "legacyDialogueId": "generic.ask_opinion_001",
+      "legacyRouteId": "ask_opinion",
+      "topicId": "ask_opinion",
+      "scenarioId": "ask_opinion_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_opinion.json"
+    },
+    {
+      "sourceFile": "ask_opinion/ask_opinion_002.json",
+      "legacyDialogueId": "generic.ask_opinion_002",
+      "legacyRouteId": "ask_opinion",
+      "topicId": "ask_opinion",
+      "scenarioId": "ask_opinion_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_opinion.json"
+    },
+    {
+      "sourceFile": "ask_preference/ask_preference_001.json",
+      "legacyDialogueId": "generic.ask_preference_001",
+      "legacyRouteId": "ask_preference",
+      "topicId": "ask_preference",
+      "scenarioId": "ask_preference_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_preference.json"
+    },
+    {
+      "sourceFile": "ask_preference/ask_preference_002.json",
+      "legacyDialogueId": "generic.ask_preference_002",
+      "legacyRouteId": "ask_preference",
+      "topicId": "ask_preference",
+      "scenarioId": "ask_preference_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_preference.json"
+    },
+    {
+      "sourceFile": "ask_preference/ask_preference_003.json",
+      "legacyDialogueId": "generic.ask_preference_003",
+      "legacyRouteId": "ask_preference",
+      "topicId": "ask_preference",
+      "scenarioId": "ask_preference_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_preference.json"
+    },
+    {
+      "sourceFile": "ask_status/ask_status.json",
+      "legacyDialogueId": "generic.ask_status",
+      "legacyRouteId": "ask_status",
+      "topicId": "ask_status",
+      "scenarioId": "ask_status",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_status.json"
+    },
+    {
+      "sourceFile": "ask_status/ask_status_001.json",
+      "legacyDialogueId": "generic.ask_status_001",
+      "legacyRouteId": "ask_status",
+      "topicId": "ask_status",
+      "scenarioId": "ask_status_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_status.json"
+    },
+    {
+      "sourceFile": "ask_status/ask_status_002.json",
+      "legacyDialogueId": "generic.ask_status_002",
+      "legacyRouteId": "ask_status",
+      "topicId": "ask_status",
+      "scenarioId": "ask_status_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_status.json"
+    },
+    {
+      "sourceFile": "ask_status/ask_status_003.json",
+      "legacyDialogueId": "generic.ask_status_003",
+      "legacyRouteId": "ask_status",
+      "topicId": "ask_status",
+      "scenarioId": "ask_status_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_status.json"
+    },
+    {
+      "sourceFile": "ask_status/ask_status_004.json",
+      "legacyDialogueId": "generic.ask_status_004",
+      "legacyRouteId": "ask_status",
+      "topicId": "ask_status",
+      "scenarioId": "ask_status_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_status.json"
+    },
+    {
+      "sourceFile": "ask_task_help_short/ask_task_help_short_001.json",
+      "legacyDialogueId": "generic.ask_task_help_short_001",
+      "legacyRouteId": "ask_task_help_short",
+      "topicId": "ask_task_help_short",
+      "scenarioId": "ask_task_help_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_task_help_short.json"
+    },
+    {
+      "sourceFile": "ask_task_help_short/ask_task_help_short_002.json",
+      "legacyDialogueId": "generic.ask_task_help_short_002",
+      "legacyRouteId": "ask_task_help_short",
+      "topicId": "ask_task_help_short",
+      "scenarioId": "ask_task_help_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/ask_task_help_short.json"
+    },
+    {
+      "sourceFile": "back_to_work/back_to_work_001.json",
+      "legacyDialogueId": "generic.back_to_work_001",
+      "legacyRouteId": "back_to_work",
+      "topicId": "back_to_work",
+      "scenarioId": "back_to_work_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/back_to_work.json"
+    },
+    {
+      "sourceFile": "back_to_work/back_to_work_002.json",
+      "legacyDialogueId": "generic.back_to_work_002",
+      "legacyRouteId": "back_to_work",
+      "topicId": "back_to_work",
+      "scenarioId": "back_to_work_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/back_to_work.json"
+    },
+    {
+      "sourceFile": "compliment/compliment_001.json",
+      "legacyDialogueId": "generic.compliment_001",
+      "legacyRouteId": "compliment",
+      "topicId": "compliment",
+      "scenarioId": "compliment_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/compliment.json"
+    },
+    {
+      "sourceFile": "compliment/compliment_002.json",
+      "legacyDialogueId": "generic.compliment_002",
+      "legacyRouteId": "compliment",
+      "topicId": "compliment",
+      "scenarioId": "compliment_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/compliment.json"
+    },
+    {
+      "sourceFile": "compliment/compliment_003.json",
+      "legacyDialogueId": "generic.compliment_003",
+      "legacyRouteId": "compliment",
+      "topicId": "compliment",
+      "scenarioId": "compliment_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/compliment.json"
+    },
+    {
+      "sourceFile": "dont_understand/dont_understand_001.json",
+      "legacyDialogueId": "generic.dont_understand_001",
+      "legacyRouteId": "dont_understand",
+      "topicId": "dont_understand",
+      "scenarioId": "dont_understand_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/dont_understand.json"
+    },
+    {
+      "sourceFile": "dont_understand/dont_understand_002.json",
+      "legacyDialogueId": "generic.dont_understand_002",
+      "legacyRouteId": "dont_understand",
+      "topicId": "dont_understand",
+      "scenarioId": "dont_understand_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/dont_understand.json"
+    },
+    {
+      "sourceFile": "empty_input/empty_input_001.json",
+      "legacyDialogueId": "generic.empty_input_001",
+      "legacyRouteId": "empty_input",
+      "topicId": "empty_input",
+      "scenarioId": "empty_input_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/empty_input.json"
+    },
+    {
+      "sourceFile": "empty_input/empty_input_002.json",
+      "legacyDialogueId": "generic.empty_input_002",
+      "legacyRouteId": "empty_input",
+      "topicId": "empty_input",
+      "scenarioId": "empty_input_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/empty_input.json"
+    },
+    {
+      "sourceFile": "empty_input/empty_input_003.json",
+      "legacyDialogueId": "generic.empty_input_003",
+      "legacyRouteId": "empty_input",
+      "topicId": "empty_input",
+      "scenarioId": "empty_input_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/empty_input.json"
+    },
+    {
+      "sourceFile": "farewell/farewell_001.json",
+      "legacyDialogueId": "generic.farewell_001",
+      "legacyRouteId": "farewell",
+      "topicId": "farewell",
+      "scenarioId": "farewell_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/farewell.json"
+    },
+    {
+      "sourceFile": "farewell/farewell_002.json",
+      "legacyDialogueId": "generic.farewell_002",
+      "legacyRouteId": "farewell",
+      "topicId": "farewell",
+      "scenarioId": "farewell_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/farewell.json"
+    },
+    {
+      "sourceFile": "finish_focus/finish_focus_001.json",
+      "legacyDialogueId": "generic.finish_focus_001",
+      "legacyRouteId": "finish_focus",
+      "topicId": "finish_focus",
+      "scenarioId": "finish_focus_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/finish_focus.json"
+    },
+    {
+      "sourceFile": "finish_focus/finish_focus_002.json",
+      "legacyDialogueId": "generic.finish_focus_002",
+      "legacyRouteId": "finish_focus",
+      "topicId": "finish_focus",
+      "scenarioId": "finish_focus_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/finish_focus.json"
+    },
+    {
+      "sourceFile": "food_or_tea_ritual/food_or_tea_ritual_001.json",
+      "legacyDialogueId": "generic.food_or_tea_ritual_001",
+      "legacyRouteId": "food_or_tea_ritual",
+      "topicId": "food_or_tea_ritual",
+      "scenarioId": "food_or_tea_ritual_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/food_or_tea_ritual.json"
+    },
+    {
+      "sourceFile": "food_or_tea_ritual/food_or_tea_ritual_002.json",
+      "legacyDialogueId": "generic.food_or_tea_ritual_002",
+      "legacyRouteId": "food_or_tea_ritual",
+      "topicId": "food_or_tea_ritual",
+      "scenarioId": "food_or_tea_ritual_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/food_or_tea_ritual.json"
+    },
+    {
+      "sourceFile": "goodnight/goodnight_001.json",
+      "legacyDialogueId": "generic.goodnight_001",
+      "legacyRouteId": "goodnight",
+      "topicId": "goodnight",
+      "scenarioId": "goodnight_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 20,
+        "endHour": 6
+      },
+      "stagedFile": "topics/goodnight.json"
+    },
+    {
+      "sourceFile": "goodnight/goodnight_002.json",
+      "legacyDialogueId": "generic.goodnight_002",
+      "legacyRouteId": "goodnight",
+      "topicId": "goodnight",
+      "scenarioId": "goodnight_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 20,
+        "endHour": 6
+      },
+      "stagedFile": "topics/goodnight.json"
+    },
+    {
+      "sourceFile": "goodnight/goodnight_003.json",
+      "legacyDialogueId": "generic.goodnight_003",
+      "legacyRouteId": "goodnight",
+      "topicId": "goodnight",
+      "scenarioId": "goodnight_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 20,
+        "endHour": 6
+      },
+      "stagedFile": "topics/goodnight.json"
+    },
+    {
+      "sourceFile": "goodnight/goodnight_004.json",
+      "legacyDialogueId": "generic.goodnight_004",
+      "legacyRouteId": "goodnight",
+      "topicId": "goodnight",
+      "scenarioId": "goodnight_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 20,
+        "endHour": 6
+      },
+      "stagedFile": "topics/goodnight.json"
+    },
+    {
+      "sourceFile": "gratitude/gratitude_001.json",
+      "legacyDialogueId": "generic.gratitude_001",
+      "legacyRouteId": "gratitude",
+      "topicId": "gratitude",
+      "scenarioId": "gratitude_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/gratitude.json"
+    },
+    {
+      "sourceFile": "gratitude/gratitude_002.json",
+      "legacyDialogueId": "generic.gratitude_002",
+      "legacyRouteId": "gratitude",
+      "topicId": "gratitude",
+      "scenarioId": "gratitude_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/gratitude.json"
+    },
+    {
+      "sourceFile": "gratitude/gratitude_003.json",
+      "legacyDialogueId": "generic.gratitude_003",
+      "legacyRouteId": "gratitude",
+      "topicId": "gratitude",
+      "scenarioId": "gratitude_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/gratitude.json"
+    },
+    {
+      "sourceFile": "greeting_afternoon/greeting_afternoon_001.json",
+      "legacyDialogueId": "generic.greeting_afternoon_001",
+      "legacyRouteId": "greeting_afternoon",
+      "topicId": "greeting_afternoon",
+      "scenarioId": "greeting_afternoon_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 12,
+        "endHour": 17
+      },
+      "stagedFile": "topics/greeting_afternoon.json"
+    },
+    {
+      "sourceFile": "greeting_afternoon/greeting_afternoon_002.json",
+      "legacyDialogueId": "generic.greeting_afternoon_002",
+      "legacyRouteId": "greeting_afternoon",
+      "topicId": "greeting_afternoon",
+      "scenarioId": "greeting_afternoon_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 12,
+        "endHour": 17
+      },
+      "stagedFile": "topics/greeting_afternoon.json"
+    },
+    {
+      "sourceFile": "greeting_afternoon/greeting_afternoon_003.json",
+      "legacyDialogueId": "generic.greeting_afternoon_003",
+      "legacyRouteId": "greeting_afternoon",
+      "topicId": "greeting_afternoon",
+      "scenarioId": "greeting_afternoon_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 12,
+        "endHour": 17
+      },
+      "stagedFile": "topics/greeting_afternoon.json"
+    },
+    {
+      "sourceFile": "greeting_evening/greeting_evening_001.json",
+      "legacyDialogueId": "generic.greeting_evening_001",
+      "legacyRouteId": "greeting_evening",
+      "topicId": "greeting_evening",
+      "scenarioId": "greeting_evening_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 17,
+        "endHour": 22
+      },
+      "stagedFile": "topics/greeting_evening.json"
+    },
+    {
+      "sourceFile": "greeting_evening/greeting_evening_002.json",
+      "legacyDialogueId": "generic.greeting_evening_002",
+      "legacyRouteId": "greeting_evening",
+      "topicId": "greeting_evening",
+      "scenarioId": "greeting_evening_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 17,
+        "endHour": 22
+      },
+      "stagedFile": "topics/greeting_evening.json"
+    },
+    {
+      "sourceFile": "greeting_evening/greeting_evening_003.json",
+      "legacyDialogueId": "generic.greeting_evening_003",
+      "legacyRouteId": "greeting_evening",
+      "topicId": "greeting_evening",
+      "scenarioId": "greeting_evening_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 17,
+        "endHour": 22
+      },
+      "stagedFile": "topics/greeting_evening.json"
+    },
+    {
+      "sourceFile": "greeting_evening/greeting_evening_004.json",
+      "legacyDialogueId": "generic.greeting_evening_004",
+      "legacyRouteId": "greeting_evening",
+      "topicId": "greeting_evening",
+      "scenarioId": "greeting_evening_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 17,
+        "endHour": 22
+      },
+      "stagedFile": "topics/greeting_evening.json"
+    },
+    {
+      "sourceFile": "greeting_general/greeting_general_001.json",
+      "legacyDialogueId": "generic.greeting_general_001",
+      "legacyRouteId": "greeting_general",
+      "topicId": "greeting_general",
+      "scenarioId": "greeting_general_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/greeting_general.json"
+    },
+    {
+      "sourceFile": "greeting_general/greeting_general_002.json",
+      "legacyDialogueId": "generic.greeting_general_002",
+      "legacyRouteId": "greeting_general",
+      "topicId": "greeting_general",
+      "scenarioId": "greeting_general_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/greeting_general.json"
+    },
+    {
+      "sourceFile": "greeting_general/greeting_general_003.json",
+      "legacyDialogueId": "generic.greeting_general_003",
+      "legacyRouteId": "greeting_general",
+      "topicId": "greeting_general",
+      "scenarioId": "greeting_general_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/greeting_general.json"
+    },
+    {
+      "sourceFile": "greeting_latenight/greeting_latenight_001.json",
+      "legacyDialogueId": "generic.greeting_latenight_001",
+      "legacyRouteId": "greeting_latenight",
+      "topicId": "greeting_latenight",
+      "scenarioId": "greeting_latenight_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 22,
+        "endHour": 5
+      },
+      "stagedFile": "topics/greeting_latenight.json"
+    },
+    {
+      "sourceFile": "greeting_latenight/greeting_latenight_002.json",
+      "legacyDialogueId": "generic.greeting_latenight_002",
+      "legacyRouteId": "greeting_latenight",
+      "topicId": "greeting_latenight",
+      "scenarioId": "greeting_latenight_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 22,
+        "endHour": 5
+      },
+      "stagedFile": "topics/greeting_latenight.json"
+    },
+    {
+      "sourceFile": "greeting_latenight/greeting_latenight_003.json",
+      "legacyDialogueId": "generic.greeting_latenight_003",
+      "legacyRouteId": "greeting_latenight",
+      "topicId": "greeting_latenight",
+      "scenarioId": "greeting_latenight_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 22,
+        "endHour": 5
+      },
+      "stagedFile": "topics/greeting_latenight.json"
+    },
+    {
+      "sourceFile": "greeting_morning/greeting_morning_001.json",
+      "legacyDialogueId": "generic.greeting_morning_001",
+      "legacyRouteId": "greeting_morning",
+      "topicId": "greeting_morning",
+      "scenarioId": "greeting_morning_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 5,
+        "endHour": 12
+      },
+      "stagedFile": "topics/greeting_morning.json"
+    },
+    {
+      "sourceFile": "greeting_morning/greeting_morning_002.json",
+      "legacyDialogueId": "generic.greeting_morning_002",
+      "legacyRouteId": "greeting_morning",
+      "topicId": "greeting_morning",
+      "scenarioId": "greeting_morning_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 5,
+        "endHour": 12
+      },
+      "stagedFile": "topics/greeting_morning.json"
+    },
+    {
+      "sourceFile": "greeting_morning/greeting_morning_003.json",
+      "legacyDialogueId": "generic.greeting_morning_003",
+      "legacyRouteId": "greeting_morning",
+      "topicId": "greeting_morning",
+      "scenarioId": "greeting_morning_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 5,
+        "endHour": 12
+      },
+      "stagedFile": "topics/greeting_morning.json"
+    },
+    {
+      "sourceFile": "greeting_morning/greeting_morning_004.json",
+      "legacyDialogueId": "generic.greeting_morning_004",
+      "legacyRouteId": "greeting_morning",
+      "topicId": "greeting_morning",
+      "scenarioId": "greeting_morning_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 5,
+        "endHour": 12
+      },
+      "stagedFile": "topics/greeting_morning.json"
+    },
+    {
+      "sourceFile": "hostility_major/hostility_major_001.json",
+      "legacyDialogueId": "generic.hostility_major_001",
+      "legacyRouteId": "hostility_major",
+      "topicId": "hostility_major",
+      "scenarioId": "hostility_major_001",
+      "legacyPriority": 1.2,
+      "scenarioPriority": 4,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/hostility_major.json"
+    },
+    {
+      "sourceFile": "hostility_major/hostility_major_002.json",
+      "legacyDialogueId": "generic.hostility_major_002",
+      "legacyRouteId": "hostility_major",
+      "topicId": "hostility_major",
+      "scenarioId": "hostility_major_002",
+      "legacyPriority": 1.2,
+      "scenarioPriority": 4,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/hostility_major.json"
+    },
+    {
+      "sourceFile": "hostility_medium/hostility_medium_001.json",
+      "legacyDialogueId": "generic.hostility_medium_001",
+      "legacyRouteId": "hostility_medium",
+      "topicId": "hostility_medium",
+      "scenarioId": "hostility_medium_001",
+      "legacyPriority": 1.1,
+      "scenarioPriority": 2,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/hostility_medium.json"
+    },
+    {
+      "sourceFile": "hostility_medium/hostility_medium_002.json",
+      "legacyDialogueId": "generic.hostility_medium_002",
+      "legacyRouteId": "hostility_medium",
+      "topicId": "hostility_medium",
+      "scenarioId": "hostility_medium_002",
+      "legacyPriority": 1.1,
+      "scenarioPriority": 2,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/hostility_medium.json"
+    },
+    {
+      "sourceFile": "inappropriate_boundary/inappropriate_boundary_001.json",
+      "legacyDialogueId": "generic.inappropriate_boundary_001",
+      "legacyRouteId": "inappropriate_boundary",
+      "topicId": "inappropriate_boundary",
+      "scenarioId": "inappropriate_boundary_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/inappropriate_boundary.json"
+    },
+    {
+      "sourceFile": "inappropriate_boundary/inappropriate_boundary_002.json",
+      "legacyDialogueId": "generic.inappropriate_boundary_002",
+      "legacyRouteId": "inappropriate_boundary",
+      "topicId": "inappropriate_boundary",
+      "scenarioId": "inappropriate_boundary_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/inappropriate_boundary.json"
+    },
+    {
+      "sourceFile": "inappropriate_boundary/inappropriate_boundary_003.json",
+      "legacyDialogueId": "generic.inappropriate_boundary_003",
+      "legacyRouteId": "inappropriate_boundary",
+      "topicId": "inappropriate_boundary",
+      "scenarioId": "inappropriate_boundary_003",
+      "legacyPriority": 1.15,
+      "scenarioPriority": 3,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/inappropriate_boundary.json"
+    },
+    {
+      "sourceFile": "insult_boundary_light/insult_boundary_light_001.json",
+      "legacyDialogueId": "generic.insult_boundary_light_001",
+      "legacyRouteId": "insult_boundary_light",
+      "topicId": "insult_boundary_light",
+      "scenarioId": "insult_boundary_light_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/insult_boundary_light.json"
+    },
+    {
+      "sourceFile": "insult_boundary_light/insult_boundary_light_002.json",
+      "legacyDialogueId": "generic.insult_boundary_light_002",
+      "legacyRouteId": "insult_boundary_light",
+      "topicId": "insult_boundary_light",
+      "scenarioId": "insult_boundary_light_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/insult_boundary_light.json"
+    },
+    {
+      "sourceFile": "keyboard_mash/keyboard_mash_001.json",
+      "legacyDialogueId": "generic.keyboard_mash_001",
+      "legacyRouteId": "keyboard_mash",
+      "topicId": "keyboard_mash",
+      "scenarioId": "keyboard_mash_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/keyboard_mash.json"
+    },
+    {
+      "sourceFile": "missed_you/missed_you_001.json",
+      "legacyDialogueId": "generic.missed_you_001",
+      "legacyRouteId": "missed_you",
+      "topicId": "missed_you",
+      "scenarioId": "missed_you_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/missed_you.json"
+    },
+    {
+      "sourceFile": "missed_you/missed_you_002.json",
+      "legacyDialogueId": "generic.missed_you_002",
+      "legacyRouteId": "missed_you",
+      "topicId": "missed_you",
+      "scenarioId": "missed_you_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/missed_you.json"
+    },
+    {
+      "sourceFile": "missed_you/missed_you_003.json",
+      "legacyDialogueId": "generic.missed_you_003",
+      "legacyRouteId": "missed_you",
+      "topicId": "missed_you",
+      "scenarioId": "missed_you_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/missed_you.json"
+    },
+    {
+      "sourceFile": "missed_you/missed_you_004.json",
+      "legacyDialogueId": "generic.missed_you_004",
+      "legacyRouteId": "missed_you",
+      "topicId": "missed_you",
+      "scenarioId": "missed_you_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/missed_you.json"
+    },
+    {
+      "sourceFile": "no_response_needed/no_response_needed_001.json",
+      "legacyDialogueId": "generic.no_response_needed_001",
+      "legacyRouteId": "no_response_needed",
+      "topicId": "no_response_needed",
+      "scenarioId": "no_response_needed_001",
+      "legacyPriority": 0.85,
+      "scenarioPriority": 0,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/no_response_needed.json"
+    },
+    {
+      "sourceFile": "no_response_needed/no_response_needed_002.json",
+      "legacyDialogueId": "generic.no_response_needed_002",
+      "legacyRouteId": "no_response_needed",
+      "topicId": "no_response_needed",
+      "scenarioId": "no_response_needed_002",
+      "legacyPriority": 0.85,
+      "scenarioPriority": 0,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/no_response_needed.json"
+    },
+    {
+      "sourceFile": "no_response_needed/no_response_needed_003.json",
+      "legacyDialogueId": "generic.no_response_needed_003",
+      "legacyRouteId": "no_response_needed",
+      "topicId": "no_response_needed",
+      "scenarioId": "no_response_needed_003",
+      "legacyPriority": 0.85,
+      "scenarioPriority": 0,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/no_response_needed.json"
+    },
+    {
+      "sourceFile": "no_response_needed/no_response_needed_004.json",
+      "legacyDialogueId": "generic.no_response_needed_004",
+      "legacyRouteId": "no_response_needed",
+      "topicId": "no_response_needed",
+      "scenarioId": "no_response_needed_004",
+      "legacyPriority": 0.85,
+      "scenarioPriority": 0,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/no_response_needed.json"
+    },
+    {
+      "sourceFile": "player_bored/player_bored_001.json",
+      "legacyDialogueId": "generic.player_bored_001",
+      "legacyRouteId": "player_bored",
+      "topicId": "player_bored",
+      "scenarioId": "player_bored_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_bored.json"
+    },
+    {
+      "sourceFile": "player_bored/player_bored_002.json",
+      "legacyDialogueId": "generic.player_bored_002",
+      "legacyRouteId": "player_bored",
+      "topicId": "player_bored",
+      "scenarioId": "player_bored_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_bored.json"
+    },
+    {
+      "sourceFile": "player_bored/player_bored_003.json",
+      "legacyDialogueId": "generic.player_bored_003",
+      "legacyRouteId": "player_bored",
+      "topicId": "player_bored",
+      "scenarioId": "player_bored_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_bored.json"
+    },
+    {
+      "sourceFile": "player_bored/player_bored_004.json",
+      "legacyDialogueId": "generic.player_bored_004",
+      "legacyRouteId": "player_bored",
+      "topicId": "player_bored",
+      "scenarioId": "player_bored_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_bored.json"
+    },
+    {
+      "sourceFile": "player_happy_short/player_happy_short_001.json",
+      "legacyDialogueId": "generic.player_happy_short_001",
+      "legacyRouteId": "player_happy_short",
+      "topicId": "player_happy_short",
+      "scenarioId": "player_happy_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_happy_short.json"
+    },
+    {
+      "sourceFile": "player_happy_short/player_happy_short_002.json",
+      "legacyDialogueId": "generic.player_happy_short_002",
+      "legacyRouteId": "player_happy_short",
+      "topicId": "player_happy_short",
+      "scenarioId": "player_happy_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_happy_short.json"
+    },
+    {
+      "sourceFile": "player_happy_short/player_happy_short_003.json",
+      "legacyDialogueId": "generic.player_happy_short_003",
+      "legacyRouteId": "player_happy_short",
+      "topicId": "player_happy_short",
+      "scenarioId": "player_happy_short_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_happy_short.json"
+    },
+    {
+      "sourceFile": "player_happy_short/player_happy_short_004.json",
+      "legacyDialogueId": "generic.player_happy_short_004",
+      "legacyRouteId": "player_happy_short",
+      "topicId": "player_happy_short",
+      "scenarioId": "player_happy_short_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_happy_short.json"
+    },
+    {
+      "sourceFile": "player_lonely_short/player_lonely_short_001.json",
+      "legacyDialogueId": "generic.player_lonely_short_001",
+      "legacyRouteId": "player_lonely_short",
+      "topicId": "player_lonely_short",
+      "scenarioId": "player_lonely_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_lonely_short.json"
+    },
+    {
+      "sourceFile": "player_lonely_short/player_lonely_short_002.json",
+      "legacyDialogueId": "generic.player_lonely_short_002",
+      "legacyRouteId": "player_lonely_short",
+      "topicId": "player_lonely_short",
+      "scenarioId": "player_lonely_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_lonely_short.json"
+    },
+    {
+      "sourceFile": "player_lonely_short/player_lonely_short_003.json",
+      "legacyDialogueId": "generic.player_lonely_short_003",
+      "legacyRouteId": "player_lonely_short",
+      "topicId": "player_lonely_short",
+      "scenarioId": "player_lonely_short_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_lonely_short.json"
+    },
+    {
+      "sourceFile": "player_needs_motivation/player_needs_motivation_001.json",
+      "legacyDialogueId": "generic.player_needs_motivation_001",
+      "legacyRouteId": "player_needs_motivation",
+      "topicId": "player_needs_motivation",
+      "scenarioId": "player_needs_motivation_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_needs_motivation.json"
+    },
+    {
+      "sourceFile": "player_needs_motivation/player_needs_motivation_002.json",
+      "legacyDialogueId": "generic.player_needs_motivation_002",
+      "legacyRouteId": "player_needs_motivation",
+      "topicId": "player_needs_motivation",
+      "scenarioId": "player_needs_motivation_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_needs_motivation.json"
+    },
+    {
+      "sourceFile": "player_needs_motivation/player_needs_motivation_003.json",
+      "legacyDialogueId": "generic.player_needs_motivation_003",
+      "legacyRouteId": "player_needs_motivation",
+      "topicId": "player_needs_motivation",
+      "scenarioId": "player_needs_motivation_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_needs_motivation.json"
+    },
+    {
+      "sourceFile": "player_overworking/player_overworking_001.json",
+      "legacyDialogueId": "generic.player_overworking_001",
+      "legacyRouteId": "player_overworking",
+      "topicId": "player_overworking",
+      "scenarioId": "player_overworking_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_overworking.json"
+    },
+    {
+      "sourceFile": "player_overworking/player_overworking_002.json",
+      "legacyDialogueId": "generic.player_overworking_002",
+      "legacyRouteId": "player_overworking",
+      "topicId": "player_overworking",
+      "scenarioId": "player_overworking_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_overworking.json"
+    },
+    {
+      "sourceFile": "player_overworking/player_overworking_003.json",
+      "legacyDialogueId": "generic.player_overworking_003",
+      "legacyRouteId": "player_overworking",
+      "topicId": "player_overworking",
+      "scenarioId": "player_overworking_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_overworking.json"
+    },
+    {
+      "sourceFile": "player_proud/player_proud_001.json",
+      "legacyDialogueId": "generic.player_proud_001",
+      "legacyRouteId": "player_proud",
+      "topicId": "player_proud",
+      "scenarioId": "player_proud_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_proud.json"
+    },
+    {
+      "sourceFile": "player_proud/player_proud_002.json",
+      "legacyDialogueId": "generic.player_proud_002",
+      "legacyRouteId": "player_proud",
+      "topicId": "player_proud",
+      "scenarioId": "player_proud_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_proud.json"
+    },
+    {
+      "sourceFile": "player_proud/player_proud_003.json",
+      "legacyDialogueId": "generic.player_proud_003",
+      "legacyRouteId": "player_proud",
+      "topicId": "player_proud",
+      "scenarioId": "player_proud_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_proud.json"
+    },
+    {
+      "sourceFile": "player_sad_short/player_sad_short_001.json",
+      "legacyDialogueId": "generic.player_sad_short_001",
+      "legacyRouteId": "player_sad_short",
+      "topicId": "player_sad_short",
+      "scenarioId": "player_sad_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_sad_short.json"
+    },
+    {
+      "sourceFile": "player_sad_short/player_sad_short_002.json",
+      "legacyDialogueId": "generic.player_sad_short_002",
+      "legacyRouteId": "player_sad_short",
+      "topicId": "player_sad_short",
+      "scenarioId": "player_sad_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_sad_short.json"
+    },
+    {
+      "sourceFile": "player_sad_short/player_sad_short_003.json",
+      "legacyDialogueId": "generic.player_sad_short_003",
+      "legacyRouteId": "player_sad_short",
+      "topicId": "player_sad_short",
+      "scenarioId": "player_sad_short_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_sad_short.json"
+    },
+    {
+      "sourceFile": "player_self_doubt_short/player_self_doubt_short_001.json",
+      "legacyDialogueId": "generic.player_self_doubt_short_001",
+      "legacyRouteId": "player_self_doubt_short",
+      "topicId": "player_self_doubt_short",
+      "scenarioId": "player_self_doubt_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_self_doubt_short.json"
+    },
+    {
+      "sourceFile": "player_self_doubt_short/player_self_doubt_short_002.json",
+      "legacyDialogueId": "generic.player_self_doubt_short_002",
+      "legacyRouteId": "player_self_doubt_short",
+      "topicId": "player_self_doubt_short",
+      "scenarioId": "player_self_doubt_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_self_doubt_short.json"
+    },
+    {
+      "sourceFile": "player_self_doubt_short/player_self_doubt_short_003.json",
+      "legacyDialogueId": "generic.player_self_doubt_short_003",
+      "legacyRouteId": "player_self_doubt_short",
+      "topicId": "player_self_doubt_short",
+      "scenarioId": "player_self_doubt_short_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_self_doubt_short.json"
+    },
+    {
+      "sourceFile": "player_stressed/player_stressed_001.json",
+      "legacyDialogueId": "generic.player_stressed_001",
+      "legacyRouteId": "player_stressed",
+      "topicId": "player_stressed",
+      "scenarioId": "player_stressed_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_stressed.json"
+    },
+    {
+      "sourceFile": "player_stressed/player_stressed_002.json",
+      "legacyDialogueId": "generic.player_stressed_002",
+      "legacyRouteId": "player_stressed",
+      "topicId": "player_stressed",
+      "scenarioId": "player_stressed_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_stressed.json"
+    },
+    {
+      "sourceFile": "player_stressed/player_stressed_003.json",
+      "legacyDialogueId": "generic.player_stressed_003",
+      "legacyRouteId": "player_stressed",
+      "topicId": "player_stressed",
+      "scenarioId": "player_stressed_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_stressed.json"
+    },
+    {
+      "sourceFile": "player_stressed/player_stressed_004.json",
+      "legacyDialogueId": "generic.player_stressed_004",
+      "legacyRouteId": "player_stressed",
+      "topicId": "player_stressed",
+      "scenarioId": "player_stressed_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_stressed.json"
+    },
+    {
+      "sourceFile": "player_tired/player_tired_001.json",
+      "legacyDialogueId": "generic.player_tired_001",
+      "legacyRouteId": "player_tired",
+      "topicId": "player_tired",
+      "scenarioId": "player_tired_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_tired.json"
+    },
+    {
+      "sourceFile": "player_tired/player_tired_002.json",
+      "legacyDialogueId": "generic.player_tired_002",
+      "legacyRouteId": "player_tired",
+      "topicId": "player_tired",
+      "scenarioId": "player_tired_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_tired.json"
+    },
+    {
+      "sourceFile": "player_tired/player_tired_003.json",
+      "legacyDialogueId": "generic.player_tired_003",
+      "legacyRouteId": "player_tired",
+      "topicId": "player_tired",
+      "scenarioId": "player_tired_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_tired.json"
+    },
+    {
+      "sourceFile": "player_tired/player_tired_004.json",
+      "legacyDialogueId": "generic.player_tired_004",
+      "legacyRouteId": "player_tired",
+      "topicId": "player_tired",
+      "scenarioId": "player_tired_004",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/player_tired.json"
+    },
+    {
+      "sourceFile": "procrastination_short/procrastination_short_001.json",
+      "legacyDialogueId": "generic.procrastination_short_001",
+      "legacyRouteId": "procrastination_short",
+      "topicId": "procrastination_short",
+      "scenarioId": "procrastination_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/procrastination_short.json"
+    },
+    {
+      "sourceFile": "procrastination_short/procrastination_short_002.json",
+      "legacyDialogueId": "generic.procrastination_short_002",
+      "legacyRouteId": "procrastination_short",
+      "topicId": "procrastination_short",
+      "scenarioId": "procrastination_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/procrastination_short.json"
+    },
+    {
+      "sourceFile": "procrastination_short/procrastination_short_003.json",
+      "legacyDialogueId": "generic.procrastination_short_003",
+      "legacyRouteId": "procrastination_short",
+      "topicId": "procrastination_short",
+      "scenarioId": "procrastination_short_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/procrastination_short.json"
+    },
+    {
+      "sourceFile": "profanity_minor/profanity_minor_001.json",
+      "legacyDialogueId": "generic.profanity_minor_001",
+      "legacyRouteId": "profanity_minor",
+      "topicId": "profanity_minor",
+      "scenarioId": "profanity_minor_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/profanity_minor.json"
+    },
+    {
+      "sourceFile": "profanity_minor/profanity_minor_002.json",
+      "legacyDialogueId": "generic.profanity_minor_002",
+      "legacyRouteId": "profanity_minor",
+      "topicId": "profanity_minor",
+      "scenarioId": "profanity_minor_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/profanity_minor.json"
+    },
+    {
+      "sourceFile": "returning/returning_001.json",
+      "legacyDialogueId": "generic.returning_001",
+      "legacyRouteId": "returning",
+      "topicId": "returning",
+      "scenarioId": "returning_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/returning.json"
+    },
+    {
+      "sourceFile": "returning/returning_002.json",
+      "legacyDialogueId": "generic.returning_002",
+      "legacyRouteId": "returning",
+      "topicId": "returning",
+      "scenarioId": "returning_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/returning.json"
+    },
+    {
+      "sourceFile": "returning/returning_003.json",
+      "legacyDialogueId": "generic.returning_003",
+      "legacyRouteId": "returning",
+      "topicId": "returning",
+      "scenarioId": "returning_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/returning.json"
+    },
+    {
+      "sourceFile": "room_or_desk_comment/room_or_desk_comment_001.json",
+      "legacyDialogueId": "generic.room_or_desk_comment_001",
+      "legacyRouteId": "room_or_desk_comment",
+      "topicId": "room_or_desk_comment",
+      "scenarioId": "room_or_desk_comment_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/room_or_desk_comment.json"
+    },
+    {
+      "sourceFile": "room_or_desk_comment/room_or_desk_comment_002.json",
+      "legacyDialogueId": "generic.room_or_desk_comment_002",
+      "legacyRouteId": "room_or_desk_comment",
+      "topicId": "room_or_desk_comment",
+      "scenarioId": "room_or_desk_comment_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/room_or_desk_comment.json"
+    },
+    {
+      "sourceFile": "sit_with_me/sit_with_me_001.json",
+      "legacyDialogueId": "generic.sit_with_me_001",
+      "legacyRouteId": "sit_with_me",
+      "topicId": "sit_with_me",
+      "scenarioId": "sit_with_me_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/sit_with_me.json"
+    },
+    {
+      "sourceFile": "sit_with_me/sit_with_me_002.json",
+      "legacyDialogueId": "generic.sit_with_me_002",
+      "legacyRouteId": "sit_with_me",
+      "topicId": "sit_with_me",
+      "scenarioId": "sit_with_me_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/sit_with_me.json"
+    },
+    {
+      "sourceFile": "sit_with_me/sit_with_me_003.json",
+      "legacyDialogueId": "generic.sit_with_me_003",
+      "legacyRouteId": "sit_with_me",
+      "topicId": "sit_with_me",
+      "scenarioId": "sit_with_me_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/sit_with_me.json"
+    },
+    {
+      "sourceFile": "sit_with_me/sit_with_me_005.json",
+      "legacyDialogueId": "generic.sit_with_me_005",
+      "legacyRouteId": "sit_with_me",
+      "topicId": "sit_with_me",
+      "scenarioId": "sit_with_me_005",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/sit_with_me.json"
+    },
+    {
+      "sourceFile": "sleep_nudge/sleep_nudge_001.json",
+      "legacyDialogueId": "generic.sleep_nudge_001",
+      "legacyRouteId": "sleep_nudge",
+      "topicId": "sleep_nudge",
+      "scenarioId": "sleep_nudge_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 21,
+        "endHour": 6
+      },
+      "stagedFile": "topics/sleep_nudge.json"
+    },
+    {
+      "sourceFile": "sleep_nudge/sleep_nudge_002.json",
+      "legacyDialogueId": "generic.sleep_nudge_002",
+      "legacyRouteId": "sleep_nudge",
+      "topicId": "sleep_nudge",
+      "scenarioId": "sleep_nudge_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": {
+        "startHour": 22,
+        "endHour": 6
+      },
+      "stagedFile": "topics/sleep_nudge.json"
+    },
+    {
+      "sourceFile": "start_focus/start_focus_001.json",
+      "legacyDialogueId": "generic.start_focus_001",
+      "legacyRouteId": "start_focus",
+      "topicId": "start_focus",
+      "scenarioId": "start_focus_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/start_focus.json"
+    },
+    {
+      "sourceFile": "start_focus/start_focus_002.json",
+      "legacyDialogueId": "generic.start_focus_002",
+      "legacyRouteId": "start_focus",
+      "topicId": "start_focus",
+      "scenarioId": "start_focus_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/start_focus.json"
+    },
+    {
+      "sourceFile": "start_focus/start_focus_003.json",
+      "legacyDialogueId": "generic.start_focus_003",
+      "legacyRouteId": "start_focus",
+      "topicId": "start_focus",
+      "scenarioId": "start_focus_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/start_focus.json"
+    },
+    {
+      "sourceFile": "take_break/take_break_001.json",
+      "legacyDialogueId": "generic.take_break_001",
+      "legacyRouteId": "take_break",
+      "topicId": "take_break",
+      "scenarioId": "take_break_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/take_break.json"
+    },
+    {
+      "sourceFile": "take_break/take_break_002.json",
+      "legacyDialogueId": "generic.take_break_002",
+      "legacyRouteId": "take_break",
+      "topicId": "take_break",
+      "scenarioId": "take_break_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/take_break.json"
+    },
+    {
+      "sourceFile": "tease_playful/tease_playful_001.json",
+      "legacyDialogueId": "generic.tease_playful_001",
+      "legacyRouteId": "tease_playful",
+      "topicId": "tease_playful",
+      "scenarioId": "tease_playful_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/tease_playful.json"
+    },
+    {
+      "sourceFile": "tease_playful/tease_playful_002.json",
+      "legacyDialogueId": "generic.tease_playful_002",
+      "legacyRouteId": "tease_playful",
+      "topicId": "tease_playful",
+      "scenarioId": "tease_playful_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/tease_playful.json"
+    },
+    {
+      "sourceFile": "too_many_compliments/too_many_compliments_001.json",
+      "legacyDialogueId": "generic.too_many_compliments_001",
+      "legacyRouteId": "too_many_compliments",
+      "topicId": "too_many_compliments",
+      "scenarioId": "too_many_compliments_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/too_many_compliments.json"
+    },
+    {
+      "sourceFile": "too_many_compliments/too_many_compliments_002.json",
+      "legacyDialogueId": "generic.too_many_compliments_002",
+      "legacyRouteId": "too_many_compliments",
+      "topicId": "too_many_compliments",
+      "scenarioId": "too_many_compliments_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/too_many_compliments.json"
+    },
+    {
+      "sourceFile": "too_many_status_checks/too_many_status_checks_001.json",
+      "legacyDialogueId": "generic.too_many_status_checks_001",
+      "legacyRouteId": "too_many_status_checks",
+      "topicId": "too_many_status_checks",
+      "scenarioId": "too_many_status_checks_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/too_many_status_checks.json"
+    },
+    {
+      "sourceFile": "too_many_status_checks/too_many_status_checks_002.json",
+      "legacyDialogueId": "generic.too_many_status_checks_002",
+      "legacyRouteId": "too_many_status_checks",
+      "topicId": "too_many_status_checks",
+      "scenarioId": "too_many_status_checks_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/too_many_status_checks.json"
+    },
+    {
+      "sourceFile": "unclear_short/unclear_short_001.json",
+      "legacyDialogueId": "generic.unclear_short_001",
+      "legacyRouteId": "unclear_short",
+      "topicId": "unclear_short",
+      "scenarioId": "unclear_short_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/unclear_short.json"
+    },
+    {
+      "sourceFile": "unclear_short/unclear_short_002.json",
+      "legacyDialogueId": "generic.unclear_short_002",
+      "legacyRouteId": "unclear_short",
+      "topicId": "unclear_short",
+      "scenarioId": "unclear_short_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/unclear_short.json"
+    },
+    {
+      "sourceFile": "weather_smalltalk/weather_smalltalk_001.json",
+      "legacyDialogueId": "generic.weather_smalltalk_001",
+      "legacyRouteId": "weather_smalltalk",
+      "topicId": "weather_smalltalk",
+      "scenarioId": "weather_smalltalk_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/weather_smalltalk.json"
+    },
+    {
+      "sourceFile": "weather_smalltalk/weather_smalltalk_002.json",
+      "legacyDialogueId": "generic.weather_smalltalk_002",
+      "legacyRouteId": "weather_smalltalk",
+      "topicId": "weather_smalltalk",
+      "scenarioId": "weather_smalltalk_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/weather_smalltalk.json"
+    },
+    {
+      "sourceFile": "weather_smalltalk/weather_smalltalk_003.json",
+      "legacyDialogueId": "generic.weather_smalltalk_003",
+      "legacyRouteId": "weather_smalltalk",
+      "topicId": "weather_smalltalk",
+      "scenarioId": "weather_smalltalk_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/weather_smalltalk.json"
+    },
+    {
+      "sourceFile": "you_there/you_there_001.json",
+      "legacyDialogueId": "generic.you_there_001",
+      "legacyRouteId": "you_there",
+      "topicId": "you_there",
+      "scenarioId": "you_there_001",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/you_there.json"
+    },
+    {
+      "sourceFile": "you_there/you_there_002.json",
+      "legacyDialogueId": "generic.you_there_002",
+      "legacyRouteId": "you_there",
+      "topicId": "you_there",
+      "scenarioId": "you_there_002",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/you_there.json"
+    },
+    {
+      "sourceFile": "you_there/you_there_003.json",
+      "legacyDialogueId": "generic.you_there_003",
+      "legacyRouteId": "you_there",
+      "topicId": "you_there",
+      "scenarioId": "you_there_003",
+      "legacyPriority": 1.0,
+      "scenarioPriority": 1,
+      "legacyTimeWindow": null,
+      "stagedFile": "topics/you_there.json"
+    }
+  ]
+}

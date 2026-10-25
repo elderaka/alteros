@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_goodnight_003",
+    "timestamp": "",
+    "mood": "shy",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "goodnight" }
+    ],
+    "nlp": {
+      "intentId": "goodnight",
+      "patterns": [ "good night", "goodnight", "gn", "sweet dreams" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 20, "maxValue": 6 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "goodnight_003_01",
+      "speaker": "altera",
+      "text": "おやすみ。えっと、変な夢じゃなくて、やさしい夢だといいね。",
+      "translatedText": "Good night. Um, I hope your dreams are gentle ones, not strange ones.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "goodnight_003_02"
+    },
+    {
+      "id": "goodnight_003_02",
+      "speaker": "altera",
+      "text": "今のは少し照れた。だから、早く寝て。見なかったことにして。",
+      "translatedText": "That embarrassed me a little. So go sleep quickly. Pretend you did not see that.",
+      "emotion": "flustered",
+      "presentation": { "expression": "flustered", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

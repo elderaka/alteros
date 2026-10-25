@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Topic generation ready",
+    "timestamp": "",
+    "mood": "gentle",
+    "triggerConditions": []
+  },
+  "lines": [
+    {
+      "id": "topic_ready_01",
+      "text": "できたよ。今ならちゃんと話せる。",
+      "translatedText": "I'm ready now. I can talk about it properly.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_ready_02",
+      "text": "ん、まとまった。もう聞きに来ていいよ。",
+      "translatedText": "Mm, it's come together. You can come hear it now.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_ready_03",
+      "text": "ふふ、待たせたね。話したい形にはできたと思う。",
+      "translatedText": "Heh, sorry to keep you waiting. I think I got it into a shape worth sharing.",
+      "language": "japanese",
+      "triggerConditions": []
+    }
+  ]
+}

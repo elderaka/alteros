@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_preference_001",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_preference"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_preference",
+      "patterns": [
+        "what do you like",
+        "what are your likes",
+        "what is your favorite",
+        "favorite thing",
+        "tell me what you like"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_preference",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_preference_001_01",
+      "speaker": "altera",
+      "text": "好きなもの？ えっと、急に聞かれると並べたくなる。",
+      "translatedText": "Things I like? Um, when you ask suddenly, I want to make a list.",
+      "emotion": "excited",
+      "presentation": {
+        "expression": "excited",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_preference_001_02"
+    },
+    {
+      "id": "ask_preference_001_02",
+      "speaker": "altera",
+      "text": "ロイヤルミルクティー、きれいなノート、雨の音、あと机の上がちゃんと片づいてる瞬間。",
+      "translatedText": "Royal milk tea, clean notebooks, the sound of rain, and the moment when a desk is properly tidy.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_preference_001_03"
+    },
+    {
+      "id": "ask_preference_001_03",
+      "speaker": "altera",
+      "text": "あと、説明したいことをちゃんと聞いてもらえる時間。これは、かなり上位。",
+      "translatedText": "Also, time when someone properly listens to something I want to explain. That ranks very high.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

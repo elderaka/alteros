@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_bored_004",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_bored"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_bored",
+      "patterns": [
+        "i need a tiny idea",
+        "give me a tiny idea",
+        "tiny idea please",
+        "small idea",
+        "something small to do"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_bored",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_bored_004_01",
+      "speaker": "altera",
+      "text": "小さい案ね。大きい案は、退屈な時には重いから。",
+      "translatedText": "A small idea, then. Big ideas are heavy when you are bored.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Tiny task.",
+          "nextId": "player_bored_004_02",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "taskProgress",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Tiny comfort.",
+          "nextId": "player_bored_004_02",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "rest",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Tiny chaos.",
+          "nextId": "player_bored_004_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "stimulation",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "player_bored_004_02"
+    },
+    {
+      "id": "player_bored_004_02",
+      "speaker": "altera",
+      "text": "机の上のものを一つ動かす。水を飲む。変なタイトルを一つ考える。はい、三択。",
+      "translatedText": "Move one thing on the desk. Drink water. Think of one strange title. There, three options.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

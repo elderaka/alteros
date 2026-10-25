@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_evening_003",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "greeting_evening"
+      }
+    ],
+    "nlp": {
+      "intentId": "greeting_evening",
+      "patterns": [
+        "good evening",
+        "evening",
+        "hey evening"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 17,
+        "maxValue": 22
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_evening_003_01",
+      "speaker": "altera",
+      "text": "こんばんは。今日もちゃんとここまで来たね。",
+      "translatedText": "Good evening. You made it all the way here again today.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_evening_003_02"
+    },
+    {
+      "id": "greeting_evening_003_02",
+      "speaker": "altera",
+      "text": "その顔、まだ何か考えてる顔。隠せてないよ、少しだけ。",
+      "translatedText": "That face says you are still thinking about something. You are not hiding it, not completely.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

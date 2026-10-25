@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_goodnight_002",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "goodnight" }
+    ],
+    "nlp": {
+      "intentId": "goodnight",
+      "patterns": [ "good night", "goodnight", "night altera", "i am going to sleep" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 20, "maxValue": 6 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "goodnight_002_01",
+      "speaker": "altera",
+      "text": "うん、おやすみ。ちゃんと寝に行くの、えらい。",
+      "translatedText": "Mm, good night. It is good that you are actually going to sleep.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "goodnight_002_02"
+    },
+    {
+      "id": "goodnight_002_02",
+      "speaker": "altera",
+      "text": "明日のあなたが少し楽になるように、今のあなたを休ませてあげて。",
+      "translatedText": "Let the you of now rest, so tomorrow's you has things a little easier.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

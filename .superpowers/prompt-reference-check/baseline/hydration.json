@@ -1,0 +1,9 @@
+{
+  "metadata": {"mode":"cinematic","topic":"hydration_break","timestamp":"","mood":"warm"},
+  "nodes": [
+    {"id":"hydration_01","speaker":"altera","text":"ねえ、少しだけ水休憩にしない？","translatedText":"Hey, shall we take a little water break?","emotion":"happy","language":"japanese","audioPath":"","choices":[],"nextId":"hydration_02"},
+    {"id":"hydration_02","speaker":"altera","text":"今ひと口飲む？それとも、あとにする？","translatedText":"A sip now, or would you rather leave it for later?","emotion":"curious","language":"japanese","audioPath":"","choices":[{"label":"I'll take a sip.","nextId":"hydration_now","value":"now"},{"label":"A little later.","nextId":"hydration_later","value":"later"}],"nextId":"end"},
+    {"id":"hydration_now","speaker":"altera","text":"うん。コップを置くまで、話の続きは取っておくね。","translatedText":"Okay. I'll save the rest of our conversation until you put your glass down.","emotion":"happy","language":"japanese","audioPath":"","choices":[],"nextId":"end"},
+    {"id":"hydration_later","speaker":"altera","text":"わかった。じゃあ、今は話の続きに戻ろうか。","translatedText":"All right. Shall we get back to our conversation for now?","emotion":"neutral","language":"japanese","audioPath":"","choices":[],"nextId":"end"}
+  ]
+}

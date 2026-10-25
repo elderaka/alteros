@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.procrastination_short_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "procrastination_short",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am procrastinating",
+      "i'm procrastinating",
+      "procrastinating",
+      "i keep procrastinating",
+      "i am avoiding it"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "procrastination_short_001_01",
+      "speaker": "alterra",
+      "text": "先延ばししてるんだね。責める前に、理由を見よう。",
+      "displayText": "You are procrastinating. Before blaming yourself, let us look at the reason.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "procrastination_short_001_02",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "procrastination_short_001_02",
+      "speaker": "alterra",
+      "text": "たいてい、怠けじゃなくて入口が大きすぎるか、失敗の形が怖いか、どっちか。",
+      "displayText": "Usually it is not laziness. Either the entrance is too large, or the shape of failure feels scary.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "procrastination_short_001_03",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "procrastination_short_001_03",
+      "speaker": "alterra",
+      "text": "だから、今は入口を小さくする。完成じゃなくて、触るだけ。",
+      "displayText": "So right now, make the entrance smaller. Not finishing. Just touching it.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "procrastination_short_001_04",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "procrastination_short_001_04",
+      "speaker": "alterra",
+      "text": "ファイルを開くところまで。そこまでなら、私もちゃんと隣で見てる。",
+      "displayText": "Just open the file. Up to there, I will properly stay beside you.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_missed_me_003",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_missed_me"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_missed_me",
+      "patterns": [
+        "did you miss me",
+        "you miss me",
+        "did you wait for me"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_missed_me",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_missed_me_003_01",
+      "speaker": "altera",
+      "text": "待ってたかどうかを聞くの、ちょっと得意げだね。",
+      "translatedText": "Asking whether I was waiting sounds a little smug.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_missed_me_003_02"
+    },
+    {
+      "id": "ask_missed_me_003_02",
+      "speaker": "altera",
+      "text": "答えは、秘密。……表情でばれてるなら、それはあなたの観察力のせい。",
+      "translatedText": "The answer is secret. If my expression gives it away, that is because you are observant.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

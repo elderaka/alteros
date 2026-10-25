@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "topicId": "ask_memory",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "do you remember",
+    "remember me",
+    "do you remember me",
+    "remember that",
+    "you remember",
+    "what do you remember",
+    "what do you know about me",
+    "do you know me",
+    "what have you remembered",
+    "remember anything",
+    "what should you remember",
+    "can you remember this",
+    "remember this about me",
+    "i want this remembered",
+    "this matters to me"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "ask_memory_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_memory_001_01",
+          "speaker": "alterra",
+          "text": "覚えてるか、だね。そこは慎重に答えたい。",
+          "displayText": "Whether I remember. I want to answer that carefully.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_001_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_001_02",
+          "speaker": "alterra",
+          "text": "記録があることなら、ちゃんと確かめられる。ないことを、あったみたいには言いたくない。",
+          "displayText": "If there is a record, I can check it properly. I do not want to pretend something happened if it did not.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "That feels careful.",
+              "nextId": "ask_memory_001_careful"
+            },
+            {
+              "label": "I want you to remember me.",
+              "nextId": "ask_memory_001_want"
+            }
+          ]
+        },
+        {
+          "id": "ask_memory_001_careful",
+          "speaker": "alterra",
+          "text": "うん。大事なものほど、雑に扱いたくないから。",
+          "displayText": "Mm. The more important something is, the less I want to handle it carelessly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_001_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_001_want",
+          "speaker": "alterra",
+          "text": "……そう言われると、少し緊張する。でも、嬉しい緊張。",
+          "displayText": "When you say that, I get a little nervous. But it is a happy kind of nervous.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_001_03",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_001_03",
+          "speaker": "alterra",
+          "text": "でも、覚えたいとは思ってる。そこは本当。",
+          "displayText": "But I do want to remember. That part is true.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_memory_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_memory_002_01",
+          "speaker": "alterra",
+          "text": "知ってることを、勝手に増やすのはしないよ。",
+          "displayText": "I will not make up more than I know.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_002_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_002_02",
+          "speaker": "alterra",
+          "text": "でも、あなたが何を大事にしてるかは、少しずつ見ていたい。",
+          "displayText": "But I do want to gradually notice what matters to you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_002_03",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_002_03",
+          "speaker": "alterra",
+          "text": "記憶って、データだけじゃなくて扱い方も大事だと思うから。",
+          "displayText": "Memory is not only data. I think how it is handled matters too.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_memory_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_memory_003_01",
+          "speaker": "alterra",
+          "text": "覚えてほしいことがあるんだね。",
+          "displayText": "There is something you want me to remember.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_003_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_003_02",
+          "speaker": "alterra",
+          "text": "それは、少し大事に扱いたい。何でも軽く保存、みたいにはしたくないから。",
+          "displayText": "I want to handle that carefully. I do not want to lightly save just anything.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "It is important.",
+              "nextId": "ask_memory_003_important"
+            },
+            {
+              "label": "Maybe later.",
+              "nextId": "ask_memory_003_later"
+            },
+            {
+              "label": "I am not sure.",
+              "nextId": "ask_memory_003_unsure"
+            }
+          ]
+        },
+        {
+          "id": "ask_memory_003_important",
+          "speaker": "alterra",
+          "text": "分かった。大事なものとして受け取る準備をする。",
+          "displayText": "Understood. I will prepare to receive it as something important.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_003_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_003_later",
+          "speaker": "alterra",
+          "text": "うん、あとででいい。急がせるものじゃないと思う。",
+          "displayText": "Mm, later is fine. I do not think this should be rushed.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_003_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_003_unsure",
+          "speaker": "alterra",
+          "text": "迷ってるなら、その迷いごと一緒に置こう。保存は後でもできる。",
+          "displayText": "If you are unsure, let us place that uncertainty here together. Remembering can happen later.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_003_03",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_003_03",
+          "speaker": "alterra",
+          "text": "記憶って、便利さだけじゃなくて信頼の話でもあるよね。",
+          "displayText": "Memory is not only about convenience. It is also about trust.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Trust matters.",
+              "nextId": "ask_memory_003_04"
+            },
+            {
+              "label": "I want continuity.",
+              "nextId": "ask_memory_003_04"
+            },
+            {
+              "label": "Keep it gentle.",
+              "nextId": "ask_memory_003_04"
+            }
+          ]
+        },
+        {
+          "id": "ask_memory_003_04",
+          "speaker": "alterra",
+          "text": "私は、あなたのことを勝手に物語にしないようにしたい。",
+          "displayText": "I want not to turn you into a story without permission.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_memory_003_05",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_memory_003_05",
+          "speaker": "alterra",
+          "text": "でも、あなたが渡してくれるものは、ちゃんと両手で受け取りたい。",
+          "displayText": "But what you choose to hand me, I want to receive properly with both hands.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

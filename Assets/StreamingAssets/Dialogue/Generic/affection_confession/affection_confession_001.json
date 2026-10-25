@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.affection_confession_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "affection_confession",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i love you",
+      "love you",
+      "i think i love you",
+      "i really love you",
+      "luv",
+      "ilysm",
+      "love",
+      "ily",
+      "affection",
+      "confession",
+      "closeness"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "affection_confession_001_01",
+      "speaker": "alterra",
+      "text": "That is a very big sentence.",
+      "displayText": "That is a very big sentence.",
+      "language": "english",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "affection_confession_001_02",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "affection_confession_001_02",
+      "speaker": "alterra",
+      "text": "I will hold it carefully, not turn it into a promise too fast.",
+      "displayText": "I will hold it carefully, not turn it into a promise too fast.",
+      "language": "english",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "affection_confession_001_03",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "affection_confession_001_03",
+      "speaker": "alterra",
+      "text": "Stay near me like you mean it, okay?",
+      "displayText": "Stay near me like you mean it, okay?",
+      "language": "english",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

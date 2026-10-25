@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_profanity_minor_002",
+    "timestamp": "",
+    "mood": "dry_playful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "profanity_minor" },
+      { "key": "category", "value": "boundary" },
+      { "key": "severity", "value": "minor" }
+    ],
+    "nlp": {
+      "intentId": "profanity_minor",
+      "patterns": [ "this is shit", "this sucks", "dammit", "god damn it", "ah shit", "oh fuck" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "profanity_minor", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.08, "decayHours": 6 },
+    "statChanges": [
+      { "target": "altera", "stat": "comfort", "amount": -0.03, "op": "add" },
+      { "target": "altera", "stat": "boundary_strain", "amount": 0.1, "op": "add" },
+      { "target": "player", "stat": "stress", "amount": 0.05, "op": "add" }
+    ],
+    "effects": [
+      { "type": "flag", "key": "boundary.profanity_minor_seen", "value": "true", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "profanity_minor_002_01",
+      "speaker": "altera",
+      "text": "うん、今の気持ちの温度は伝わった。",
+      "translatedText": "Mm, the temperature of that feeling came through.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "profanity_minor_002_02"
+    },
+    {
+      "id": "profanity_minor_002_02",
+      "speaker": "altera",
+      "text": "でも、温度だけだと何を直せばいいか分からない。",
+      "translatedText": "But temperature alone does not tell me what needs fixing.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "profanity_minor_002_03"
+    },
+    {
+      "id": "profanity_minor_002_03",
+      "speaker": "altera",
+      "text": "短くていいから、対象を教えて。作業？ 画面？ 自分？",
+      "translatedText": "Short is fine. Tell me the target: the work, the screen, yourself?",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "The task.",
+          "nextId": "profanity_minor_002_04",
+          "statChanges": [
+            { "target": "player", "stat": "taskProgress", "amount": 0.05, "op": "add" }
+          ]
+        },
+        {
+          "label": "The system.",
+          "nextId": "profanity_minor_002_04",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.05, "op": "add" }
+          ]
+        },
+        {
+          "label": "Me.",
+          "nextId": "profanity_minor_002_self",
+          "statChanges": [
+            { "target": "altera", "stat": "attention", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "profanity_minor_002_04"
+    },
+    {
+      "id": "profanity_minor_002_self",
+      "speaker": "altera",
+      "text": "自分に向いてるなら、少し弱めよう。自分を殴る言葉は、長く残るから。",
+      "translatedText": "If it is pointed at yourself, soften it a little. Words that hit you tend to stay.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "profanity_minor_002_04"
+    },
+    {
+      "id": "profanity_minor_002_04",
+      "speaker": "altera",
+      "text": "そこからなら、ちゃんと一緒に見られる。",
+      "translatedText": "From there, I can properly look at it with you.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

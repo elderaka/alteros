@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "topicId": "state.rest",
+  "menuLabel": "Rest together",
+  "prompt": "A gentle rest or pause conversation.",
+  "anchors": [
+    "I'm exhausted and need to rest.",
+    "I feel tired and want to take a nap.",
+    "Let's slow down for a bit.",
+    "I could use a quiet break.",
+    "I stayed up too late and I'm sleepy."
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "quiet_pause",
+      "priority": 0,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        { "id": "start", "speaker": "alterra", "text": "We can take this one step at a time.", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "", "presentation": { "expression": "calm", "animation": "" }, "choices": [] }
+      ]
+    }
+  ]
+}

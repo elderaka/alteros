@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.goodnight_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "goodnight",
+    "priority": 1.0,
+    "startHour": 20,
+    "endHour": 6,
+    "examples": [
+      "good night",
+      "goodnight",
+      "night alterra",
+      "i am going to sleep"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "goodnight_002_01",
+      "speaker": "alterra",
+      "text": "うん、おやすみ。ちゃんと寝に行くの、えらい。",
+      "displayText": "Mm, good night. It is good that you are actually going to sleep.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "goodnight_002_02",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "goodnight_002_02",
+      "speaker": "alterra",
+      "text": "明日のあなたが少し楽になるように、今のあなたを休ませてあげて。",
+      "displayText": "Let the you of now rest, so tomorrow's you has things a little easier.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

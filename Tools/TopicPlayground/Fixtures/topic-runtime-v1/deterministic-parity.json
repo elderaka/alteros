@@ -1,0 +1,41 @@
+{
+  "query": "I'm thirsty, let's grab some water",
+  "localHour": 9,
+  "fixtureSet": "",
+  "topicMode": "direct-family",
+  "topicFixtureSet": "topic-runtime-v1",
+  "topicFamilyId": "beverage.drink",
+  "instanceId": "playground-parity-water-001",
+  "source": "generated",
+  "replayPolicy": "",
+  "draw": 0.25,
+  "selectionTimeUtc": "2026-10-16T12:00:00Z",
+  "scratchHistoryPath": "",
+  "stats": [
+    { "statId": "alterra.hydration", "isKnown": true, "value": 20 },
+    { "statId": "alterra.emotion.valence", "isKnown": false, "value": 0 },
+    { "statId": "alterra.emotion.activation", "isKnown": false, "value": 0 },
+    { "statId": "alterra.emotion.control", "isKnown": false, "value": 0 }
+  ],
+  "facts": [
+    { "key": "user_confirmed.has_bottle", "isKnown": false, "value": false }
+  ],
+  "objectsComplete": true,
+  "objects": [
+    {
+      "id": "dispenser-a",
+      "kind": "dispenser",
+      "flags": [ { "key": "drinkable", "isKnown": true, "value": true } ],
+      "numbers": [ { "key": "water_level", "isKnown": true, "value": 2 } ]
+    }
+  ],
+  "expectedRouteId": "station_break",
+  "steps": [
+    { "action": "present", "index": 0, "instanceId": "", "secondsAfterStart": 0 },
+    { "action": "continue", "index": 0, "instanceId": "", "secondsAfterStart": 0 },
+    { "action": "present", "index": 0, "instanceId": "", "secondsAfterStart": 1 },
+    { "action": "cancel", "index": 0, "instanceId": "", "secondsAfterStart": 2 },
+    { "action": "retry", "index": 0, "instanceId": "", "secondsAfterStart": 3 },
+    { "action": "newOccurrence", "index": 0, "instanceId": "playground-parity-water-002", "secondsAfterStart": 4 }
+  ]
+}

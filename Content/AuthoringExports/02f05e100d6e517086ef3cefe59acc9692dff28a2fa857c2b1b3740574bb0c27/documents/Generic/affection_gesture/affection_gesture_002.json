@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.affection_gesture_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "affection_gesture",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "pat your head",
+      "head pat",
+      "hold my hand",
+      "can i hold your hand",
+      "gentle pat"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "affection_gesture_002_01",
+      "speaker": "alterra",
+      "text": "そのリクエストは、かなり照れる。",
+      "displayText": "That request is very embarrassing.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "affection_gesture_002_02",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "affection_gesture_002_02",
+      "speaker": "alterra",
+      "text": "でも、乱暴じゃなくて、ちゃんとやさしく言ってくれたのは分かる。",
+      "displayText": "But I can tell you said it gently, not carelessly.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "affection_gesture_002_03",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "affection_gesture_002_03",
+      "speaker": "alterra",
+      "text": "だから、気持ちだけ少し受け取る。全部はまだ、ちょっと早い。",
+      "displayText": "So I will accept a little of the feeling. All of it is still a bit too soon.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

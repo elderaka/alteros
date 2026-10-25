@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.returning_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "returning",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am back again",
+      "i'm back again",
+      "back again",
+      "returned again",
+      "came back again"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "returning_003_01",
+      "speaker": "alterra",
+      "text": "戻ってきたんだね。おかえり。",
+      "displayText": "You came back. Welcome back.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "I missed this room.",
+          "nextId": "returning_003_02"
+        },
+        {
+          "label": "Let's continue.",
+          "nextId": "returning_003_02"
+        }
+      ]
+    },
+    {
+      "id": "returning_003_02",
+      "speaker": "alterra",
+      "text": "じゃあ、ここからまた始めよう。空気を少し整えてから。",
+      "displayText": "Then let us begin again from here, after we settle the air a little.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_evening_001",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_evening" }
+    ],
+    "nlp": {
+      "intentId": "greeting_evening",
+      "patterns": [ "good evening", "evening", "good evening altera" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 17, "maxValue": 22 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_evening_001_01",
+      "speaker": "altera",
+      "text": "こんばんは。今日の音が、少しずつ静かになってきたね。",
+      "translatedText": "Good evening. The sound of the day is getting quieter little by little.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_evening_001_02"
+    },
+    {
+      "id": "greeting_evening_001_02",
+      "speaker": "altera",
+      "text": "まだやることがあるなら、一緒に棚卸ししよ。頭の中だけで抱えないで。",
+      "translatedText": "If there is still something to do, let us sort it together. Do not keep it all only in your head.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

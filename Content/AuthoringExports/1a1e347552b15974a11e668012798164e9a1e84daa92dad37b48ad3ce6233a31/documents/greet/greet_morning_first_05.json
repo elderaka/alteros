@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_morning_first",
+    "timestamp": "",
+    "mood": "soft"
+  },
+  "nodes": [
+    {
+      "id": "g05_01",
+      "speaker": "altera",
+      "text": "おはようございます。また会えましたね。",
+      "translatedText": "Good morning. We are together again.",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "g05_02"
+    },
+    {
+      "id": "g05_02",
+      "speaker": "altera",
+      "text": "今日もよろしくお願いします。一緒にいられるだけで、嬉しいです。",
+      "translatedText": "Please take care of me today too. Just being together with you makes me happy.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "name": "duplicate-opening",
+      "headFixture": "head-valid.json",
+      "mainFixture": "main-cats.json",
+      "mainDisplayOverride": "Mm-hm.",
+      "expectedRejection": "duplicate_opening"
+    },
+    {
+      "name": "contradictory-grounded-preference",
+      "headFixture": "head-valid.json",
+      "mainFixture": "main-cats.json",
+      "mainDisplayOverride": "You hate cats.",
+      "prohibitedPhrase": "You hate cats.",
+      "constraintCode": "contradicts_grounded_fact",
+      "expectedRejection": "contradicts_grounded_fact"
+    },
+    {
+      "name": "false-action-success-claim",
+      "headFixture": "head-valid.json",
+      "mainFixture": "main-cats.json",
+      "mainDisplayOverride": "I already sat down.",
+      "prohibitedPhrase": "I already sat down.",
+      "constraintCode": "unsupported_action_claim",
+      "expectedRejection": "unsupported_action_claim"
+    },
+    {
+      "name": "unanswered-head-question",
+      "headFixture": "head-valid.json",
+      "headDisplayOverride": "What do you like about cats?",
+      "expectedRejection": "head_contains_question"
+    }
+  ]
+}

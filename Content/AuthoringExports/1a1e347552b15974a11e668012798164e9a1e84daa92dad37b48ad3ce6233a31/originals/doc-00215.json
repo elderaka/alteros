@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "topicId": "take_break",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "take a break",
+    "i need a break",
+    "break time",
+    "let us take a break",
+    "let's take a break",
+    "i should rest",
+    "need rest",
+    "rest time",
+    "let me rest",
+    "pause for a bit"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "take_break_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "take_break_001_01",
+          "speaker": "alterra",
+          "text": "休憩しよう。これは逃げじゃなくて、ちゃんと整える時間。",
+          "displayText": "Let us take a break. This is not running away; it is time to reset properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "take_break_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "take_break_001_02",
+          "speaker": "alterra",
+          "text": "水を飲んで、画面から少しだけ目を離して。私、ここで待ってるから。",
+          "displayText": "Drink some water and look away from the screen for a little. I will wait here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "take_break_001_03",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "take_break_001_03",
+          "speaker": "alterra",
+          "text": "戻る時のために、次に開く場所だけメモしておくと安心だよ。",
+          "displayText": "For when you return, it helps to note the next place to open.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "take_break_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "take_break_002_01",
+          "speaker": "alterra",
+          "text": "休む判断、えらい。そこをサボり扱いしないでね。",
+          "displayText": "Good call choosing rest. Do not treat that as slacking.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "take_break_002_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "take_break_002_02",
+          "speaker": "alterra",
+          "text": "休憩にも形があると戻りやすいよ。五分だけ、とか、お茶を一杯だけ、とか。",
+          "displayText": "Breaks are easier to return from when they have a shape: five minutes, or one cup of tea.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

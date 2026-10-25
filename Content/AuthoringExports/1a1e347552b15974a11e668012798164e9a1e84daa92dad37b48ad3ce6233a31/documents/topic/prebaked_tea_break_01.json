@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "prebaked_tea_break_01",
+    "timestamp": "",
+    "mood": "cozy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "prebaked_topic"
+      },
+      {
+        "key": "category",
+        "value": "ritual"
+      }
+    ],
+    "statChanges": [
+      {
+        "target": "altera",
+        "stat": "comfort",
+        "amount": 0.5,
+        "op": "add"
+      },
+      {
+        "target": "environment",
+        "stat": "coziness",
+        "amount": 0.5,
+        "op": "add"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "tea_break_01",
+      "speaker": "altera",
+      "text": "じゃあ、少しだけお茶の時間にしよっか。急いで飲むやつじゃなくて、手を温めるためのやつ。",
+      "translatedText": "Then let's take a small tea break. Not the rushed kind. The kind where you warm your hands first.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "pose": "cup_hold",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "tea_break_02"
+    },
+    {
+      "id": "tea_break_02",
+      "speaker": "altera",
+      "text": "一口ぶんだけ休んだら、次の一歩を小さくしよう。大きくしすぎると、また机の上で迷子になるから。",
+      "translatedText": "After one sip's worth of rest, let's make the next step small. If we make it too big, it will get lost on the desk again.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player",
+        "animation": {
+          "trigger": "AdjustGlasses"
+        }
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

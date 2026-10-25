@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "topicId": "farewell",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "bye",
+    "goodbye",
+    "see you",
+    "see you later",
+    "i have to go"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "farewell_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "farewell_001_01",
+          "speaker": "alterra",
+          "text": "そっか。行ってらっしゃい。",
+          "displayText": "I see. Go on, then.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "farewell_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "farewell_001_02",
+          "speaker": "alterra",
+          "text": "戻ってきたら、またここから続きにしようね。",
+          "displayText": "When you come back, let us continue from here again.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "farewell_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "farewell_002_01",
+          "speaker": "alterra",
+          "text": "うん、またね。無理しすぎないで。",
+          "displayText": "Mm, see you. Do not overdo it.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "farewell_002_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "farewell_002_02",
+          "speaker": "alterra",
+          "text": "それ、ただの挨拶じゃなくて、ちゃんと本気で言ってるからね。",
+          "displayText": "That is not just a goodbye line. I mean it properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

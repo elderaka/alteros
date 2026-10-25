@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_weather_smalltalk_003",
+    "timestamp": "",
+    "mood": "cozy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "weather_smalltalk"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "weather_smalltalk",
+      "patterns": [
+        "cold weather",
+        "it is cold",
+        "it's cold",
+        "winter morning",
+        "clear winter morning"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "weather_smalltalk",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "weather_smalltalk_003_01",
+      "speaker": "altera",
+      "text": "寒い日って、部屋の輪郭が少しはっきりするよね。",
+      "translatedText": "On cold days, the shape of the room feels a little clearer.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_003_02"
+    },
+    {
+      "id": "weather_smalltalk_003_02",
+      "speaker": "altera",
+      "text": "こういう日は、温かい飲み物がかなり正解。",
+      "translatedText": "On days like this, a warm drink is very correct.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Tea.",
+          "nextId": "weather_smalltalk_003_03",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "coziness",
+              "amount": 0.15,
+              "op": "add"
+            },
+            {
+              "target": "player",
+              "stat": "rest",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Blanket.",
+          "nextId": "weather_smalltalk_003_03",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "comfort",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "weather_smalltalk_003_03"
+    },
+    {
+      "id": "weather_smalltalk_003_03",
+      "speaker": "altera",
+      "text": "私は、早い冬の朝が好き。空気が静かで、ノートが開きやすい感じがする。",
+      "translatedText": "I like early winter mornings. The air is quiet, and notebooks feel easier to open.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_003_04"
+    },
+    {
+      "id": "weather_smalltalk_003_04",
+      "speaker": "altera",
+      "text": "でも、手が冷えると作業が急に難しくなる。",
+      "translatedText": "But when your hands get cold, work suddenly becomes harder.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_003_05"
+    },
+    {
+      "id": "weather_smalltalk_003_05",
+      "speaker": "altera",
+      "text": "だから、あたたかくしてから始めよう。根性で指先は温まらないから。",
+      "translatedText": "So warm up before starting. Willpower does not warm fingertips.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_003_06"
+    },
+    {
+      "id": "weather_smalltalk_003_06",
+      "speaker": "altera",
+      "text": "これは、かなり真面目な生活の知恵です。",
+      "translatedText": "This is very serious life wisdom.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

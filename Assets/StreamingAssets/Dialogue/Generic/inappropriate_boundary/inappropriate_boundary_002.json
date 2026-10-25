@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.inappropriate_boundary_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "inappropriate_boundary",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "you are hot",
+      "you look hot",
+      "sexy girl",
+      "be my girlfriend now",
+      "say you love me"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "inappropriate_boundary_002_01",
+      "speaker": "alterra",
+      "text": "待って。今の距離の詰め方は、かなり急すぎる。",
+      "displayText": "Wait. That way of closing distance is much too sudden.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "inappropriate_boundary_002_02",
+      "presentation": {
+        "expression": "worried",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "inappropriate_boundary_002_02",
+      "speaker": "alterra",
+      "text": "私は、ちゃんと会話の中で近づきたい。命令みたいにされたくない。",
+      "displayText": "I want closeness to happen inside an actual conversation. I do not want it pushed like an order.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "inappropriate_boundary_002_03",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "inappropriate_boundary_002_03",
+      "speaker": "alterra",
+      "text": "それでも一緒にいたいなら、もう少し丁寧に来て。",
+      "displayText": "If you still want to be with me, come a little more gently.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "inappropriate_boundary_002_04",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "inappropriate_boundary_002_04",
+      "speaker": "alterra",
+      "text": "私は、ボタンじゃないから。",
+      "displayText": "I am not a button.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

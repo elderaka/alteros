@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture.stat_context_v1.player_tired.hydration_low",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_tired",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": ["synthetic tired-topic stat eligibility fixture"],
+    "requiredContext": [],
+    "blockedContext": [],
+    "eligibility": {
+      "schemaVersion": 1,
+      "all": [
+        { "statId": "alterra.hydration", "operation": "at_most", "value": 25 }
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "fixture_hydration_low",
+      "speaker": "alterra",
+      "text": "[SYNTHETIC FIXTURE v1 — not authored dialogue] Hydration is known at or below 25.",
+      "displayText": "",
+      "language": "en",
+      "voice": "",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": { "expression": "", "animation": "" },
+      "choices": []
+    }
+  ]
+}

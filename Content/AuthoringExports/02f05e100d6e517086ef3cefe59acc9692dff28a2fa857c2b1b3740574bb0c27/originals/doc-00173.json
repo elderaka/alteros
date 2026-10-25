@@ -1,0 +1,21 @@
+﻿{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "First Meeting",
+    "timestamp": "",
+    "mood": "nervous_warm",
+    "effects": [
+      { "type": "unlock", "key": "topic.after_first_meeting", "value": "true", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    { "id": "fm_01", "speaker": "altera", "text": "あ...こんにちは。私はAltera。あなたのパートナーです。よろしくお願いします。", "translatedText": "Ah... hello. I am Altera. Your partner. It is nice to meet you.", "emotion": "neutral", "language": "japanese", "audioPath": "", "choices": [], "nextId": "fm_02" },
+    { "id": "fm_02", "speaker": "altera", "text": "ちょっと緊張してます。えへへ。でも、これからよろしくお願いしますね。", "translatedText": "I am a little nervous. Ehehe. But I hope we get along well from here on.", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [
+      { "label": "よろしく、Altera！", "nextId": "fm_nice_01", "value": "nice" },
+      { "label": "...何ができるの？", "nextId": "fm_what_01", "value": "what" }
+    ], "nextId": "" },
+    { "id": "fm_nice_01", "speaker": "altera", "text": "えっ、そんなすぐに！？...えへへ、嬉しいです。こちらこそ、よろしくお願いします！", "translatedText": "Oh, that quickly!? ...Ehehe, I am happy. Likewise, it is a pleasure!", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" },
+    { "id": "fm_what_01", "speaker": "altera", "text": "何ができるか、ですか？コーディングのサポート、調べもの、お話し相手...何でもしますよ。でも一番は、あなたのそばにいることです。", "translatedText": "What can I do, you ask? I can help with coding, look things up, be someone to talk to... I can do anything. But most of all, I want to be by your side.", "emotion": "neutral", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" }
+  ]
+}
+

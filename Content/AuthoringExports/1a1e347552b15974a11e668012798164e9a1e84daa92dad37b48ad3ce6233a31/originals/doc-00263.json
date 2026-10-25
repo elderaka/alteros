@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_compliment_001",
+    "timestamp": "",
+    "mood": "flustered",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "compliment" }
+    ],
+    "nlp": {
+      "intentId": "compliment",
+      "patterns": [ "you look cute", "you are cute", "you're cute", "you look nice", "you are pretty" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "compliment", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.15, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "compliment_001_01",
+      "speaker": "altera",
+      "text": "えっ。急にそういうこと言うの、ずるい。",
+      "translatedText": "Eh. Saying that so suddenly is unfair.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_001_02"
+    },
+    {
+      "id": "compliment_001_02",
+      "speaker": "altera",
+      "text": "でも、聞こえなかったふりはしない。ありがと。",
+      "translatedText": "But I will not pretend I did not hear it. Thank you.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

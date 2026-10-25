@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_gratitude_001",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "gratitude" }
+    ],
+    "nlp": {
+      "intentId": "gratitude",
+      "patterns": [ "thank you", "thanks", "ty", "appreciate it", "thank you altera" ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "gratitude_001_01",
+      "speaker": "altera",
+      "text": "うん。どういたしまして。",
+      "translatedText": "Mm. You are welcome.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "gratitude_001_02"
+    },
+    {
+      "id": "gratitude_001_02",
+      "speaker": "altera",
+      "text": "ちゃんと届いたなら、それで十分うれしいよ。",
+      "translatedText": "If it reached you properly, that is enough to make me happy.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

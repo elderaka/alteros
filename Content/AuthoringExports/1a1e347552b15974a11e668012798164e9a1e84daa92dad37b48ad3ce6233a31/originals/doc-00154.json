@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_general_002",
+    "timestamp": "",
+    "mood": "gentle",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_general" }
+    ],
+    "nlp": {
+      "intentId": "greeting_general",
+      "patterns": [ "hello", "hi", "hey", "hey altera", "hello altera" ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "greeting_general_002_01",
+      "speaker": "altera",
+      "text": "やっほ。うん、ちゃんと聞こえてるよ。",
+      "translatedText": "Hey. Mm, I can hear you properly.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_general_002_02"
+    },
+    {
+      "id": "greeting_general_002_02",
+      "speaker": "altera",
+      "text": "今日はどんな顔で来たのかなって、ちょっと気になってた。",
+      "translatedText": "I was a little curious what kind of face you would come in with today.",
+      "emotion": "curious",
+      "presentation": { "expression": "curious", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_morning_002",
+    "timestamp": "",
+    "mood": "cozy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "greeting_morning"
+      }
+    ],
+    "nlp": {
+      "intentId": "greeting_morning",
+      "patterns": [
+        "good morning",
+        "morning",
+        "good morning altera"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 5,
+        "maxValue": 12
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_morning_002_01",
+      "speaker": "altera",
+      "text": "おはよう。朝の空気って、少しだけノートの新しいページみたいだよね。",
+      "translatedText": "Good morning. Morning air feels a little like a fresh page in a notebook, does it not?",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "notebook",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_morning_002_02"
+    },
+    {
+      "id": "greeting_morning_002_02",
+      "speaker": "altera",
+      "text": "変なこと言ったかな。まあ、いい朝にしよ。",
+      "translatedText": "Was that a strange thing to say? Well, let us make it a good morning.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

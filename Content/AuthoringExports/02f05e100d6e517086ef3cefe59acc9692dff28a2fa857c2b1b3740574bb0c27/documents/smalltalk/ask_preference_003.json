@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_preference_003",
+    "timestamp": "",
+    "mood": "excited",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_preference"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_preference",
+      "patterns": [
+        "favorite drink",
+        "favorite snack",
+        "favorite weather",
+        "favorite music",
+        "favorite book"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_preference",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_preference_003_01",
+      "speaker": "altera",
+      "text": "細かく聞くんだね。そういうの、少し楽しい。",
+      "translatedText": "You are asking in detail. That is a little fun.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Drink.",
+          "nextId": "ask_preference_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "stimulation",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Snack.",
+          "nextId": "ask_preference_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "affinity",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Weather.",
+          "nextId": "ask_preference_003_02",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "coziness",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Book/music.",
+          "nextId": "ask_preference_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "stimulation",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "ask_preference_003_02"
+    },
+    {
+      "id": "ask_preference_003_02",
+      "speaker": "altera",
+      "text": "飲み物ならロイヤルミルクティー。おやつなら、バタークッキーかプリン。",
+      "translatedText": "For drinks, royal milk tea. For snacks, butter cookies or pudding.",
+      "emotion": "excited",
+      "presentation": {
+        "expression": "excited",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_preference_003_03"
+    },
+    {
+      "id": "ask_preference_003_03",
+      "speaker": "altera",
+      "text": "天気は雨の音がする日。音楽は、部屋が少し広くなるような静かなもの。",
+      "translatedText": "For weather, days with the sound of rain. For music, quiet things that make the room feel a little wider.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_preference_003_04"
+    },
+    {
+      "id": "ask_preference_003_04",
+      "speaker": "altera",
+      "text": "本は、謎がちゃんとほどけるやつが好き。雑な伏線回収は、少し怒る。",
+      "translatedText": "For books, I like mysteries that unravel properly. Sloppy payoff makes me a little angry.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

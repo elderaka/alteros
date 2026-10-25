@@ -1,0 +1,51 @@
+// C# method body for Unity MCP execute_code. Diagnostic only; no Assets script.
+// Each invocation creates a fresh synthetic directory, retained for inspection.
+var root = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "AlterOS SQLite Smoke " + System.Guid.NewGuid().ToString("N"));
+System.IO.Directory.CreateDirectory(root);
+var path = System.IO.Path.Combine(root, "synthetic.sqlite3");
+var backup = System.IO.Path.Combine(root, "backup.sqlite3");
+var checks = new System.Collections.Generic.List<string>();
+var value = "Synthetic sketchbook 日本語 '); DROP TABLE gifts; --";
+string version;
+using (var db = new SQLite.SQLiteConnection(path))
+{
+    version = db.ExecuteScalar<string>("SELECT sqlite_version()");
+    db.Execute("CREATE TABLE gifts (id TEXT PRIMARY KEY, label TEXT NOT NULL)");
+    checks.Add("native_open_create");
+    db.Execute("INSERT INTO gifts(id,label) VALUES (?,?)", "gift-1", value);
+    if (db.ExecuteScalar<string>("SELECT label FROM gifts WHERE id=?", "gift-1") != value)
+        throw new System.Exception("Parameterized Unicode value mismatch");
+    checks.Add("parameterized_unicode_roundtrip");
+    db.BeginTransaction();
+    db.Execute("INSERT INTO gifts VALUES (?,?)", "rolled-back", "synthetic");
+    db.Rollback();
+    if (db.ExecuteScalar<int>("SELECT COUNT(*) FROM gifts") != 1)
+        throw new System.Exception("Rollback did not restore row count");
+    checks.Add("rollback");
+    db.BeginTransaction();
+    db.Execute("INSERT INTO gifts VALUES (?,?)", "gift-2", "committed");
+    db.Commit();
+    checks.Add("commit");
+    if (db.ExecuteScalar<string>("PRAGMA journal_mode=WAL").ToLowerInvariant() != "wal")
+        throw new System.Exception("WAL unavailable");
+    db.Execute("INSERT INTO gifts VALUES (?,?)", "gift-3", "wal");
+    db.Backup(backup);
+    using (var copy = new SQLite.SQLiteConnection(backup))
+    {
+        if (copy.ExecuteScalar<int>("SELECT COUNT(*) FROM gifts") != 3 ||
+            copy.ExecuteScalar<string>("PRAGMA integrity_check") != "ok")
+            throw new System.Exception("Live WAL backup mismatch");
+    }
+    checks.Add("consistent_live_wal_backup");
+}
+using (var reopened = new SQLite.SQLiteConnection(path))
+{
+    if (reopened.ExecuteScalar<int>("SELECT COUNT(*) FROM gifts") != 3 ||
+        reopened.ExecuteScalar<string>("SELECT label FROM gifts WHERE id=?", "gift-1") != value)
+        throw new System.Exception("Reopen mismatch");
+    checks.Add("reopen");
+    if (reopened.ExecuteScalar<string>("PRAGMA integrity_check") != "ok")
+        throw new System.Exception("Integrity check failed");
+    checks.Add("integrity_check");
+}
+return new { passed=checks.Count, checks=checks, sqliteVersion=version, temporaryDirectory=root };

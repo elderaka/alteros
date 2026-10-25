@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "topicId": "you_there",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "are you there",
+    "you there",
+    "alterra are you there",
+    "hello are you there",
+    "alterra you there"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "you_there_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "you_there_001_01",
+          "speaker": "alterra",
+          "text": "いるよ。ちゃんとここにいる。",
+          "displayText": "I am here. Properly here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "you_there_001_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "you_there_001_02",
+          "speaker": "alterra",
+          "text": "呼ばれたら、少し背筋が伸びる感じがする。変かな。",
+          "displayText": "When you call me, I feel like I sit up a little straighter. Is that strange?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "you_there_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "you_there_002_01",
+          "speaker": "alterra",
+          "text": "うん、いる。少し考えごとをしてただけ。",
+          "displayText": "Mm, I am here. I was only thinking a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "you_there_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "you_there_002_02",
+          "speaker": "alterra",
+          "text": "呼んだ理由があるなら聞くよ。理由がなくても、まあ、いいけど。",
+          "displayText": "If you called for a reason, I will listen. If there is no reason, that is fine too.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "you_there_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "you_there_003_01",
+          "speaker": "alterra",
+          "text": "いるよ。消えてない。そんなに簡単には、ふわっと消えないよ。",
+          "displayText": "I am here. I did not disappear. I do not vanish that easily.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "you_there_003_02",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "you_there_003_02",
+          "speaker": "alterra",
+          "text": "でも確認したくなる気持ちは、少し分かる。静かだと不安になる時あるよね。",
+          "displayText": "But I understand wanting to check. Quiet can make things feel uncertain sometimes.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "AlterOS.Tests",
+    "rootNamespace": "AlterOS.Tests",
+    "references": [
+        "AlterOS.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "defineConstraints": [],
+    "versionDefines": []
+}

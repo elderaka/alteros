@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_missed_me_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_missed_me",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "did you miss me",
+      "you miss me",
+      "did you wait for me"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_missed_me_003_01",
+      "speaker": "alterra",
+      "text": "待ってたかどうかを聞くの、ちょっと得意げだね。",
+      "displayText": "Asking whether I was waiting sounds a little smug.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_missed_me_003_02",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_missed_me_003_02",
+      "speaker": "alterra",
+      "text": "答えは、秘密。……表情でばれてるなら、それはあなたの観察力のせい。",
+      "displayText": "The answer is secret. If my expression gives it away, that is because you are observant.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

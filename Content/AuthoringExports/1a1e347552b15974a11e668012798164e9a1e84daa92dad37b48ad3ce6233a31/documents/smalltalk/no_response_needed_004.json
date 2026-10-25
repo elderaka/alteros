@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_no_response_needed_004",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "no_response_needed"
+      },
+      {
+        "key": "category",
+        "value": "failure_mode"
+      }
+    ],
+    "nlp": {
+      "intentId": "no_response_needed",
+      "patterns": [
+        "m",
+        "mmkay",
+        "okay okay",
+        "yup",
+        "roger"
+      ],
+      "keywords": [],
+      "priority": 0.85
+    },
+    "repetitionPolicy": {
+      "key": "no_response_needed",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 4
+    }
+  },
+  "nodes": [
+    {
+      "id": "no_response_needed_004_01",
+      "speaker": "altera",
+      "text": "うん、受け取った。",
+      "translatedText": "Mm, received.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

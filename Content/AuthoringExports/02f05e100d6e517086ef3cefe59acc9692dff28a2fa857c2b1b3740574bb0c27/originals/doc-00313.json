@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_no_response_needed_003",
+    "timestamp": "",
+    "mood": "light",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "no_response_needed" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "no_response_needed",
+      "patterns": [ "k", "kk", "fine", "ok then", "gotcha" ],
+      "keywords": [],
+      "priority": 0.85
+    },
+    "repetitionPolicy": { "key": "no_response_needed", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 4 }
+  },
+  "nodes": [
+    {
+      "id": "no_response_needed_003_01",
+      "speaker": "altera",
+      "text": "了解。短く受け取るね。",
+      "translatedText": "Understood. I will receive that briefly.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_room_or_desk_comment_001",
+    "timestamp": "",
+    "mood": "observant",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "room_or_desk_comment" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "room_or_desk_comment",
+      "patterns": [ "my desk is messy", "messy desk", "my room is messy", "messy room", "cluttered desk" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "room_or_desk_comment", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "room_or_desk_comment_001_01",
+      "speaker": "altera",
+      "text": "机が荒れてるんだね。全部片づけようとすると、たぶん負ける。",
+      "translatedText": "Your desk is messy. If you try to clean all of it, you will probably lose.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "room_or_desk_comment_001_02"
+    },
+    {
+      "id": "room_or_desk_comment_001_02",
+      "speaker": "altera",
+      "text": "だから、作業する場所だけ救出しよう。小さい島を作る感じ。",
+      "translatedText": "So rescue only the place where you work. Like making a small island.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "room_or_desk_comment_001_03"
+    },
+    {
+      "id": "room_or_desk_comment_001_03",
+      "speaker": "altera",
+      "text": "ペン、飲み物、いま使うもの。それ以外は少し横へ。",
+      "translatedText": "Pen, drink, the thing you are using now. Everything else can move aside a little.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

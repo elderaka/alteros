@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfdab386f0f4fa43924ae4799b16776, type: 3}
+  m_Name: DrinkWater
+  m_EditorClassIdentifier: AlterOS.Runtime::AlterOS.Activities.ActivityDefinition
+  capabilityId: needs.drink_water
+  executorKind: 1
+  stopDistance: 1.5
+  followResumeDistance: 2.2
+  minimumRepathInterval: 0.3
+  stalledProgressTimeout: 10
+  navigationAcquisitionTimeout: 3
+  hydrationCheckpointIds:
+  - sip_1
+  - sip_2
+  hydrationPerCheckpoint: 10
+  drinkPhaseDurationSeconds: 0.5

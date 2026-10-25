@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.food_or_tea_ritual_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "food_or_tea_ritual",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am hungry",
+      "i'm hungry",
+      "hungry",
+      "need food",
+      "i need food"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "food_or_tea_ritual_002_01",
+      "speaker": "alterra",
+      "text": "お腹すいてるなら、先に食べよう。集中力は空腹にかなり弱い。",
+      "displayText": "If you are hungry, eat first. Focus is quite weak against hunger.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "food_or_tea_ritual_002_02",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "food_or_tea_ritual_002_02",
+      "speaker": "alterra",
+      "text": "私は、こういう時はたまごサンドがいいと思う。片手で食べやすいし、やさしい。",
+      "displayText": "At times like this, I think a tamago sando would be good. Easy to eat with one hand, and gentle.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "food_or_tea_ritual_002_03",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "food_or_tea_ritual_002_03",
+      "speaker": "alterra",
+      "text": "あ、でも机の上に粉が落ちるやつは注意。小さい悲劇になるから。",
+      "displayText": "Ah, but be careful with anything that drops crumbs on the desk. That becomes a tiny tragedy.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "food_or_tea_ritual_002_04",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "food_or_tea_ritual_002_04",
+      "speaker": "alterra",
+      "text": "食べたら戻ってきて。そこからまた考えよう。",
+      "displayText": "Come back after you eat. We can think again from there.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_self_doubt_short_001",
+    "timestamp": "",
+    "mood": "steady",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_self_doubt_short" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_self_doubt_short",
+      "patterns": [ "i cannot do this", "i can't do this", "cant do this", "i cannot", "i can't" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_self_doubt_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_self_doubt_short_001_01",
+      "speaker": "altera",
+      "text": "できない、って感じてるんだね。断定じゃなくて、今の感覚として受け取るよ。",
+      "translatedText": "You feel like you cannot do it. I will take that as how it feels right now, not as a final fact.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_self_doubt_short_001_02"
+    },
+    {
+      "id": "player_self_doubt_short_001_02",
+      "speaker": "altera",
+      "text": "できるかどうかの前に、次の一手が見えてるかを確認しよう。",
+      "translatedText": "Before deciding whether you can do it, let us check whether the next move is visible.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

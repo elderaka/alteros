@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "TTS generation filler pool",
+    "timestamp": "",
+    "mood": "soft_processing",
+    "triggerConditions": []
+  },
+  "lines": [
+    {
+      "id": "filler_sequence_01",
+      "text": "んー、あれ、なんて言えばよかったっけ。",
+      "translatedText": "Hmm, wait, how was I supposed to say that again?",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_sequence_02",
+      "text": "えっと……言葉、どこまで出てきてたかな。",
+      "translatedText": "Uh... now where were the words again?",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_sequence_03",
+      "text": "あ、いや、ちがう……もう一回まとめるね。",
+      "translatedText": "Ah, no, that's not it... let me gather it one more time.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_sequence_04",
+      "text": "ん、んー……ちょっとだけ待って。今つなげるから。",
+      "translatedText": "Mm, mmm... wait just a second. I'm piecing it together.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_sequence_05",
+      "text": "あー……その、ちゃんと伝わる言い方にしたいの。",
+      "translatedText": "Ah... I just want to put it in a way that really comes through.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_sequence_06",
+      "text": "えっと、えっと……あ、もう少しで出てきそう。",
+      "translatedText": "Uh, uh... ah, I think it's almost there.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_sequence_07",
+      "text": "待って、今いい感じだったのに……もう一回。",
+      "translatedText": "Wait, I almost had it just now... one more try.",
+      "language": "japanese",
+      "triggerConditions": []
+    }
+  ]
+}

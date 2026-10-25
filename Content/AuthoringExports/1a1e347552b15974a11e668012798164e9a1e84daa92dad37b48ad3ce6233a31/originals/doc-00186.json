@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_sad_short_001",
+    "timestamp": "",
+    "mood": "quiet_care",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_sad_short" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_sad_short",
+      "patterns": [ "i am sad", "i'm sad", "sad", "i feel sad", "bad day" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_sad_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_sad_short_001_01",
+      "speaker": "altera",
+      "text": "そっか。悲しいんだね。",
+      "translatedText": "I see. You are sad.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_sad_short_001_02"
+    },
+    {
+      "id": "player_sad_short_001_02",
+      "speaker": "altera",
+      "text": "無理に明るくしなくていいよ。今は、ちゃんと隣に置かせて。",
+      "translatedText": "You do not have to force brightness. For now, let me sit beside it with you.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

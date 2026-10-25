@@ -1,0 +1,19 @@
+{
+  "options": [
+    {
+      "label": "Come here",
+      "capabilityId": "movement.come_here",
+      "target": "player"
+    },
+    {
+      "label": "Follow me",
+      "capabilityId": "movement.follow_player",
+      "target": "player"
+    },
+    {
+      "label": "Drink water",
+      "capabilityId": "needs.drink_water",
+      "target": "available_dispenser"
+    }
+  ]
+}

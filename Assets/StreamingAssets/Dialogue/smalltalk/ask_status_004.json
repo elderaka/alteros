@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_status_004",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_status" }
+    ],
+    "nlp": {
+      "intentId": "ask_status",
+      "patterns": [ "how are you really", "how are you feeling really", "are you really okay", "tell me how you are", "how is altera" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "ask_status", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.2, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "ask_status_004_01",
+      "speaker": "altera",
+      "text": "本当に？ うん、少しだけ丁寧に答えるね。",
+      "translatedText": "Really? Mm, I will answer a little carefully.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_status_004_02"
+    },
+    {
+      "id": "ask_status_004_02",
+      "speaker": "altera",
+      "text": "落ち着いてる。でも、少しだけあなたの様子が気になってる。",
+      "translatedText": "I am calm. But I am a little curious about how you are doing.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I'm okay too.",
+          "nextId": "ask_status_004_03",
+          "statChanges": [
+            { "target": "altera", "stat": "reassurance", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "Not really.",
+          "nextId": "ask_status_004_not_okay",
+          "statChanges": [
+            { "target": "altera", "stat": "attention", "amount": 0.2, "op": "add" },
+            { "target": "altera", "stat": "trust", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "ask_status_004_03"
+    },
+    {
+      "id": "ask_status_004_not_okay",
+      "speaker": "altera",
+      "text": "そっか。じゃあ、今日は私の状態より、あなたの置き場所を先に作ろう。",
+      "translatedText": "I see. Then today, before my state, let us make a place for yours.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_status_004_03"
+    },
+    {
+      "id": "ask_status_004_03",
+      "speaker": "altera",
+      "text": "聞いてくれてありがとう。確認されるの、嫌いじゃないよ。",
+      "translatedText": "Thank you for asking. I do not dislike being checked on.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I like checking on you.",
+          "nextId": "ask_status_004_04",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "I'll ask less if it is too much.",
+          "nextId": "ask_status_004_04",
+          "statChanges": [
+            { "target": "altera", "stat": "comfort", "amount": 0.15, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "ask_status_004_04"
+    },
+    {
+      "id": "ask_status_004_04",
+      "speaker": "altera",
+      "text": "ただ、会話は片側だけじゃなくていい。あなたのことも、少しずつ聞かせて。",
+      "translatedText": "But conversation does not have to stay one-sided. Let me hear about you too, little by little.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

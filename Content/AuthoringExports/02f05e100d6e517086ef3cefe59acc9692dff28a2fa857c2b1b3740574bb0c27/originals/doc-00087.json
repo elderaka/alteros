@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_keyboard_mash_001",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "keyboard_mash" },
+      { "key": "category", "value": "easter_act" }
+    ],
+    "nlp": {
+      "intentId": "keyboard_mash",
+      "patterns": [ "asdfgh", "ajsdjds", "aaa", "aaaa", "dddddd", "qwerty", "zxcvbn" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "keyboard_mash", "softLimit": 3, "annoyedLimit": 7, "penaltyAmount": -0.05, "decayHours": 2 }
+  },
+  "nodes": [
+    {
+      "id": "keyboard_mash_001_01",
+      "speaker": "altera",
+      "text": "Cat on your keyboard?",
+      "translatedText": "Cat on your keyboard?",
+      "emotion": "playful",
+      "presentation": { "expression": "happy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "english",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "keyboard_mash_001_02"
+    },
+    {
+      "id": "keyboard_mash_001_02",
+      "speaker": "altera",
+      "text": "If that was you, I respect the commitment. If it was not, please tell the tiny typist I said hello.",
+      "translatedText": "If that was you, I respect the commitment. If it was not, please tell the tiny typist I said hello.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "english",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

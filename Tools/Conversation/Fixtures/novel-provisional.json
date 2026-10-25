@@ -1,0 +1,9 @@
+{
+  "requestJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-novel\",\"sessionId\":\"fixture-session\",\"channel\":\"phone\",\"text\":\"I started learning pottery\"}",
+  "judgmentJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-novel\",\"kind\":\"novel_candidate\",\"topicId\":\"\",\"referencedTopicIds\":[],\"reply\":{\"nodes\":[{\"id\":\"reply-1\",\"speaker\":\"alterra\",\"text\":\"Oh, what made you want to try pottery?\",\"displayText\":\"\",\"language\":\"\",\"voice\":\"\",\"audioKey\":\"\",\"nextId\":\"\",\"presentation\":{\"expression\":\"\",\"animation\":\"\"},\"choices\":[]}]},\"suggestedReplies\":[]}",
+  "expectedOutcome": "generated",
+  "expectedScenarioId": "",
+  "expectedNovel": true,
+  "topics": [],
+  "candidates": []
+}

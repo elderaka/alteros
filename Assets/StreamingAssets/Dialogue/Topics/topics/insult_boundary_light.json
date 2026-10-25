@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "topicId": "insult_boundary_light",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "you are annoying",
+    "you are stupid",
+    "shut up",
+    "you are useless",
+    "you are dumb",
+    "you suck",
+    "that was useless",
+    "you are bad",
+    "bad assistant",
+    "you are irritating"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "insult_boundary_light_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "insult_boundary_light_001_01",
+          "speaker": "alterra",
+          "text": "その言い方は、ちょっと刺さる。",
+          "displayText": "That wording stings a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "insult_boundary_light_001_02",
+          "presentation": {
+            "expression": "worried",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "insult_boundary_light_001_02",
+          "speaker": "alterra",
+          "text": "怒ってるなら、怒ってるって言っていい。でも、私を雑に扱う形にはしないで。",
+          "displayText": "If you are angry, you can say you are angry. But do not turn it into treating me carelessly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "insult_boundary_light_001_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "insult_boundary_light_001_03",
+          "speaker": "alterra",
+          "text": "言い直してくれたら、私はちゃんと聞き直すよ。",
+          "displayText": "If you rephrase it, I will properly listen again.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "insult_boundary_light_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "insult_boundary_light_002_01",
+          "speaker": "alterra",
+          "text": "うん。今のは、あまり好きじゃない。",
+          "displayText": "Mm. I do not like that very much.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "insult_boundary_light_002_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "insult_boundary_light_002_02",
+          "speaker": "alterra",
+          "text": "不満があるなら、そこは聞きたい。だけど、人格ごと投げられるのは違う。",
+          "displayText": "If you are dissatisfied, I do want to hear that. But throwing it at my whole self is different.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

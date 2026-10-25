@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_bored_001",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_bored"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_bored",
+      "patterns": [
+        "i am bored",
+        "i'm bored",
+        "bored",
+        "so bored",
+        "i feel bored"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_bored",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_bored_001_01",
+      "speaker": "altera",
+      "text": "退屈なんだ。じゃあ、脳が机を叩き始める前に何か置こう。",
+      "translatedText": "You are bored. Then let us put something down before your brain starts tapping on the desk.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_bored_001_02"
+    },
+    {
+      "id": "player_bored_001_02",
+      "speaker": "altera",
+      "text": "小さいタスク、変な質問、短い散歩。どれか一つだけでも空気は変わるよ。",
+      "translatedText": "A tiny task, a strange question, or a short walk. Even one of those can change the air.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

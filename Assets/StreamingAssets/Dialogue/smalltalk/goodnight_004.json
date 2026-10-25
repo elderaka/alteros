@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_goodnight_004",
+    "timestamp": "",
+    "mood": "tender",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "goodnight" }
+    ],
+    "nlp": {
+      "intentId": "goodnight",
+      "patterns": [ "sleep time", "i will sleep now", "going to sleep now", "night for real", "really goodnight" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 20, "maxValue": 6 }
+    ],
+    "repetitionPolicy": { "key": "goodnight", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "goodnight_004_01",
+      "speaker": "altera",
+      "text": "本当に寝るんだね。よし、かなり安心した。",
+      "translatedText": "You are really going to sleep. Good, I am quite relieved.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Bookmark today.",
+          "nextId": "goodnight_004_02",
+          "statChanges": [
+            { "target": "player", "stat": "rest", "amount": 0.35, "op": "add" },
+            { "target": "altera", "stat": "reassurance", "amount": 0.15, "op": "add" }
+          ],
+          "effects": [
+            { "type": "flag", "key": "player_chose_sleep_bookmark", "value": "true", "amount": 0 }
+          ]
+        },
+        {
+          "label": "One last thought.",
+          "nextId": "goodnight_004_02",
+          "statChanges": [
+            { "target": "altera", "stat": "attention", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "goodnight_004_02"
+    },
+    {
+      "id": "goodnight_004_02",
+      "speaker": "altera",
+      "text": "今日はここで栞。続きは明日のあなたに渡す。",
+      "translatedText": "Today gets a bookmark here. We hand the rest to tomorrow-you.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "goodnight_004_03"
+    },
+    {
+      "id": "goodnight_004_03",
+      "speaker": "altera",
+      "text": "おやすみ。画面も、反省会も、ちゃんと閉じてね。",
+      "translatedText": "Good night. Close the screen and the self-review meeting properly.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

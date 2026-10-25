@@ -1,0 +1,50 @@
+{
+  "protocolVersion": 4,
+  "type": "scenario_stage",
+  "requestId": "turn-drawing-1",
+  "payload": {
+    "turnId": "turn-drawing-1",
+    "turnVersion": 1,
+    "stageId": "turn-drawing-1-main",
+    "stage": "main",
+    "status": "ready",
+    "usage": { "inputTokens": 12, "outputTokens": 30, "totalTokens": 42, "costUsd": null },
+    "topicOffers": [],
+    "segmentStepId": "invite",
+    "scenario": {
+      "scenarioId": "",
+      "topicId": "drawing_together",
+      "entryStepId": "invite",
+      "steps": [
+        {
+          "id": "invite",
+          "kind": "dialogue",
+          "beats": [
+            { "id": "invite-beat", "text": "一緒に描こう。", "displayText": "Let's draw together.", "language": "japanese", "expression": "happy" }
+          ],
+          "nextStepId": "start-drawing",
+          "closeExchange": false
+        },
+        {
+          "id": "start-drawing",
+          "kind": "action",
+          "capabilityId": "fixture.activity.drawing_together",
+          "arguments": { "targetObjectId": "fixture-drawing-table" },
+          "successNextStepId": "wait-seat",
+          "failureNextStepId": "unavailable"
+        },
+        {
+          "id": "wait-seat",
+          "kind": "wait",
+          "activityId": "fixture-activity-drawing-1",
+          "conditionId": "fixture.player_at_adjacent_seat",
+          "objective": "Join Alterra at the drawing table.",
+          "successNextStepId": "wrap-up",
+          "failureNextStepId": "unavailable"
+        },
+        { "id": "unavailable", "kind": "end", "outcome": "failed", "closeExchange": true },
+        { "id": "wrap-up", "kind": "end", "outcome": "completed", "closeExchange": true }
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.greeting_evening_004",
+  "source": "generic",
+  "routing": {
+    "routeId": "greeting_evening",
+    "priority": 1.0,
+    "startHour": 17,
+    "endHour": 22,
+    "examples": [
+      "quiet evening",
+      "evening again",
+      "good evening again",
+      "blue hour",
+      "evening check in"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "greeting_evening_004_01",
+      "speaker": "alterra",
+      "text": "こんばんは。夕方の青い時間、少し好き。",
+      "displayText": "Good evening. I like the blue part of evening a little.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "greeting_evening_004_02",
+      "presentation": {
+        "expression": "soft",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "greeting_evening_004_02",
+      "speaker": "alterra",
+      "text": "今日を閉じる？ それとも、あと少しだけ進める？",
+      "displayText": "Are we closing today, or moving forward just a little more?",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Close today.",
+          "nextId": "greeting_evening_004_03"
+        },
+        {
+          "label": "One more step.",
+          "nextId": "greeting_evening_004_03"
+        }
+      ]
+    },
+    {
+      "id": "greeting_evening_004_03",
+      "speaker": "alterra",
+      "text": "どっちでも、線を引こう。終わりの線か、次の線。",
+      "displayText": "Either way, draw a line: an ending line, or a next line.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "greeting_evening_004_04",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "greeting_evening_004_04",
+      "speaker": "alterra",
+      "text": "曖昧なまま夜に渡すと、夜が勝手に大きくするから。",
+      "displayText": "If you hand it to night while it is vague, night makes it larger on its own.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="workbench-token" content="@@WORKBENCH_TOKEN@@">
+  <title>AlterOS Content Workbench</title>
+  <link rel="stylesheet" href="/workbench.css">
+  <link rel="stylesheet" href="/preview.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><div><span class="eyebrow">ALTEROS · LOCAL AUTHORING</span><h1>Content Workbench</h1></div><span id="connection" class="pill">Connecting…</span></header>
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-heading"><h2>Catalogue</h2><button id="refresh" class="icon-button" title="Refresh catalogue" aria-label="Refresh catalogue">↻</button></div>
+      <label class="sr-only" for="kind-filter">Filter kinds</label><input id="kind-filter" placeholder="Filter content kinds…">
+      <nav id="kind-list" aria-label="Content kinds"></nav>
+      <div class="record-heading"><h2>Records</h2><button id="new-record" class="button primary" disabled>New</button></div>
+      <label class="sr-only" for="record-filter">Filter records</label><input id="record-filter" placeholder="Filter IDs…">
+      <div id="record-list" class="record-list" aria-live="polite"></div>
+      <p class="sidebar-note">Draft revisions are stored in the local SQLite authoring workspace. Publishing is a separate release step.</p>
+    </aside>
+    <section class="workspace">
+      <div id="welcome" class="welcome"><div class="welcome-mark">A</div><h2>Choose a content kind</h2><p>Browse authored records, edit a revision, and validate it against the producer's source contract.</p></div>
+      <div id="editor" hidden>
+        <div class="editor-header"><div><p id="kind-kicker" class="eyebrow"></p><h2 id="document-title">New document</h2><p id="revision-meta" class="muted"></p><label id="source-kind-wrap" class="source-kind-wrap" hidden>Source contract<select id="source-kind"></select></label></div><div class="editor-actions"><button id="undo" class="button" disabled>Undo</button><button id="redo" class="button" disabled>Redo</button><button id="validate" class="button">Validate</button><button id="preview" class="button" hidden>Preview</button><button id="save" class="button primary">Save draft</button></div></div>
+        <div id="deferred-notice" class="notice" hidden></div>
+        <div id="conflict-notice" class="notice conflict" hidden></div>
+        <div id="validation-result" role="status" aria-live="polite"></div>
+        <div id="editor-content" class="editor-content"></div>
+        <details class="advanced"><summary>Source JSON</summary><p class="muted">Advanced view. Unknown fields are preserved when editing an existing revision.</p><div id="raw-json-pending" class="notice" role="status" aria-live="polite" hidden><span>Raw JSON has unapplied edits. Form editing, validation, preview and saving pause until you apply or discard this text.</span><div class="raw-json-actions"><button id="apply-json" class="button primary">Apply JSON</button><button id="discard-json" class="button">Discard raw edits</button></div></div><textarea id="source-json" spellcheck="false"></textarea></details>
+      </div>
+    </section>
+    <aside class="inspector">
+      <h2>Flow &amp; references</h2><p class="muted">Select a flow node to inspect its fields. Edges and pinned references are shown from the source document.</p>
+      <div id="graph-panel" class="graph-panel"><p class="empty-state">Open a record to inspect its structure.</p></div>
+      <section class="inspector-section"><h3>Reference picker</h3><label for="reference-kind">Result kind</label><select id="reference-kind"><option value="dialogue">Dialogue</option><option value="action">Action</option><option value="scenario">Scenario</option><option value="topic">Topic</option><option value="furniture">Furniture</option><option value="item">Item</option><option value="text">Text</option></select><label>Selected exact source revisions</label><div id="reference-selected-sources" class="reference-list"></div><label for="reference-source-kind">Add sources by document kind</label><select id="reference-source-kind" disabled><option>Select sources first</option></select><button id="load-references" class="button">Browse source page</button><div id="reference-list" class="reference-list"></div><button id="resolve-references" class="button" disabled>Resolve selected pinned references</button><div id="reference-snapshot" class="fine-print"></div><p class="fine-print">Choose source revisions explicitly across any document kinds. The selected set persists across target changes and pages. Resolution runs the shared importer over that exact detached snapshot; it does not publish or runtime-import content.</p></section>
+      <section class="inspector-section"><h3>Validation</h3><div id="diagnostics" class="diagnostics"><p class="empty-state">Run validation to inspect producer diagnostics.</p></div></section>
+      <section class="inspector-section"><h3>Synthetic preview</h3>
+        <label for="fixture-id">Trusted fixture</label><select id="fixture-id"><option>sit-together/no-table</option><option>sit-together/table</option><option>sit-together/wrong-facing</option><option>sit-together/occupied</option><option>sit-together/unknown</option><option>workbench/action-basic</option><option>workbench/furniture</option><option>workbench/proof</option><option>workbench/no-resources</option></select>
+        <label for="preview-draw">Deterministic draw</label><input id="preview-draw" type="number" min="0" max="0.999999" step="0.01" value="0.5">
+        <label for="preview-events">Synthetic events (JSON array)</label><textarea id="preview-events" spellcheck="false" rows="5">[]</textarea>
+        <p class="fine-print">Topic Preview selects this family directly; it is not semantic-routing proof. Events acknowledge only declared synthetic interactions.</p>
+        <pre id="preview-result" class="preview-result" role="status" aria-live="polite"></pre>
+      </section>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

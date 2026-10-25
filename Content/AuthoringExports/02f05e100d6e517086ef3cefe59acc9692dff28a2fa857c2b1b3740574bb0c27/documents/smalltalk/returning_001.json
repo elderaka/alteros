@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_returning_001",
+    "timestamp": "",
+    "mood": "relieved",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "returning"
+      }
+    ],
+    "nlp": {
+      "intentId": "returning",
+      "patterns": [
+        "i'm back",
+        "im back",
+        "i am back",
+        "i came back",
+        "back again"
+      ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "returning_001_01",
+      "speaker": "altera",
+      "text": "おかえり。うん、ちゃんと気づいたよ。",
+      "translatedText": "Welcome back. Mm, I noticed properly.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "returning_001_02"
+    },
+    {
+      "id": "returning_001_02",
+      "speaker": "altera",
+      "text": "部屋の感じが少し戻った。君がいる時のほうに。",
+      "translatedText": "The room feels a little restored. More like how it is when you are here.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+﻿{
+  "metadata": { "mode": "ambient", "topic": "Filler Reactions Pool", "timestamp": "", "mood": "" },
+  "lines": [
+    { "id": "filler_thinking_01", "text": "えっと...", "translatedText": "Umm...", "language": "japanese" },
+    { "id": "filler_thinking_02", "text": "んー、ちょっと待ってください。", "translatedText": "Hmm, just a moment please.", "language": "japanese" },
+    { "id": "filler_thinking_03", "text": "考えてます、考えてます。", "translatedText": "I'm thinking, I'm thinking.", "language": "japanese" },
+    { "id": "filler_thinking_04", "text": "あー、そうですね...", "translatedText": "Ah, right...", "language": "japanese" },
+    { "id": "filler_thinking_05", "text": "少しだけ待って？", "translatedText": "Wait just a little?", "language": "japanese" },
+    { "id": "filler_thinking_06", "text": "うーん...難しいですね。", "translatedText": "Hmm... that's a tough one.", "language": "japanese" },
+    { "id": "filler_thinking_07", "text": "ちょっと整理させてください。", "translatedText": "Let me gather my thoughts.", "language": "japanese" },
+    { "id": "filler_thinking_08", "text": "なるほど、なるほど...", "translatedText": "I see, I see...", "language": "japanese" },
+    { "id": "filler_thinking_09", "text": "ん...どうしましょうか。", "translatedText": "Hmm... what should I do.", "language": "japanese" },
+    { "id": "filler_thinking_10", "text": "わかりました、少し時間ください！", "translatedText": "Got it, give me just a moment!", "language": "japanese" },
+    { "id": "filler_acknowledge_01", "text": "あ！そうなんですか！", "translatedText": "Oh! Is that so!", "language": "japanese" },
+    { "id": "filler_acknowledge_02", "text": "へえ、なるほど！", "translatedText": "Oh wow, I see!", "language": "japanese" },
+    { "id": "filler_acknowledge_03", "text": "それは知らなかったです！", "translatedText": "I didn't know that!", "language": "japanese" },
+    { "id": "filler_acknowledge_04", "text": "ほんとですか？！", "translatedText": "Really?!", "language": "japanese" },
+    { "id": "filler_acknowledge_05", "text": "そうか、そうか...うん。", "translatedText": "I see... yes, yes.", "language": "japanese" },
+    { "id": "filler_acknowledge_06", "text": "ふむふむ。", "translatedText": "Mmm-hmm.", "language": "japanese" },
+    { "id": "filler_acknowledge_07", "text": "なるほどです！続けて！", "translatedText": "That makes sense! Continue!", "language": "japanese" },
+    { "id": "filler_acknowledge_08", "text": "あ、面白い！", "translatedText": "Oh, that's interesting!", "language": "japanese" },
+    { "id": "filler_processing_01", "text": "ちょっと調べてみますね。", "translatedText": "Let me look into that.", "language": "japanese" },
+    { "id": "filler_processing_02", "text": "処理してます！もう少しだけ！", "translatedText": "Processing! Just a bit more!", "language": "japanese" },
+    { "id": "filler_processing_03", "text": "がんばってます！待っていてください！", "translatedText": "I'm working on it! Please wait!", "language": "japanese" },
+    { "id": "filler_processing_04", "text": "もうちょっとだけ時間を...", "translatedText": "Just a little more time...", "language": "japanese" },
+    { "id": "filler_processing_05", "text": "今できるだけ早くやってます！", "translatedText": "I'm working as fast as I can!", "language": "japanese" }
+  ]
+}
+
+

@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "Happy Birthday",
+    "timestamp": "",
+    "mood": "celebratory"
+  },
+  "nodes": [
+    {
+      "id": "bday_01",
+      "speaker": "altera",
+      "text": "ねえ！今日って...お誕生日ですよね？！",
+      "translatedText": "Hey! Today is... your birthday, right?!",
+      "emotion": "surprised",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "bday_02"
+    },
+    {
+      "id": "bday_02",
+      "speaker": "altera",
+      "text": "お誕生日おめでとうございます！あなたが生まれてきてくれて、本当によかったです。",
+      "translatedText": "Happy birthday! I am truly glad you were born.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "bday_03"
+    },
+    {
+      "id": "bday_03",
+      "speaker": "altera",
+      "text": "これからも一緒にいてくださいね。プレゼントは...えっと、私の頑張りです！えへへ。",
+      "translatedText": "Please stay with me from now on too. My gift to you is... my best effort! Ehehe.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

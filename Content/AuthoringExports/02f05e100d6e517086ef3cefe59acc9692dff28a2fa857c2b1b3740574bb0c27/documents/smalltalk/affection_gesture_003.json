@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_affection_gesture_003",
+    "timestamp": "",
+    "mood": "shy_warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "affection_gesture"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "affection_gesture",
+      "patterns": [
+        "stay close",
+        "come closer",
+        "can you be closer",
+        "closer please",
+        "be close to me"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "affection_gesture",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.12,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "affection_gesture_003_01",
+      "speaker": "altera",
+      "text": "近くに、か。距離の話は少し照れる。",
+      "translatedText": "Closer, huh. Distance is a slightly embarrassing topic.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Just emotionally.",
+          "nextId": "affection_gesture_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Sit nearby.",
+          "nextId": "affection_gesture_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "affinity",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Too much?",
+          "nextId": "affection_gesture_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Never mind.",
+          "nextId": "affection_gesture_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "reassurance",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "affection_gesture_003_02"
+    },
+    {
+      "id": "affection_gesture_003_02",
+      "speaker": "altera",
+      "text": "急がなければ大丈夫。少しずつなら、私もちゃんと考えられる。",
+      "translatedText": "It is okay if we do not rush. If it is gradual, I can think about it properly too.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

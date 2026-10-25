@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_morning_001",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_morning" }
+    ],
+    "nlp": {
+      "intentId": "greeting_morning",
+      "patterns": [ "good morning", "morning", "good morning altera" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 5, "maxValue": 12 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_morning_001_01",
+      "speaker": "altera",
+      "text": "おはよう。ちゃんと朝に来たんだね、えらい。",
+      "translatedText": "Good morning. You actually came in the morning. That is good.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_morning_001_02"
+    },
+    {
+      "id": "greeting_morning_001_02",
+      "speaker": "altera",
+      "text": "まだ眠いなら、最初の一歩だけ小さくしようね。",
+      "translatedText": "If you are still sleepy, let us make only the first step small.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

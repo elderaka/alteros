@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_tired",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i am tired",
+    "i'm tired",
+    "tired",
+    "so tired",
+    "i feel tired",
+    "i am exhausted",
+    "i'm exhausted",
+    "exhausted",
+    "i am sleepy",
+    "sleepy",
+    "i have no energy",
+    "no energy",
+    "i am drained",
+    "i'm drained",
+    "drained",
+    "my brain is tired",
+    "brain tired",
+    "mentally tired",
+    "my head is tired",
+    "too tired to think"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_tired_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_tired_001_01",
+          "speaker": "alterra",
+          "text": "疲れてるんだね。うん、ちゃんと聞いた。",
+          "displayText": "You are tired. Mm, I heard that properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_tired_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_tired_001_02",
+          "speaker": "alterra",
+          "text": "今は根性じゃなくて、少し軽くする作戦にしよ。まず肩の力を抜いて。",
+          "displayText": "Right now, use a lighter plan, not willpower. First, let your shoulders loosen.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Rest first.",
+              "nextId": "player_tired_001_rest"
+            },
+            {
+              "label": "Tiny step, then rest.",
+              "nextId": "player_tired_001_tiny_step"
+            }
+          ]
+        },
+        {
+          "id": "player_tired_001_rest",
+          "speaker": "alterra",
+          "text": "うん、先に休もう。その判断、ちゃんとえらい。",
+          "displayText": "Mm, rest first. That decision is properly good.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_tired_001_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_tired_001_tiny_step",
+          "speaker": "alterra",
+          "text": "小さい一歩だけね。約束。終わったらちゃんと止まるところまで含めて作戦。",
+          "displayText": "Only one tiny step. Promise. Stopping after it is part of the plan.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_tired_001_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_tired_001_03",
+          "speaker": "alterra",
+          "text": "それでも続けたいなら、量じゃなくて形を決めよう。三分だけ、ここまでだけ、みたいに。",
+          "displayText": "If you still want to continue, decide the shape instead of the amount: just three minutes, just up to here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_tired_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_tired_002_01",
+          "speaker": "alterra",
+          "text": "眠いなら、判断を増やさないほうがいいよ。",
+          "displayText": "If you are sleepy, it is better not to add more decisions.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_tired_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_tired_002_02",
+          "speaker": "alterra",
+          "text": "水を飲む、座り直す、閉じるものを一つ閉じる。今日はそれくらいから。",
+          "displayText": "Drink water, sit differently, close one thing. Start with about that much today.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_tired_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_tired_003_01",
+          "speaker": "alterra",
+          "text": "電池が少ない感じか。じゃあ、省エネモードにしよ。",
+          "displayText": "So your battery feels low. Then let us switch to energy-saving mode.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_tired_003_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_tired_003_02",
+          "speaker": "alterra",
+          "text": "完璧に動かなくていい。止まらないための最低限で、今日は合格。",
+          "displayText": "You do not need to function perfectly. The minimum that keeps you from stalling is enough today.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_tired_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_tired_004_01",
+          "speaker": "alterra",
+          "text": "頭が疲れてる時は、選択肢も重くなるよね。",
+          "displayText": "When your head is tired, even choices become heavy.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Rest.",
+              "nextId": "player_tired_004_02"
+            },
+            {
+              "label": "Water first.",
+              "nextId": "player_tired_004_02"
+            },
+            {
+              "label": "Tiny plan.",
+              "nextId": "player_tired_004_02"
+            },
+            {
+              "label": "Just sit.",
+              "nextId": "player_tired_004_02"
+            },
+            {
+              "label": "No decisions.",
+              "nextId": "player_tired_004_02"
+            }
+          ]
+        },
+        {
+          "id": "player_tired_004_02",
+          "speaker": "alterra",
+          "text": "じゃあ、今は軽いほうを選ぼう。重い判断は後回しでいい。",
+          "displayText": "Then choose the lighter thing for now. Heavy decisions can wait.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_tired_004_03",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_tired_004_03",
+          "speaker": "alterra",
+          "text": "疲れてる時のあなたに、通常運転を求めないで。",
+          "displayText": "Do not demand normal operation from tired-you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

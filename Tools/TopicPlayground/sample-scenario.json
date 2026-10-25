@@ -1,0 +1,11 @@
+{
+  "query": "ngl im kinda tired",
+  "localHour": -1,
+  "fixtureSet": "stat-context-v1",
+  "stats": [
+    { "statId": "alterra.hydration", "isKnown": true, "value": 20 },
+    { "statId": "alterra.emotion.valence", "isKnown": false, "value": 0 }
+  ],
+  "expectedRouteId": "",
+  "steps": []
+}

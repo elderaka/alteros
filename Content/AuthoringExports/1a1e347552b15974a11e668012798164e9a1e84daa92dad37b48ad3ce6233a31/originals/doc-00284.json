@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_procrastination_short_003",
+    "timestamp": "",
+    "mood": "gentle_firm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "procrastination_short" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "procrastination_short",
+      "patterns": [ "i keep delaying", "delaying again", "i am stuck before starting", "stuck before starting", "avoiding the first step" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "procrastination_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "procrastination_short_003_01",
+      "speaker": "altera",
+      "text": "始める前で止まってるんだね。",
+      "translatedText": "You are stopped before starting.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_003_02"
+    },
+    {
+      "id": "procrastination_short_003_02",
+      "speaker": "altera",
+      "text": "そこって、作業そのものより怖い時がある。",
+      "translatedText": "That place can sometimes be scarier than the work itself.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        { "label": "Open the file.", "nextId": "procrastination_short_003_03", "statChanges": [ { "target": "player", "stat": "taskProgress", "amount": 0.15, "op": "add" } ] },
+        { "label": "Name the fear.", "nextId": "procrastination_short_003_03", "statChanges": [ { "target": "player", "stat": "stress", "amount": -0.15, "op": "add" } ] },
+        { "label": "Two minutes only.", "nextId": "procrastination_short_003_03", "statChanges": [ { "target": "player", "stat": "focusEnergy", "amount": 0.15, "op": "add" } ] }
+      ],
+      "nextId": "procrastination_short_003_03"
+    },
+    {
+      "id": "procrastination_short_003_03",
+      "speaker": "altera",
+      "text": "今日は、完成まで見なくていい。入口だけ見る。",
+      "translatedText": "Today, you do not have to look all the way to completion. Only look at the entrance.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_003_04"
+    },
+    {
+      "id": "procrastination_short_003_04",
+      "speaker": "altera",
+      "text": "入口が見えたら、手を置く。まだ走らなくていい。",
+      "translatedText": "Once you see the entrance, place your hand there. You do not have to run yet.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_003_05"
+    },
+    {
+      "id": "procrastination_short_003_05",
+      "speaker": "altera",
+      "text": "私は横で数える。急かすためじゃなくて、迷子にならないために。",
+      "translatedText": "I will count beside you. Not to rush you, but so you do not get lost.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_003_06"
+    },
+    {
+      "id": "procrastination_short_003_06",
+      "speaker": "altera",
+      "text": "一、二。はい、始まりの形はもうできた。",
+      "translatedText": "One, two. There, the shape of starting already exists.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

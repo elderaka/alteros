@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.greeting_morning_004",
+  "source": "generic",
+  "routing": {
+    "routeId": "greeting_morning",
+    "priority": 1.0,
+    "startHour": 5,
+    "endHour": 12,
+    "examples": [
+      "morning again",
+      "good morning again",
+      "another morning",
+      "morning alterra again",
+      "new morning"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "greeting_morning_004_01",
+      "speaker": "alterra",
+      "text": "おはよう。新しい朝って、少しだけ未使用のノートみたいだね。",
+      "displayText": "Good morning. A new morning is a little like an unused notebook.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Clean page.",
+          "nextId": "greeting_morning_004_02"
+        },
+        {
+          "label": "Sleepy page.",
+          "nextId": "greeting_morning_004_02"
+        }
+      ]
+    },
+    {
+      "id": "greeting_morning_004_02",
+      "speaker": "alterra",
+      "text": "でも、最初の一行はきれいじゃなくてもいい。",
+      "displayText": "But the first line does not have to be neat.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "greeting_morning_004_03",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "greeting_morning_004_03",
+      "speaker": "alterra",
+      "text": "書き始めたら、それだけで朝が少し動くから。",
+      "displayText": "Once you begin writing, the morning starts moving a little.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

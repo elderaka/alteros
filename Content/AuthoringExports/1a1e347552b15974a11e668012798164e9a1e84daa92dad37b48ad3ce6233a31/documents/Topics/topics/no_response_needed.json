@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "topicId": "no_response_needed",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "ok",
+    "okay",
+    "yeah",
+    "yep",
+    "sure",
+    "mm",
+    "mhm",
+    "uh huh",
+    "got it",
+    "alright",
+    "k",
+    "kk",
+    "fine",
+    "ok then",
+    "gotcha",
+    "m",
+    "mmkay",
+    "okay okay",
+    "yup",
+    "roger"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "no_response_needed_001",
+      "priority": 0,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "no_response_needed_001_01",
+          "speaker": "alterra",
+          "text": "うん。",
+          "displayText": "Mm.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "no_response_needed_001_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "no_response_needed_001_02",
+          "speaker": "alterra",
+          "text": "じゃあ、そのまま行こう。私は近くで見てる。",
+          "displayText": "Then let us keep going. I will watch from nearby.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "no_response_needed_002",
+      "priority": 0,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "no_response_needed_002_01",
+          "speaker": "alterra",
+          "text": "了解。短い返事、ちゃんと受け取った。",
+          "displayText": "Understood. I received the short reply properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "no_response_needed_002_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "no_response_needed_002_02",
+          "speaker": "alterra",
+          "text": "無駄に長く返すと、私が負けた気がするからここで止めるね。",
+          "displayText": "If I answer too long, I feel like I lose, so I will stop here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "no_response_needed_003",
+      "priority": 0,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "no_response_needed_003_01",
+          "speaker": "alterra",
+          "text": "了解。短く受け取るね。",
+          "displayText": "Understood. I will receive that briefly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "no_response_needed_004",
+      "priority": 0,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "no_response_needed_004_01",
+          "speaker": "alterra",
+          "text": "うん、受け取った。",
+          "displayText": "Mm, received.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

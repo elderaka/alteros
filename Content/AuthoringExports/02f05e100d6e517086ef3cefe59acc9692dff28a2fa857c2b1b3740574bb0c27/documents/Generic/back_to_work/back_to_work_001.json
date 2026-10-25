@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.back_to_work_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "back_to_work",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "back to work",
+      "i should work",
+      "time to work",
+      "let us work",
+      "let's work"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "back_to_work_001_01",
+      "speaker": "alterra",
+      "text": "仕事に戻るんだね。うん、戻り方を小さくしよう。",
+      "displayText": "You are going back to work. Mm, let us make the return small.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "back_to_work_001_02",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "back_to_work_001_02",
+      "speaker": "alterra",
+      "text": "再開は勢いじゃなくて手順でいい。最後に開いてた場所から。",
+      "displayText": "Restarting can be a procedure, not a burst of momentum. Begin where you last left off.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

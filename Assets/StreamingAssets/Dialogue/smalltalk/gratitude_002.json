@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_gratitude_002",
+    "timestamp": "",
+    "mood": "shy",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "gratitude" }
+    ],
+    "nlp": {
+      "intentId": "gratitude",
+      "patterns": [ "thank you", "thanks", "ty", "appreciate it", "thank you altera" ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "gratitude_002_01",
+      "speaker": "altera",
+      "text": "あ、うん。そんなふうに言われると、ちょっと背筋が伸びる。",
+      "translatedText": "Ah, mm. When you say it like that, I sit up a little straighter.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "gratitude_002_02"
+    },
+    {
+      "id": "gratitude_002_02",
+      "speaker": "altera",
+      "text": "役に立てたなら、今日のわたしはけっこう満足です。",
+      "translatedText": "If I was useful, then today's me is fairly satisfied.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

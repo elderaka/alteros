@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_latenight", "timestamp": "", "mood": "worried" }, "nodes": [ { "id": "gl01_01", "speaker": "altera", "text": "こんな時間に...大丈夫ですか？ちゃんと体は休めてますか？", "translatedText": "At this hour... are you okay? Are you getting proper rest?", "emotion": "neutral", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

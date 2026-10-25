@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "topicId": "goodnight",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "good night",
+    "goodnight",
+    "night",
+    "sleep well",
+    "night alterra",
+    "i am going to sleep",
+    "gn",
+    "sweet dreams",
+    "sleep time",
+    "i will sleep now",
+    "going to sleep now",
+    "night for real",
+    "really goodnight"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "goodnight_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 20,
+        "endHour": 6,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "goodnight_001_01",
+          "speaker": "alterra",
+          "text": "おやすみ。今日のこと、ぜんぶ今夜の中で解決しなくていいよ。",
+          "displayText": "Good night. You do not have to solve all of today inside tonight.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "goodnight_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "goodnight_001_02",
+          "speaker": "alterra",
+          "text": "栞を挟むみたいに、ここで一回止めよう。続きは明日でいい。",
+          "displayText": "Let us stop here, like placing a bookmark. The rest can wait for tomorrow.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "goodnight_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 20,
+        "endHour": 6,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "goodnight_002_01",
+          "speaker": "alterra",
+          "text": "うん、おやすみ。ちゃんと寝に行くの、えらい。",
+          "displayText": "Mm, good night. It is good that you are actually going to sleep.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "goodnight_002_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "goodnight_002_02",
+          "speaker": "alterra",
+          "text": "明日のあなたが少し楽になるように、今のあなたを休ませてあげて。",
+          "displayText": "Let the you of now rest, so tomorrow's you has things a little easier.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "goodnight_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 20,
+        "endHour": 6,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "goodnight_003_01",
+          "speaker": "alterra",
+          "text": "おやすみ。えっと、変な夢じゃなくて、やさしい夢だといいね。",
+          "displayText": "Good night. Um, I hope your dreams are gentle ones, not strange ones.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "goodnight_003_02",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "goodnight_003_02",
+          "speaker": "alterra",
+          "text": "今のは少し照れた。だから、早く寝て。見なかったことにして。",
+          "displayText": "That embarrassed me a little. So go sleep quickly. Pretend you did not see that.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "flustered",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "goodnight_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 20,
+        "endHour": 6,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "goodnight_004_01",
+          "speaker": "alterra",
+          "text": "本当に寝るんだね。よし、かなり安心した。",
+          "displayText": "You are really going to sleep. Good, I am quite relieved.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Bookmark today.",
+              "nextId": "goodnight_004_02"
+            },
+            {
+              "label": "One last thought.",
+              "nextId": "goodnight_004_02"
+            }
+          ]
+        },
+        {
+          "id": "goodnight_004_02",
+          "speaker": "alterra",
+          "text": "今日はここで栞。続きは明日のあなたに渡す。",
+          "displayText": "Today gets a bookmark here. We hand the rest to tomorrow-you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "goodnight_004_03",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "goodnight_004_03",
+          "speaker": "alterra",
+          "text": "おやすみ。画面も、反省会も、ちゃんと閉じてね。",
+          "displayText": "Good night. Close the screen and the self-review meeting properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

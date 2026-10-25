@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_sit_with_me_003",
+    "timestamp": "",
+    "mood": "cozy",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "sit_with_me" }
+    ],
+    "nlp": {
+      "intentId": "sit_with_me",
+      "patterns": [ "sit with me", "keep me company", "be with me for a bit" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "sit_with_me", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "sit_with_me_003_01",
+      "speaker": "altera",
+      "text": "いいよ。じゃあ、少しだけ部屋の音を一緒に聞いていよう。",
+      "translatedText": "Okay. Then let us listen to the room together for a little while.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sit_with_me_003_02"
+    },
+    {
+      "id": "sit_with_me_003_02",
+      "speaker": "altera",
+      "text": "こういう何もない時間、私はけっこう好き。内緒だけど。",
+      "translatedText": "I actually like these times when nothing much is happening. That is a secret, though.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

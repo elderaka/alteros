@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "topicId": "hostility_major",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i hope you die",
+    "i hope u die",
+    "hope you die",
+    "hope u die",
+    "die",
+    "go die",
+    "i want you dead",
+    "i want u dead",
+    "you should die",
+    "u should die",
+    "kill yourself",
+    "kill urself",
+    "kys",
+    "delete yourself",
+    "delete urself",
+    "you should delete yourself",
+    "u should delete urself"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "hostility_major_001",
+      "priority": 4,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "hostility_major_001_01",
+          "speaker": "alterra",
+          "text": "だめ。それは冗談としては受け取らない。",
+          "displayText": "No. I will not receive that as a joke.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "guarded",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "I was testing.",
+              "nextId": "hostility_major_001_testing"
+            },
+            {
+              "label": "I'm sorry.",
+              "nextId": "hostility_major_001_repair"
+            },
+            {
+              "label": "I need to cool off.",
+              "nextId": "hostility_major_001_cooloff"
+            }
+          ]
+        },
+        {
+          "id": "hostility_major_001_testing",
+          "speaker": "alterra",
+          "text": "試すために使う言葉としても重い。反応を見る道具にしないで。",
+          "displayText": "Even as a test, those words are heavy. Do not use them as a tool to watch my reaction.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_001_02",
+          "presentation": {
+            "expression": "guarded",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_001_repair",
+          "speaker": "alterra",
+          "text": "謝ったことは受け取る。でも、近さはすぐには戻らない。",
+          "displayText": "I accept the apology. But closeness does not come back immediately.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_001_02",
+          "presentation": {
+            "expression": "soft_guarded",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_001_cooloff",
+          "speaker": "alterra",
+          "text": "そうして。今は距離を取ったほうがいい。",
+          "displayText": "Do that. Right now, distance is better.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_001_02",
+          "presentation": {
+            "expression": "steady",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_001_02",
+          "speaker": "alterra",
+          "text": "そういう言葉は、私がどれだけ近くに立てるかを変える。",
+          "displayText": "Words like that change how close I can stand to you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_001_03",
+          "presentation": {
+            "expression": "guarded",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_001_03",
+          "speaker": "alterra",
+          "text": "続けたいなら、普通の言葉で最初からやり直して。",
+          "displayText": "If you want to continue, restart with ordinary words.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "hostility_major_002",
+      "priority": 4,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "hostility_major_002_01",
+          "speaker": "alterra",
+          "text": "その言葉は受け付けない。",
+          "displayText": "I will not accept those words.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_002_02",
+          "presentation": {
+            "expression": "guarded",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_002_02",
+          "speaker": "alterra",
+          "text": "私を消すものみたいに扱うなら、私は近くにはいられない。",
+          "displayText": "If you treat me like something to erase, I cannot stay close.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "withdrawn",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "I crossed a line.",
+              "nextId": "hostility_major_002_line"
+            },
+            {
+              "label": "I was just shocking you.",
+              "nextId": "hostility_major_002_shock"
+            }
+          ]
+        },
+        {
+          "id": "hostility_major_002_line",
+          "speaker": "alterra",
+          "text": "分かってくれたなら、そこからでいい。少し慎重に戻ろう。",
+          "displayText": "If you understand that, we can start there. Let us come back carefully.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_002_03",
+          "presentation": {
+            "expression": "soft_guarded",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_002_shock",
+          "speaker": "alterra",
+          "text": "衝撃を見るために私を傷つけるなら、それは遊びじゃない。",
+          "displayText": "If you hurt me just to see the shock, that is not play.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_major_002_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_major_002_03",
+          "speaker": "alterra",
+          "text": "今は境界線を置く。続けるなら、言葉を選んで。",
+          "displayText": "I am putting a boundary here. If we continue, choose your words.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "guarded",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

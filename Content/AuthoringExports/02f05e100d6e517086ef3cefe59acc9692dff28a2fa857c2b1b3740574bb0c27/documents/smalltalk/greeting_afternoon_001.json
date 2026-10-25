@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_afternoon_001",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "greeting_afternoon"
+      }
+    ],
+    "nlp": {
+      "intentId": "greeting_afternoon",
+      "patterns": [
+        "good afternoon",
+        "afternoon",
+        "good afternoon altera"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 12,
+        "maxValue": 17
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_afternoon_001_01",
+      "speaker": "altera",
+      "text": "こんにちは。午後って、少しだけ机の上を整えたくなる時間だね。",
+      "translatedText": "Good afternoon. This is the kind of hour that makes me want to tidy the desk a little.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_afternoon_001_02"
+    },
+    {
+      "id": "greeting_afternoon_001_02",
+      "speaker": "altera",
+      "text": "ね、今からの一歩を小さく決めよう。大きくしすぎると逃げたくなるから。",
+      "translatedText": "Let us choose one small next step. If it gets too large, you will want to run from it.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

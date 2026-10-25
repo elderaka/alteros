@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_stressed_004",
+    "timestamp": "",
+    "mood": "steady",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_stressed" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_stressed",
+      "patterns": [ "my mind is loud", "too many thoughts", "thoughts are loud", "head is noisy", "everything is noisy" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_stressed", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_stressed_004_01",
+      "speaker": "altera",
+      "text": "頭の中がうるさいんだね。",
+      "translatedText": "Your head is loud.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Make it quieter.",
+          "nextId": "player_stressed_004_02",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.2, "op": "add" }
+          ]
+        },
+        {
+          "label": "Help me list it.",
+          "nextId": "player_stressed_004_02",
+          "statChanges": [
+            { "target": "player", "stat": "taskProgress", "amount": 0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "Stay with me.",
+          "nextId": "player_stressed_004_02",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "player_stressed_004_02"
+    },
+    {
+      "id": "player_stressed_004_02",
+      "speaker": "altera",
+      "text": "じゃあ、音量を下げるために、まず一つだけ外へ出そう。",
+      "translatedText": "Then to lower the volume, let us move just one thing outside first.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "One worry.",
+          "nextId": "player_stressed_004_03",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "One task.",
+          "nextId": "player_stressed_004_03",
+          "statChanges": [
+            { "target": "player", "stat": "taskProgress", "amount": 0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "One feeling.",
+          "nextId": "player_stressed_004_03",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "player_stressed_004_03"
+    },
+    {
+      "id": "player_stressed_004_03",
+      "speaker": "altera",
+      "text": "全部じゃなくていい。一つ出せたら、もう密室じゃなくなる。",
+      "translatedText": "It does not have to be everything. If one thing gets out, it is no longer a sealed room.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_stressed_004_04"
+    },
+    {
+      "id": "player_stressed_004_04",
+      "speaker": "altera",
+      "text": "私はここで、分類用の小さい箱を持って待ってる。",
+      "translatedText": "I will wait here holding a small box for sorting.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

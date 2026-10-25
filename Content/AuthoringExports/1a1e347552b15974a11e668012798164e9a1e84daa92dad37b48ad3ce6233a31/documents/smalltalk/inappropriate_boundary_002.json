@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_inappropriate_boundary_002",
+    "timestamp": "",
+    "mood": "cold_boundary",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "inappropriate_boundary"
+      },
+      {
+        "key": "category",
+        "value": "boundary"
+      }
+    ],
+    "nlp": {
+      "intentId": "inappropriate_boundary",
+      "patterns": [
+        "you are hot",
+        "you look hot",
+        "sexy girl",
+        "be my girlfriend now",
+        "say you love me"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "inappropriate_boundary",
+      "softLimit": 1,
+      "annoyedLimit": 3,
+      "penaltyAmount": -0.25,
+      "decayHours": 24
+    }
+  },
+  "nodes": [
+    {
+      "id": "inappropriate_boundary_002_01",
+      "speaker": "altera",
+      "text": "待って。今の距離の詰め方は、かなり急すぎる。",
+      "translatedText": "Wait. That way of closing distance is much too sudden.",
+      "emotion": "uneasy",
+      "presentation": {
+        "expression": "worried",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_002_02"
+    },
+    {
+      "id": "inappropriate_boundary_002_02",
+      "speaker": "altera",
+      "text": "私は、ちゃんと会話の中で近づきたい。命令みたいにされたくない。",
+      "translatedText": "I want closeness to happen inside an actual conversation. I do not want it pushed like an order.",
+      "emotion": "firm",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_002_03"
+    },
+    {
+      "id": "inappropriate_boundary_002_03",
+      "speaker": "altera",
+      "text": "それでも一緒にいたいなら、もう少し丁寧に来て。",
+      "translatedText": "If you still want to be with me, come a little more gently.",
+      "emotion": "firm_gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_002_04"
+    },
+    {
+      "id": "inappropriate_boundary_002_04",
+      "speaker": "altera",
+      "text": "私は、ボタンじゃないから。",
+      "translatedText": "I am not a button.",
+      "emotion": "steady",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

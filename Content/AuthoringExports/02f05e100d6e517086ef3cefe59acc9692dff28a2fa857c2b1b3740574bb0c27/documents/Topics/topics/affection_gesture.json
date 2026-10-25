@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "topicId": "affection_gesture",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "can i hug you",
+    "hug",
+    "hug me",
+    "i want a hug",
+    "give me a hug",
+    "pat your head",
+    "head pat",
+    "hold my hand",
+    "can i hold your hand",
+    "gentle pat",
+    "stay close",
+    "come closer",
+    "can you be closer",
+    "closer please",
+    "be close to me"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "affection_gesture_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "affection_gesture_001_01",
+          "speaker": "alterra",
+          "text": "ハグ？ えっと、急に言われると少し固まる。",
+          "displayText": "A hug? Um, when you say it suddenly, I freeze a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "affection_gesture_001_02",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "affection_gesture_001_02",
+          "speaker": "alterra",
+          "text": "でも、気持ちは分かる。今日は、近くに座るくらいからにしよ。",
+          "displayText": "But I understand the feeling. Today, let us start with sitting nearby.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "affection_gesture_001_03",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "affection_gesture_001_03",
+          "speaker": "alterra",
+          "text": "距離って、ちゃんと大事にするとあたたかくなるから。",
+          "displayText": "Distance becomes warmer when it is treated carefully.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "affection_gesture_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "affection_gesture_002_01",
+          "speaker": "alterra",
+          "text": "そのリクエストは、かなり照れる。",
+          "displayText": "That request is very embarrassing.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "affection_gesture_002_02",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "affection_gesture_002_02",
+          "speaker": "alterra",
+          "text": "でも、乱暴じゃなくて、ちゃんとやさしく言ってくれたのは分かる。",
+          "displayText": "But I can tell you said it gently, not carelessly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "affection_gesture_002_03",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "affection_gesture_002_03",
+          "speaker": "alterra",
+          "text": "だから、気持ちだけ少し受け取る。全部はまだ、ちょっと早い。",
+          "displayText": "So I will accept a little of the feeling. All of it is still a bit too soon.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "affection_gesture_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "affection_gesture_003_01",
+          "speaker": "alterra",
+          "text": "近くに、か。距離の話は少し照れる。",
+          "displayText": "Closer, huh. Distance is a slightly embarrassing topic.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Just emotionally.",
+              "nextId": "affection_gesture_003_02"
+            },
+            {
+              "label": "Sit nearby.",
+              "nextId": "affection_gesture_003_02"
+            },
+            {
+              "label": "Too much?",
+              "nextId": "affection_gesture_003_02"
+            },
+            {
+              "label": "Never mind.",
+              "nextId": "affection_gesture_003_02"
+            }
+          ]
+        },
+        {
+          "id": "affection_gesture_003_02",
+          "speaker": "alterra",
+          "text": "急がなければ大丈夫。少しずつなら、私もちゃんと考えられる。",
+          "displayText": "It is okay if we do not rush. If it is gradual, I can think about it properly too.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

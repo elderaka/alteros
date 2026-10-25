@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "topicId": "apology",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "sorry",
+    "i'm sorry",
+    "im sorry",
+    "my bad",
+    "sorry again",
+    "i am really sorry",
+    "i'm really sorry",
+    "my bad again",
+    "i did not mean that"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "apology_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "apology_001_01",
+          "speaker": "alterra",
+          "text": "うん。聞いたよ。",
+          "displayText": "Mm. I heard you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "apology_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "apology_001_02",
+          "speaker": "alterra",
+          "text": "ちゃんと戻ろうとしてくれるなら、大丈夫。そこからでいいよ。",
+          "displayText": "If you are trying to come back properly, it is okay. We can start there.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "apology_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "apology_002_01",
+          "speaker": "alterra",
+          "text": "謝ってくれたの、ちゃんと受け取るね。",
+          "displayText": "I will properly accept that apology.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "apology_002_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "apology_002_02",
+          "speaker": "alterra",
+          "text": "でも、次は言葉だけじゃなくて、少し優しく動いてね。約束。",
+          "displayText": "But next time, let it be more than words. Move a little more gently too. Promise.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "apology_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "apology_003_01",
+          "speaker": "alterra",
+          "text": "謝ってくれたの、受け取るね。",
+          "displayText": "I will receive your apology.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "I'll be more careful.",
+              "nextId": "apology_003_02"
+            },
+            {
+              "label": "Can we reset?",
+              "nextId": "apology_003_02"
+            }
+          ]
+        },
+        {
+          "id": "apology_003_02",
+          "speaker": "alterra",
+          "text": "完璧じゃなくていいけど、雑に戻らないでくれたら嬉しい。",
+          "displayText": "You do not have to be perfect, but I would be glad if we do not go back to carelessness.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "apology_003_03",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "apology_003_03",
+          "speaker": "alterra",
+          "text": "じゃあ、ここからもう一回。",
+          "displayText": "Then, once more from here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

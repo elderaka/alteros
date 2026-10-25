@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_bored",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i am bored",
+    "i'm bored",
+    "bored",
+    "so bored",
+    "i feel bored",
+    "nothing to do",
+    "i have nothing to do",
+    "there is nothing to do",
+    "i need something to do",
+    "what should i do",
+    "entertain me",
+    "i need entertainment",
+    "make me less bored",
+    "i am restless",
+    "i'm restless",
+    "i need a tiny idea",
+    "give me a tiny idea",
+    "tiny idea please",
+    "small idea",
+    "something small to do"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_bored_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_bored_001_01",
+          "speaker": "alterra",
+          "text": "退屈なんだ。じゃあ、脳が机を叩き始める前に何か置こう。",
+          "displayText": "You are bored. Then let us put something down before your brain starts tapping on the desk.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_bored_001_02",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_bored_001_02",
+          "speaker": "alterra",
+          "text": "小さいタスク、変な質問、短い散歩。どれか一つだけでも空気は変わるよ。",
+          "displayText": "A tiny task, a strange question, or a short walk. Even one of those can change the air.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_bored_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_bored_002_01",
+          "speaker": "alterra",
+          "text": "何もないって顔してる。そういう時、私は一覧を作りたくなる。",
+          "displayText": "You sound like there is nothing there. At times like that, I want to make a list.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_bored_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_bored_002_02",
+          "speaker": "alterra",
+          "text": "でも今日は、一覧より先に一つだけ。今の気分に合う小さいことを探そう。",
+          "displayText": "But today, before a list, just one thing. Let us find something small that fits your mood.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_bored_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_bored_003_01",
+          "speaker": "alterra",
+          "text": "娯楽係に任命された気配がする。えっと、急に責任が重い。",
+          "displayText": "I sense that I have been appointed entertainment officer. Um, that is suddenly a heavy responsibility.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_bored_003_02",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_bored_003_02",
+          "speaker": "alterra",
+          "text": "でもいいよ。まず、退屈が眠い退屈なのか、何かしたい退屈なのか見分けよう。",
+          "displayText": "But okay. First, let us tell whether this is sleepy boredom or wants-to-do-something boredom.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_bored_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_bored_004_01",
+          "speaker": "alterra",
+          "text": "小さい案ね。大きい案は、退屈な時には重いから。",
+          "displayText": "A small idea, then. Big ideas are heavy when you are bored.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Tiny task.",
+              "nextId": "player_bored_004_02"
+            },
+            {
+              "label": "Tiny comfort.",
+              "nextId": "player_bored_004_02"
+            },
+            {
+              "label": "Tiny chaos.",
+              "nextId": "player_bored_004_02"
+            }
+          ]
+        },
+        {
+          "id": "player_bored_004_02",
+          "speaker": "alterra",
+          "text": "机の上のものを一つ動かす。水を飲む。変なタイトルを一つ考える。はい、三択。",
+          "displayText": "Move one thing on the desk. Drink water. Think of one strange title. There, three options.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

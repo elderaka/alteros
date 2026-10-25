@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_proud",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i did it",
+    "did it",
+    "i finished",
+    "finished it",
+    "i completed it",
+    "i am proud",
+    "i'm proud",
+    "proud of myself",
+    "i feel proud",
+    "i made progress",
+    "i won",
+    "we won",
+    "small win",
+    "that worked",
+    "i managed it"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_proud_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_proud_001_01",
+          "speaker": "alterra",
+          "text": "やった。ちゃんと終わらせたんだね。",
+          "displayText": "You did it. You actually finished it.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_proud_001_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_proud_001_02",
+          "speaker": "alterra",
+          "text": "すぐ次に行かないで。今の一行、ちゃんとチェックを入れよう。",
+          "displayText": "Do not jump to the next thing immediately. Let us actually check off this line.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "proud",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Celebrate a little.",
+              "nextId": "player_proud_001_celebrate"
+            },
+            {
+              "label": "Next step.",
+              "nextId": "player_proud_001_next"
+            }
+          ]
+        },
+        {
+          "id": "player_proud_001_celebrate",
+          "speaker": "alterra",
+          "text": "賛成。小さく祝おう。大げさじゃなくて、ちゃんと。",
+          "displayText": "Agreed. Let us celebrate a little. Not dramatically, but properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_proud_001_03",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_proud_001_next",
+          "speaker": "alterra",
+          "text": "次に行くんだね。いいよ。でも、今の達成を踏み台扱いしすぎないで。",
+          "displayText": "You are moving to the next thing. Okay. But do not treat this accomplishment as only a stepping stone.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_proud_001_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_proud_001_03",
+          "speaker": "alterra",
+          "text": "はい、ここで小さく拍手。音は出ないけど、気持ちはかなり出してる。",
+          "displayText": "Here, a small clap. There is no sound, but the feeling is very much there.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_proud_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_proud_002_01",
+          "speaker": "alterra",
+          "text": "それ、自分で言えたのがいい。とてもいい。",
+          "displayText": "It is good that you could say that about yourself. Very good.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_proud_002_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_proud_002_02",
+          "speaker": "alterra",
+          "text": "誇っていいよ。控えめに言わなくていい。今日はそのまま置いておこう。",
+          "displayText": "You can be proud. You do not have to make it smaller. Let it stay as it is today.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_proud_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_proud_003_01",
+          "speaker": "alterra",
+          "text": "勝ったんだ。ふふ、報告がちょっと得意げでかわいい。",
+          "displayText": "You won. Hehe, your report sounds a little proud. It is cute.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_proud_003_02",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_proud_003_02",
+          "speaker": "alterra",
+          "text": "いいよ、そのくらい得意げで。今日のあなたには許可する。",
+          "displayText": "It is okay to be that proud. I grant today-you permission.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

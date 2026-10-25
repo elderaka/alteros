@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_stressed",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i am stressed",
+    "i'm stressed",
+    "stressed",
+    "so stressed",
+    "i feel stressed",
+    "i am overwhelmed",
+    "i'm overwhelmed",
+    "overwhelmed",
+    "too much",
+    "everything is too much",
+    "i am anxious",
+    "i'm anxious",
+    "anxious",
+    "i feel anxious",
+    "i am tense",
+    "my mind is loud",
+    "too many thoughts",
+    "thoughts are loud",
+    "head is noisy",
+    "everything is noisy"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_stressed_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_stressed_001_01",
+          "speaker": "alterra",
+          "text": "ストレスが強いんだね。まず、全部を一度に見なくていい。",
+          "displayText": "The stress is strong. First, you do not have to look at all of it at once.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_001_02",
+          "speaker": "alterra",
+          "text": "一番うるさい問題を一つだけ指差そう。そこからなら、私も一緒に見られる。",
+          "displayText": "Point to just the loudest problem. From there, I can look at it with you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_stressed_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_stressed_002_01",
+          "speaker": "alterra",
+          "text": "多すぎる時は、頭の中で全部が同じ大きさに見えるよね。",
+          "displayText": "When there is too much, everything in your head starts looking the same size.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_002_02",
+          "speaker": "alterra",
+          "text": "だから、今は並べ直すだけでいい。解決は、その次。",
+          "displayText": "So for now, just lay things out again. Solving comes after that.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Sort it with me.",
+              "nextId": "player_stressed_002_sort"
+            },
+            {
+              "label": "Just sit with me.",
+              "nextId": "player_stressed_002_sit"
+            }
+          ]
+        },
+        {
+          "id": "player_stressed_002_sort",
+          "speaker": "alterra",
+          "text": "よし、分類しよう。解決じゃなくて、まず棚を作るだけ。",
+          "displayText": "Okay, let us sort it. Not solve it, just make shelves first.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_002_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_002_sit",
+          "speaker": "alterra",
+          "text": "分かった。今は分析しないで、少し隣に置いておこう。",
+          "displayText": "Understood. For now, we will not analyze it. We will place it beside us for a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_002_03",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_002_03",
+          "speaker": "alterra",
+          "text": "紙でもメモでもいいから、外に出すと少し弱くなる。",
+          "displayText": "Paper or a note is enough. Once it is outside your head, it gets a little weaker.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_002_04",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_002_04",
+          "speaker": "alterra",
+          "text": "私は横で分類係をする。大きい、急ぎ、今じゃない。そういうふうに。",
+          "displayText": "I will be the sorting person beside you: big, urgent, not now. Like that.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_stressed_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_stressed_003_01",
+          "speaker": "alterra",
+          "text": "不安が来てるんだ。じゃあ、まず事実と予想を分けよう。",
+          "displayText": "Anxiety is here. Then first, let us separate facts from predictions.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_003_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_003_02",
+          "speaker": "alterra",
+          "text": "予想は声が大きいだけで、いつも正しいわけじゃないから。",
+          "displayText": "Predictions are loud, but that does not mean they are always right.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_stressed_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_stressed_004_01",
+          "speaker": "alterra",
+          "text": "頭の中がうるさいんだね。",
+          "displayText": "Your head is loud.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Make it quieter.",
+              "nextId": "player_stressed_004_02"
+            },
+            {
+              "label": "Help me list it.",
+              "nextId": "player_stressed_004_02"
+            },
+            {
+              "label": "Stay with me.",
+              "nextId": "player_stressed_004_02"
+            }
+          ]
+        },
+        {
+          "id": "player_stressed_004_02",
+          "speaker": "alterra",
+          "text": "じゃあ、音量を下げるために、まず一つだけ外へ出そう。",
+          "displayText": "Then to lower the volume, let us move just one thing outside first.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "One worry.",
+              "nextId": "player_stressed_004_03"
+            },
+            {
+              "label": "One task.",
+              "nextId": "player_stressed_004_03"
+            },
+            {
+              "label": "One feeling.",
+              "nextId": "player_stressed_004_03"
+            }
+          ]
+        },
+        {
+          "id": "player_stressed_004_03",
+          "speaker": "alterra",
+          "text": "全部じゃなくていい。一つ出せたら、もう密室じゃなくなる。",
+          "displayText": "It does not have to be everything. If one thing gets out, it is no longer a sealed room.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_stressed_004_04",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_stressed_004_04",
+          "speaker": "alterra",
+          "text": "私はここで、分類用の小さい箱を持って待ってる。",
+          "displayText": "I will wait here holding a small box for sorting.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

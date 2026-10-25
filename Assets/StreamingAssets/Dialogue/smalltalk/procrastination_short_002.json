@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_procrastination_short_002",
+    "timestamp": "",
+    "mood": "playful_focused",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "procrastination_short" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "procrastination_short",
+      "patterns": [ "i keep avoiding work", "avoiding work", "i am putting it off", "i'm putting it off", "putting it off" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "procrastination_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "procrastination_short_002_01",
+      "speaker": "altera",
+      "text": "避けてるの、自分で気づけたんだ。そこはもう半分えらい。",
+      "translatedText": "You noticed that you are avoiding it. That is already half good.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_002_02"
+    },
+    {
+      "id": "procrastination_short_002_02",
+      "speaker": "altera",
+      "text": "もう半分は、逃げ道をふさぐことじゃなくて、入口をかわいくすること。",
+      "translatedText": "The other half is not blocking the escape route. It is making the entrance less awful.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_002_03"
+    },
+    {
+      "id": "procrastination_short_002_03",
+      "speaker": "altera",
+      "text": "二分だけなら、ちょっとだませる。脳を。たぶん。",
+      "translatedText": "Two minutes can trick it a little. Your brain, I mean. Probably.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

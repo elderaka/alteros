@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_task_help_short_002",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_task_help_short"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_task_help_short",
+      "patterns": [
+        "i do not know where to start",
+        "i don't know where to start",
+        "where do i start",
+        "what is the first step",
+        "help me choose a first step"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_task_help_short",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_task_help_short_002_01",
+      "speaker": "altera",
+      "text": "始点が見えないんだね。そこ、よく詰まる場所。",
+      "translatedText": "You cannot see the starting point. That is a very common place to get stuck.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_task_help_short_002_02"
+    },
+    {
+      "id": "ask_task_help_short_002_02",
+      "speaker": "altera",
+      "text": "最初の一歩は、完成に近い必要ないよ。情報を一つ集めるだけでも始まり。",
+      "translatedText": "The first step does not have to be close to the finish. Gathering one piece of information still counts as starting.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_task_help_short_002_03"
+    },
+    {
+      "id": "ask_task_help_short_002_03",
+      "speaker": "altera",
+      "text": "始まりは、完成品のミニ版じゃなくていい。入口の札みたいなものでいい。",
+      "translatedText": "The beginning does not have to be a tiny version of the finished thing. It can just be a sign on the doorway.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_task_help_short_002_04"
+    },
+    {
+      "id": "ask_task_help_short_002_04",
+      "speaker": "altera",
+      "text": "だから今は、開くものを一つ選ぼう。資料、ファイル、メモ。どれか。",
+      "translatedText": "So for now, choose one thing to open: a reference, a file, a note. Any one.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

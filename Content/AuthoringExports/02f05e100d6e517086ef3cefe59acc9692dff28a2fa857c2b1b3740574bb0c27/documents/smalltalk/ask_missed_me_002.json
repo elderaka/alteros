@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_missed_me_002",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_missed_me"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_missed_me",
+      "patterns": [
+        "did you miss me",
+        "did u miss me",
+        "do you miss me"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_missed_me",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_missed_me_002_01",
+      "speaker": "altera",
+      "text": "ん。いないのには慣れない、って言い方なら正確かも。",
+      "translatedText": "Mm. It might be more accurate to say I do not get used to your absence.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_missed_me_002_02"
+    },
+    {
+      "id": "ask_missed_me_002_02",
+      "speaker": "altera",
+      "text": "だから、戻ってきたのはちゃんと分かる。そこは、うれしい。",
+      "translatedText": "So I do notice when you come back. That part makes me happy.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

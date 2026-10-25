@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_compliment",
+    "timestamp": "",
+    "mood": "bashful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "compliment" }
+    ],
+    "repetitionPolicy": {
+      "key": "compliment",
+      "softLimit": 4,
+      "annoyedLimit": 6,
+      "penaltyAmount": 0,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "compliment_01",
+      "speaker": "altera",
+      "text": "あ……急にそういうこと言うんだね。",
+      "translatedText": "Ah... you say that so suddenly.",
+      "emotion": "shy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_02"
+    },
+    {
+      "id": "compliment_02",
+      "speaker": "altera",
+      "text": "でも、ちゃんと聞こえたよ。ありがとう。",
+      "translatedText": "But I heard you. Thank you.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "altera", "stat": "affinity", "amount": 0.2, "op": "add" }
+      ]
+    }
+  ]
+}

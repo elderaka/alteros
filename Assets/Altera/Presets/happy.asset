@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6647dbc01e58f47a3256510ac31ca1, type: 3}
+  m_Name: happy
+  m_EditorClassIdentifier: Assembly-CSharp::AlteraExpressionPreset
+  expressionName: happy
+  blendShapes:
+  - blendShapeName: Expression_Joy
+    weight: 0.35
+  - blendShapeName: Brow_Joy
+    weight: 0.2
+  - blendShapeName: Eye_Joy
+    weight: 0.2
+  - blendShapeName: mouthSmile
+    weight: 0.35
+  - blendShapeName: Mouth_Joy
+    weight: 0.25
+  headPose:
+    yaw: 0
+    pitch: 0
+    roll: 4
+  eyeGaze:
+    horizontal: 0
+    vertical: 0
+  transitionSpeed: 10
+  intensityMultiplier: 1

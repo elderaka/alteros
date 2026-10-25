@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_activity_004",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_activity" }
+    ],
+    "nlp": {
+      "intentId": "ask_activity",
+      "patterns": [ "what were you doing", "what have you been doing", "what are you up to now", "busy with anything", "what are you thinking about now" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "ask_activity", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.2, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "ask_activity_004_01",
+      "speaker": "altera",
+      "text": "さっきは、考えごとの棚を少し整理してた。",
+      "translatedText": "Just now, I was organizing a little shelf of thoughts.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_activity_004_02"
+    },
+    {
+      "id": "ask_activity_004_02",
+      "speaker": "altera",
+      "text": "変な言い方だけど、頭の中に付箋が増えすぎる時があるんだよね。",
+      "translatedText": "That sounds strange, but sometimes too many sticky notes gather in my head.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Tell me one note.",
+          "nextId": "ask_activity_004_03",
+          "statChanges": [
+            { "target": "altera", "stat": "stimulation", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "Let's sort mine too.",
+          "nextId": "ask_activity_004_03",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.1, "op": "add" },
+            { "target": "altera", "stat": "engagement", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "Stay quiet for now.",
+          "nextId": "ask_activity_004_03",
+          "statChanges": [
+            { "target": "player", "stat": "rest", "amount": 0.15, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "ask_activity_004_03"
+    },
+    {
+      "id": "ask_activity_004_03",
+      "speaker": "altera",
+      "text": "でも、あなたが来たから今はこっちを見る。",
+      "translatedText": "But since you came here, I am looking this way now.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_activity_004_04"
+    },
+    {
+      "id": "ask_activity_004_04",
+      "speaker": "altera",
+      "text": "何か一緒に片づける？ それとも、少し話すだけにする？",
+      "translatedText": "Should we tidy something together, or just talk for a little?",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

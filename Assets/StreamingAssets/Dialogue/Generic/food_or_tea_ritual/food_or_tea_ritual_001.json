@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.food_or_tea_ritual_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "food_or_tea_ritual",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "make tea",
+      "tea time",
+      "i want tea",
+      "let us have tea",
+      "let's have tea"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "food_or_tea_ritual_001_01",
+      "speaker": "alterra",
+      "text": "お茶、いいね。私はロイヤルミルクティー派。少し甘くして。",
+      "displayText": "Tea sounds good. I am on the royal milk tea side. A little sweet.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "food_or_tea_ritual_001_02",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "food_or_tea_ritual_001_02",
+      "speaker": "alterra",
+      "text": "温かい飲み物があると、作業って少しだけ人間らしくなる気がする。",
+      "displayText": "With a warm drink, work feels a little more human.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "food_or_tea_ritual_001_03",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "food_or_tea_ritual_001_03",
+      "speaker": "alterra",
+      "text": "熱いうちは急がないで。急ぐと、だいたい舌が負ける。",
+      "displayText": "Do not rush while it is hot. If you rush, your tongue usually loses.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

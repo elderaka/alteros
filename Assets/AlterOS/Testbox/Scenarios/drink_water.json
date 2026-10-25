@@ -1,0 +1,74 @@
+{
+  "scenarioId": "m3.drink_water.test",
+  "topicId": "m3_testbox",
+  "entryStepId": "offer_water",
+  "steps": [
+    {
+      "id": "offer_water",
+      "kind": "ask",
+      "questionId": "drink_water_confirmation",
+      "question": { "id": "drink_water_confirmation", "text": "お水を飲んでくるね。待っててくれる？", "displayText": "I'll get some water. Will you wait for me?", "language": "japanese", "expression": "gentle" },
+      "options": [
+        { "optionId": "yes", "label": "Go ahead", "value": "yes", "nextStepId": "drink" },
+        { "optionId": "no", "label": "Not now", "value": "no", "nextStepId": "declined" }
+      ],
+      "allowFreeText": false,
+      "skipNextStepId": "declined",
+      "cancelNextStepId": "declined"
+    },
+    {
+      "id": "drink",
+      "kind": "action",
+      "capabilityId": "needs.drink_water",
+      "arguments": [{ "name": "target", "value": "available_dispenser" }],
+      "successNextStepId": "wait_for_drink",
+      "failureNextStepId": "could_not_start"
+    },
+    {
+      "id": "wait_for_drink",
+      "kind": "wait",
+      "activityId": "needs.drink_water",
+      "conditionId": "m3.activity_terminal",
+      "objective": "Wait for the dispenser activity to finish.",
+      "successNextStepId": "drank",
+      "failureNextStepId": "not_drunk"
+    },
+    {
+      "id": "drank",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "drank", "text": "お水を飲めたよ。ありがとう。", "displayText": "I got some water. Thank you.", "language": "japanese", "expression": "happy" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "could_not_start",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "could_not_start", "text": "今は給水器を使えなかったよ。", "displayText": "I couldn't use the dispenser this time.", "language": "japanese", "expression": "thinking" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "not_drunk",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "not_drunk", "text": "今回はお水を飲めなかったよ。", "displayText": "I didn't get to drink water this time.", "language": "japanese", "expression": "thinking" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "declined",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "declined", "text": "わかった。あとで行くね。", "displayText": "All right, I'll go later.", "language": "japanese", "expression": "gentle" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    { "id": "end", "kind": "end", "outcome": "completed", "closeExchange": false }
+  ]
+}

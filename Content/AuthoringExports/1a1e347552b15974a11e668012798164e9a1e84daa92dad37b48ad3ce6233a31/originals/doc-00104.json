@@ -1,0 +1,45 @@
+{
+  "entries": [
+    {
+      "capabilityId": "movement.follow_player",
+      "engagement": "bark_then_e",
+      "continueLabel": "Keep following",
+      "stopLabel": "Stop following",
+      "waiting": { "id": "following", "text": "うん、ついていくよ。ここで止まろうか？", "displayText": "I'm right behind you. Would you like to stop here?", "language": "japanese", "expression": "gentle" },
+      "readyBark": { "id": "follow_ready", "text": "ここにいるよ。", "displayText": "I'm here if you need me.", "language": "japanese", "expression": "gentle" },
+      "scenario": {
+        "scenarioId": "activity.follow_player", "topicId": "", "entryStepId": "follow",
+        "steps": [
+          { "id": "follow", "kind": "action", "capabilityId": "movement.follow_player", "arguments": [{ "name": "target", "value": "player" }], "successNextStepId": "following", "failureNextStepId": "unavailable" },
+          { "id": "following", "kind": "wait", "activityId": "movement.follow_player", "conditionId": "m3.activity_terminal", "objective": "Follow until stopped. Press E to keep following or stop.", "successNextStepId": "finished", "failureNextStepId": "finished" },
+          { "id": "finished", "kind": "dialogue", "beats": [{ "id": "finished", "text": "今はここで待っているね。", "displayText": "I'm not following now. I'll wait here.", "language": "japanese", "expression": "gentle" }], "nextStepId": "end" },
+          { "id": "unavailable", "kind": "dialogue", "beats": [{ "id": "unavailable", "text": "今はついていけないみたい。", "displayText": "I can't start following right now.", "language": "japanese", "expression": "thinking" }], "nextStepId": "end" },
+          { "id": "end", "kind": "end", "outcome": "completed" }
+        ]
+      }
+    },
+    {
+      "capabilityId": "needs.drink_water",
+      "engagement": "bark_then_e",
+      "continueLabel": "I'll wait",
+      "stopLabel": "Stop for now",
+      "waiting": { "id": "drinking", "text": "お水を飲んでから戻ってくるね。", "displayText": "I'll come back after getting some water.", "language": "japanese", "expression": "gentle" },
+      "returning": { "id": "returning", "text": "今そっちに戻っているよ。", "displayText": "I'm on my way back to you.", "language": "japanese", "expression": "gentle" },
+      "readyBark": { "id": "drink_ready", "text": "用事が済んだよ。ここにいるね。", "displayText": "I'm done for now. I'm here when you're ready.", "language": "japanese", "expression": "gentle" },
+      "scenario": {
+        "scenarioId": "activity.drink_water", "topicId": "", "entryStepId": "drink",
+        "steps": [
+          { "id": "drink", "kind": "action", "capabilityId": "needs.drink_water", "arguments": [{ "name": "target", "value": "available_dispenser" }], "successNextStepId": "drinking", "failureNextStepId": "unavailable" },
+          { "id": "drinking", "kind": "wait", "activityId": "needs.drink_water", "conditionId": "m3.activity_terminal", "objective": "Let Alterra finish drinking; then she returns to you.", "successNextStepId": "return", "failureNextStepId": "interrupted" },
+          { "id": "return", "kind": "action", "capabilityId": "movement.come_here", "arguments": [{ "name": "target", "value": "player" }], "successNextStepId": "returning", "failureNextStepId": "return_failed" },
+          { "id": "returning", "kind": "wait", "activityId": "movement.come_here", "conditionId": "m3.activity_terminal", "objective": "Alterra is returning. Press E when she is ready to talk.", "successNextStepId": "finished", "failureNextStepId": "return_failed" },
+          { "id": "finished", "kind": "dialogue", "beats": [{ "id": "finished", "text": "お水を飲んで戻ってきたよ。待っていてくれてありがとう。", "displayText": "I've had some water and I'm back. Thanks for waiting.", "language": "japanese", "expression": "happy" }], "nextStepId": "end" },
+          { "id": "unavailable", "kind": "dialogue", "beats": [{ "id": "unavailable", "text": "今は給水器を使えなかったよ。", "displayText": "I couldn't use the dispenser this time.", "language": "japanese", "expression": "thinking" }], "nextStepId": "end" },
+          { "id": "interrupted", "kind": "dialogue", "beats": [{ "id": "interrupted", "text": "途中で止まっちゃったね。", "displayText": "I couldn't finish that drink break.", "language": "japanese", "expression": "thinking" }], "nextStepId": "end" },
+          { "id": "return_failed", "kind": "dialogue", "beats": [{ "id": "return_failed", "text": "お水は飲めたけど、そっちに戻れなかったよ。", "displayText": "I had some water, but couldn't make it back to you.", "language": "japanese", "expression": "thinking" }], "nextStepId": "end" },
+          { "id": "end", "kind": "end", "outcome": "completed" }
+        ]
+      }
+    }
+  ]
+}

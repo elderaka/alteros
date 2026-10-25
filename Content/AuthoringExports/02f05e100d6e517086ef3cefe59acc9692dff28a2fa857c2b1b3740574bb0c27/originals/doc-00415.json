@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_returning_003",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "returning" }
+    ],
+    "nlp": {
+      "intentId": "returning",
+      "patterns": [ "i am back again", "i'm back again", "back again", "returned again", "came back again" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "returning", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "returning_003_01",
+      "speaker": "altera",
+      "text": "戻ってきたんだね。おかえり。",
+      "translatedText": "You came back. Welcome back.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I missed this room.",
+          "nextId": "returning_003_02",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.1, "op": "add" },
+            { "target": "environment", "stat": "coziness", "amount": 0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "Let's continue.",
+          "nextId": "returning_003_02",
+          "statChanges": [
+            { "target": "player", "stat": "taskProgress", "amount": 0.1, "op": "add" },
+            { "target": "altera", "stat": "engagement", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "returning_003_02"
+    },
+    {
+      "id": "returning_003_02",
+      "speaker": "altera",
+      "text": "じゃあ、ここからまた始めよう。空気を少し整えてから。",
+      "translatedText": "Then let us begin again from here, after we settle the air a little.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

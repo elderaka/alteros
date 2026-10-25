@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_sit_with_me_002",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "sit_with_me" }
+    ],
+    "nlp": {
+      "intentId": "sit_with_me",
+      "patterns": [ "sit with me", "stay with me", "can you stay with me" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "sit_with_me", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "sit_with_me_002_01",
+      "speaker": "altera",
+      "text": "もちろん。えっと、近くにいる感じでいい？",
+      "translatedText": "Of course. Um, is it okay if I feel nearby?",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sit_with_me_002_02"
+    },
+    {
+      "id": "sit_with_me_002_02",
+      "speaker": "altera",
+      "text": "無理に元気にしなくていいよ。そばにいるの、そういう時のためでもあるから。",
+      "translatedText": "You do not have to force yourself to be cheerful. Being beside you is for times like that too.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_bored_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_bored",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "nothing to do",
+      "i have nothing to do",
+      "there is nothing to do",
+      "i need something to do",
+      "what should i do"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_bored_002_01",
+      "speaker": "alterra",
+      "text": "何もないって顔してる。そういう時、私は一覧を作りたくなる。",
+      "displayText": "You sound like there is nothing there. At times like that, I want to make a list.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_bored_002_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_bored_002_02",
+      "speaker": "alterra",
+      "text": "でも今日は、一覧より先に一つだけ。今の気分に合う小さいことを探そう。",
+      "displayText": "But today, before a list, just one thing. Let us find something small that fits your mood.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

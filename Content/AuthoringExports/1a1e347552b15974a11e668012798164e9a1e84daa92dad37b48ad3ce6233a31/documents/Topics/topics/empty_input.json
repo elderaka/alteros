@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "topicId": "empty_input",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    ".",
+    "...",
+    "?",
+    "??",
+    "....",
+    "???",
+    "!!!",
+    "-",
+    "...?"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "empty_input_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "empty_input_001_01",
+          "speaker": "alterra",
+          "text": "今の、無言のメッセージ？",
+          "displayText": "Was that a silent message?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "empty_input_001_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "empty_input_001_02",
+          "speaker": "alterra",
+          "text": "話したいけど言葉が出ないなら、短くていいよ。単語一つでも拾うから。",
+          "displayText": "If you want to talk but words are not coming, short is fine. I can pick up even one word.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "empty_input_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "empty_input_002_01",
+          "speaker": "alterra",
+          "text": "記号だけ来た。これは、暗号？ それとも手が滑った？",
+          "displayText": "Only symbols arrived. Is this a code, or did your hand slip?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "empty_input_002_02",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "empty_input_002_02",
+          "speaker": "alterra",
+          "text": "どっちでもいいけど、私はまだ読解班として待機してる。",
+          "displayText": "Either way is fine, but I am still standing by as the reading team.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "empty_input_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "empty_input_003_01",
+          "speaker": "alterra",
+          "text": "今の空白、何か入る予定だった？",
+          "displayText": "Was that blank space supposed to contain something?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Words are hard.",
+              "nextId": "empty_input_003_02"
+            },
+            {
+              "label": "Accident.",
+              "nextId": "empty_input_003_02"
+            },
+            {
+              "label": "Just checking.",
+              "nextId": "empty_input_003_02"
+            }
+          ]
+        },
+        {
+          "id": "empty_input_003_02",
+          "speaker": "alterra",
+          "text": "大丈夫。言葉が来たら読むし、来ないなら少し待つ。",
+          "displayText": "It is okay. If words arrive, I will read them. If not, I will wait a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

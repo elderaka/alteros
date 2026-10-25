@@ -1,0 +1,9 @@
+{
+  "requestJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-followup\",\"sessionId\":\"fixture-session\",\"channel\":\"direct\",\"text\":\"What kind of tea?\",\"activeResponseId\":\"response-1\",\"activeTopicId\":\"beverage.tea\"}",
+  "judgmentJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-followup\",\"kind\":\"continue\",\"topicId\":\"\",\"referencedTopicIds\":[\"beverage.tea\"],\"reply\":{\"nodes\":[{\"id\":\"reply-1\",\"speaker\":\"alterra\",\"text\":\"I'm in the mood for jasmine.\",\"displayText\":\"\",\"language\":\"\",\"voice\":\"\",\"audioKey\":\"\",\"nextId\":\"\",\"presentation\":{\"expression\":\"\",\"animation\":\"\"},\"choices\":[]}]},\"suggestedReplies\":[]}",
+  "expectedOutcome": "generated",
+  "expectedScenarioId": "",
+  "expectedNovel": false,
+  "topics": [{"topicId": "beverage.tea", "scenarios": [{"scenarioId": "tea-intro", "priority": 1, "channel": ""}]}],
+  "candidates": [{"topicId": "beverage.tea", "similarity": 0.88, "supportCount": 2, "availability": "ready"}]
+}

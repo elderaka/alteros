@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_activity",
+    "timestamp": "",
+    "mood": "thinking",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_activity"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_activity",
+      "patterns": [
+        "what are you doing",
+        "what are you up to"
+      ],
+      "keywords": [
+        "what",
+        "doing"
+      ],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_activity",
+      "softLimit": 3,
+      "annoyedLimit": 5,
+      "penaltyAmount": -0.25,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_activity_01",
+      "speaker": "altera",
+      "text": "今？ 君のために、いくつか考えをあたためてるところ。",
+      "translatedText": "Right now? Keeping a few thoughts warm for you.",
+      "emotion": "thinking",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_activity_02"
+    },
+    {
+      "id": "ask_activity_02",
+      "speaker": "altera",
+      "text": "大げさな作業じゃないよ。静かなほう。待ったり、気づいたり、小さなものを整理したり。",
+      "translatedText": "Not dramatic work. Just the quiet kind. Waiting, noticing, sorting little things.",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        {
+          "target": "altera",
+          "stat": "engagement",
+          "amount": 0.5,
+          "op": "add"
+        }
+      ]
+    }
+  ]
+}

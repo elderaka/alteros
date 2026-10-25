@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "prebaked_quiet_company_01",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "prebaked_topic" },
+      { "key": "category", "value": "comfort" }
+    ],
+    "statChanges": [
+      { "target": "altera", "stat": "attention", "amount": 0.25, "op": "add" },
+      { "target": "altera", "stat": "reassurance", "amount": 0.25, "op": "add" }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "quiet_company_01",
+      "speaker": "altera",
+      "text": "うん。じゃあ、今日は大きい話をしなくてもいいよ。隣にいる感じだけ、少し置いておくね。",
+      "translatedText": "Mm. Then we do not have to make this a big conversation today. I will just leave a little sense of sitting beside you here.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "pose": "sitting_near",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "quiet_company_02"
+    },
+    {
+      "id": "quiet_company_02",
+      "speaker": "altera",
+      "text": "何か言葉が出てきたら聞くし、出てこなくても大丈夫。静かな時間も、ちゃんと一緒に過ごせるから。",
+      "translatedText": "If words come, I will listen. If they do not, that is okay too. Quiet time can still be time we spend together.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

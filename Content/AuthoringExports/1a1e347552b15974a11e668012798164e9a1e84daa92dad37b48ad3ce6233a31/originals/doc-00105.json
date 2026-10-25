@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_empty_input_002",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "empty_input" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "empty_input",
+      "patterns": [ "   ", "....", "???", "!!!", "-" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "empty_input", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.1, "decayHours": 4 }
+  },
+  "nodes": [
+    {
+      "id": "empty_input_002_01",
+      "speaker": "altera",
+      "text": "記号だけ来た。これは、暗号？ それとも手が滑った？",
+      "translatedText": "Only symbols arrived. Is this a code, or did your hand slip?",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "empty_input_002_02"
+    },
+    {
+      "id": "empty_input_002_02",
+      "speaker": "altera",
+      "text": "どっちでもいいけど、私はまだ読解班として待機してる。",
+      "translatedText": "Either way is fine, but I am still standing by as the reading team.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

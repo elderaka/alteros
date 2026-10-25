@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_proud_002",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_proud"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_proud",
+      "patterns": [
+        "i am proud",
+        "i'm proud",
+        "proud of myself",
+        "i feel proud",
+        "i made progress"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_proud",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_proud_002_01",
+      "speaker": "altera",
+      "text": "それ、自分で言えたのがいい。とてもいい。",
+      "translatedText": "It is good that you could say that about yourself. Very good.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_proud_002_02"
+    },
+    {
+      "id": "player_proud_002_02",
+      "speaker": "altera",
+      "text": "誇っていいよ。控えめに言わなくていい。今日はそのまま置いておこう。",
+      "translatedText": "You can be proud. You do not have to make it smaller. Let it stay as it is today.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

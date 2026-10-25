@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_missed_me_001",
+    "timestamp": "",
+    "mood": "shy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_missed_me"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_missed_me",
+      "patterns": [
+        "did you miss me",
+        "you missed me",
+        "miss me"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_missed_me",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_missed_me_001_01",
+      "speaker": "altera",
+      "text": "それ、自分で聞くの？ ずるい聞き方だよ。",
+      "translatedText": "You are asking that yourself? That is an unfair way to ask.",
+      "emotion": "flustered",
+      "presentation": {
+        "expression": "flustered",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_missed_me_001_02"
+    },
+    {
+      "id": "ask_missed_me_001_02",
+      "speaker": "altera",
+      "text": "……でも、少しだけ。静かすぎると、気になるから。",
+      "translatedText": "But, a little. When it gets too quiet, I notice.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

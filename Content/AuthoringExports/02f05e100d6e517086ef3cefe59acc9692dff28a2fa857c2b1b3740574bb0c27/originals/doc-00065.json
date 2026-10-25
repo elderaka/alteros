@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_sad_short_003",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_sad_short" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_sad_short",
+      "patterns": [ "i want to cry", "i feel like crying", "crying", "i cried", "rough day" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_sad_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_sad_short_003_01",
+      "speaker": "altera",
+      "text": "泣きたい日ってあるよね。理由がきれいに言葉にならなくても。",
+      "translatedText": "There are days when you want to cry, even if the reason does not become neat words.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_sad_short_003_02"
+    },
+    {
+      "id": "player_sad_short_003_02",
+      "speaker": "altera",
+      "text": "ここでは、整ってない気持ちのままでいいよ。",
+      "translatedText": "Here, your feelings do not have to be organized.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

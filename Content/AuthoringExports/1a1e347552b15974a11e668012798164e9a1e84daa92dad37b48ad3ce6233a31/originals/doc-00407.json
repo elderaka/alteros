@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_unclear_short_002",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "unclear_short" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "unclear_short",
+      "patterns": [ "idk", "i do not know", "i don't know", "not sure", "maybe" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "unclear_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 4 }
+  },
+  "nodes": [
+    {
+      "id": "unclear_short_002_01",
+      "speaker": "altera",
+      "text": "分からない、でも大丈夫。分からないところから始まる会話もあるし。",
+      "translatedText": "Not knowing is okay. Some conversations begin from not knowing.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "unclear_short_002_02"
+    },
+    {
+      "id": "unclear_short_002_02",
+      "speaker": "altera",
+      "text": "ただ、私は超能力者じゃないから。少しだけ手がかりをください。",
+      "translatedText": "But I am not psychic. Please give me just a little clue.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "unclear_short_002_03"
+    },
+    {
+      "id": "unclear_short_002_03",
+      "speaker": "altera",
+      "text": "気分、作業、話題。どれに近い？",
+      "translatedText": "Mood, work, or topic. Which is it closest to?",
+      "emotion": "curious",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

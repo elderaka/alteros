@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_tired_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_tired",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am exhausted",
+      "i'm exhausted",
+      "exhausted",
+      "i am sleepy",
+      "sleepy"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_tired_002_01",
+      "speaker": "alterra",
+      "text": "眠いなら、判断を増やさないほうがいいよ。",
+      "displayText": "If you are sleepy, it is better not to add more decisions.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_tired_002_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_tired_002_02",
+      "speaker": "alterra",
+      "text": "水を飲む、座り直す、閉じるものを一つ閉じる。今日はそれくらいから。",
+      "displayText": "Drink water, sit differently, close one thing. Start with about that much today.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

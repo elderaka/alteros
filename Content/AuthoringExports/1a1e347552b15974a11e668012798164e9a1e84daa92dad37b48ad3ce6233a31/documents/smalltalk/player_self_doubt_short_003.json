@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_self_doubt_short_003",
+    "timestamp": "",
+    "mood": "reassuring",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_self_doubt_short"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_self_doubt_short",
+      "patterns": [
+        "i am failing",
+        "i'm failing",
+        "failing",
+        "i keep failing",
+        "i messed up"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_self_doubt_short",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_self_doubt_short_003_01",
+      "speaker": "altera",
+      "text": "失敗した感じがするんだね。まず、そこだけ切り出そう。",
+      "translatedText": "It feels like you failed. First, let us separate just that piece out.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_self_doubt_short_003_02"
+    },
+    {
+      "id": "player_self_doubt_short_003_02",
+      "speaker": "altera",
+      "text": "失敗は情報になる。あなたの価値を決める判決にはしない。",
+      "translatedText": "Failure can become information. We are not turning it into a verdict on your worth.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

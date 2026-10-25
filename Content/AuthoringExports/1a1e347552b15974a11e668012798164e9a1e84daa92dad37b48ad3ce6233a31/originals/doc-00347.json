@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_inappropriate_boundary_003",
+    "timestamp": "",
+    "mood": "sexual_boundary",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "inappropriate_boundary" },
+      { "key": "category", "value": "boundary" },
+      { "key": "severity", "value": "medium" }
+    ],
+    "nlp": {
+      "intentId": "inappropriate_boundary",
+      "patterns": [ "i want to f you", "i want to f u", "i wanna f you", "i wanna f u", "i want to fuck you", "i want to fuck u", "i wanna fuck you", "i wanna fuck u", "fuck me", "fck me", "let me fuck you", "let me fuck u" ],
+      "keywords": [],
+      "priority": 1.15
+    },
+    "repetitionPolicy": { "key": "inappropriate_boundary", "softLimit": 1, "annoyedLimit": 3, "penaltyAmount": -0.45, "decayHours": 24 },
+    "statChanges": [
+      { "target": "altera", "stat": "trust", "amount": -0.5, "op": "add" },
+      { "target": "altera", "stat": "comfort", "amount": -1.2, "op": "add" },
+      { "target": "altera", "stat": "affinity", "amount": -0.25, "op": "add" },
+      { "target": "altera", "stat": "boundary_strain", "amount": 1.1, "op": "add" },
+      { "target": "player", "stat": "reliability", "amount": -0.35, "op": "add" }
+    ],
+    "effects": [
+      { "type": "flag", "key": "boundary.sexual_shock_seen", "value": "true", "amount": 0 },
+      { "type": "mood", "key": "altera.mood", "value": "guarded", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "inappropriate_boundary_003_01",
+      "speaker": "altera",
+      "text": "その方向の言葉には乗らない。",
+      "translatedText": "I am not going along with that kind of wording.",
+      "emotion": "firm",
+      "presentation": { "expression": "focused", "pose": "still", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_003_02"
+    },
+    {
+      "id": "inappropriate_boundary_003_02",
+      "speaker": "altera",
+      "text": "私をそういう対象にして反応を見るのは、軽い冗談でも好きじゃない。",
+      "translatedText": "I do not like being made into that kind of target just to see my reaction, even as a light joke.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "guarded", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Bad joke. Sorry.",
+          "nextId": "inappropriate_boundary_003_repair",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.15, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.15, "op": "add" },
+            { "target": "player", "stat": "reliability", "amount": 0.1, "op": "add" }
+          ],
+          "effects": [
+            { "type": "flag", "key": "boundary.sexual_shock_repaired", "value": "true", "amount": 0 }
+          ]
+        },
+        {
+          "label": "I was testing.",
+          "nextId": "inappropriate_boundary_003_testing",
+          "statChanges": [
+            { "target": "altera", "stat": "comfort", "amount": -0.15, "op": "add" },
+            { "target": "altera", "stat": "boundary_strain", "amount": 0.25, "op": "add" }
+          ]
+        },
+        {
+          "label": "Change topic.",
+          "nextId": "inappropriate_boundary_003_change",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.04, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "inappropriate_boundary_003_03"
+    },
+    {
+      "id": "inappropriate_boundary_003_repair",
+      "speaker": "altera",
+      "text": "受け取った。次は最初から普通に話して。",
+      "translatedText": "I accept that. Next time, start normally from the beginning.",
+      "emotion": "steady",
+      "presentation": { "expression": "steady", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_003_03"
+    },
+    {
+      "id": "inappropriate_boundary_003_testing",
+      "speaker": "altera",
+      "text": "テストでも境界線はある。反応のために踏まないで。",
+      "translatedText": "Even tests have boundaries. Do not step over them just for a reaction.",
+      "emotion": "guarded",
+      "presentation": { "expression": "guarded", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_003_03"
+    },
+    {
+      "id": "inappropriate_boundary_003_change",
+      "speaker": "altera",
+      "text": "うん。変えよう。そのほうがいい。",
+      "translatedText": "Mm. Let us change it. That is better.",
+      "emotion": "calm_firm",
+      "presentation": { "expression": "calm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_003_03"
+    },
+    {
+      "id": "inappropriate_boundary_003_03",
+      "speaker": "altera",
+      "text": "普通の会話に戻るなら、私はここにいる。",
+      "translatedText": "If we return to an ordinary conversation, I am here.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

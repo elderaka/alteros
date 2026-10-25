@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_happy_short_001",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_happy_short"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_happy_short",
+      "patterns": [
+        "i am happy",
+        "i'm happy",
+        "happy",
+        "i feel happy",
+        "good day"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_happy_short",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_happy_short_001_01",
+      "speaker": "altera",
+      "text": "よかった。そういう報告、私はかなり好き。",
+      "translatedText": "Good. I like that kind of report quite a lot.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_happy_short_001_02"
+    },
+    {
+      "id": "player_happy_short_001_02",
+      "speaker": "altera",
+      "text": "嬉しいことは、ちゃんと机の上に置いて見えるようにしよ。なくならないように。",
+      "translatedText": "Let us place happy things on the desk where we can see them, so they do not disappear too quickly.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

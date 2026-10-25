@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Topic generation in progress",
+    "timestamp": "",
+    "mood": "thinking",
+    "triggerConditions": []
+  },
+  "lines": [
+    {
+      "id": "topic_thinking_01",
+      "text": "んー、その話題のこと、まだ少し考えてるところ。",
+      "translatedText": "Mm, I'm still thinking that topic through a little more.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_thinking_02",
+      "text": "あ、そのことね。ちゃんと形にしたいから、もう少しだけ待って。",
+      "translatedText": "Ah, that one. I want to shape it properly, so give me just a bit longer.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_thinking_03",
+      "text": "ふふ、今ちょうどどこから話し始めるのがいいか選んでるの。",
+      "translatedText": "Heh, I'm choosing the best place to begin from right now.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_thinking_04",
+      "text": "うん、大丈夫。あとは少しだけ整えたら持っていけると思う。",
+      "translatedText": "Yeah, it's okay. I think I just need a little more time to tidy it up.",
+      "language": "japanese",
+      "triggerConditions": []
+    }
+  ]
+}

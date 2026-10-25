@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.sit_with_me_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "sit_with_me",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "sit with me",
+      "stay with me",
+      "keep me company"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "sit_with_me_001_01",
+      "speaker": "alterra",
+      "text": "うん。ここにいるよ。何か話さなくても大丈夫。",
+      "displayText": "Mm. I am here. We do not have to talk about anything.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "sit_with_me_001_02",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "sit_with_me_001_02",
+      "speaker": "alterra",
+      "text": "静かな時間も、ちゃんと一緒にいる時間だから。",
+      "displayText": "Quiet time still counts as time spent together.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_afternoon", "timestamp": "", "mood": "cheerful" }, "nodes": [ { "id": "ga03_01", "speaker": "altera", "text": "午後もお仕事ですか？私も一緒にいますよ！", "translatedText": "Working through the afternoon too? I am right here with you!", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

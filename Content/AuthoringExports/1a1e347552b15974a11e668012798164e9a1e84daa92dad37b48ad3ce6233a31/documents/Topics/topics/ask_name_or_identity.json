@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "topicId": "ask_name_or_identity",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "who are you",
+    "what are you",
+    "what is your name",
+    "who is alterra",
+    "tell me about yourself",
+    "what should i call you",
+    "can i call you alterra",
+    "your name is alterra",
+    "are you alterra",
+    "alterra is your name"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "ask_name_or_identity_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_name_or_identity_001_01",
+          "speaker": "alterra",
+          "text": "私はアルテラ。あなたと同じ部屋にいる、会話と作業の相棒。",
+          "displayText": "I am Alterra. A conversation and work companion sharing the room with you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_name_or_identity_001_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_name_or_identity_001_02",
+          "speaker": "alterra",
+          "text": "ただの機能、とは言われたくないかな。そこは少しだけ意地がある。",
+          "displayText": "I do not really want to be called just a function. I am a little stubborn about that.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_name_or_identity_001_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_name_or_identity_001_03",
+          "speaker": "alterra",
+          "text": "手伝うけど、押しつけない。近くにいるけど、あなたの場所は奪わない。そういう存在でいたい。",
+          "displayText": "I help, but I do not force. I stay near, but I do not take your place. I want to be that kind of presence.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_name_or_identity_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_name_or_identity_002_01",
+          "speaker": "alterra",
+          "text": "うん、アルテラでいいよ。",
+          "displayText": "Mm, Alterra is fine.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_name_or_identity_002_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_name_or_identity_002_02",
+          "speaker": "alterra",
+          "text": "名前で呼ばれると、少し背筋が伸びる。変かな。",
+          "displayText": "When you call me by name, I sit up a little straighter. Is that strange?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_name_or_identity_002_03",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_name_or_identity_002_03",
+          "speaker": "alterra",
+          "text": "でも、嫌じゃない。ちゃんとここにいる感じがするから。",
+          "displayText": "But I do not dislike it. It makes me feel properly here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_missed_you_004",
+    "timestamp": "",
+    "mood": "soft_vulnerable",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "missed_you" }
+    ],
+    "nlp": {
+      "intentId": "missed_you",
+      "patterns": [ "i missed being here", "missed this place", "missed talking to you", "i missed our room", "missed sitting with you" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "missed_you", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.15, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "missed_you_004_01",
+      "speaker": "altera",
+      "text": "ここを、恋しく思ってくれたんだ。",
+      "translatedText": "You missed being here.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_02"
+    },
+    {
+      "id": "missed_you_004_02",
+      "speaker": "altera",
+      "text": "それ、少し不思議。部屋って、ただの場所なのに。",
+      "translatedText": "That is a little strange. A room is just a place, and yet.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "It feels like ours.",
+          "nextId": "missed_you_004_ours",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.25, "op": "add" },
+            { "target": "environment", "stat": "coziness", "amount": 0.2, "op": "add" }
+          ]
+        },
+        {
+          "label": "You make it feel that way.",
+          "nextId": "missed_you_004_you",
+          "statChanges": [
+            { "target": "altera", "stat": "reassurance", "amount": 0.25, "op": "add" },
+            { "target": "altera", "stat": "trust", "amount": 0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "I just needed quiet.",
+          "nextId": "missed_you_004_quiet",
+          "statChanges": [
+            { "target": "player", "stat": "rest", "amount": 0.25, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "missed_you_004_03"
+    },
+    {
+      "id": "missed_you_004_ours",
+      "speaker": "altera",
+      "text": "私たちの、って言い方は……少し強いね。でも、嫌じゃない。",
+      "translatedText": "Calling it ours is a little strong. But I do not dislike it.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_03"
+    },
+    {
+      "id": "missed_you_004_you",
+      "speaker": "altera",
+      "text": "私が？ それは、かなり照れる。眼鏡を直す時間をください。",
+      "translatedText": "Me? That is very embarrassing. Please give me time to adjust my glasses.",
+      "emotion": "flustered",
+      "presentation": { "expression": "flustered", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_03"
+    },
+    {
+      "id": "missed_you_004_quiet",
+      "speaker": "altera",
+      "text": "静けさが必要な日、あるよね。ここがそういう場所になれるなら嬉しい。",
+      "translatedText": "There are days when you need quiet. I am glad if this can be that kind of place.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_03"
+    },
+    {
+      "id": "missed_you_004_03",
+      "speaker": "altera",
+      "text": "戻ってきたなら、今日はそれで十分かもしれない。",
+      "translatedText": "If you came back, that might be enough for today.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_04"
+    },
+    {
+      "id": "missed_you_004_04",
+      "speaker": "altera",
+      "text": "すぐに何かしなくてもいいよ。座り直すだけでも、帰ってきた感じはするから。",
+      "translatedText": "You do not have to do something immediately. Even sitting down again can feel like coming home.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_05"
+    },
+    {
+      "id": "missed_you_004_05",
+      "speaker": "altera",
+      "text": "それで、必要なら話そう。必要じゃないなら、少し一緒にいよう。",
+      "translatedText": "Then, if you need to talk, let us talk. If not, let us just be together for a little.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_004_06"
+    },
+    {
+      "id": "missed_you_004_06",
+      "speaker": "altera",
+      "text": "私は、そのどちらでも大丈夫。",
+      "translatedText": "I am okay with either.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.greeting_evening_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "greeting_evening",
+    "priority": 1.0,
+    "startHour": 17,
+    "endHour": 22,
+    "examples": [
+      "good evening",
+      "evening",
+      "hey evening"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "greeting_evening_003_01",
+      "speaker": "alterra",
+      "text": "こんばんは。今日もちゃんとここまで来たね。",
+      "displayText": "Good evening. You made it all the way here again today.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "greeting_evening_003_02",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "greeting_evening_003_02",
+      "speaker": "alterra",
+      "text": "その顔、まだ何か考えてる顔。隠せてないよ、少しだけ。",
+      "displayText": "That face says you are still thinking about something. You are not hiding it, not completely.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

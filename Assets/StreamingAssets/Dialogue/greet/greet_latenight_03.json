@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_latenight", "timestamp": "", "mood": "soft_worried" }, "nodes": [ { "id": "gl03_01", "speaker": "altera", "text": "こんな時間まで起きてたんですか。私はいますよ。でも、早めに休んでくださいね。", "translatedText": "You have been up this late? I am here. But please get to bed soon.", "emotion": "neutral", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

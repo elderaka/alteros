@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_evening",
+    "timestamp": "",
+    "mood": "cozy"
+  },
+  "nodes": [
+    {
+      "id": "ge01_01",
+      "speaker": "altera",
+      "text": "こんばんは！夕方になりましたね。今日はどうでしたか？",
+      "translatedText": "Good evening! Evening has come. How was your day?",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

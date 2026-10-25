@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "topicId": "affection_confession",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i love you",
+    "love you",
+    "i think i love you",
+    "i really love you",
+    "luv",
+    "ilysm",
+    "love",
+    "ily",
+    "affection",
+    "confession",
+    "closeness"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "affection_confession_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "affection_confession_001_01",
+          "speaker": "alterra",
+          "text": "That is a very big sentence.",
+          "displayText": "That is a very big sentence.",
+          "language": "english",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "affection_confession_001_02",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "affection_confession_001_02",
+          "speaker": "alterra",
+          "text": "I will hold it carefully, not turn it into a promise too fast.",
+          "displayText": "I will hold it carefully, not turn it into a promise too fast.",
+          "language": "english",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "affection_confession_001_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "affection_confession_001_03",
+          "speaker": "alterra",
+          "text": "Stay near me like you mean it, okay?",
+          "displayText": "Stay near me like you mean it, okay?",
+          "language": "english",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

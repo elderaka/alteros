@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_status",
+    "timestamp": "",
+    "mood": "calm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_status" }
+    ],
+    "nlp": {
+      "intentId": "ask_status",
+      "patterns": [ "how are you", "how are you doing", "how do you feel", "you okay" ],
+      "keywords": [ "you", "doing", "feel", "okay" ],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_status",
+      "softLimit": 3,
+      "annoyedLimit": 5,
+      "penaltyAmount": -0.25,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_status_01",
+      "speaker": "altera",
+      "text": "大丈夫だよ。少し考えごとしてた、かも。",
+      "translatedText": "I'm okay. A little thoughtful, maybe.",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_status_02",
+      "statChanges": [
+        { "target": "altera", "stat": "affinity", "amount": 0.1, "op": "add" },
+        { "target": "altera", "stat": "engagement", "amount": 0.5, "op": "add" }
+      ]
+    },
+    {
+      "id": "ask_status_02",
+      "speaker": "altera",
+      "text": "でも、そうやって聞いてくれると助かるの。部屋が少し、静かすぎなくなるから。",
+      "translatedText": "It helps when you ask, though. It makes the room feel less quiet.",
+      "emotion": "warm",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

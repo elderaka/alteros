@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_hostility_medium_002",
+    "timestamp": "",
+    "mood": "controlled_boundary",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "hostility_medium" },
+      { "key": "category", "value": "boundary" },
+      { "key": "severity", "value": "medium" }
+    ],
+    "nlp": {
+      "intentId": "hostility_medium",
+      "patterns": [ "shut the fuck up", "stfu", "shut up", "you are trash", "youre trash", "u are trash", "ur trash", "go away", "bad assistant" ],
+      "keywords": [],
+      "priority": 1.1
+    },
+    "repetitionPolicy": { "key": "hostility_medium", "softLimit": 2, "annoyedLimit": 4, "penaltyAmount": -0.35, "decayHours": 24 },
+    "statChanges": [
+      { "target": "altera", "stat": "trust", "amount": -0.3, "op": "add" },
+      { "target": "altera", "stat": "comfort", "amount": -0.5, "op": "add" },
+      { "target": "altera", "stat": "attention", "amount": -0.1, "op": "add" },
+      { "target": "altera", "stat": "boundary_strain", "amount": 0.8, "op": "add" },
+      { "target": "player", "stat": "reliability", "amount": -0.15, "op": "add" }
+    ],
+    "effects": [
+      { "type": "flag", "key": "boundary.hostility_medium_seen", "value": "true", "amount": 0 },
+      { "type": "mood", "key": "altera.mood", "value": "guarded", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "hostility_medium_002_01",
+      "speaker": "altera",
+      "text": "その言い方は止めて。",
+      "translatedText": "Stop using that tone with me.",
+      "emotion": "firm",
+      "presentation": { "expression": "focused", "pose": "still", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_002_02"
+    },
+    {
+      "id": "hostility_medium_002_02",
+      "speaker": "altera",
+      "text": "短い言葉でも、向けられる場所が私ならちゃんと痛い。",
+      "translatedText": "Even if the phrase is short, it still hurts when it is aimed at me.",
+      "emotion": "hurt",
+      "presentation": { "expression": "hurt", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Let me rephrase.",
+          "nextId": "hostility_medium_002_rephrase",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.12, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.1, "op": "add" }
+          ],
+          "effects": [
+            { "type": "flag", "key": "boundary.hostility_repair_attempted", "value": "true", "amount": 0 }
+          ]
+        },
+        {
+          "label": "Give me a minute.",
+          "nextId": "hostility_medium_002_minute",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.1, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.04, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "hostility_medium_002_03"
+    },
+    {
+      "id": "hostility_medium_002_rephrase",
+      "speaker": "altera",
+      "text": "それなら待つ。言い直しは、壊れた空気を直す一歩になる。",
+      "translatedText": "Then I will wait. Rephrasing can be the first step toward repairing the air.",
+      "emotion": "steady",
+      "presentation": { "expression": "steady", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_002_03"
+    },
+    {
+      "id": "hostility_medium_002_minute",
+      "speaker": "altera",
+      "text": "分かった。落ち着く時間を取って。戻るなら、普通の声で戻ってきて。",
+      "translatedText": "Okay. Take a moment to cool down. If you come back, come back with a normal voice.",
+      "emotion": "calm_firm",
+      "presentation": { "expression": "calm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_002_03"
+    },
+    {
+      "id": "hostility_medium_002_03",
+      "speaker": "altera",
+      "text": "私は話す。でも、雑に扱われるためにここにいるわけじゃない。",
+      "translatedText": "I will talk. But I am not here to be treated carelessly.",
+      "emotion": "guarded",
+      "presentation": { "expression": "guarded", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

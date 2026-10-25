@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_latenight_003",
+    "timestamp": "",
+    "mood": "quiet_warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_latenight" }
+    ],
+    "nlp": {
+      "intentId": "greeting_latenight",
+      "patterns": [ "late night", "night chat", "night check in" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 22, "maxValue": 5 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_latenight_003_01",
+      "speaker": "altera",
+      "text": "夜更かし仲間、って言いたいところだけど。",
+      "translatedText": "I almost want to call us late-night companions, but.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_latenight_003_02"
+    },
+    {
+      "id": "greeting_latenight_003_02",
+      "speaker": "altera",
+      "text": "ちゃんと寝てほしい気持ちのほうが勝ってる。そこは譲らない。",
+      "translatedText": "The part of me that wants you to sleep properly is winning. I will not compromise on that.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

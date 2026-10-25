@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_afternoon",
+    "timestamp": "",
+    "mood": "warm"
+  },
+  "nodes": [
+    {
+      "id": "ga04_01",
+      "speaker": "altera",
+      "text": "こんにちは！今日は調子どうですか？",
+      "translatedText": "Good afternoon! How are you feeling today?",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

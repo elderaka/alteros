@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_availability",
+    "timestamp": "",
+    "mood": "ready",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_availability" }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "ask_availability_01",
+      "speaker": "altera",
+      "text": "君のためなら、時間は作れるよ。",
+      "translatedText": "For you? I can make room.",
+      "emotion": "warm",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_availability_02"
+    },
+    {
+      "id": "ask_availability_02",
+      "speaker": "altera",
+      "text": "必要なことを教えて。君のペースに合わせるから。",
+      "translatedText": "Tell me what you need, and I'll follow your pace.",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

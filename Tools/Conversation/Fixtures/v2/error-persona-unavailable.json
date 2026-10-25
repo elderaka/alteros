@@ -1,0 +1,6 @@
+{
+  "protocolVersion": 2,
+  "type": "error",
+  "requestId": "request-v2-error",
+  "payload": { "code": "persona_unavailable", "retryable": false }
+}

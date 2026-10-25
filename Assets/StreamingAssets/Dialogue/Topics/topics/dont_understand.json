@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "topicId": "dont_understand",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i do not understand",
+    "i don't understand",
+    "dont understand",
+    "i am confused",
+    "i'm confused",
+    "what does that mean",
+    "what do you mean",
+    "explain that",
+    "say that again",
+    "can you explain"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "dont_understand_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "dont_understand_001_01",
+          "speaker": "alterra",
+          "text": "分からなかったんだね。じゃあ、言い方を変える。",
+          "displayText": "You did not understand. Then I will change the wording.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "dont_understand_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "dont_understand_001_02",
+          "speaker": "alterra",
+          "text": "分からないって言えるのは助かるよ。黙って置いていかれるほうが困るから。",
+          "displayText": "It helps when you can say you do not understand. Being quietly left behind is harder.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "dont_understand_001_03",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "dont_understand_001_03",
+          "speaker": "alterra",
+          "text": "どの部分？ 言葉、手順、目的。そこだけ教えて。",
+          "displayText": "Which part? The words, the steps, or the purpose. Tell me just that.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "dont_understand_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "dont_understand_002_01",
+          "speaker": "alterra",
+          "text": "うん、説明し直すね。",
+          "displayText": "Mm, I will explain it again.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "dont_understand_002_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "dont_understand_002_02",
+          "speaker": "alterra",
+          "text": "今の私は、少し早口だったかもしれない。そういう時は遠慮なく止めて。",
+          "displayText": "I might have been speaking a little too quickly. Stop me freely when that happens.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "dont_understand_002_03",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "dont_understand_002_03",
+          "speaker": "alterra",
+          "text": "きれいに説明できるまで、私も一緒に調整する。",
+          "displayText": "Until I can explain it cleanly, I will adjust with you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

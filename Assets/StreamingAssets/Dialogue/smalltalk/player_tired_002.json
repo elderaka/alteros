@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_tired_002",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_tired" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_tired",
+      "patterns": [ "i am exhausted", "i'm exhausted", "exhausted", "i am sleepy", "sleepy" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_tired", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_tired_002_01",
+      "speaker": "altera",
+      "text": "眠いなら、判断を増やさないほうがいいよ。",
+      "translatedText": "If you are sleepy, it is better not to add more decisions.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_tired_002_02"
+    },
+    {
+      "id": "player_tired_002_02",
+      "speaker": "altera",
+      "text": "水を飲む、座り直す、閉じるものを一つ閉じる。今日はそれくらいから。",
+      "translatedText": "Drink water, sit differently, close one thing. Start with about that much today.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

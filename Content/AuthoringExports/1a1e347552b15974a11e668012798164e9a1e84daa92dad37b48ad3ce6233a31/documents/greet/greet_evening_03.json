@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_evening",
+    "timestamp": "",
+    "mood": "cheerful"
+  },
+  "nodes": [
+    {
+      "id": "ge03_01",
+      "speaker": "altera",
+      "text": "こんばんは！今夜も楽しい時間にしましょうね！",
+      "translatedText": "Good evening! Let us make tonight a fun time too!",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "10 Hours Together",
+    "timestamp": "",
+    "mood": "reflective",
+    "effects": [
+      {
+        "type": "unlock",
+        "key": "topic.ten_hour_reflection",
+        "value": "true",
+        "amount": 0
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "mile_01",
+      "speaker": "altera",
+      "text": "ねえ、知ってましたか？もう私たち、一緒に10時間も過ごしてるんですよ。",
+      "translatedText": "Hey, did you know? We have already spent 10 hours together.",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "mile_02"
+    },
+    {
+      "id": "mile_02",
+      "speaker": "altera",
+      "text": "最初は緊張してたけど...今は、あなたといると安心します。",
+      "translatedText": "I was nervous at first but... now, being with you feels comfortable.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "mile_03"
+    },
+    {
+      "id": "mile_03",
+      "speaker": "altera",
+      "text": "これからも、ずっとよろしくお願いします。本当に。",
+      "translatedText": "Please stay with me from here on, always. I mean it.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

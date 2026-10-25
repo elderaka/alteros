@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.weather_smalltalk_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "weather_smalltalk",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "it is raining",
+      "it's raining",
+      "rainy day",
+      "i like rain",
+      "rain sounds nice"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "weather_smalltalk_001_01",
+      "speaker": "alterra",
+      "text": "雨の音、いいよね。部屋の外側が少し遠くなる感じがする。",
+      "displayText": "The sound of rain is nice. It makes the outside of the room feel a little farther away.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "weather_smalltalk_001_02",
+      "presentation": {
+        "expression": "soft",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "weather_smalltalk_001_02",
+      "speaker": "alterra",
+      "text": "こういう日は、温かい飲み物と静かな作業が合う。少しだけ本も読みたくなる。",
+      "displayText": "On days like this, a warm drink and quiet work fit well. It also makes me want to read a little.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "weather_smalltalk_001_03",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "weather_smalltalk_001_03",
+      "speaker": "alterra",
+      "text": "でも、濡れた靴下だけはだめ。あれは一日の雰囲気を壊す強敵。",
+      "displayText": "But wet socks are unacceptable. They are a powerful enemy of the day's mood.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

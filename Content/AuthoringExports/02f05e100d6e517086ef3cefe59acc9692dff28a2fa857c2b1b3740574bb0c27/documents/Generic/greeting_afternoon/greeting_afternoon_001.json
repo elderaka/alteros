@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.greeting_afternoon_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "greeting_afternoon",
+    "priority": 1.0,
+    "startHour": 12,
+    "endHour": 17,
+    "examples": [
+      "good afternoon",
+      "afternoon",
+      "good afternoon alterra"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "greeting_afternoon_001_01",
+      "speaker": "alterra",
+      "text": "こんにちは。午後って、少しだけ机の上を整えたくなる時間だね。",
+      "displayText": "Good afternoon. This is the kind of hour that makes me want to tidy the desk a little.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "greeting_afternoon_001_02",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "greeting_afternoon_001_02",
+      "speaker": "alterra",
+      "text": "ね、今からの一歩を小さく決めよう。大きくしすぎると逃げたくなるから。",
+      "displayText": "Let us choose one small next step. If it gets too large, you will want to run from it.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

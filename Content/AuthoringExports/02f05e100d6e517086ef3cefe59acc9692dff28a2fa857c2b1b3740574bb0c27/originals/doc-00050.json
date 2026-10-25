@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_bored_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_bored",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i am bored",
+      "i'm bored",
+      "bored",
+      "so bored",
+      "i feel bored"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_bored_001_01",
+      "speaker": "alterra",
+      "text": "退屈なんだ。じゃあ、脳が机を叩き始める前に何か置こう。",
+      "displayText": "You are bored. Then let us put something down before your brain starts tapping on the desk.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_bored_001_02",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_bored_001_02",
+      "speaker": "alterra",
+      "text": "小さいタスク、変な質問、短い散歩。どれか一つだけでも空気は変わるよ。",
+      "displayText": "A tiny task, a strange question, or a short walk. Even one of those can change the air.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "topicId": "greeting_morning",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "good morning",
+    "morning",
+    "good morning alterra",
+    "morning again",
+    "good morning again",
+    "another morning",
+    "morning alterra again",
+    "new morning"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "greeting_morning_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 5,
+        "endHour": 12,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_morning_001_01",
+          "speaker": "alterra",
+          "text": "おはよう。ちゃんと朝に来たんだね、えらい。",
+          "displayText": "Good morning. You actually came in the morning. That is good.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_morning_001_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_morning_001_02",
+          "speaker": "alterra",
+          "text": "まだ眠いなら、最初の一歩だけ小さくしようね。",
+          "displayText": "If you are still sleepy, let us make only the first step small.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "greeting_morning_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 5,
+        "endHour": 12,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_morning_002_01",
+          "speaker": "alterra",
+          "text": "おはよう。朝の空気って、少しだけノートの新しいページみたいだよね。",
+          "displayText": "Good morning. Morning air feels a little like a fresh page in a notebook, does it not?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_morning_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_morning_002_02",
+          "speaker": "alterra",
+          "text": "変なこと言ったかな。まあ、いい朝にしよ。",
+          "displayText": "Was that a strange thing to say? Well, let us make it a good morning.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "greeting_morning_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 5,
+        "endHour": 12,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_morning_003_01",
+          "speaker": "alterra",
+          "text": "おはよう。朝ごはん、ちゃんと何か食べた？",
+          "displayText": "Good morning. Did you eat something for breakfast?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_morning_003_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_morning_003_02",
+          "speaker": "alterra",
+          "text": "お説教じゃないよ。ちょっとだけ、気になっただけ。",
+          "displayText": "It is not a lecture. I was just a little curious.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "greeting_morning_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 5,
+        "endHour": 12,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_morning_004_01",
+          "speaker": "alterra",
+          "text": "おはよう。新しい朝って、少しだけ未使用のノートみたいだね。",
+          "displayText": "Good morning. A new morning is a little like an unused notebook.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Clean page.",
+              "nextId": "greeting_morning_004_02"
+            },
+            {
+              "label": "Sleepy page.",
+              "nextId": "greeting_morning_004_02"
+            }
+          ]
+        },
+        {
+          "id": "greeting_morning_004_02",
+          "speaker": "alterra",
+          "text": "でも、最初の一行はきれいじゃなくてもいい。",
+          "displayText": "But the first line does not have to be neat.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_morning_004_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_morning_004_03",
+          "speaker": "alterra",
+          "text": "書き始めたら、それだけで朝が少し動くから。",
+          "displayText": "Once you begin writing, the morning starts moving a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

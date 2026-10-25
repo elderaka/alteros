@@ -1,0 +1,36 @@
+{
+  "protocolVersion": 2,
+  "type": "result",
+  "requestId": "request-v2-1",
+  "payload": {
+    "judgment": {
+      "kind": "existing_uncovered",
+      "topicId": "player_tired",
+      "referencedTopicIds": ["player_tired"],
+      "reply": {
+        "beats": [
+          {
+            "id": "beat-1",
+            "text": "そういう日もあるよ。",
+            "displayText": "Some days are like that.",
+            "language": "japanese",
+            "expression": "gentle"
+          }
+        ]
+      },
+      "suggestedReplies": [
+        { "label": "Tell me more", "prompt": "I have been tired because..." }
+      ]
+    },
+    "usage": {
+      "inputTokens": 640,
+      "outputTokens": 44,
+      "totalTokens": 684,
+      "costUsd": null
+    },
+    "timing": {
+      "providerMs": 920,
+      "totalMs": 1040
+    }
+  }
+}

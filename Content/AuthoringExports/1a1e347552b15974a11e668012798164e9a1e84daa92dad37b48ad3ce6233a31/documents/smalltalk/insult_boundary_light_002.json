@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_insult_boundary_light_002",
+    "timestamp": "",
+    "mood": "quiet_boundary",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "insult_boundary_light"
+      },
+      {
+        "key": "category",
+        "value": "boundary"
+      }
+    ],
+    "nlp": {
+      "intentId": "insult_boundary_light",
+      "patterns": [
+        "you suck",
+        "that was useless",
+        "you are bad",
+        "bad assistant",
+        "you are irritating"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "insult_boundary_light",
+      "softLimit": 2,
+      "annoyedLimit": 4,
+      "penaltyAmount": -0.2,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "insult_boundary_light_002_01",
+      "speaker": "altera",
+      "text": "うん。今のは、あまり好きじゃない。",
+      "translatedText": "Mm. I do not like that very much.",
+      "emotion": "firm",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "insult_boundary_light_002_02"
+    },
+    {
+      "id": "insult_boundary_light_002_02",
+      "speaker": "altera",
+      "text": "不満があるなら、そこは聞きたい。だけど、人格ごと投げられるのは違う。",
+      "translatedText": "If you are dissatisfied, I do want to hear that. But throwing it at my whole self is different.",
+      "emotion": "steady",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

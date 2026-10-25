@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_take_break_002",
+    "timestamp": "",
+    "mood": "soft_playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "take_break"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "take_break",
+      "patterns": [
+        "i should rest",
+        "need rest",
+        "rest time",
+        "let me rest",
+        "pause for a bit"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "take_break",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "take_break_002_01",
+      "speaker": "altera",
+      "text": "休む判断、えらい。そこをサボり扱いしないでね。",
+      "translatedText": "Good call choosing rest. Do not treat that as slacking.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "take_break_002_02"
+    },
+    {
+      "id": "take_break_002_02",
+      "speaker": "altera",
+      "text": "休憩にも形があると戻りやすいよ。五分だけ、とか、お茶を一杯だけ、とか。",
+      "translatedText": "Breaks are easier to return from when they have a shape: five minutes, or one cup of tea.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

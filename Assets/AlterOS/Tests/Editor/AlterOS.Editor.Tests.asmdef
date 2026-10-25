@@ -1,0 +1,7 @@
+{
+    "name": "AlterOS.Editor.Tests",
+    "rootNamespace": "AlterOS.Tests",
+    "references": ["AlterOS.Runtime", "UnityEngine.UI", "Gilzoide.SqliteNet"],
+    "includePlatforms": ["Editor"],
+    "optionalUnityReferences": ["TestAssemblies"]
+}

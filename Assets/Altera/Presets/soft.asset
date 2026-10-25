@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6647dbc01e58f47a3256510ac31ca1, type: 3}
+  m_Name: soft
+  m_EditorClassIdentifier: Assembly-CSharp::AlteraExpressionPreset
+  expressionName: soft
+  blendShapes:
+  - blendShapeName: browInnerUp
+    weight: 0.08
+  - blendShapeName: Eye_Natural
+    weight: 0.05
+  - blendShapeName: eyeSquintLeft
+    weight: 0.08
+  - blendShapeName: Mouth_Small
+    weight: 0.12
+  - blendShapeName: mouthSmile
+    weight: 0.05
+  headPose:
+    yaw: 0
+    pitch: -2
+    roll: -4
+  eyeGaze:
+    horizontal: 0
+    vertical: 0
+  transitionSpeed: 8
+  intensityMultiplier: 0.7

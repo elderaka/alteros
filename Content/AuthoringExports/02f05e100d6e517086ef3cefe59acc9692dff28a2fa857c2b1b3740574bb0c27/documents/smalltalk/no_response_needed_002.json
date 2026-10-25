@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_no_response_needed_002",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "no_response_needed"
+      },
+      {
+        "key": "category",
+        "value": "failure_mode"
+      }
+    ],
+    "nlp": {
+      "intentId": "no_response_needed",
+      "patterns": [
+        "mm",
+        "mhm",
+        "uh huh",
+        "got it",
+        "alright"
+      ],
+      "keywords": [],
+      "priority": 0.85
+    },
+    "repetitionPolicy": {
+      "key": "no_response_needed",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 4
+    }
+  },
+  "nodes": [
+    {
+      "id": "no_response_needed_002_01",
+      "speaker": "altera",
+      "text": "了解。短い返事、ちゃんと受け取った。",
+      "translatedText": "Understood. I received the short reply properly.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "no_response_needed_002_02"
+    },
+    {
+      "id": "no_response_needed_002_02",
+      "speaker": "altera",
+      "text": "無駄に長く返すと、私が負けた気がするからここで止めるね。",
+      "translatedText": "If I answer too long, I feel like I lose, so I will stop here.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

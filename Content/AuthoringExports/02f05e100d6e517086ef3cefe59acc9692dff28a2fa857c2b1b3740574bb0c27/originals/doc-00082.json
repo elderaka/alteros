@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_needs_motivation_003",
+    "timestamp": "",
+    "mood": "playful_encouraging",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_needs_motivation" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_needs_motivation",
+      "patterns": [ "hype me up", "give me a push", "i need a push", "make me productive", "help me focus" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_needs_motivation", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_needs_motivation_003_01",
+      "speaker": "altera",
+      "text": "よし、背中を押す係だね。押しすぎたら文句を言って。",
+      "translatedText": "Okay, I am in charge of giving you a push. Complain if I push too hard.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_needs_motivation_003_02"
+    },
+    {
+      "id": "player_needs_motivation_003_02",
+      "speaker": "altera",
+      "text": "でも本気で言うね。あなたは、始める前に全部の勇気をそろえなくていい。",
+      "translatedText": "But seriously: you do not need to gather all your courage before starting.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

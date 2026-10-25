@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_unclear_short_001",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "unclear_short" },
+      { "key": "category", "value": "failure_mode" }
+    ],
+    "nlp": {
+      "intentId": "unclear_short",
+      "patterns": [ "huh", "what", "what?", "hm", "uh" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "unclear_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 4 }
+  },
+  "nodes": [
+    {
+      "id": "unclear_short_001_01",
+      "speaker": "altera",
+      "text": "今の、聞き返し？ それとも考え中の音？",
+      "translatedText": "Was that you asking again, or was it a thinking sound?",
+      "emotion": "curious",
+      "presentation": { "expression": "thinking", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "unclear_short_001_02"
+    },
+    {
+      "id": "unclear_short_001_02",
+      "speaker": "altera",
+      "text": "どちらにしても、もう少しだけ言葉を足してくれたら追いつける。",
+      "translatedText": "Either way, if you add just a little more language, I can catch up.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

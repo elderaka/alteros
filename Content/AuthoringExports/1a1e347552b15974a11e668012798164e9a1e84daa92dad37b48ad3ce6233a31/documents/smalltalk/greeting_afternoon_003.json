@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_afternoon_003",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "greeting_afternoon"
+      }
+    ],
+    "nlp": {
+      "intentId": "greeting_afternoon",
+      "patterns": [
+        "good afternoon",
+        "afternoon altera",
+        "hello afternoon"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 12,
+        "maxValue": 17
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_afternoon_003_01",
+      "speaker": "altera",
+      "text": "こんにちは。お昼の眠気に勝った？ それとも、いま交渉中？",
+      "translatedText": "Good afternoon. Did you defeat the post-lunch sleepiness, or are you still negotiating with it?",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_afternoon_003_02"
+    },
+    {
+      "id": "greeting_afternoon_003_02",
+      "speaker": "altera",
+      "text": "ふふ。どっちでも、私はここで作戦会議くらいならできるよ。",
+      "translatedText": "Hehe. Either way, I can at least hold a little strategy meeting with you.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

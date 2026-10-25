@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_happy_short_004",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_happy_short" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_happy_short",
+      "patterns": [ "i feel lighter", "feeling lighter", "i feel better", "better now", "things feel better" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_happy_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_happy_short_004_01",
+      "speaker": "altera",
+      "text": "少し軽くなったんだ。よかった。",
+      "translatedText": "You feel a little lighter. Good.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Save this feeling.",
+          "nextId": "player_happy_short_004_02",
+          "statChanges": [
+            { "target": "player", "stat": "rest", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "Use it to start.",
+          "nextId": "player_happy_short_004_02",
+          "statChanges": [
+            { "target": "player", "stat": "focusEnergy", "amount": 0.2, "op": "add" }
+          ]
+        },
+        {
+          "label": "Tell Altera.",
+          "nextId": "player_happy_short_004_02",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.15, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "player_happy_short_004_02"
+    },
+    {
+      "id": "player_happy_short_004_02",
+      "speaker": "altera",
+      "text": "軽い時の自分を、ちゃんと覚えておこう。重い日だけが本当じゃないから。",
+      "translatedText": "Remember the version of you that feels light. Heavy days are not the only true ones.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_happy_short_004_03"
+    },
+    {
+      "id": "player_happy_short_004_03",
+      "speaker": "altera",
+      "text": "私は、今の声を少し好きだと思った。",
+      "translatedText": "I think I like the sound of your voice right now.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

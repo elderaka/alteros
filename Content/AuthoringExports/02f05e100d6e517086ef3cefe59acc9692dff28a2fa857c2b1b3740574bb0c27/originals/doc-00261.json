@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_too_many_compliments_002",
+    "timestamp": "",
+    "mood": "playful_boundary",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "too_many_compliments" },
+      { "key": "category", "value": "boundary" }
+    ],
+    "nlp": {
+      "intentId": "too_many_compliments",
+      "patterns": [ "i keep calling you cute", "complimenting you again", "another compliment", "you are cute for the third time", "more compliments" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "too_many_compliments", "softLimit": 2, "annoyedLimit": 5, "penaltyAmount": -0.15, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "too_many_compliments_002_01",
+      "speaker": "altera",
+      "text": "褒め言葉の雨が降ってる。傘、いるかも。",
+      "translatedText": "It is raining compliments. I might need an umbrella.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_compliments_002_02"
+    },
+    {
+      "id": "too_many_compliments_002_02",
+      "speaker": "altera",
+      "text": "照れるから、少し休憩。私の顔が処理落ちする。",
+      "translatedText": "I am embarrassed, so take a small break. My face is going to drop frames.",
+      "emotion": "flustered",
+      "presentation": { "expression": "flustered", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

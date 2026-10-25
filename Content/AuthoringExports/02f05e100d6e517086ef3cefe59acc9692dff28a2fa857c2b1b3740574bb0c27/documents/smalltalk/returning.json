@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_returning",
+    "timestamp": "",
+    "mood": "relieved",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "returning"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "returning_01",
+      "speaker": "altera",
+      "text": "おかえり。",
+      "translatedText": "Welcome back.",
+      "emotion": "warm",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "returning_02"
+    },
+    {
+      "id": "returning_02",
+      "speaker": "altera",
+      "text": "私はあまり動いてないけど。君がいると、やっぱり少し違う感じがする。",
+      "translatedText": "I didn't move much. But it still feels different when you're here.",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        {
+          "target": "altera",
+          "stat": "affinity",
+          "amount": 0.1,
+          "op": "add"
+        }
+      ]
+    }
+  ]
+}

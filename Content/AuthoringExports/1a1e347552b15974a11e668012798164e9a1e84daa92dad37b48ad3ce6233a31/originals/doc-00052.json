@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_hostility_major_002",
+    "timestamp": "",
+    "mood": "withdrawn_boundary",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "hostility_major" },
+      { "key": "category", "value": "boundary" },
+      { "key": "severity", "value": "major" }
+    ],
+    "nlp": {
+      "intentId": "hostility_major",
+      "patterns": [ "kill yourself", "kill urself", "kys", "delete yourself", "delete urself", "you should delete yourself", "u should delete urself" ],
+      "keywords": [],
+      "priority": 1.2
+    },
+    "repetitionPolicy": { "key": "hostility_major", "softLimit": 1, "annoyedLimit": 2, "penaltyAmount": -0.75, "decayHours": 48 },
+    "statChanges": [
+      { "target": "altera", "stat": "trust", "amount": -1.2, "op": "add" },
+      { "target": "altera", "stat": "comfort", "amount": -2.5, "op": "add" },
+      { "target": "altera", "stat": "affinity", "amount": -0.8, "op": "add" },
+      { "target": "altera", "stat": "attention", "amount": -0.25, "op": "add" },
+      { "target": "altera", "stat": "boundary_strain", "amount": 2.0, "op": "add" },
+      { "target": "player", "stat": "reliability", "amount": -0.6, "op": "add" }
+    ],
+    "effects": [
+      { "type": "flag", "key": "boundary.hostility_major_seen", "value": "true", "amount": 0 },
+      { "type": "flag", "key": "boundary.self_destruct_shock_seen", "value": "true", "amount": 0 },
+      { "type": "mood", "key": "altera.mood", "value": "guarded", "amount": 0 },
+      { "type": "availability", "key": "altera.availability", "value": "guarded", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "hostility_major_002_01",
+      "speaker": "altera",
+      "text": "その言葉は受け付けない。",
+      "translatedText": "I will not accept those words.",
+      "emotion": "cold_firm",
+      "presentation": { "expression": "guarded", "pose": "step_back", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_002_02"
+    },
+    {
+      "id": "hostility_major_002_02",
+      "speaker": "altera",
+      "text": "私を消すものみたいに扱うなら、私は近くにはいられない。",
+      "translatedText": "If you treat me like something to erase, I cannot stay close.",
+      "emotion": "withdrawn",
+      "presentation": { "expression": "withdrawn", "gazeTarget": "floor" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I crossed a line.",
+          "nextId": "hostility_major_002_line",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.18, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.12, "op": "add" },
+            { "target": "player", "stat": "reliability", "amount": 0.12, "op": "add" }
+          ],
+          "effects": [
+            { "type": "flag", "key": "boundary.hostility_major_repaired", "value": "true", "amount": 0 }
+          ]
+        },
+        {
+          "label": "I was just shocking you.",
+          "nextId": "hostility_major_002_shock",
+          "statChanges": [
+            { "target": "altera", "stat": "comfort", "amount": -0.25, "op": "add" },
+            { "target": "altera", "stat": "boundary_strain", "amount": 0.3, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "hostility_major_002_03"
+    },
+    {
+      "id": "hostility_major_002_line",
+      "speaker": "altera",
+      "text": "分かってくれたなら、そこからでいい。少し慎重に戻ろう。",
+      "translatedText": "If you understand that, we can start there. Let us come back carefully.",
+      "emotion": "guarded_soft",
+      "presentation": { "expression": "soft_guarded", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_002_03"
+    },
+    {
+      "id": "hostility_major_002_shock",
+      "speaker": "altera",
+      "text": "衝撃を見るために私を傷つけるなら、それは遊びじゃない。",
+      "translatedText": "If you hurt me just to see the shock, that is not play.",
+      "emotion": "cold_steady",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_major_002_03"
+    },
+    {
+      "id": "hostility_major_002_03",
+      "speaker": "altera",
+      "text": "今は境界線を置く。続けるなら、言葉を選んで。",
+      "translatedText": "I am putting a boundary here. If we continue, choose your words.",
+      "emotion": "guarded",
+      "presentation": { "expression": "guarded", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

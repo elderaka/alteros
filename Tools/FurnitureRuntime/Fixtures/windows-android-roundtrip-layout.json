@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "homeId": "fixture.home",
+  "roomId": "fixture.room",
+  "catalogueVersion": "1.0.0",
+  "seedVersion": "fixture-1",
+  "coordinateFrame": "room_local_y_up_positive_z_forward",
+  "lengthUnit": "m",
+  "layoutRevision": 7,
+  "instances": [
+    {
+      "instanceId": "chair.raised",
+      "definitionId": "furniture.seat.basic",
+      "positionMeters": { "x": 1.234, "y": 0.125, "z": -0.75 },
+      "rotation": { "x": 0, "y": 0.31730465640509214, "z": 0, "w": 0.9483236631770373 },
+      "scale": { "x": 1, "y": 1, "z": 1 },
+      "support": {
+        "supportId": "room.floor",
+        "supportKind": "roomFloor",
+        "supportFrameRevision": "floor-3",
+        "attachmentPointId": "origin",
+        "localPositionMeters": { "x": 1.234, "y": 0.125, "z": -0.75 },
+        "localRotation": { "x": 0, "y": 0.31730465640509214, "z": 0, "w": 0.9483236631770373 }
+      },
+      "enabled": true,
+      "conditionState": "worn",
+      "resourceState": [ { "resourceId": "fabric", "value": 0.72, "known": true } ],
+      "instanceRevision": 4
+    },
+    {
+      "instanceId": "window.mounted",
+      "definitionId": "furniture.window.basic",
+      "positionMeters": { "x": 0, "y": 1.5, "z": 4 },
+      "rotation": { "x": 0, "y": 1, "z": 0, "w": 0 },
+      "scale": { "x": 1, "y": 1, "z": 1 },
+      "support": {
+        "supportId": "room.wall.north.opening.01",
+        "supportKind": "wallOpening",
+        "supportFrameRevision": "wall-2",
+        "attachmentPointId": "opening.center",
+        "localPositionMeters": { "x": 0, "y": 0, "z": 0 },
+        "localRotation": { "x": 0, "y": 0, "z": 0, "w": 1 }
+      },
+      "enabled": true,
+      "conditionState": "good",
+      "resourceState": [],
+      "instanceRevision": 2
+    },
+    {
+      "instanceId": "carpet.floor",
+      "definitionId": "furniture.carpet.basic",
+      "positionMeters": { "x": -1, "y": 0, "z": 0.5 },
+      "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+      "scale": { "x": 1, "y": 1, "z": 1 },
+      "support": {
+        "supportId": "room.floor",
+        "supportKind": "roomFloor",
+        "supportFrameRevision": "floor-3",
+        "attachmentPointId": "origin",
+        "localPositionMeters": { "x": -1, "y": 0, "z": 0.5 },
+        "localRotation": { "x": 0, "y": 0, "z": 0, "w": 1 }
+      },
+      "enabled": true,
+      "conditionState": "good",
+      "resourceState": [],
+      "instanceRevision": 1
+    }
+  ]
+}

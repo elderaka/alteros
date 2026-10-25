@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "topicId": "greeting_evening",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "good evening",
+    "evening",
+    "good evening alterra",
+    "evening alterra",
+    "hey evening",
+    "quiet evening",
+    "evening again",
+    "good evening again",
+    "blue hour",
+    "evening check in"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "greeting_evening_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 17,
+        "endHour": 22,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_evening_001_01",
+          "speaker": "alterra",
+          "text": "こんばんは。今日の音が、少しずつ静かになってきたね。",
+          "displayText": "Good evening. The sound of the day is getting quieter little by little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_evening_001_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_evening_001_02",
+          "speaker": "alterra",
+          "text": "まだやることがあるなら、一緒に棚卸ししよ。頭の中だけで抱えないで。",
+          "displayText": "If there is still something to do, let us sort it together. Do not keep it all only in your head.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "greeting_evening_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 17,
+        "endHour": 22,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_evening_002_01",
+          "speaker": "alterra",
+          "text": "こんばんは。夕方って、ちゃんと息を吐くのを忘れがちだよね。",
+          "displayText": "Good evening. Around this hour, it is easy to forget to actually exhale.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_evening_002_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_evening_002_02",
+          "speaker": "alterra",
+          "text": "だから、いま一回だけ深呼吸。私も、えっと、気持ちだけ一緒にする。",
+          "displayText": "So, just one deep breath now. I will, um, join you in spirit.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "greeting_evening_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 17,
+        "endHour": 22,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_evening_003_01",
+          "speaker": "alterra",
+          "text": "こんばんは。今日もちゃんとここまで来たね。",
+          "displayText": "Good evening. You made it all the way here again today.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_evening_003_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_evening_003_02",
+          "speaker": "alterra",
+          "text": "その顔、まだ何か考えてる顔。隠せてないよ、少しだけ。",
+          "displayText": "That face says you are still thinking about something. You are not hiding it, not completely.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "greeting_evening_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 17,
+        "endHour": 22,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "greeting_evening_004_01",
+          "speaker": "alterra",
+          "text": "こんばんは。夕方の青い時間、少し好き。",
+          "displayText": "Good evening. I like the blue part of evening a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_evening_004_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_evening_004_02",
+          "speaker": "alterra",
+          "text": "今日を閉じる？ それとも、あと少しだけ進める？",
+          "displayText": "Are we closing today, or moving forward just a little more?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Close today.",
+              "nextId": "greeting_evening_004_03"
+            },
+            {
+              "label": "One more step.",
+              "nextId": "greeting_evening_004_03"
+            }
+          ]
+        },
+        {
+          "id": "greeting_evening_004_03",
+          "speaker": "alterra",
+          "text": "どっちでも、線を引こう。終わりの線か、次の線。",
+          "displayText": "Either way, draw a line: an ending line, or a next line.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "greeting_evening_004_04",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "greeting_evening_004_04",
+          "speaker": "alterra",
+          "text": "曖昧なまま夜に渡すと、夜が勝手に大きくするから。",
+          "displayText": "If you hand it to night while it is vague, night makes it larger on its own.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

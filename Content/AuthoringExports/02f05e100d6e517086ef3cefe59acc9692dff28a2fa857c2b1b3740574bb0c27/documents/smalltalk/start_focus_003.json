@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_start_focus_003",
+    "timestamp": "",
+    "mood": "focused",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "start_focus"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "start_focus",
+      "patterns": [
+        "focus with me",
+        "start a quiet focus",
+        "quiet focus",
+        "focus beside me",
+        "help me enter focus"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "start_focus",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "start_focus_003_01",
+      "speaker": "altera",
+      "text": "静かな集中に入るなら、入口を整えよう。",
+      "translatedText": "If we are entering quiet focus, let us prepare the doorway.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Clear tabs.",
+          "nextId": "start_focus_003_02",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "focusAtmosphere",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Write goal.",
+          "nextId": "start_focus_003_02",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "taskProgress",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Start timer.",
+          "nextId": "start_focus_003_02",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "focusEnergy",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "start_focus_003_02"
+    },
+    {
+      "id": "start_focus_003_02",
+      "speaker": "altera",
+      "text": "次は、邪魔になるものを一つだけ減らす。",
+      "translatedText": "Next, reduce one thing that will get in the way.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Phone away.",
+          "nextId": "start_focus_003_03",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "focusAtmosphere",
+              "amount": 0.2,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "One file only.",
+          "nextId": "start_focus_003_03",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "focusEnergy",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Water nearby.",
+          "nextId": "start_focus_003_03",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "rest",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "No music.",
+          "nextId": "start_focus_003_03",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "noise",
+              "amount": -0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Soft music.",
+          "nextId": "start_focus_003_03",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "comfort",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "start_focus_003_03"
+    },
+    {
+      "id": "start_focus_003_03",
+      "speaker": "altera",
+      "text": "いい。集中は気合いより、入口の摩擦を下げるほうが効く。",
+      "translatedText": "Good. For focus, lowering the friction at the entrance works better than force.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "start_focus_003_04"
+    },
+    {
+      "id": "start_focus_003_04",
+      "speaker": "altera",
+      "text": "始めたら、私は静かにする。ちゃんと隣にはいるから。",
+      "translatedText": "Once you begin, I will be quiet. I will still be properly beside you.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

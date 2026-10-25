@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "onboarding.first_meeting",
+  "steps": [
+    {
+      "stepId": "consent",
+      "speechText": "これから、あなたが教えてくれた好みを覚えてもいい？いつでも確認したり、忘れたりできるよ。",
+      "displayText": "Would it be okay if I remembered a few preferences you choose to share? You can review or forget them anytime.",
+      "choices": [
+        {
+          "choiceId": "allow",
+          "label": "いいよ / Sure"
+        },
+        {
+          "choiceId": "skip",
+          "label": "今はやめておく / Not now"
+        }
+      ]
+    },
+    {
+      "stepId": "preferred_name",
+      "speechText": "あなたのこと、なんて呼べばいい？",
+      "displayText": "What would you like me to call you?",
+      "answerCategory": "preferred_name"
+    },
+    {
+      "stepId": "interest",
+      "speechText": "最近、好きなものや夢中になっていることってある？",
+      "displayText": "Is there something you enjoy or have been really into lately?",
+      "answerCategory": "interest"
+    },
+    {
+      "stepId": "shared_activity_preference",
+      "speechText": "一緒に過ごすなら、どんなことをするのが好き？",
+      "displayText": "What kinds of things do you enjoy doing together?",
+      "answerCategory": "shared_activity_preference"
+    }
+  ]
+}

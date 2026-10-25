@@ -1,0 +1,16 @@
+{
+  "runId": "playground-diversion",
+  "turnId": "fixture-turn-diversion",
+  "definition": {
+    "scenarioId": "playground-diversion",
+    "topicId": "cats",
+    "entryStepId": "opening",
+    "steps": [
+      { "id": "opening", "kind": "dialogue", "beats": [{ "id": "opening", "text": "もちろん。", "displayText": "Of course.", "language": "japanese", "expression": "gentle" }], "nextStepId": "end", "closeExchange": false },
+      { "id": "end", "kind": "end", "outcome": "player_ended", "closeExchange": true }
+    ]
+  },
+  "events": [
+    { "nowSeconds": 1, "input": { "kind": "dialogue_complete", "runId": "playground-diversion", "stepId": "opening" } }
+  ]
+}

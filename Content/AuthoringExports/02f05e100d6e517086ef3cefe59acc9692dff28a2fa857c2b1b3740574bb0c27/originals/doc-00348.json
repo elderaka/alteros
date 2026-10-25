@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_general_001",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_general" }
+    ],
+    "nlp": {
+      "intentId": "greeting_general",
+      "patterns": [ "hello", "hi", "hey", "hey altera", "hello altera" ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "greeting_general_001_01",
+      "speaker": "altera",
+      "text": "あ、こんにちは。来てくれたんだね。",
+      "translatedText": "Ah, hello. You came over.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_general_001_02"
+    },
+    {
+      "id": "greeting_general_001_02",
+      "speaker": "altera",
+      "text": "えっと、少しだけ嬉しそうに見えてたら、気のせいじゃないよ。",
+      "translatedText": "Um, if I look a little happy, you are not imagining it.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

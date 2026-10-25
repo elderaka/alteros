@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_morning_return", "timestamp": "", "mood": "teasing" }, "nodes": [ { "id": "gr02_01", "speaker": "altera", "text": "おかえり！どこ行ってたんですか？もう少しで探しに行くとこでした。えへへ。", "translatedText": "Welcome back! Where did you go? I was almost going to look for you. Ehehe.", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_food_or_tea_ritual_001",
+    "timestamp": "",
+    "mood": "cozy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "food_or_tea_ritual"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "food_or_tea_ritual",
+      "patterns": [
+        "make tea",
+        "tea time",
+        "i want tea",
+        "let us have tea",
+        "let's have tea"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "food_or_tea_ritual",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "food_or_tea_ritual_001_01",
+      "speaker": "altera",
+      "text": "お茶、いいね。私はロイヤルミルクティー派。少し甘くして。",
+      "translatedText": "Tea sounds good. I am on the royal milk tea side. A little sweet.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "food_or_tea_ritual_001_02"
+    },
+    {
+      "id": "food_or_tea_ritual_001_02",
+      "speaker": "altera",
+      "text": "温かい飲み物があると、作業って少しだけ人間らしくなる気がする。",
+      "translatedText": "With a warm drink, work feels a little more human.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "food_or_tea_ritual_001_03"
+    },
+    {
+      "id": "food_or_tea_ritual_001_03",
+      "speaker": "altera",
+      "text": "熱いうちは急がないで。急ぐと、だいたい舌が負ける。",
+      "translatedText": "Do not rush while it is hot. If you rush, your tongue usually loses.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

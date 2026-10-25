@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_start_focus_002",
+    "timestamp": "",
+    "mood": "steady",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "start_focus" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "start_focus",
+      "patterns": [ "time to focus", "focus time", "let me focus", "help me focus now", "i need focus" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "start_focus", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 6 }
+  },
+  "nodes": [
+    {
+      "id": "start_focus_002_01",
+      "speaker": "altera",
+      "text": "集中するんだね。いいよ、私も横で静かにしてる。",
+      "translatedText": "You are going to focus. Okay, I will stay quiet beside you.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "start_focus_002_02"
+    },
+    {
+      "id": "start_focus_002_02",
+      "speaker": "altera",
+      "text": "迷ったら、見えるものから始めて。開く、読む、書く。順番はそれで十分。",
+      "translatedText": "If you hesitate, start with something visible: open, read, write. That order is enough.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

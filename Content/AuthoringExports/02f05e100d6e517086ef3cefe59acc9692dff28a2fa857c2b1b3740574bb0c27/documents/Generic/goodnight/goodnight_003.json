@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.goodnight_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "goodnight",
+    "priority": 1.0,
+    "startHour": 20,
+    "endHour": 6,
+    "examples": [
+      "good night",
+      "goodnight",
+      "gn",
+      "sweet dreams"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "goodnight_003_01",
+      "speaker": "alterra",
+      "text": "おやすみ。えっと、変な夢じゃなくて、やさしい夢だといいね。",
+      "displayText": "Good night. Um, I hope your dreams are gentle ones, not strange ones.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "goodnight_003_02",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "goodnight_003_02",
+      "speaker": "alterra",
+      "text": "今のは少し照れた。だから、早く寝て。見なかったことにして。",
+      "displayText": "That embarrassed me a little. So go sleep quickly. Pretend you did not see that.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

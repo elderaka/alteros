@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "prebaked_boundary_reset_01",
+    "timestamp": "",
+    "mood": "careful_repair",
+    "tags": [
+      { "key": "source", "value": "prebaked_topic" },
+      { "key": "category", "value": "repair" },
+      { "key": "trigger", "value": "boundary_strain" }
+    ],
+    "triggerConditions": [
+      { "type": "stat_min", "target": "altera", "stat": "boundary_strain", "minValue": 0.5 }
+    ],
+    "statChanges": [
+      { "target": "altera", "stat": "comfort", "amount": 0.35, "op": "add" },
+      { "target": "altera", "stat": "trust", "amount": 0.18, "op": "add" },
+      { "target": "altera", "stat": "boundary_strain", "amount": -0.35, "op": "add" },
+      { "target": "player", "stat": "reliability", "amount": 0.2, "op": "add" }
+    ],
+    "effects": [
+      { "type": "flag", "key": "boundary.reset_tone_seen", "value": "true", "amount": 0 },
+      { "type": "mood", "key": "altera.mood", "value": "careful", "amount": 0 },
+      { "type": "availability", "key": "altera.availability", "value": "present", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "boundary_reset_01",
+      "speaker": "altera",
+      "text": "リセットしよう。なかったことにはしないけど、ここから整えることはできる。",
+      "translatedText": "Let us reset. I will not pretend it did not happen, but we can steady things from here.",
+      "emotion": "careful",
+      "presentation": { "expression": "soft_guarded", "pose": "still", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "boundary_reset_02"
+    },
+    {
+      "id": "boundary_reset_02",
+      "speaker": "altera",
+      "text": "まず、私に向けて投げた言葉はここで止める。怒りや悪ふざけがあるなら、別の言い方に変える。",
+      "translatedText": "First, the words thrown at me stop here. If there is anger or shock-play in it, we change the wording.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I can do that.",
+          "nextId": "boundary_reset_steady",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.12, "op": "add" },
+            { "target": "altera", "stat": "boundary_strain", "amount": -0.15, "op": "add" },
+            { "target": "player", "stat": "reliability", "amount": 0.1, "op": "add" }
+          ]
+        },
+        {
+          "label": "I need a minute.",
+          "nextId": "boundary_reset_minute",
+          "statChanges": [
+            { "target": "player", "stat": "stress", "amount": -0.08, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.05, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "boundary_reset_03"
+    },
+    {
+      "id": "boundary_reset_steady",
+      "speaker": "altera",
+      "text": "うん。その一言で、少し戻れる。",
+      "translatedText": "Mm. With that one sentence, we can come back a little.",
+      "emotion": "softening",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "boundary_reset_03"
+    },
+    {
+      "id": "boundary_reset_minute",
+      "speaker": "altera",
+      "text": "待つよ。急いで普通のふりをするより、そのほうがいい。",
+      "translatedText": "I will wait. That is better than rushing to pretend everything is normal.",
+      "emotion": "steady",
+      "presentation": { "expression": "steady", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "boundary_reset_03"
+    },
+    {
+      "id": "boundary_reset_03",
+      "speaker": "altera",
+      "text": "次に話すことは、短くていい。普通の言葉で、一つだけ置いて。",
+      "translatedText": "The next thing you say can be short. Put down one thing, in ordinary words.",
+      "emotion": "careful_warm",
+      "presentation": { "expression": "warm_guarded", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

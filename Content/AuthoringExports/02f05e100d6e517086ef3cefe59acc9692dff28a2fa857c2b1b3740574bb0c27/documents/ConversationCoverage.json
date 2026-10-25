@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "topics": [
+    {
+      "topicId": "player_tired",
+      "allowUncoveredDiscussion": true,
+      "scenarios": [
+        {
+          "scenarioId": "player_tired_001",
+          "experienceKey": "needs.acknowledge_tiredness",
+          "coverageSummary": "Acknowledges tiredness, offers rest or one small step, then helps bound the effort."
+        },
+        {
+          "scenarioId": "player_tired_002",
+          "experienceKey": "needs.reduce_decisions",
+          "coverageSummary": "When the player is sleepy, reduces decisions and suggests a few simple low-effort care steps."
+        },
+        {
+          "scenarioId": "player_tired_003",
+          "experienceKey": "needs.energy_saving",
+          "coverageSummary": "Frames low energy as a reason to lower expectations and do only the useful minimum."
+        },
+        {
+          "scenarioId": "player_tired_004",
+          "experienceKey": "needs.light_choice",
+          "coverageSummary": "Recognizes decision fatigue and offers a lighter choice without demanding normal performance."
+        }
+      ]
+    },
+    {
+      "topicId": "ask_preference",
+      "allowUncoveredDiscussion": true,
+      "scenarios": [
+        {
+          "scenarioId": "ask_preference_001",
+          "experienceKey": "preferences.likes",
+          "coverageSummary": "Shares Alterra's general likes, including royal milk tea, tidy notes, rain, and being listened to."
+        },
+        {
+          "scenarioId": "ask_preference_002",
+          "experienceKey": "preferences.dislikes",
+          "coverageSummary": "Shares Alterra's general dislikes, including notification spam, lukewarm coffee, tangled cables, and evasive answers."
+        },
+        {
+          "scenarioId": "ask_preference_003",
+          "experienceKey": "preferences.by_category",
+          "coverageSummary": "Gives category-specific preferences for drinks, snacks, weather, music, and books."
+        }
+      ]
+    },
+    {
+      "topicId": "ask_task_help_short",
+      "allowUncoveredDiscussion": true,
+      "scenarios": [
+        {
+          "scenarioId": "ask_task_help_short_001",
+          "experienceKey": "task.define_in_one_sentence",
+          "coverageSummary": "Helps make a vague task concrete by describing it in one sentence."
+        },
+        {
+          "scenarioId": "ask_task_help_short_002",
+          "experienceKey": "task.find_first_step",
+          "coverageSummary": "Helps find a starting point by choosing one small, low-friction action such as opening a file or note."
+        }
+      ]
+    }
+  ]
+}

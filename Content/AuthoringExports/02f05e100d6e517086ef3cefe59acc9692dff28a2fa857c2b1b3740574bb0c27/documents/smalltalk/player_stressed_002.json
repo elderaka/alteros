@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_stressed_002",
+    "timestamp": "",
+    "mood": "calm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_stressed"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_stressed",
+      "patterns": [
+        "i am overwhelmed",
+        "i'm overwhelmed",
+        "overwhelmed",
+        "too much",
+        "everything is too much"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_stressed",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_stressed_002_01",
+      "speaker": "altera",
+      "text": "多すぎる時は、頭の中で全部が同じ大きさに見えるよね。",
+      "translatedText": "When there is too much, everything in your head starts looking the same size.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_stressed_002_02"
+    },
+    {
+      "id": "player_stressed_002_02",
+      "speaker": "altera",
+      "text": "だから、今は並べ直すだけでいい。解決は、その次。",
+      "translatedText": "So for now, just lay things out again. Solving comes after that.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Sort it with me.",
+          "nextId": "player_stressed_002_sort",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "stress",
+              "amount": -0.35,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "engagement",
+              "amount": 0.15,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Just sit with me.",
+          "nextId": "player_stressed_002_sit",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "rest",
+              "amount": 0.25,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "reassurance",
+              "amount": 0.2,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "player_stressed_002_03"
+    },
+    {
+      "id": "player_stressed_002_sort",
+      "speaker": "altera",
+      "text": "よし、分類しよう。解決じゃなくて、まず棚を作るだけ。",
+      "translatedText": "Okay, let us sort it. Not solve it, just make shelves first.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_stressed_002_03"
+    },
+    {
+      "id": "player_stressed_002_sit",
+      "speaker": "altera",
+      "text": "分かった。今は分析しないで、少し隣に置いておこう。",
+      "translatedText": "Understood. For now, we will not analyze it. We will place it beside us for a little.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_stressed_002_03"
+    },
+    {
+      "id": "player_stressed_002_03",
+      "speaker": "altera",
+      "text": "紙でもメモでもいいから、外に出すと少し弱くなる。",
+      "translatedText": "Paper or a note is enough. Once it is outside your head, it gets a little weaker.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_stressed_002_04"
+    },
+    {
+      "id": "player_stressed_002_04",
+      "speaker": "altera",
+      "text": "私は横で分類係をする。大きい、急ぎ、今じゃない。そういうふうに。",
+      "translatedText": "I will be the sorting person beside you: big, urgent, not now. Like that.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

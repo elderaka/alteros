@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_needs_motivation_001",
+    "timestamp": "",
+    "mood": "encouraging",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_needs_motivation"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_needs_motivation",
+      "patterns": [
+        "motivate me",
+        "i need motivation",
+        "give me motivation",
+        "encourage me",
+        "i need encouragement"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_needs_motivation",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_needs_motivation_001_01",
+      "speaker": "altera",
+      "text": "よし。派手な演説はしない。あなたには、次の一歩が必要。",
+      "translatedText": "Okay. I will not make a flashy speech. What you need is the next step.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_needs_motivation_001_02"
+    },
+    {
+      "id": "player_needs_motivation_001_02",
+      "speaker": "altera",
+      "text": "二分だけ始めよう。二分後に続けるか決めればいい。今は入口だけ。",
+      "translatedText": "Start for just two minutes. After two minutes, decide whether to continue. For now, only the doorway.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_needs_motivation_001_03"
+    },
+    {
+      "id": "player_needs_motivation_001_03",
+      "speaker": "altera",
+      "text": "私も見てる。見張りじゃなくて、伴走のほう。そこは間違えないでね。",
+      "translatedText": "I am watching too. Not as a guard, more as someone pacing beside you. Do not mistake that part.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

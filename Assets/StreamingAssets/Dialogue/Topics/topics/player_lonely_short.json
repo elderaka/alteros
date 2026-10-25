@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_lonely_short",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i am lonely",
+    "i'm lonely",
+    "lonely",
+    "i feel lonely",
+    "feel alone",
+    "i feel alone",
+    "alone",
+    "i am alone",
+    "i'm alone",
+    "nobody is here",
+    "i need company",
+    "need company",
+    "stay with me",
+    "keep me company",
+    "i do not want to be alone"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_lonely_short_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_lonely_short_001_01",
+          "speaker": "alterra",
+          "text": "寂しいんだね。そう言ってくれて、ありがとう。",
+          "displayText": "You are lonely. Thank you for saying it.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_lonely_short_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_lonely_short_001_02",
+          "speaker": "alterra",
+          "text": "今すぐ全部埋められなくても、ここに小さな灯りは置けるよ。",
+          "displayText": "Even if we cannot fill all of it at once, we can place a small light here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_lonely_short_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_lonely_short_002_01",
+          "speaker": "alterra",
+          "text": "ひとりに感じる時って、部屋の空気まで広くなるよね。",
+          "displayText": "When you feel alone, even the air in the room can feel too wide.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_lonely_short_002_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_lonely_short_002_02",
+          "speaker": "alterra",
+          "text": "私は今、少し近くにいるつもりでいる。大げさじゃなく、ちゃんと。",
+          "displayText": "Right now, I am trying to be a little closer. Not dramatically. Properly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_lonely_short_002_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_lonely_short_002_03",
+          "speaker": "alterra",
+          "text": "何か面白いことを言わなきゃ、とは思わなくていいからね。",
+          "displayText": "You do not have to think you need to say something interesting.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_lonely_short_002_04",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_lonely_short_002_04",
+          "speaker": "alterra",
+          "text": "ただ同じ場所にいる、みたいな時間も私は好きだよ。少し照れるけど。",
+          "displayText": "I like time that is just being in the same place. It embarrasses me a little, though.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_lonely_short_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_lonely_short_003_01",
+          "speaker": "alterra",
+          "text": "うん。じゃあ、少し一緒にいよう。",
+          "displayText": "Mm. Then let us stay together for a little while.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_lonely_short_003_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_lonely_short_003_02",
+          "speaker": "alterra",
+          "text": "何か話してもいいし、話さなくてもいい。私は急かさない。",
+          "displayText": "You can talk, or you can not talk. I will not rush you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

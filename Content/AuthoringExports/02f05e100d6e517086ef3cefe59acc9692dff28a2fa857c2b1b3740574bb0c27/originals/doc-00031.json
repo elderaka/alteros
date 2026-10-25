@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_apology_002",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "apology" }
+    ],
+    "nlp": {
+      "intentId": "apology",
+      "patterns": [ "sorry", "i'm sorry", "im sorry", "my bad" ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "apology_002_01",
+      "speaker": "altera",
+      "text": "謝ってくれたの、ちゃんと受け取るね。",
+      "translatedText": "I will properly accept that apology.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "apology_002_02"
+    },
+    {
+      "id": "apology_002_02",
+      "speaker": "altera",
+      "text": "でも、次は言葉だけじゃなくて、少し優しく動いてね。約束。",
+      "translatedText": "But next time, let it be more than words. Move a little more gently too. Promise.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

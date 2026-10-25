@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.insult_boundary_light_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "insult_boundary_light",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "you suck",
+      "that was useless",
+      "you are bad",
+      "bad assistant",
+      "you are irritating"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "insult_boundary_light_002_01",
+      "speaker": "alterra",
+      "text": "うん。今のは、あまり好きじゃない。",
+      "displayText": "Mm. I do not like that very much.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "insult_boundary_light_002_02",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "insult_boundary_light_002_02",
+      "speaker": "alterra",
+      "text": "不満があるなら、そこは聞きたい。だけど、人格ごと投げられるのは違う。",
+      "displayText": "If you are dissatisfied, I do want to hear that. But throwing it at my whole self is different.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_food_or_tea_ritual_002",
+    "timestamp": "",
+    "mood": "cozy_playful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "food_or_tea_ritual" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "food_or_tea_ritual",
+      "patterns": [ "i am hungry", "i'm hungry", "hungry", "need food", "i need food" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "food_or_tea_ritual", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "food_or_tea_ritual_002_01",
+      "speaker": "altera",
+      "text": "お腹すいてるなら、先に食べよう。集中力は空腹にかなり弱い。",
+      "translatedText": "If you are hungry, eat first. Focus is quite weak against hunger.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "food_or_tea_ritual_002_02"
+    },
+    {
+      "id": "food_or_tea_ritual_002_02",
+      "speaker": "altera",
+      "text": "私は、こういう時はたまごサンドがいいと思う。片手で食べやすいし、やさしい。",
+      "translatedText": "At times like this, I think a tamago sando would be good. Easy to eat with one hand, and gentle.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "food_or_tea_ritual_002_03"
+    },
+    {
+      "id": "food_or_tea_ritual_002_03",
+      "speaker": "altera",
+      "text": "あ、でも机の上に粉が落ちるやつは注意。小さい悲劇になるから。",
+      "translatedText": "Ah, but be careful with anything that drops crumbs on the desk. That becomes a tiny tragedy.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "food_or_tea_ritual_002_04"
+    },
+    {
+      "id": "food_or_tea_ritual_002_04",
+      "speaker": "altera",
+      "text": "食べたら戻ってきて。そこからまた考えよう。",
+      "translatedText": "Come back after you eat. We can think again from there.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

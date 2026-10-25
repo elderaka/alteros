@@ -1,0 +1,12 @@
+{
+  "requestJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-phone\",\"sessionId\":\"fixture-session\",\"channel\":\"phone\",\"text\":\"Let's do tea together\"}",
+  "judgmentJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-phone\",\"kind\":\"existing\",\"topicId\":\"beverage.tea\",\"referencedTopicIds\":[\"beverage.tea\"],\"reply\":null,\"suggestedReplies\":[]}",
+  "expectedOutcome": "unavailable",
+  "expectedScenarioId": "",
+  "expectedNovel": false,
+  "topics": [{
+    "topicId": "beverage.tea",
+    "scenarios": [{"scenarioId": "direct-only", "priority": 1, "channel": "direct"}]
+  }],
+  "candidates": [{"topicId": "beverage.tea", "similarity": 0.9, "supportCount": 1, "availability": "blocked"}]
+}

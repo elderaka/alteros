@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_happy_short_003",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_happy_short"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_happy_short",
+      "patterns": [
+        "i feel good",
+        "feeling good",
+        "today is good",
+        "i am in a good mood",
+        "i'm in a good mood"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_happy_short",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_happy_short_003_01",
+      "speaker": "altera",
+      "text": "いい顔してる。……たぶん。声だけでも分かる気がする。",
+      "translatedText": "You sound like you have a good expression. Probably. I feel like I can tell even from your voice.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_happy_short_003_02"
+    },
+    {
+      "id": "player_happy_short_003_02",
+      "speaker": "altera",
+      "text": "その調子、少しだけ保存しておこう。あとで疲れた時の証拠になるから。",
+      "translatedText": "Let us save a little of that mood. It can be evidence later when you get tired.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

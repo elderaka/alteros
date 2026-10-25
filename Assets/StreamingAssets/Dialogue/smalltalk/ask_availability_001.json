@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_availability_001",
+    "timestamp": "",
+    "mood": "present",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_availability" }
+    ],
+    "nlp": {
+      "intentId": "ask_availability",
+      "patterns": [ "are you busy", "are you free", "can we talk", "do you have time" ],
+      "keywords": [],
+      "priority": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_availability_001_01",
+      "speaker": "altera",
+      "text": "今なら大丈夫。ちゃんと向き合えるよ。",
+      "translatedText": "Right now is okay. I can turn toward you properly.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_availability_001_02"
+    },
+    {
+      "id": "ask_availability_001_02",
+      "speaker": "altera",
+      "text": "急ぎでも、ゆっくりでも。君の速度で話して。",
+      "translatedText": "Whether it is urgent or slow, speak at your own pace.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

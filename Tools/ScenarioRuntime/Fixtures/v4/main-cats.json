@@ -1,0 +1,54 @@
+{
+  "protocolVersion": 4,
+  "type": "scenario_stage",
+  "requestId": "turn-cats-1",
+  "payload": {
+    "turnId": "turn-cats-1",
+    "turnVersion": 1,
+    "stageId": "turn-cats-1-main",
+    "stage": "main",
+    "status": "ready",
+    "usage": { "inputTokens": 10, "outputTokens": 20, "totalTokens": 30, "costUsd": null },
+    "topicOffers": [],
+    "segmentStepId": "opening",
+    "scenario": {
+      "scenarioId": "",
+      "topicId": "cats",
+      "entryStepId": "opening",
+      "steps": [
+        {
+          "id": "opening",
+          "kind": "dialogue",
+          "beats": [
+            { "id": "answer", "text": "猫が好き。", "displayText": "I do like cats.", "language": "japanese", "expression": "gentle" }
+          ],
+          "nextStepId": "ask-favorite",
+          "closeExchange": false
+        },
+        {
+          "id": "ask-favorite",
+          "kind": "ask",
+          "questionId": "favorite-trait",
+          "question": { "id": "question", "text": "猫のどんなところが好き？", "displayText": "What do you like about cats?", "language": "japanese", "expression": "thinking" },
+          "options": [
+            { "optionId": "playful", "label": "They're playful", "value": "playful", "nextStepId": "closing" }
+          ],
+          "allowFreeText": true,
+          "freeTextNextStepId": "closing",
+          "skipNextStepId": "closing",
+          "cancelNextStepId": "closing"
+        },
+        {
+          "id": "closing",
+          "kind": "dialogue",
+          "beats": [
+            { "id": "thanks", "text": "教えてくれてありがとう。", "displayText": "Thanks for telling me.", "language": "japanese", "expression": "happy" }
+          ],
+          "nextStepId": "end",
+          "closeExchange": true
+        },
+        { "id": "end", "kind": "end", "outcome": "completed", "closeExchange": true }
+      ]
+    }
+  }
+}

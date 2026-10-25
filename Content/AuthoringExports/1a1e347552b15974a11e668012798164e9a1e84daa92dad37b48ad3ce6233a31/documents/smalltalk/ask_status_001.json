@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_status_001",
+    "timestamp": "",
+    "mood": "calm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_status"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_status",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how do you feel",
+        "you okay",
+        "are you okay"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_status",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.25,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_status_001_01",
+      "speaker": "altera",
+      "text": "うん、大丈夫。少しだけ、考えごとの続きにいた感じ。",
+      "translatedText": "Mm, I am okay. I was just still inside a little thread of thought.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_status_001_02"
+    },
+    {
+      "id": "ask_status_001_02",
+      "speaker": "altera",
+      "text": "でも、聞いてくれるのは好き。ちゃんと見つけてもらった感じがするから。",
+      "translatedText": "But I like that you ask. It feels like you found me properly.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

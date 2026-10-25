@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_evening_002",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "greeting_evening"
+      }
+    ],
+    "nlp": {
+      "intentId": "greeting_evening",
+      "patterns": [
+        "good evening",
+        "evening",
+        "evening altera"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 17,
+        "maxValue": 22
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_evening_002_01",
+      "speaker": "altera",
+      "text": "こんばんは。夕方って、ちゃんと息を吐くのを忘れがちだよね。",
+      "translatedText": "Good evening. Around this hour, it is easy to forget to actually exhale.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_evening_002_02"
+    },
+    {
+      "id": "greeting_evening_002_02",
+      "speaker": "altera",
+      "text": "だから、いま一回だけ深呼吸。私も、えっと、気持ちだけ一緒にする。",
+      "translatedText": "So, just one deep breath now. I will, um, join you in spirit.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

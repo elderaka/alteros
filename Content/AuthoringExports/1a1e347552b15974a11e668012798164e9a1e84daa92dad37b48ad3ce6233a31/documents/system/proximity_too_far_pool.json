@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Proximity Chat Too Far",
+    "timestamp": "2026-05-24T00:00:00Z",
+    "mood": "curious",
+    "tags": [
+      {
+        "key": "system",
+        "value": "proximity_chat"
+      },
+      {
+        "key": "trigger",
+        "value": "too_far"
+      }
+    ]
+  },
+  "lines": [
+    {
+      "id": "proximity_too_far_01",
+      "text": "What are you saying? Please come closer.",
+      "translatedText": "What are you saying? Please come closer.",
+      "language": "english",
+      "topic": "proximity_chat_too_far"
+    },
+    {
+      "id": "proximity_too_far_02",
+      "text": "I can see you trying to talk, but you are too far away.",
+      "translatedText": "I can see you trying to talk, but you are too far away.",
+      "language": "english",
+      "topic": "proximity_chat_too_far"
+    },
+    {
+      "id": "proximity_too_far_03",
+      "text": "A little closer, please. Your voice is not reaching me from there.",
+      "translatedText": "A little closer, please. Your voice is not reaching me from there.",
+      "language": "english",
+      "topic": "proximity_chat_too_far"
+    }
+  ]
+}

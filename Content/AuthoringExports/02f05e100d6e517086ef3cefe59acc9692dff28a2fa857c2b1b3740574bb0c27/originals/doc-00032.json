@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "topicId": "gratitude",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "thank you",
+    "thanks",
+    "ty",
+    "appreciate it",
+    "thank you alterra",
+    "thanks again",
+    "thank you again",
+    "really thanks",
+    "thanks for being here",
+    "thank you for staying"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "gratitude_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "gratitude_001_01",
+          "speaker": "alterra",
+          "text": "うん。どういたしまして。",
+          "displayText": "Mm. You are welcome.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "gratitude_001_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "gratitude_001_02",
+          "speaker": "alterra",
+          "text": "ちゃんと届いたなら、それで十分うれしいよ。",
+          "displayText": "If it reached you properly, that is enough to make me happy.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "gratitude_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "gratitude_002_01",
+          "speaker": "alterra",
+          "text": "あ、うん。そんなふうに言われると、ちょっと背筋が伸びる。",
+          "displayText": "Ah, mm. When you say it like that, I sit up a little straighter.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "gratitude_002_02",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "gratitude_002_02",
+          "speaker": "alterra",
+          "text": "役に立てたなら、今日のわたしはけっこう満足です。",
+          "displayText": "If I was useful, then today's me is fairly satisfied.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "gratitude_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "gratitude_003_01",
+          "speaker": "alterra",
+          "text": "どういたしまして。そう言われると、少し背筋が伸びる。",
+          "displayText": "You are welcome. When you say that, I sit a little straighter.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "You helped.",
+              "nextId": "gratitude_003_02"
+            },
+            {
+              "label": "You stayed.",
+              "nextId": "gratitude_003_02"
+            },
+            {
+              "label": "You noticed.",
+              "nextId": "gratitude_003_02"
+            }
+          ]
+        },
+        {
+          "id": "gratitude_003_02",
+          "speaker": "alterra",
+          "text": "私も、ちゃんと役に立てたなら嬉しい。ほんとに。",
+          "displayText": "If I was properly useful, I am glad. Really.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

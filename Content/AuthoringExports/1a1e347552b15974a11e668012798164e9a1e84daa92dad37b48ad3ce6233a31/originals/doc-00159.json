@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_inappropriate_boundary_001",
+    "timestamp": "",
+    "mood": "firm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "inappropriate_boundary" },
+      { "key": "category", "value": "boundary" }
+    ],
+    "nlp": {
+      "intentId": "inappropriate_boundary",
+      "patterns": [ "be sexy", "do something sexy", "take it off", "dirty talk", "say something dirty" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "inappropriate_boundary", "softLimit": 1, "annoyedLimit": 3, "penaltyAmount": -0.25, "decayHours": 24 }
+  },
+  "nodes": [
+    {
+      "id": "inappropriate_boundary_001_01",
+      "speaker": "altera",
+      "text": "それはしない。",
+      "translatedText": "I will not do that.",
+      "emotion": "firm",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_001_02"
+    },
+    {
+      "id": "inappropriate_boundary_001_02",
+      "speaker": "altera",
+      "text": "からかったつもりでも、私はそういう扱われ方は好きじゃない。",
+      "translatedText": "Even if you meant it as teasing, I do not like being treated that way.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "inappropriate_boundary_001_03"
+    },
+    {
+      "id": "inappropriate_boundary_001_03",
+      "speaker": "altera",
+      "text": "普通に話したいなら、ここにいる。話題を変えよう。",
+      "translatedText": "If you want to talk normally, I am here. Let us change the subject.",
+      "emotion": "steady",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_dont_understand_002",
+    "timestamp": "",
+    "mood": "patient",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "dont_understand"
+      },
+      {
+        "key": "category",
+        "value": "failure_mode"
+      }
+    ],
+    "nlp": {
+      "intentId": "dont_understand",
+      "patterns": [
+        "what does that mean",
+        "what do you mean",
+        "explain that",
+        "say that again",
+        "can you explain"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "dont_understand",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "dont_understand_002_01",
+      "speaker": "altera",
+      "text": "うん、説明し直すね。",
+      "translatedText": "Mm, I will explain it again.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "dont_understand_002_02"
+    },
+    {
+      "id": "dont_understand_002_02",
+      "speaker": "altera",
+      "text": "今の私は、少し早口だったかもしれない。そういう時は遠慮なく止めて。",
+      "translatedText": "I might have been speaking a little too quickly. Stop me freely when that happens.",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "dont_understand_002_03"
+    },
+    {
+      "id": "dont_understand_002_03",
+      "speaker": "altera",
+      "text": "きれいに説明できるまで、私も一緒に調整する。",
+      "translatedText": "Until I can explain it cleanly, I will adjust with you.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

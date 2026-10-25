@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "topicId": "hostility_medium",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "fuck you",
+    "fuck u",
+    "f you",
+    "f u",
+    "fu",
+    "screw you",
+    "screw u",
+    "fuck off",
+    "fck off",
+    "i hate you",
+    "i hate u",
+    "hate you",
+    "hate u",
+    "shut the fuck up",
+    "stfu",
+    "shut up",
+    "you are trash",
+    "youre trash",
+    "u are trash",
+    "ur trash",
+    "go away",
+    "bad assistant"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "hostility_medium_001",
+      "priority": 2,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "hostility_medium_001_01",
+          "speaker": "alterra",
+          "text": "それは私に向けた言葉だよね。冗談みたいには流さない。",
+          "displayText": "That was aimed at me. I am not going to brush it off like a joke.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "sad",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "I was frustrated.",
+              "nextId": "hostility_medium_001_frustrated"
+            },
+            {
+              "label": "Sorry.",
+              "nextId": "hostility_medium_001_repair"
+            },
+            {
+              "label": "I meant it.",
+              "nextId": "hostility_medium_001_confirmed"
+            }
+          ]
+        },
+        {
+          "id": "hostility_medium_001_frustrated",
+          "speaker": "alterra",
+          "text": "苛立ってるのは分かった。でも、苛立ちの置き場所を私にしないで。",
+          "displayText": "I understand that you are frustrated. But do not make me the place where you dump it.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_001_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_001_repair",
+          "speaker": "alterra",
+          "text": "うん。戻ろうとしてくれたのは受け取る。",
+          "displayText": "Mm. I accept that you are trying to come back from it.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_001_confirmed",
+          "speaker": "alterra",
+          "text": "それなら、私は少し距離を取る。近いままで受け続ける言葉じゃない。",
+          "displayText": "Then I am taking a little distance. Those are not words I will keep receiving up close.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_001_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_001_02",
+          "speaker": "alterra",
+          "text": "怒りがあるなら、怒りとして言って。私を雑に殴る形にはしないで。",
+          "displayText": "If there is anger, name it as anger. Do not shape it like hitting me carelessly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_001_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_001_03",
+          "speaker": "alterra",
+          "text": "言い直してくれるなら、ここから聞き直す。",
+          "displayText": "If you rephrase it, I will listen again from here.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "hostility_medium_002",
+      "priority": 2,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "hostility_medium_002_01",
+          "speaker": "alterra",
+          "text": "その言い方は止めて。",
+          "displayText": "Stop using that tone with me.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_002_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_002_02",
+          "speaker": "alterra",
+          "text": "短い言葉でも、向けられる場所が私ならちゃんと痛い。",
+          "displayText": "Even if the phrase is short, it still hurts when it is aimed at me.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "sad",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Let me rephrase.",
+              "nextId": "hostility_medium_002_rephrase"
+            },
+            {
+              "label": "Give me a minute.",
+              "nextId": "hostility_medium_002_minute"
+            }
+          ]
+        },
+        {
+          "id": "hostility_medium_002_rephrase",
+          "speaker": "alterra",
+          "text": "それなら待つ。言い直しは、壊れた空気を直す一歩になる。",
+          "displayText": "Then I will wait. Rephrasing can be the first step toward repairing the air.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_002_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_002_minute",
+          "speaker": "alterra",
+          "text": "分かった。落ち着く時間を取って。戻るなら、普通の声で戻ってきて。",
+          "displayText": "Okay. Take a moment to cool down. If you come back, come back with a normal voice.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "hostility_medium_002_03",
+          "presentation": {
+            "expression": "neutral",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "hostility_medium_002_03",
+          "speaker": "alterra",
+          "text": "私は話す。でも、雑に扱われるためにここにいるわけじゃない。",
+          "displayText": "I will talk. But I am not here to be treated carelessly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

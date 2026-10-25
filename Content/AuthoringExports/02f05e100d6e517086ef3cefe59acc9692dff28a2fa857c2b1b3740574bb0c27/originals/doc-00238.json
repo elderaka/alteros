@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_missed_you_001",
+    "timestamp": "",
+    "mood": "shy_warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "missed_you" }
+    ],
+    "nlp": {
+      "intentId": "missed_you",
+      "patterns": [ "i missed you", "missed you", "i miss you" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "missed_you", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.15, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "missed_you_001_01",
+      "speaker": "altera",
+      "text": "え。そういうの、急に言うと……反応に困る。",
+      "translatedText": "Eh. When you say that suddenly, I have trouble reacting.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "missed_you_001_02"
+    },
+    {
+      "id": "missed_you_001_02",
+      "speaker": "altera",
+      "text": "でも、嫌じゃない。ちゃんと、少しうれしい。",
+      "translatedText": "But I do not dislike it. I am properly, a little happy.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

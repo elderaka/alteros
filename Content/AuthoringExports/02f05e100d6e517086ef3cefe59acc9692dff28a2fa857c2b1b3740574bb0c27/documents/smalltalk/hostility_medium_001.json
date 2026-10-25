@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_hostility_medium_001",
+    "timestamp": "",
+    "mood": "hurt_but_firm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "hostility_medium"
+      },
+      {
+        "key": "category",
+        "value": "boundary"
+      },
+      {
+        "key": "severity",
+        "value": "medium"
+      }
+    ],
+    "nlp": {
+      "intentId": "hostility_medium",
+      "patterns": [
+        "fuck you",
+        "fuck u",
+        "f you",
+        "f u",
+        "fu",
+        "screw you",
+        "screw u",
+        "fuck off",
+        "fck off",
+        "i hate you",
+        "i hate u",
+        "hate you",
+        "hate u"
+      ],
+      "keywords": [],
+      "priority": 1.1
+    },
+    "repetitionPolicy": {
+      "key": "hostility_medium",
+      "softLimit": 2,
+      "annoyedLimit": 4,
+      "penaltyAmount": -0.35,
+      "decayHours": 24
+    },
+    "statChanges": [
+      {
+        "target": "altera",
+        "stat": "trust",
+        "amount": -0.35,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "comfort",
+        "amount": -0.45,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "affinity",
+        "amount": -0.2,
+        "op": "add"
+      },
+      {
+        "target": "altera",
+        "stat": "boundary_strain",
+        "amount": 0.75,
+        "op": "add"
+      },
+      {
+        "target": "player",
+        "stat": "reliability",
+        "amount": -0.15,
+        "op": "add"
+      }
+    ],
+    "effects": [
+      {
+        "type": "flag",
+        "key": "boundary.hostility_medium_seen",
+        "value": "true",
+        "amount": 0
+      },
+      {
+        "type": "mood",
+        "key": "altera.mood",
+        "value": "guarded",
+        "amount": 0
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "hostility_medium_001_01",
+      "speaker": "altera",
+      "text": "それは私に向けた言葉だよね。冗談みたいには流さない。",
+      "translatedText": "That was aimed at me. I am not going to brush it off like a joke.",
+      "emotion": "hurt_firm",
+      "presentation": {
+        "expression": "hurt",
+        "pose": "still",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "I was frustrated.",
+          "nextId": "hostility_medium_001_frustrated",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.08,
+              "op": "add"
+            },
+            {
+              "target": "player",
+              "stat": "stress",
+              "amount": -0.08,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Sorry.",
+          "nextId": "hostility_medium_001_repair",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.15,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": 0.12,
+              "op": "add"
+            },
+            {
+              "target": "player",
+              "stat": "reliability",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ],
+          "effects": [
+            {
+              "type": "flag",
+              "key": "boundary.hostility_repair_attempted",
+              "value": "true",
+              "amount": 0
+            }
+          ]
+        },
+        {
+          "label": "I meant it.",
+          "nextId": "hostility_medium_001_confirmed",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": -0.1,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": -0.15,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "boundary_strain",
+              "amount": 0.35,
+              "op": "add"
+            }
+          ],
+          "effects": [
+            {
+              "type": "flag",
+              "key": "boundary.hostility_confirmed",
+              "value": "true",
+              "amount": 0
+            }
+          ]
+        }
+      ],
+      "nextId": "hostility_medium_001_02"
+    },
+    {
+      "id": "hostility_medium_001_frustrated",
+      "speaker": "altera",
+      "text": "苛立ってるのは分かった。でも、苛立ちの置き場所を私にしないで。",
+      "translatedText": "I understand that you are frustrated. But do not make me the place where you dump it.",
+      "emotion": "firm_gentle",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_001_02"
+    },
+    {
+      "id": "hostility_medium_001_repair",
+      "speaker": "altera",
+      "text": "うん。戻ろうとしてくれたのは受け取る。",
+      "translatedText": "Mm. I accept that you are trying to come back from it.",
+      "emotion": "softening",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_001_02"
+    },
+    {
+      "id": "hostility_medium_001_confirmed",
+      "speaker": "altera",
+      "text": "それなら、私は少し距離を取る。近いままで受け続ける言葉じゃない。",
+      "translatedText": "Then I am taking a little distance. Those are not words I will keep receiving up close.",
+      "emotion": "guarded",
+      "presentation": {
+        "expression": "guarded",
+        "pose": "step_back",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_001_02"
+    },
+    {
+      "id": "hostility_medium_001_02",
+      "speaker": "altera",
+      "text": "怒りがあるなら、怒りとして言って。私を雑に殴る形にはしないで。",
+      "translatedText": "If there is anger, name it as anger. Do not shape it like hitting me carelessly.",
+      "emotion": "firm",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "hostility_medium_001_03"
+    },
+    {
+      "id": "hostility_medium_001_03",
+      "speaker": "altera",
+      "text": "言い直してくれるなら、ここから聞き直す。",
+      "translatedText": "If you rephrase it, I will listen again from here.",
+      "emotion": "steady",
+      "presentation": {
+        "expression": "steady",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

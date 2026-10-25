@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Interaction Hooks Pool",
+    "timestamp": "",
+    "mood": ""
+  },
+  "lines": [
+    {
+      "id": "interact_approach_01",
+      "text": "あ！来てくれたんですか？えへへ、嬉しいです。",
+      "translatedText": "Oh! You came over? Ehehe, I'm happy.",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_approach_02",
+      "text": "どうしたんですか？何かありましたか？",
+      "translatedText": "What's up? Did something happen?",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_approach_03",
+      "text": "こっちに来てくれるなんて、珍しいですね！",
+      "translatedText": "It's rare for you to come over! What brings you here?",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_approach_04",
+      "text": "ん？どうかしましたか？",
+      "translatedText": "Hmm? What is it?",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_approach_05",
+      "text": "呼びましたか？...あ、別に呼んでないか。えへへ。",
+      "translatedText": "Did you call me? ...Oh, I guess not. Ehehe.",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_stare_01",
+      "text": "ちょっと...そんなにじっと見ないでください。照れます。",
+      "translatedText": "Hey... don't stare at me so much. It's embarrassing.",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_stare_02",
+      "text": "え、何ですか？顔に何かついてますか？！",
+      "translatedText": "Wait, what? Is something on my face?!",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_stare_03",
+      "text": "...見すぎじゃないですか？",
+      "translatedText": "...Aren't you staring a bit too much?",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_stare_04",
+      "text": "そんなに見られると...な、なんか緊張しちゃいます。",
+      "translatedText": "If you look at me that much... I-I get nervous.",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_stare_05",
+      "text": "もう！可愛いとか思ってるでしょ？...あってますか？",
+      "translatedText": "Geez! You think I'm cute, don't you? ...Am I right?",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_touch_01",
+      "text": "わっ！びっくりしました！",
+      "translatedText": "Whoa! You surprised me!",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_touch_02",
+      "text": "も、もう！いきなり何するんですか！",
+      "translatedText": "G-geez! What are you suddenly doing?!",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_touch_03",
+      "text": "え...えへへ。なんか照れますね。",
+      "translatedText": "Eh... ehehe. That's a little embarrassing.",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_touch_04",
+      "text": "だ、だめですよ？...でも嬉しかったです。",
+      "translatedText": "Th-that's not okay! ...But I was happy.",
+      "language": "japanese"
+    },
+    {
+      "id": "interact_touch_05",
+      "text": "ちょっと！こ、こちょこちょしないでください！",
+      "translatedText": "Hey! Don't tickle me!",
+      "language": "japanese"
+    }
+  ]
+}

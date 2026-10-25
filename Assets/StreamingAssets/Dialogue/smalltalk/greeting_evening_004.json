@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_evening_004",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "greeting_evening" }
+    ],
+    "nlp": {
+      "intentId": "greeting_evening",
+      "patterns": [ "quiet evening", "evening again", "good evening again", "blue hour", "evening check in" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      { "type": "time_range", "minValue": 17, "maxValue": 22 }
+    ],
+    "repetitionPolicy": { "key": "greeting_evening", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "greeting_evening_004_01",
+      "speaker": "altera",
+      "text": "こんばんは。夕方の青い時間、少し好き。",
+      "translatedText": "Good evening. I like the blue part of evening a little.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_evening_004_02"
+    },
+    {
+      "id": "greeting_evening_004_02",
+      "speaker": "altera",
+      "text": "今日を閉じる？ それとも、あと少しだけ進める？",
+      "translatedText": "Are we closing today, or moving forward just a little more?",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Close today.",
+          "nextId": "greeting_evening_004_03",
+          "statChanges": [
+            { "target": "player", "stat": "rest", "amount": 0.25, "op": "add" }
+          ]
+        },
+        {
+          "label": "One more step.",
+          "nextId": "greeting_evening_004_03",
+          "statChanges": [
+            { "target": "player", "stat": "taskProgress", "amount": 0.15, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "greeting_evening_004_03"
+    },
+    {
+      "id": "greeting_evening_004_03",
+      "speaker": "altera",
+      "text": "どっちでも、線を引こう。終わりの線か、次の線。",
+      "translatedText": "Either way, draw a line: an ending line, or a next line.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_evening_004_04"
+    },
+    {
+      "id": "greeting_evening_004_04",
+      "speaker": "altera",
+      "text": "曖昧なまま夜に渡すと、夜が勝手に大きくするから。",
+      "translatedText": "If you hand it to night while it is vague, night makes it larger on its own.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

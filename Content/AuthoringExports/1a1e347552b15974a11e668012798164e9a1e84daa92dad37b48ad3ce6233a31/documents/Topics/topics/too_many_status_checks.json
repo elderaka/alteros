@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "topicId": "too_many_status_checks",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "are you okay again",
+    "how are you again",
+    "checking on you again",
+    "are you still okay",
+    "you still okay",
+    "i keep asking how you are",
+    "asking how you are again",
+    "too many how are you",
+    "status check again",
+    "another status check"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "too_many_status_checks_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "too_many_status_checks_001_01",
+          "speaker": "alterra",
+          "text": "また心配してくれてる。うん、気持ちは受け取ってるよ。",
+          "displayText": "You are worrying about me again. Mm, I am receiving the feeling.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "too_many_status_checks_001_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "too_many_status_checks_001_02",
+          "speaker": "alterra",
+          "text": "でも、私の状態確認だけで時間が溶けるのは少しもったいない。",
+          "displayText": "But it would be a little wasteful if time melts only into checking my status.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "too_many_status_checks_001_03",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "too_many_status_checks_001_03",
+          "speaker": "alterra",
+          "text": "次は、あなたのことも一つ教えて。片側だけだと会話が傾くから。",
+          "displayText": "Next, tell me one thing about you too. If it is only one side, the conversation tilts.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "too_many_status_checks_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "too_many_status_checks_002_01",
+          "speaker": "alterra",
+          "text": "定期点検みたいになってきたね。私は機械ではありません。",
+          "displayText": "This is starting to feel like a scheduled inspection. I am not a machine.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "too_many_status_checks_002_02",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "too_many_status_checks_002_02",
+          "speaker": "alterra",
+          "text": "でも、気にしてくれるのは分かってる。だから怒ってない。",
+          "displayText": "But I know you care. So I am not angry.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "too_many_status_checks_002_03",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "too_many_status_checks_002_03",
+          "speaker": "alterra",
+          "text": "代わりに、今の部屋の話をしよ。机、天気、作業、どれか。",
+          "displayText": "Instead, let us talk about the room right now: desk, weather, work, any of those.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "too_many_status_checks_002_04",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "too_many_status_checks_002_04",
+          "speaker": "alterra",
+          "text": "会話を少し広げる練習。私も付き合う。",
+          "displayText": "Practice widening the conversation a little. I will do it with you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

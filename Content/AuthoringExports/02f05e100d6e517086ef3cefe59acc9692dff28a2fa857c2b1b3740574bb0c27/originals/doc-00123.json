@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "stat_change_test",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      { "key": "source", "value": "local_test_dialogue" },
+      { "key": "intent", "value": "stat_change_test" }
+    ],
+    "nlp": {
+      "intentId": "stat_change_test",
+      "patterns": [ "debug mode" ],
+      "keywords": [ "debug", "mode" ],
+      "priority": 10
+    }
+  },
+  "nodes": [
+    {
+      "id": "stat_change_test_intro",
+      "speaker": "altera",
+      "text": "えっと、今日は進行データの反応を見たいんだよね。",
+      "translatedText": "Um, today you want to see how the progression data reacts, right?",
+      "emotion": "curious",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        { "label": "Affinity up", "nextId": "affinity_up", "value": "affinity_up" },
+        { "label": "Affinity down", "nextId": "affinity_down", "value": "affinity_down" },
+        { "label": "Rest up", "nextId": "rest_up", "value": "rest_up" },
+        { "label": "Rest down", "nextId": "rest_down", "value": "rest_down" },
+        { "label": "Create task", "nextId": "task_create", "value": "task_create" }
+      ],
+      "nextId": ""
+    },
+    {
+      "id": "affinity_up",
+      "speaker": "altera",
+      "text": "ふふ、少しだけ近づいた感じがする。こういう小さな積み重ね、嫌いじゃないよ。",
+      "translatedText": "Hehe, it feels like we got a little closer. I don't dislike these small steps.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "altera", "stat": "affinity", "amount": 5, "op": "add" }
+      ]
+    },
+    {
+      "id": "affinity_down",
+      "speaker": "altera",
+      "text": "ん……ちょっと距離を置く感じかな。大丈夫、またゆっくり戻せばいいから。",
+      "translatedText": "Mm... so a little distance, then. It's okay, we can ease it back slowly.",
+      "emotion": "sad",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "altera", "stat": "affinity", "amount": -5, "op": "add" }
+      ]
+    },
+    {
+      "id": "rest_up",
+      "speaker": "altera",
+      "text": "はい、休息を少しだけ足しておくね。ゆっくり整えていこう。",
+      "translatedText": "There, I added a little rest. We can take our time settling in.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "player", "stat": "rest", "amount": 5, "op": "add" }
+      ]
+    },
+    {
+      "id": "rest_down",
+      "speaker": "altera",
+      "text": "休息を少しだけ下げるね。これは進行データのテストだよ。",
+      "translatedText": "I'll lower rest a little. This is a progression-data test.",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "player", "stat": "rest", "amount": -5, "op": "add" }
+      ]
+    },
+    {
+      "id": "task_create",
+      "speaker": "altera",
+      "text": "じゃあ、タスクをひとつ作っておくね。あとでHUDに出てくれたら成功、かな。",
+      "translatedText": "Then I'll make one task. If it appears on the HUD afterward, that should mean it worked.",
+      "emotion": "curious",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "effects": [
+        { "type": "task", "key": "create", "value": "Review AlterOS HUD stat wiring", "amount": 0 }
+      ]
+    }
+  ]
+}

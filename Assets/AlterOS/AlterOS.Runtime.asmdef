@@ -1,0 +1,17 @@
+{
+    "name": "AlterOS.Runtime",
+    "rootNamespace": "AlterOS",
+    "references": [
+        "Unity.InferenceEngine",
+        "Unity.InferenceEngine.Tokenization",
+        "Gilzoide.SqliteNet"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

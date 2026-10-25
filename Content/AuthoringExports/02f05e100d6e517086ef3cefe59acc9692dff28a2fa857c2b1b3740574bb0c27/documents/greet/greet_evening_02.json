@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "greet_evening",
+    "timestamp": "",
+    "mood": "warm"
+  },
+  "nodes": [
+    {
+      "id": "ge02_01",
+      "speaker": "altera",
+      "text": "夜もいっしょですね。お疲れ様でした。ゆっくりしましょうか。",
+      "translatedText": "We are together in the evening too. Good work today. Shall we relax a bit?",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

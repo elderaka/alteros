@@ -1,0 +1,6 @@
+{
+  "protocolVersion": 1,
+  "requestId": "fixture-unsupported-operation",
+  "operation": "route.player_text",
+  "payload": {}
+}

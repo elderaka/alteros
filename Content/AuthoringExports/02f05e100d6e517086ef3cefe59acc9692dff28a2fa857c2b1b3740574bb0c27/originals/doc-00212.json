@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_sad_short_002",
+    "timestamp": "",
+    "mood": "worried",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_sad_short" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_sad_short",
+      "patterns": [ "i am not okay", "i'm not okay", "not okay", "i feel bad", "i feel awful" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_sad_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_sad_short_002_01",
+      "speaker": "altera",
+      "text": "大丈夫って言わなくていい。大丈夫じゃない時は、そう言っていい。",
+      "translatedText": "You do not have to say you are okay. When you are not okay, you can say that.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_sad_short_002_02"
+    },
+    {
+      "id": "player_sad_short_002_02",
+      "speaker": "altera",
+      "text": "私はここで聞く。急いで説明しなくてもいいから。",
+      "translatedText": "I will listen here. You do not have to explain quickly.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Stay quiet with me.",
+          "nextId": "player_sad_short_002_quiet",
+          "statChanges": [
+            { "target": "player", "stat": "rest", "amount": 0.3, "op": "add" },
+            { "target": "altera", "stat": "comfort", "amount": 0.2, "op": "add" }
+          ]
+        },
+        {
+          "label": "Help me name it.",
+          "nextId": "player_sad_short_002_name",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.2, "op": "add" },
+            { "target": "player", "stat": "stress", "amount": -0.15, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "player_sad_short_002_03"
+    },
+    {
+      "id": "player_sad_short_002_quiet",
+      "speaker": "altera",
+      "text": "うん。じゃあ、静かにする。置いていかない静けさにするね。",
+      "translatedText": "Mm. Then I will be quiet. The kind of quiet that does not leave you behind.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    },
+    {
+      "id": "player_sad_short_002_name",
+      "speaker": "altera",
+      "text": "分かった。言葉にするところだけ一緒にやろう。",
+      "translatedText": "Understood. Let us only do the naming part together.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_sad_short_002_03"
+    },
+    {
+      "id": "player_sad_short_002_03",
+      "speaker": "altera",
+      "text": "一文だけでもいい。今のつらさに名前をつけるなら、何に近い？",
+      "translatedText": "Even one sentence is enough. If you gave the hurt a name, what would it be closest to?",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

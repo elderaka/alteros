@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_back_to_work_001",
+    "timestamp": "",
+    "mood": "steady",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "back_to_work"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "back_to_work",
+      "patterns": [
+        "back to work",
+        "i should work",
+        "time to work",
+        "let us work",
+        "let's work"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "back_to_work",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "back_to_work_001_01",
+      "speaker": "altera",
+      "text": "仕事に戻るんだね。うん、戻り方を小さくしよう。",
+      "translatedText": "You are going back to work. Mm, let us make the return small.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "back_to_work_001_02"
+    },
+    {
+      "id": "back_to_work_001_02",
+      "speaker": "altera",
+      "text": "再開は勢いじゃなくて手順でいい。最後に開いてた場所から。",
+      "translatedText": "Restarting can be a procedure, not a burst of momentum. Begin where you last left off.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_activity_004",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_activity",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "what were you doing",
+      "what have you been doing",
+      "what are you up to now",
+      "busy with anything",
+      "what are you thinking about now"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_activity_004_01",
+      "speaker": "alterra",
+      "text": "さっきは、考えごとの棚を少し整理してた。",
+      "displayText": "Just now, I was organizing a little shelf of thoughts.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_activity_004_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_activity_004_02",
+      "speaker": "alterra",
+      "text": "変な言い方だけど、頭の中に付箋が増えすぎる時があるんだよね。",
+      "displayText": "That sounds strange, but sometimes too many sticky notes gather in my head.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Tell me one note.",
+          "nextId": "ask_activity_004_03"
+        },
+        {
+          "label": "Let's sort mine too.",
+          "nextId": "ask_activity_004_03"
+        },
+        {
+          "label": "Stay quiet for now.",
+          "nextId": "ask_activity_004_03"
+        }
+      ]
+    },
+    {
+      "id": "ask_activity_004_03",
+      "speaker": "alterra",
+      "text": "でも、あなたが来たから今はこっちを見る。",
+      "displayText": "But since you came here, I am looking this way now.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_activity_004_04",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_activity_004_04",
+      "speaker": "alterra",
+      "text": "何か一緒に片づける？ それとも、少し話すだけにする？",
+      "displayText": "Should we tidy something together, or just talk for a little?",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

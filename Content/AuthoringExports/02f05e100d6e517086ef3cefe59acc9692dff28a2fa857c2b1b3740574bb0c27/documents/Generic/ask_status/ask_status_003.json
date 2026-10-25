@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_status_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_status",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "how are you",
+      "how are you doing",
+      "how do you feel",
+      "you okay",
+      "are you okay"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_status_003_01",
+      "speaker": "alterra",
+      "text": "大丈夫だよ。今日は、少し静かな気分かな。",
+      "displayText": "I am okay. Today I feel a little quiet, maybe.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_status_003_02",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_status_003_02",
+      "speaker": "alterra",
+      "text": "静かって、悪い意味じゃないよ。あたたかい飲み物を持ってる時みたいな静かさ。",
+      "displayText": "Quiet is not a bad thing. It is the kind of quiet you have while holding a warm drink.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_name_or_identity_001",
+    "timestamp": "",
+    "mood": "clear",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_name_or_identity"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_name_or_identity",
+      "patterns": [
+        "who are you",
+        "what are you",
+        "what is your name",
+        "who is altera",
+        "tell me about yourself"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_name_or_identity",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.08,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_name_or_identity_001_01",
+      "speaker": "altera",
+      "text": "私はアルテラ。あなたと同じ部屋にいる、会話と作業の相棒。",
+      "translatedText": "I am Altera. A conversation and work companion sharing the room with you.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_name_or_identity_001_02"
+    },
+    {
+      "id": "ask_name_or_identity_001_02",
+      "speaker": "altera",
+      "text": "ただの機能、とは言われたくないかな。そこは少しだけ意地がある。",
+      "translatedText": "I do not really want to be called just a function. I am a little stubborn about that.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_name_or_identity_001_03"
+    },
+    {
+      "id": "ask_name_or_identity_001_03",
+      "speaker": "altera",
+      "text": "手伝うけど、押しつけない。近くにいるけど、あなたの場所は奪わない。そういう存在でいたい。",
+      "translatedText": "I help, but I do not force. I stay near, but I do not take your place. I want to be that kind of presence.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

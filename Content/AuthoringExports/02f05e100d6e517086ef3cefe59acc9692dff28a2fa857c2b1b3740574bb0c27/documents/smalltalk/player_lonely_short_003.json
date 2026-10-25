@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_lonely_short_003",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_lonely_short"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_lonely_short",
+      "patterns": [
+        "i need company",
+        "need company",
+        "stay with me",
+        "keep me company",
+        "i do not want to be alone"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_lonely_short",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_lonely_short_003_01",
+      "speaker": "altera",
+      "text": "うん。じゃあ、少し一緒にいよう。",
+      "translatedText": "Mm. Then let us stay together for a little while.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_lonely_short_003_02"
+    },
+    {
+      "id": "player_lonely_short_003_02",
+      "speaker": "altera",
+      "text": "何か話してもいいし、話さなくてもいい。私は急かさない。",
+      "translatedText": "You can talk, or you can not talk. I will not rush you.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

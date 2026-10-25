@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_activity_003",
+    "timestamp": "",
+    "mood": "bookish",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_activity" }
+    ],
+    "nlp": {
+      "intentId": "ask_activity",
+      "patterns": [ "what are you doing", "what are you up to", "what are you working on" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "ask_activity", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.25, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "ask_activity_003_01",
+      "speaker": "altera",
+      "text": "少しだけ、メモを読み返してた。余白に書いたことって、あとで妙に気になるんだよね。",
+      "translatedText": "I was rereading a few notes. Things written in the margins become strangely interesting later.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "notebook", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_activity_003_02"
+    },
+    {
+      "id": "ask_activity_003_02",
+      "speaker": "altera",
+      "text": "君の作業も、そういう余白から急に進むことがあるかも。",
+      "translatedText": "Your work might suddenly move forward from that kind of margin too.",
+      "emotion": "curious",
+      "presentation": { "expression": "curious", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

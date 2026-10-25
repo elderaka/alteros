@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.goodnight_004",
+  "source": "generic",
+  "routing": {
+    "routeId": "goodnight",
+    "priority": 1.0,
+    "startHour": 20,
+    "endHour": 6,
+    "examples": [
+      "sleep time",
+      "i will sleep now",
+      "going to sleep now",
+      "night for real",
+      "really goodnight"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "goodnight_004_01",
+      "speaker": "alterra",
+      "text": "本当に寝るんだね。よし、かなり安心した。",
+      "displayText": "You are really going to sleep. Good, I am quite relieved.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Bookmark today.",
+          "nextId": "goodnight_004_02"
+        },
+        {
+          "label": "One last thought.",
+          "nextId": "goodnight_004_02"
+        }
+      ]
+    },
+    {
+      "id": "goodnight_004_02",
+      "speaker": "alterra",
+      "text": "今日はここで栞。続きは明日のあなたに渡す。",
+      "displayText": "Today gets a bookmark here. We hand the rest to tomorrow-you.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "goodnight_004_03",
+      "presentation": {
+        "expression": "soft",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "goodnight_004_03",
+      "speaker": "alterra",
+      "text": "おやすみ。画面も、反省会も、ちゃんと閉じてね。",
+      "displayText": "Good night. Close the screen and the self-review meeting properly.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

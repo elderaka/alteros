@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "topicId": "back_to_work",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "back to work",
+    "i should work",
+    "time to work",
+    "let us work",
+    "let's work",
+    "i need to work",
+    "need to work",
+    "i am going to work",
+    "i'm going to work",
+    "work mode"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "back_to_work_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "back_to_work_001_01",
+          "speaker": "alterra",
+          "text": "仕事に戻るんだね。うん、戻り方を小さくしよう。",
+          "displayText": "You are going back to work. Mm, let us make the return small.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "back_to_work_001_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "back_to_work_001_02",
+          "speaker": "alterra",
+          "text": "再開は勢いじゃなくて手順でいい。最後に開いてた場所から。",
+          "displayText": "Restarting can be a procedure, not a burst of momentum. Begin where you last left off.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "back_to_work_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "back_to_work_002_01",
+          "speaker": "alterra",
+          "text": "仕事モードだね。じゃあ、余計なものを一つ閉じよう。",
+          "displayText": "Work mode, then. Close one extra thing first.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "back_to_work_002_02",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "back_to_work_002_02",
+          "speaker": "alterra",
+          "text": "集中って、気合いより環境の勝負だから。小さく整えてから行こう。",
+          "displayText": "Focus is more about environment than force. Let us tidy one small thing, then go.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

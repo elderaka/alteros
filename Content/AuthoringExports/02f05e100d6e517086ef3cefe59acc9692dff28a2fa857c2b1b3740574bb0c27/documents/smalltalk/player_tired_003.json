@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_tired_003",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_tired"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_tired",
+      "patterns": [
+        "i have no energy",
+        "no energy",
+        "i am drained",
+        "i'm drained",
+        "drained"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_tired",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_tired_003_01",
+      "speaker": "altera",
+      "text": "電池が少ない感じか。じゃあ、省エネモードにしよ。",
+      "translatedText": "So your battery feels low. Then let us switch to energy-saving mode.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_tired_003_02"
+    },
+    {
+      "id": "player_tired_003_02",
+      "speaker": "altera",
+      "text": "完璧に動かなくていい。止まらないための最低限で、今日は合格。",
+      "translatedText": "You do not need to function perfectly. The minimum that keeps you from stalling is enough today.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

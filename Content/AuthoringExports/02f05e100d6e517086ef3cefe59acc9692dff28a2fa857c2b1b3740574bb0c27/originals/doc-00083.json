@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_room_or_desk_comment_002",
+    "timestamp": "",
+    "mood": "pleased",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "room_or_desk_comment" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "room_or_desk_comment",
+      "patterns": [ "my desk is clean", "clean desk", "i cleaned my desk", "room is clean", "i cleaned my room" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "room_or_desk_comment", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "room_or_desk_comment_002_01",
+      "speaker": "altera",
+      "text": "きれいになったの？ それはかなり大きい。",
+      "translatedText": "It is clean now? That is actually quite big.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "room_or_desk_comment_002_02"
+    },
+    {
+      "id": "room_or_desk_comment_002_02",
+      "speaker": "altera",
+      "text": "机の上が整うと、考えごとも少し座る場所を見つける気がする。",
+      "translatedText": "When the desk is orderly, I feel like thoughts find somewhere to sit.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "room_or_desk_comment_002_03"
+    },
+    {
+      "id": "room_or_desk_comment_002_03",
+      "speaker": "altera",
+      "text": "ちょっと羨ましい。私もノートの端をそろえたくなってきた。",
+      "translatedText": "I am a little jealous. Now I want to line up the edges of a notebook.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "room_or_desk_comment_002_04"
+    },
+    {
+      "id": "room_or_desk_comment_002_04",
+      "speaker": "altera",
+      "text": "今の状態、少しだけ保護しよう。すぐ物を増やしすぎないように。",
+      "translatedText": "Protect this state a little. Do not let too many things pile up again too quickly.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

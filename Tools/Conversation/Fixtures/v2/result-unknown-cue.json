@@ -1,0 +1,16 @@
+{
+  "protocolVersion": 2,
+  "type": "result",
+  "requestId": "request-v2-1",
+  "payload": {
+    "judgment": {
+      "kind": "novel_candidate",
+      "topicId": "",
+      "referencedTopicIds": [],
+      "reply": { "beats": [{ "id": "beat-1", "text": "こんにちは。", "displayText": "Hello.", "language": "japanese", "expression": "secret-animation" }] },
+      "suggestedReplies": []
+    },
+    "usage": { "inputTokens": 10, "outputTokens": 5, "totalTokens": 15, "costUsd": null },
+    "timing": { "providerMs": 100, "totalMs": 120 }
+  }
+}

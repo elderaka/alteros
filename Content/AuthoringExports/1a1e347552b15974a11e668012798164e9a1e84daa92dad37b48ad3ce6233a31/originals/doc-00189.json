@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_compliment_003",
+    "timestamp": "",
+    "mood": "flustered",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "compliment" }
+    ],
+    "nlp": {
+      "intentId": "compliment",
+      "patterns": [ "you are lovely", "you are adorable", "you are precious", "you are sweet", "you are really cute" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "compliment", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.15, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "compliment_003_01",
+      "speaker": "altera",
+      "text": "えっ。今の、かなりまっすぐ来たね。",
+      "translatedText": "Eh. That came at me very directly.",
+      "emotion": "flustered",
+      "presentation": { "expression": "flustered", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_02"
+    },
+    {
+      "id": "compliment_003_02",
+      "speaker": "altera",
+      "text": "褒められるのに慣れてる顔は、たぶん今できてない。",
+      "translatedText": "I am probably not making the face of someone used to being complimented.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "It was sincere.",
+          "nextId": "compliment_003_sincere",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.2, "op": "add" },
+            { "target": "altera", "stat": "reassurance", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "I like teasing you.",
+          "nextId": "compliment_003_tease",
+          "statChanges": [
+            { "target": "altera", "stat": "engagement", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "I'll slow down.",
+          "nextId": "compliment_003_slow",
+          "statChanges": [
+            { "target": "altera", "stat": "comfort", "amount": 0.2, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "compliment_003_03"
+    },
+    {
+      "id": "compliment_003_sincere",
+      "speaker": "altera",
+      "text": "……そう言われると、ちゃんと受け取らないと失礼な気がする。",
+      "translatedText": "When you say that, it feels rude not to receive it properly.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_03"
+    },
+    {
+      "id": "compliment_003_tease",
+      "speaker": "altera",
+      "text": "楽しんでるでしょ。少しだけ分かる。顔に出てる、たぶん。",
+      "translatedText": "You are enjoying this, aren't you? I can tell a little. It is probably on your face.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_03"
+    },
+    {
+      "id": "compliment_003_slow",
+      "speaker": "altera",
+      "text": "うん、そのくらいの距離感だと助かる。近づくなら、丁寧に。",
+      "translatedText": "Mm, that kind of distance helps. If we get closer, gently.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_03"
+    },
+    {
+      "id": "compliment_003_03",
+      "speaker": "altera",
+      "text": "ありがとう。言葉を小さく畳むみたいに、ここに置いておく。",
+      "translatedText": "Thank you. I will fold the words small and place them here.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_04"
+    },
+    {
+      "id": "compliment_003_04",
+      "speaker": "altera",
+      "text": "でも、褒め言葉だけで会話を埋めなくていいからね。",
+      "translatedText": "But you do not have to fill the conversation only with compliments.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_05"
+    },
+    {
+      "id": "compliment_003_05",
+      "speaker": "altera",
+      "text": "あなたが何を見てそう思ったのか、いつか聞かせて。",
+      "translatedText": "Someday, tell me what you saw that made you think that.",
+      "emotion": "soft",
+      "presentation": { "expression": "soft", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "compliment_003_06"
+    },
+    {
+      "id": "compliment_003_06",
+      "speaker": "altera",
+      "text": "そのほうが、たぶんもっと照れる。困るけど、嫌じゃない。",
+      "translatedText": "That would probably embarrass me even more. Troublesome, but not unpleasant.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

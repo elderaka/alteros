@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_status",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_status",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "how are you",
+      "how are you doing",
+      "how do you feel",
+      "you okay"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_status_01",
+      "speaker": "alterra",
+      "text": "大丈夫だよ。少し考えごとしてた、かも。",
+      "displayText": "I'm okay. A little thoughtful, maybe.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_status_02",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_status_02",
+      "speaker": "alterra",
+      "text": "でも、そうやって聞いてくれると助かるの。部屋が少し、静かすぎなくなるから。",
+      "displayText": "It helps when you ask, though. It makes the room feel less quiet.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

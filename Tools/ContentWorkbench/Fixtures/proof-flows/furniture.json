@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "settings": {
+    "schemaVersion": 1,
+    "catalogueVersion": "workbench-preview-v1",
+    "lengthUnit": "m",
+    "angleUnit": "deg",
+    "coordinateConvention": "unity_local_y_up_positive_z_forward",
+    "definitions": [],
+    "relationshipRules": [],
+    "capabilities": [],
+    "legacyAliases": []
+  },
+  "definitions": [
+    { "id": "furniture.seat.basic", "category": "seat", "useIds": [], "functions": [], "presentations": [] },
+    { "id": "furniture.table.general", "category": "table", "useIds": [], "functions": [], "presentations": [] },
+    { "id": "furniture.table.study", "category": "table", "useIds": [], "functions": [], "presentations": [] },
+    { "id": "furniture.bed.basic", "category": "bed", "useIds": [], "functions": [], "presentations": [] },
+    { "id": "furniture.water_dispenser", "category": "dispenser", "useIds": ["dispenser.collect"], "functions": [],
+      "presentations": [{ "descriptorId": "dispenser.collect_mock", "pointId": "point.use", "useId": "dispenser.collect" }] },
+    { "id": "furniture.tv.basic", "category": "tv", "useIds": ["tv.power", "tv.viewing"],
+      "functions": [{ "functionId": "power.set", "pointId": "point.use", "useId": "tv.power", "contractVersion": 1,
+        "contract": { "desiredState": ["Off", "On"] } }], "presentations": [] },
+    { "id": "furniture.tv.second", "category": "tv", "useIds": ["tv.power", "tv.viewing"],
+      "functions": [{ "functionId": "power.set", "pointId": "point.use", "useId": "tv.power", "contractVersion": 1,
+        "contract": { "desiredState": ["Off", "On"] } }], "presentations": [] },
+    { "id": "furniture.window.basic", "category": "window", "useIds": ["window.power"],
+      "functions": [{ "functionId": "power.set", "pointId": "point.use", "useId": "window.power", "contractVersion": 1,
+        "contract": { "desiredState": ["Off", "On"] } }], "presentations": [] },
+    { "id": "furniture.carpet.basic", "category": "carpet", "useIds": [], "functions": [], "presentations": [] }
+  ]
+}

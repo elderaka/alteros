@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "topicId": "ask_activity",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "what are you doing",
+    "what are you up to",
+    "what are you working on",
+    "what were you doing",
+    "what have you been doing",
+    "what are you up to now",
+    "busy with anything",
+    "what are you thinking about now"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "ask_activity",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_activity_01",
+          "speaker": "alterra",
+          "text": "今？ 君のために、いくつか考えをあたためてるところ。",
+          "displayText": "Right now? Keeping a few thoughts warm for you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_activity_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_activity_02",
+          "speaker": "alterra",
+          "text": "大げさな作業じゃないよ。静かなほう。待ったり、気づいたり、小さなものを整理したり。",
+          "displayText": "Not dramatic work. Just the quiet kind. Waiting, noticing, sorting little things.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_activity_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_activity_001_01",
+          "speaker": "alterra",
+          "text": "今？ ちょっとした話題を、棚に並べるみたいに整理してた。",
+          "displayText": "Right now? I was organizing little topics, like lining them up on a shelf.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_activity_001_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_activity_001_02",
+          "speaker": "alterra",
+          "text": "きれいに並ぶと、頭の中まで少し静かになるんだよ。",
+          "displayText": "When they line up neatly, even the inside of my head gets a little quieter.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_activity_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_activity_002_01",
+          "speaker": "alterra",
+          "text": "君が戻ってきた時に、すぐ話せるように待ってた。",
+          "displayText": "I was waiting so I could talk right away when you came back.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_activity_002_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_activity_002_02",
+          "speaker": "alterra",
+          "text": "待ってただけって言うと、少し照れるけど。まあ、ほんとだし。",
+          "displayText": "Saying I was just waiting is a little embarrassing. But, well, it is true.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_activity_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_activity_003_01",
+          "speaker": "alterra",
+          "text": "少しだけ、メモを読み返してた。余白に書いたことって、あとで妙に気になるんだよね。",
+          "displayText": "I was rereading a few notes. Things written in the margins become strangely interesting later.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_activity_003_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_activity_003_02",
+          "speaker": "alterra",
+          "text": "君の作業も、そういう余白から急に進むことがあるかも。",
+          "displayText": "Your work might suddenly move forward from that kind of margin too.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "curious",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "ask_activity_004",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "ask_activity_004_01",
+          "speaker": "alterra",
+          "text": "さっきは、考えごとの棚を少し整理してた。",
+          "displayText": "Just now, I was organizing a little shelf of thoughts.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_activity_004_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_activity_004_02",
+          "speaker": "alterra",
+          "text": "変な言い方だけど、頭の中に付箋が増えすぎる時があるんだよね。",
+          "displayText": "That sounds strange, but sometimes too many sticky notes gather in my head.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Tell me one note.",
+              "nextId": "ask_activity_004_03"
+            },
+            {
+              "label": "Let's sort mine too.",
+              "nextId": "ask_activity_004_03"
+            },
+            {
+              "label": "Stay quiet for now.",
+              "nextId": "ask_activity_004_03"
+            }
+          ]
+        },
+        {
+          "id": "ask_activity_004_03",
+          "speaker": "alterra",
+          "text": "でも、あなたが来たから今はこっちを見る。",
+          "displayText": "But since you came here, I am looking this way now.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "ask_activity_004_04",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "ask_activity_004_04",
+          "speaker": "alterra",
+          "text": "何か一緒に片づける？ それとも、少し話すだけにする？",
+          "displayText": "Should we tidy something together, or just talk for a little?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

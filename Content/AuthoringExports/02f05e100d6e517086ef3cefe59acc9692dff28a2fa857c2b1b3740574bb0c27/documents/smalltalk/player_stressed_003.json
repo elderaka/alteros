@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_stressed_003",
+    "timestamp": "",
+    "mood": "firm_gentle",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_stressed"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_stressed",
+      "patterns": [
+        "i am anxious",
+        "i'm anxious",
+        "anxious",
+        "i feel anxious",
+        "i am tense"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_stressed",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_stressed_003_01",
+      "speaker": "altera",
+      "text": "不安が来てるんだ。じゃあ、まず事実と予想を分けよう。",
+      "translatedText": "Anxiety is here. Then first, let us separate facts from predictions.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_stressed_003_02"
+    },
+    {
+      "id": "player_stressed_003_02",
+      "speaker": "altera",
+      "text": "予想は声が大きいだけで、いつも正しいわけじゃないから。",
+      "translatedText": "Predictions are loud, but that does not mean they are always right.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

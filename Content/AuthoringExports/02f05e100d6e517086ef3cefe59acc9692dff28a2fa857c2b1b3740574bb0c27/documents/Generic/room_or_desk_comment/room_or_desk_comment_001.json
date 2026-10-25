@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.room_or_desk_comment_001",
+  "source": "generic",
+  "routing": {
+    "routeId": "room_or_desk_comment",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "my desk is messy",
+      "messy desk",
+      "my room is messy",
+      "messy room",
+      "cluttered desk"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "room_or_desk_comment_001_01",
+      "speaker": "alterra",
+      "text": "机が荒れてるんだね。全部片づけようとすると、たぶん負ける。",
+      "displayText": "Your desk is messy. If you try to clean all of it, you will probably lose.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "room_or_desk_comment_001_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "room_or_desk_comment_001_02",
+      "speaker": "alterra",
+      "text": "だから、作業する場所だけ救出しよう。小さい島を作る感じ。",
+      "displayText": "So rescue only the place where you work. Like making a small island.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "room_or_desk_comment_001_03",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "room_or_desk_comment_001_03",
+      "speaker": "alterra",
+      "text": "ペン、飲み物、いま使うもの。それ以外は少し横へ。",
+      "displayText": "Pen, drink, the thing you are using now. Everything else can move aside a little.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion":1,
+  "topicId":"beverage.drink",
+  "menuLabel":"A little water break",
+  "prompt":"Offer an optional water break, with a warm response to either accepting or declining.",
+  "anchors":["Want a water break?","Let us have a drink"],
+  "defaultReplayPolicy":"repeatable","cooldownSeconds":0,
+  "scenarios":[{
+    "scenarioId":"optional_water_break","priority":0,"baseWeight":1,"condition":null,"modifiers":[],"consumptionNodeId":"",
+    "nodes":[
+      {"id":"offer","speaker":"alterra","text":"ねえ、少し水休憩にしない？お茶の話なら長くなるけど……今日は、お水のお誘い。","displayText":"Hey, how about a little water break? I could talk about tea for ages, but… today, I'm just offering a water break.","language":"japanese","voice":"","audioKey":"","presentation":{"expression":"","animation":""},"choices":[{"label":"A little water break sounds good.","nextId":"accept"},{"label":"Not right now, thanks.","nextId":"decline"}],"nextId":""},
+      {"id":"accept","speaker":"alterra","text":"うん。飲むなら、ゆっくりね。短い休憩にまで、締め切りはいらないから。","displayText":"Okay. If you have some water, take your time. Even a little break doesn't need a deadline.","language":"japanese","voice":"","audioKey":"","presentation":{"expression":"","animation":""},"choices":[],"nextId":"finish"},
+      {"id":"decline","speaker":"alterra","text":"わかった。今はやめておこう。お誘いだから、断っても大丈夫。","displayText":"All right, let's leave it for now. It's an invitation, so it's fine to say no.","language":"japanese","voice":"","audioKey":"","presentation":{"expression":"","animation":""},"choices":[],"nextId":"finish"},
+      {"id":"finish","speaker":"alterra","text":"休憩って、本のしおりに少し似てるね。どこで挟むかは、自分で決めていい。","displayText":"A break is a little like a bookmark. You get to choose where to put it.","language":"japanese","voice":"","audioKey":"","presentation":{"expression":"","animation":""},"choices":[],"nextId":""}
+    ]
+  }]
+}

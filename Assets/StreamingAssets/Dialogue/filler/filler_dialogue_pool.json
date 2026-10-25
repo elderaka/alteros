@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Dialogue generation filler pool",
+    "timestamp": "",
+    "mood": "thinking",
+    "triggerConditions": []
+  },
+  "lines": [
+    {
+      "id": "filler_dialogue_01",
+      "text": "うん、少しだけ考えさせて。",
+      "translatedText": "Mm, give me just a second to think.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_dialogue_02",
+      "text": "んー、どう返すのがいちばんいいかな。",
+      "translatedText": "Hmm, what's the best way to answer that?",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_dialogue_03",
+      "text": "ちょっと待ってね。ちゃんと形にしてみる。",
+      "translatedText": "Hang on a moment. Let me shape it properly.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_dialogue_04",
+      "text": "ふふ、いま言葉を選んでるところ。",
+      "translatedText": "Heh, I'm choosing my words right now.",
+      "language": "japanese",
+      "triggerConditions": []
+    },
+    {
+      "id": "filler_dialogue_05",
+      "text": "よし、少し視点を整えてみるね。",
+      "translatedText": "Alright, let me line up my thoughts for a second.",
+      "language": "japanese",
+      "triggerConditions": []
+    }
+  ]
+}

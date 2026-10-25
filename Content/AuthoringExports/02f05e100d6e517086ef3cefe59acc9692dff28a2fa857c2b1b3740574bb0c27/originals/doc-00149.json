@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_needs_motivation_002",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_needs_motivation" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_needs_motivation",
+      "patterns": [ "help me start", "help me get started", "i need to start", "make me start", "push me a little" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_needs_motivation", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_needs_motivation_002_01",
+      "speaker": "altera",
+      "text": "始めるところが一番重いよね。そこだけ一緒に持つ。",
+      "translatedText": "The starting part is the heaviest. I will help carry just that part with you.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_needs_motivation_002_02"
+    },
+    {
+      "id": "player_needs_motivation_002_02",
+      "speaker": "altera",
+      "text": "最初の動作を一つにして。ファイルを開く、椅子に座る、タイトルを書く。どれか。",
+      "translatedText": "Make the first action one thing: open the file, sit down, write the title. Any one.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

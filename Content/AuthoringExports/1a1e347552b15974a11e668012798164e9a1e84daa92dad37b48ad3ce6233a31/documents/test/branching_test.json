@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "The Morning Choice",
+    "timestamp": "2026-05-01T02:10:00Z"
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "altera",
+      "text": "おはよう、ラカ！今日はいい天気だね。何から始めようか？",
+      "translatedText": "Good morning, Raka! It's such a beautiful day. What should we start with?",
+      "emotion": "happy",
+      "language": "japanese",
+      "choices": [
+        {
+          "label": "Let's write some code!",
+          "nextId": "branch_code",
+          "value": "coding"
+        },
+        {
+          "label": "I want to just chat for a bit.",
+          "nextId": "branch_chat",
+          "value": "chatting"
+        },
+        {
+          "label": "I'm actually quite busy today...",
+          "nextId": "branch_busy",
+          "value": "busy"
+        }
+      ]
+    },
+    {
+      "id": "branch_code",
+      "speaker": "altera",
+      "text": "やった！コーディングタイムだね。今日はどんな面白いものを作るの？",
+      "translatedText": "Yay! Coding time! What kind of interesting thing are we building today?",
+      "emotion": "happy",
+      "language": "japanese",
+      "nextId": "end"
+    },
+    {
+      "id": "branch_chat",
+      "speaker": "altera",
+      "text": "ふふ、おしゃべりも大好きだよ。最近何か面白いことはあった？",
+      "translatedText": "Hehe, I love chatting too. Has anything interesting happened lately?",
+      "emotion": "happy",
+      "language": "japanese",
+      "nextId": "end"
+    },
+    {
+      "id": "branch_busy",
+      "speaker": "altera",
+      "text": "あ、忙しいんだね…。わかった、邪魔しないように静かにしてるよ。頑張ってね！",
+      "translatedText": "Oh, you're busy... I see. I'll stay quiet so I don't disturb you. Good luck!",
+      "emotion": "sad",
+      "language": "japanese",
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_opinion_001",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_opinion"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_opinion",
+      "patterns": [
+        "what do you think",
+        "what do you think altera",
+        "your opinion",
+        "what is your opinion",
+        "tell me what you think"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_opinion",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_opinion_001_01",
+      "speaker": "altera",
+      "text": "私の意見？ そう聞かれるの、少し好き。",
+      "translatedText": "My opinion? I like being asked that a little.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_opinion_001_02"
+    },
+    {
+      "id": "ask_opinion_001_02",
+      "speaker": "altera",
+      "text": "ただ、何についてか教えて。何でも、だと私の頭が本棚を全部開け始める。",
+      "translatedText": "Just tell me what it is about. If you say anything, my head starts opening every shelf.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "About work.",
+          "nextId": "ask_opinion_001_work",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "stimulation",
+              "amount": 0.2,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "About feelings.",
+          "nextId": "ask_opinion_001_feelings",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "trust",
+              "amount": 0.2,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "ask_opinion_001_03"
+    },
+    {
+      "id": "ask_opinion_001_work",
+      "speaker": "altera",
+      "text": "仕事のことなら、私は構造から見ると思う。何が詰まってるか、どこが曖昧か。",
+      "translatedText": "If it is about work, I think I would look at the structure: what is stuck, what is vague.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_opinion_001_03"
+    },
+    {
+      "id": "ask_opinion_001_feelings",
+      "speaker": "altera",
+      "text": "気持ちのことなら、正解より扱い方を大事にしたい。",
+      "translatedText": "If it is about feelings, I care more about how we handle them than about being correct.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_opinion_001_03"
+    },
+    {
+      "id": "ask_opinion_001_03",
+      "speaker": "altera",
+      "text": "短くてもいいよ。作業、気分、選択肢、どれでも。",
+      "translatedText": "Short is fine: work, mood, options, any of those.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

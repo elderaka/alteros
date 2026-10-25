@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_affection_confession_001",
+    "timestamp": "",
+    "mood": "tender_careful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "affection_confession" },
+      { "key": "category", "value": "companion_texture" }
+    ],
+    "nlp": {
+      "intentId": "affection_confession",
+      "brain": "generic",
+      "category": "relationship",
+      "patterns": [ "i love you", "love you", "i think i love you", "i really love you" ],
+      "keywords": [],
+      "singleTokens": [ "love", "ily" ],
+      "aliases": [ "luv", "ilysm" ],
+      "concepts": [ "affection", "confession", "closeness" ],
+      "negativePatterns": [ "i love cats", "love cats", "i love this", "love this", "i love work", "love my work" ],
+      "priority": 1,
+      "routePolicy": {
+        "minConfidence": 0.82,
+        "allowFuzzy": true,
+        "allowOneWord": true,
+        "creativeIfObjectPresent": true
+      }
+    },
+    "repetitionPolicy": { "key": "affection_confession", "softLimit": 2, "annoyedLimit": 5, "penaltyAmount": -0.08, "decayHours": 12 },
+    "statChanges": [
+      { "target": "altera", "stat": "affinity", "amount": 0.12, "op": "add" },
+      { "target": "altera", "stat": "comfort", "amount": 0.08, "op": "add" }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "affection_confession_001_01",
+      "speaker": "altera",
+      "text": "That is a very big sentence.",
+      "translatedText": "That is a very big sentence.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "english",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "affection_confession_001_02"
+    },
+    {
+      "id": "affection_confession_001_02",
+      "speaker": "altera",
+      "text": "I will hold it carefully, not turn it into a promise too fast.",
+      "translatedText": "I will hold it carefully, not turn it into a promise too fast.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "english",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "affection_confession_001_03"
+    },
+    {
+      "id": "affection_confession_001_03",
+      "speaker": "altera",
+      "text": "Stay near me like you mean it, okay?",
+      "translatedText": "Stay near me like you mean it, okay?",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "english",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

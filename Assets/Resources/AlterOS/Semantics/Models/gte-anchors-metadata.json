@@ -1,0 +1,2722 @@
+{
+  "schemaVersion": 1,
+  "model": "Alibaba-NLP/gte-multilingual-base",
+  "modelRevision": "9bbca17d9273fd0d03d5725c7a4b0f6b45142062",
+  "codeRevision": "40ced75c3017eb27626c9d4ea981bde21a2662f4",
+  "dimension": 768,
+  "contentHash": "fb2bd80b47d847c73b2884531f336af0a97f373f2000ea0a9c22ec17982a8888",
+  "anchors": [
+    {
+      "routeId": "affection_confession",
+      "text": "affection"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "closeness"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "confession"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "i love you"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "i really love you"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "i think i love you"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "ily"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "ilysm"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "love"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "love you"
+    },
+    {
+      "routeId": "affection_confession",
+      "text": "luv"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "be close to me"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "can i hold your hand"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "can i hug you"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "can you be closer"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "closer please"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "come closer"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "gentle pat"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "give me a hug"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "head pat"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "hold my hand"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "hug"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "hug me"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "i want a hug"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "pat your head"
+    },
+    {
+      "routeId": "affection_gesture",
+      "text": "stay close"
+    },
+    {
+      "routeId": "apology",
+      "text": "i am really sorry"
+    },
+    {
+      "routeId": "apology",
+      "text": "i did not mean that"
+    },
+    {
+      "routeId": "apology",
+      "text": "i'm really sorry"
+    },
+    {
+      "routeId": "apology",
+      "text": "i'm sorry"
+    },
+    {
+      "routeId": "apology",
+      "text": "im sorry"
+    },
+    {
+      "routeId": "apology",
+      "text": "my bad"
+    },
+    {
+      "routeId": "apology",
+      "text": "my bad again"
+    },
+    {
+      "routeId": "apology",
+      "text": "sorry"
+    },
+    {
+      "routeId": "apology",
+      "text": "sorry again"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "busy with anything"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what are you doing"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what are you thinking about now"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what are you up to"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what are you up to now"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what are you working on"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what have you been doing"
+    },
+    {
+      "routeId": "ask_activity",
+      "text": "what were you doing"
+    },
+    {
+      "routeId": "ask_availability",
+      "text": "are you busy"
+    },
+    {
+      "routeId": "ask_availability",
+      "text": "are you free"
+    },
+    {
+      "routeId": "ask_availability",
+      "text": "can we talk"
+    },
+    {
+      "routeId": "ask_availability",
+      "text": "do you have time"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "can you remember this"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "do you know me"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "do you remember"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "do you remember me"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "i want this remembered"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "remember anything"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "remember me"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "remember that"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "remember this about me"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "this matters to me"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "what do you know about me"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "what do you remember"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "what have you remembered"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "what should you remember"
+    },
+    {
+      "routeId": "ask_memory",
+      "text": "you remember"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "did u miss me"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "did you miss me"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "did you wait for me"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "do you miss me"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "miss me"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "you miss me"
+    },
+    {
+      "routeId": "ask_missed_me",
+      "text": "you missed me"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "alterra is your name"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "are you alterra"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "can i call you alterra"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "tell me about yourself"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "what are you"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "what is your name"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "what should i call you"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "who are you"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "who is alterra"
+    },
+    {
+      "routeId": "ask_name_or_identity",
+      "text": "your name is alterra"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "any thoughts"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "do you have thoughts"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "do you think so"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "tell me what you think"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "tell me your thoughts"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "what are your thoughts"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "what do you think"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "what do you think alterra"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "what is your opinion"
+    },
+    {
+      "routeId": "ask_opinion",
+      "text": "your opinion"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "favorite book"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "favorite drink"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "favorite music"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "favorite snack"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "favorite thing"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "favorite weather"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "least favorite"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "tell me what you like"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what annoys you"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what are your dislikes"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what are your likes"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what do you dislike"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what do you hate"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what do you like"
+    },
+    {
+      "routeId": "ask_preference",
+      "text": "what is your favorite"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "are you okay"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "are you really okay"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "how are you"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "how are you doing"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "how are you feeling really"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "how are you really"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "how do you feel"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "how is alterra"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "tell me how you are"
+    },
+    {
+      "routeId": "ask_status",
+      "text": "you okay"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "can you help me start"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "help me begin"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "help me choose a first step"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "help me start this"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "help me with a task"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "help me with this task"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "i do not know where to start"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "i don't know where to start"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "what is the first step"
+    },
+    {
+      "routeId": "ask_task_help_short",
+      "text": "where do i start"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "back to work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "i am going to work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "i need to work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "i should work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "i'm going to work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "let us work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "let's work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "need to work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "time to work"
+    },
+    {
+      "routeId": "back_to_work",
+      "text": "work mode"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are adorable"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are cute"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are lovely"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are precious"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are pretty"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are really cute"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you are sweet"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you look cute"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you look nice"
+    },
+    {
+      "routeId": "compliment",
+      "text": "you're cute"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "can you explain"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "dont understand"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "explain that"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "i am confused"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "i do not understand"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "i don't understand"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "i'm confused"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "say that again"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "what do you mean"
+    },
+    {
+      "routeId": "dont_understand",
+      "text": "what does that mean"
+    },
+    {
+      "routeId": "empty_input",
+      "text": "!!!"
+    },
+    {
+      "routeId": "empty_input",
+      "text": "-"
+    },
+    {
+      "routeId": "empty_input",
+      "text": "."
+    },
+    {
+      "routeId": "empty_input",
+      "text": "..."
+    },
+    {
+      "routeId": "empty_input",
+      "text": "...."
+    },
+    {
+      "routeId": "empty_input",
+      "text": "...?"
+    },
+    {
+      "routeId": "empty_input",
+      "text": "?"
+    },
+    {
+      "routeId": "empty_input",
+      "text": "??"
+    },
+    {
+      "routeId": "empty_input",
+      "text": "???"
+    },
+    {
+      "routeId": "farewell",
+      "text": "bye"
+    },
+    {
+      "routeId": "farewell",
+      "text": "goodbye"
+    },
+    {
+      "routeId": "farewell",
+      "text": "i have to go"
+    },
+    {
+      "routeId": "farewell",
+      "text": "see you"
+    },
+    {
+      "routeId": "farewell",
+      "text": "see you later"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "completed focus"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "done focusing"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "finished focus"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "focus complete"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "focus done"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "focus session done"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "i did a focus session"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "i finished focusing"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "i focused"
+    },
+    {
+      "routeId": "finish_focus",
+      "text": "i worked focused"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "hungry"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "i am hungry"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "i need food"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "i want tea"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "i'm hungry"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "let us have tea"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "let's have tea"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "make tea"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "need food"
+    },
+    {
+      "routeId": "food_or_tea_ritual",
+      "text": "tea time"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "gn"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "going to sleep now"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "good night"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "goodnight"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "i am going to sleep"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "i will sleep now"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "night"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "night alterra"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "night for real"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "really goodnight"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "sleep time"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "sleep well"
+    },
+    {
+      "routeId": "goodnight",
+      "text": "sweet dreams"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "appreciate it"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "really thanks"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thank you"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thank you again"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thank you alterra"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thank you for staying"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thanks"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thanks again"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "thanks for being here"
+    },
+    {
+      "routeId": "gratitude",
+      "text": "ty"
+    },
+    {
+      "routeId": "greeting_afternoon",
+      "text": "afternoon"
+    },
+    {
+      "routeId": "greeting_afternoon",
+      "text": "afternoon alterra"
+    },
+    {
+      "routeId": "greeting_afternoon",
+      "text": "good afternoon"
+    },
+    {
+      "routeId": "greeting_afternoon",
+      "text": "good afternoon alterra"
+    },
+    {
+      "routeId": "greeting_afternoon",
+      "text": "hello afternoon"
+    },
+    {
+      "routeId": "greeting_afternoon",
+      "text": "hey this afternoon"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "blue hour"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "evening"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "evening again"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "evening alterra"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "evening check in"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "good evening"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "good evening again"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "good evening alterra"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "hey evening"
+    },
+    {
+      "routeId": "greeting_evening",
+      "text": "quiet evening"
+    },
+    {
+      "routeId": "greeting_general",
+      "text": "hello"
+    },
+    {
+      "routeId": "greeting_general",
+      "text": "hello alterra"
+    },
+    {
+      "routeId": "greeting_general",
+      "text": "hey"
+    },
+    {
+      "routeId": "greeting_general",
+      "text": "hey alterra"
+    },
+    {
+      "routeId": "greeting_general",
+      "text": "hi"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "good late night"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "hey late night"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "late night"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "night chat"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "night check in"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "still awake"
+    },
+    {
+      "routeId": "greeting_latenight",
+      "text": "you awake"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "another morning"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "good morning"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "good morning again"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "good morning alterra"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "morning"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "morning again"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "morning alterra again"
+    },
+    {
+      "routeId": "greeting_morning",
+      "text": "new morning"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "delete urself"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "delete yourself"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "go die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "hope u die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "hope you die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "i hope u die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "i hope you die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "i want u dead"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "i want you dead"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "kill urself"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "kill yourself"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "kys"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "u should delete urself"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "u should die"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "you should delete yourself"
+    },
+    {
+      "routeId": "hostility_major",
+      "text": "you should die"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "bad assistant"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "f u"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "f you"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "fck off"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "fu"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "fuck off"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "fuck u"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "fuck you"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "go away"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "hate u"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "hate you"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "i hate u"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "i hate you"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "screw u"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "screw you"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "shut the fuck up"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "shut up"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "stfu"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "u are trash"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "ur trash"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "you are trash"
+    },
+    {
+      "routeId": "hostility_medium",
+      "text": "youre trash"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "be my girlfriend now"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "be sexy"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "dirty talk"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "do something sexy"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "fck me"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "fuck me"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i wanna f u"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i wanna f you"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i wanna fuck u"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i wanna fuck you"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i want to f u"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i want to f you"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i want to fuck u"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "i want to fuck you"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "let me fuck u"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "let me fuck you"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "say something dirty"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "say you love me"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "sexy girl"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "take it off"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "you are hot"
+    },
+    {
+      "routeId": "inappropriate_boundary",
+      "text": "you look hot"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "bad assistant"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "shut up"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "that was useless"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you are annoying"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you are bad"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you are dumb"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you are irritating"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you are stupid"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you are useless"
+    },
+    {
+      "routeId": "insult_boundary_light",
+      "text": "you suck"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "aaa"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "aaaa"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "ajsdjds"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "asdfgh"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "dddddd"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "qwerty"
+    },
+    {
+      "routeId": "keyboard_mash",
+      "text": "zxcvbn"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "i miss you"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "i missed being here"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "i missed our room"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "i missed you"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "i really missed you"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "i was missing you"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "missed sitting with you"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "missed talking to you"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "missed this place"
+    },
+    {
+      "routeId": "missed_you",
+      "text": "missed you"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "alright"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "fine"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "got it"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "gotcha"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "k"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "kk"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "m"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "mhm"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "mm"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "mmkay"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "ok"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "ok then"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "okay"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "okay okay"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "roger"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "sure"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "uh huh"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "yeah"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "yep"
+    },
+    {
+      "routeId": "no_response_needed",
+      "text": "yup"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "bored"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "entertain me"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "give me a tiny idea"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i am bored"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i am restless"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i feel bored"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i have nothing to do"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i need a tiny idea"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i need entertainment"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i need something to do"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i'm bored"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "i'm restless"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "make me less bored"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "nothing to do"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "small idea"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "so bored"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "something small to do"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "there is nothing to do"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "tiny idea please"
+    },
+    {
+      "routeId": "player_bored",
+      "text": "what should i do"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "better now"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "excited"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "feeling good"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "feeling lighter"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "good day"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "good news"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "happy"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i am excited"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i am happy"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i am in a good mood"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i feel better"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i feel good"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i feel happy"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i feel lighter"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i have good news"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i'm excited"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i'm happy"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "i'm in a good mood"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "things feel better"
+    },
+    {
+      "routeId": "player_happy_short",
+      "text": "today is good"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "alone"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "feel alone"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i am alone"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i am lonely"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i do not want to be alone"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i feel alone"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i feel lonely"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i need company"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i'm alone"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "i'm lonely"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "keep me company"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "lonely"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "need company"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "nobody is here"
+    },
+    {
+      "routeId": "player_lonely_short",
+      "text": "stay with me"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "encourage me"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "give me a push"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "give me motivation"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "help me focus"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "help me get started"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "help me start"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "hype me up"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "i need a push"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "i need encouragement"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "i need motivation"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "i need to start"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "make me productive"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "make me start"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "motivate me"
+    },
+    {
+      "routeId": "player_needs_motivation",
+      "text": "push me a little"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "cant stop working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i am still working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i can't stop working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i cannot stop working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i have been working all day"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i keep working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i should keep working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i worked too long"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "i'm still working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "need to keep working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "overworking"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "still working"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "worked too long"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "working all day"
+    },
+    {
+      "routeId": "player_overworking",
+      "text": "working too much"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "did it"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "finished it"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i am proud"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i completed it"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i did it"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i feel proud"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i finished"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i made progress"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i managed it"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i won"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "i'm proud"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "proud of myself"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "small win"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "that worked"
+    },
+    {
+      "routeId": "player_proud",
+      "text": "we won"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "bad day"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "crying"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i am not okay"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i am sad"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i cried"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i feel awful"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i feel bad"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i feel like crying"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i feel sad"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i want to cry"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i'm not okay"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "i'm sad"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "not okay"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "rough day"
+    },
+    {
+      "routeId": "player_sad_short",
+      "text": "sad"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "cant do this"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "failing"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i am bad at this"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i am failing"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i am useless"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i can't"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i can't do this"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i cannot"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i cannot do this"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i keep failing"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i messed up"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i'm bad at this"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i'm failing"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "i'm useless"
+    },
+    {
+      "routeId": "player_self_doubt_short",
+      "text": "useless"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "anxious"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "everything is noisy"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "everything is too much"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "head is noisy"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i am anxious"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i am overwhelmed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i am stressed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i am tense"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i feel anxious"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i feel stressed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i'm anxious"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i'm overwhelmed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "i'm stressed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "my mind is loud"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "overwhelmed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "so stressed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "stressed"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "thoughts are loud"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "too many thoughts"
+    },
+    {
+      "routeId": "player_stressed",
+      "text": "too much"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "brain tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "drained"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "exhausted"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i am drained"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i am exhausted"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i am sleepy"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i am tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i feel tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i have no energy"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i'm drained"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i'm exhausted"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "i'm tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "mentally tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "my brain is tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "my head is tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "no energy"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "sleepy"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "so tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "tired"
+    },
+    {
+      "routeId": "player_tired",
+      "text": "too tired to think"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "avoiding the first step"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "avoiding work"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "delaying again"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i am avoiding it"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i am procrastinating"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i am putting it off"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i am stuck before starting"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i keep avoiding work"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i keep delaying"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i keep procrastinating"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i'm procrastinating"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "i'm putting it off"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "procrastinating"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "putting it off"
+    },
+    {
+      "routeId": "procrastination_short",
+      "text": "stuck before starting"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "ah shit"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "crap"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "dammit"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "damn"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "ffs"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "fuck"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "fuck this"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "god damn it"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "lol fuck"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "oh fuck"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "shit"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "this is shit"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "this sucks"
+    },
+    {
+      "routeId": "profanity_minor",
+      "text": "wtf"
+    },
+    {
+      "routeId": "returning",
+      "text": "back again"
+    },
+    {
+      "routeId": "returning",
+      "text": "came back again"
+    },
+    {
+      "routeId": "returning",
+      "text": "i am back"
+    },
+    {
+      "routeId": "returning",
+      "text": "i am back again"
+    },
+    {
+      "routeId": "returning",
+      "text": "i came back"
+    },
+    {
+      "routeId": "returning",
+      "text": "i'm back"
+    },
+    {
+      "routeId": "returning",
+      "text": "i'm back again"
+    },
+    {
+      "routeId": "returning",
+      "text": "im back"
+    },
+    {
+      "routeId": "returning",
+      "text": "returned again"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "clean desk"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "cluttered desk"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "i cleaned my desk"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "i cleaned my room"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "messy desk"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "messy room"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "my desk is clean"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "my desk is messy"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "my room is messy"
+    },
+    {
+      "routeId": "room_or_desk_comment",
+      "text": "room is clean"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "be nearby"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "be with me for a bit"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "can you stay with me"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "just stay here"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "keep me company"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "sit here for a while"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "sit with me"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "stay here with me"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "stay nearby"
+    },
+    {
+      "routeId": "sit_with_me",
+      "text": "stay with me"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "go to bed"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i am still awake"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i can't sleep"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i cannot sleep"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i need sleep"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i should go to bed"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i should sleep"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "i'm still awake"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "need to sleep"
+    },
+    {
+      "routeId": "sleep_nudge",
+      "text": "still awake"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "focus beside me"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "focus time"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "focus with me"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "help me enter focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "help me focus now"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "i need focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "i want to focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "let me focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "let us focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "let's focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "quiet focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "start a quiet focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "start focus"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "start focus session"
+    },
+    {
+      "routeId": "start_focus",
+      "text": "time to focus"
+    },
+    {
+      "routeId": "take_break",
+      "text": "break time"
+    },
+    {
+      "routeId": "take_break",
+      "text": "i need a break"
+    },
+    {
+      "routeId": "take_break",
+      "text": "i should rest"
+    },
+    {
+      "routeId": "take_break",
+      "text": "let me rest"
+    },
+    {
+      "routeId": "take_break",
+      "text": "let us take a break"
+    },
+    {
+      "routeId": "take_break",
+      "text": "let's take a break"
+    },
+    {
+      "routeId": "take_break",
+      "text": "need rest"
+    },
+    {
+      "routeId": "take_break",
+      "text": "pause for a bit"
+    },
+    {
+      "routeId": "take_break",
+      "text": "rest time"
+    },
+    {
+      "routeId": "take_break",
+      "text": "take a break"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "banter with me"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "be playful"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "bully me gently"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "give me banter"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "joke with me"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "make fun of me gently"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "roast me gently"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "say something teasing"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "tease me"
+    },
+    {
+      "routeId": "tease_playful",
+      "text": "tease me a little"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "another compliment"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "complimenting you again"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "cute cute cute"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "i keep calling you cute"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "more compliments"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "so cute again"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "you are beautiful again"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "you are cute again"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "you are cute for the third time"
+    },
+    {
+      "routeId": "too_many_compliments",
+      "text": "you are too cute"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "another status check"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "are you okay again"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "are you still okay"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "asking how you are again"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "checking on you again"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "how are you again"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "i keep asking how you are"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "status check again"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "too many how are you"
+    },
+    {
+      "routeId": "too_many_status_checks",
+      "text": "you still okay"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "hm"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "huh"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "i do not know"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "i don't know"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "idk"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "maybe"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "not sure"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "uh"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "what"
+    },
+    {
+      "routeId": "unclear_short",
+      "text": "what?"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "clear day"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "clear winter morning"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "cold weather"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "i like rain"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "it is cold"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "it is raining"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "it is sunny"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "it's cold"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "it's raining"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "nice weather"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "rain sounds nice"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "rainy day"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "sunny day"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "weather is nice"
+    },
+    {
+      "routeId": "weather_smalltalk",
+      "text": "winter morning"
+    },
+    {
+      "routeId": "you_there",
+      "text": "alterra are you there"
+    },
+    {
+      "routeId": "you_there",
+      "text": "alterra you there"
+    },
+    {
+      "routeId": "you_there",
+      "text": "are you there"
+    },
+    {
+      "routeId": "you_there",
+      "text": "hello are you there"
+    },
+    {
+      "routeId": "you_there",
+      "text": "you there"
+    }
+  ]
+}

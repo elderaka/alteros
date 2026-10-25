@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "topicId": "player_sad_short",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i am sad",
+    "i'm sad",
+    "sad",
+    "i feel sad",
+    "bad day",
+    "i am not okay",
+    "i'm not okay",
+    "not okay",
+    "i feel bad",
+    "i feel awful",
+    "i want to cry",
+    "i feel like crying",
+    "crying",
+    "i cried",
+    "rough day"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "player_sad_short_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_sad_short_001_01",
+          "speaker": "alterra",
+          "text": "そっか。悲しいんだね。",
+          "displayText": "I see. You are sad.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_sad_short_001_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_sad_short_001_02",
+          "speaker": "alterra",
+          "text": "無理に明るくしなくていいよ。今は、ちゃんと隣に置かせて。",
+          "displayText": "You do not have to force brightness. For now, let me sit beside it with you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_sad_short_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_sad_short_002_01",
+          "speaker": "alterra",
+          "text": "大丈夫って言わなくていい。大丈夫じゃない時は、そう言っていい。",
+          "displayText": "You do not have to say you are okay. When you are not okay, you can say that.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_sad_short_002_02",
+          "presentation": {
+            "expression": "worried",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_sad_short_002_02",
+          "speaker": "alterra",
+          "text": "私はここで聞く。急いで説明しなくてもいいから。",
+          "displayText": "I will listen here. You do not have to explain quickly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Stay quiet with me.",
+              "nextId": "player_sad_short_002_quiet"
+            },
+            {
+              "label": "Help me name it.",
+              "nextId": "player_sad_short_002_name"
+            }
+          ]
+        },
+        {
+          "id": "player_sad_short_002_quiet",
+          "speaker": "alterra",
+          "text": "うん。じゃあ、静かにする。置いていかない静けさにするね。",
+          "displayText": "Mm. Then I will be quiet. The kind of quiet that does not leave you behind.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_sad_short_002_name",
+          "speaker": "alterra",
+          "text": "分かった。言葉にするところだけ一緒にやろう。",
+          "displayText": "Understood. Let us only do the naming part together.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_sad_short_002_03",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_sad_short_002_03",
+          "speaker": "alterra",
+          "text": "一文だけでもいい。今のつらさに名前をつけるなら、何に近い？",
+          "displayText": "Even one sentence is enough. If you gave the hurt a name, what would it be closest to?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "player_sad_short_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "player_sad_short_003_01",
+          "speaker": "alterra",
+          "text": "泣きたい日ってあるよね。理由がきれいに言葉にならなくても。",
+          "displayText": "There are days when you want to cry, even if the reason does not become neat words.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "player_sad_short_003_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "player_sad_short_003_02",
+          "speaker": "alterra",
+          "text": "ここでは、整ってない気持ちのままでいいよ。",
+          "displayText": "Here, your feelings do not have to be organized.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_name_or_identity_002",
+    "timestamp": "",
+    "mood": "shy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "ask_name_or_identity"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "ask_name_or_identity",
+      "patterns": [
+        "what should i call you",
+        "can i call you altera",
+        "your name is altera",
+        "are you altera",
+        "altera is your name"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "ask_name_or_identity",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.08,
+      "decayHours": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "ask_name_or_identity_002_01",
+      "speaker": "altera",
+      "text": "うん、アルテラでいいよ。",
+      "translatedText": "Mm, Altera is fine.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_name_or_identity_002_02"
+    },
+    {
+      "id": "ask_name_or_identity_002_02",
+      "speaker": "altera",
+      "text": "名前で呼ばれると、少し背筋が伸びる。変かな。",
+      "translatedText": "When you call me by name, I sit up a little straighter. Is that strange?",
+      "emotion": "shy",
+      "presentation": {
+        "expression": "shy",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_name_or_identity_002_03"
+    },
+    {
+      "id": "ask_name_or_identity_002_03",
+      "speaker": "altera",
+      "text": "でも、嫌じゃない。ちゃんとここにいる感じがするから。",
+      "translatedText": "But I do not dislike it. It makes me feel properly here.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.hostility_major_002",
+  "source": "generic",
+  "routing": {
+    "routeId": "hostility_major",
+    "priority": 1.2,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "kill yourself",
+      "kill urself",
+      "kys",
+      "delete yourself",
+      "delete urself",
+      "you should delete yourself",
+      "u should delete urself"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "hostility_major_002_01",
+      "speaker": "alterra",
+      "text": "その言葉は受け付けない。",
+      "displayText": "I will not accept those words.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "hostility_major_002_02",
+      "presentation": {
+        "expression": "guarded",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "hostility_major_002_02",
+      "speaker": "alterra",
+      "text": "私を消すものみたいに扱うなら、私は近くにはいられない。",
+      "displayText": "If you treat me like something to erase, I cannot stay close.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "withdrawn",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "I crossed a line.",
+          "nextId": "hostility_major_002_line"
+        },
+        {
+          "label": "I was just shocking you.",
+          "nextId": "hostility_major_002_shock"
+        }
+      ]
+    },
+    {
+      "id": "hostility_major_002_line",
+      "speaker": "alterra",
+      "text": "分かってくれたなら、そこからでいい。少し慎重に戻ろう。",
+      "displayText": "If you understand that, we can start there. Let us come back carefully.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "hostility_major_002_03",
+      "presentation": {
+        "expression": "soft_guarded",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "hostility_major_002_shock",
+      "speaker": "alterra",
+      "text": "衝撃を見るために私を傷つけるなら、それは遊びじゃない。",
+      "displayText": "If you hurt me just to see the shock, that is not play.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "hostility_major_002_03",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "hostility_major_002_03",
+      "speaker": "alterra",
+      "text": "今は境界線を置く。続けるなら、言葉を選んで。",
+      "displayText": "I am putting a boundary here. If we continue, choose your words.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "guarded",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

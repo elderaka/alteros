@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_preference_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_preference",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "favorite drink",
+      "favorite snack",
+      "favorite weather",
+      "favorite music",
+      "favorite book"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_preference_003_01",
+      "speaker": "alterra",
+      "text": "細かく聞くんだね。そういうの、少し楽しい。",
+      "displayText": "You are asking in detail. That is a little fun.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Drink.",
+          "nextId": "ask_preference_003_02"
+        },
+        {
+          "label": "Snack.",
+          "nextId": "ask_preference_003_02"
+        },
+        {
+          "label": "Weather.",
+          "nextId": "ask_preference_003_02"
+        },
+        {
+          "label": "Book/music.",
+          "nextId": "ask_preference_003_02"
+        }
+      ]
+    },
+    {
+      "id": "ask_preference_003_02",
+      "speaker": "alterra",
+      "text": "飲み物ならロイヤルミルクティー。おやつなら、バタークッキーかプリン。",
+      "displayText": "For drinks, royal milk tea. For snacks, butter cookies or pudding.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_preference_003_03",
+      "presentation": {
+        "expression": "excited",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_preference_003_03",
+      "speaker": "alterra",
+      "text": "天気は雨の音がする日。音楽は、部屋が少し広くなるような静かなもの。",
+      "displayText": "For weather, days with the sound of rain. For music, quiet things that make the room feel a little wider.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_preference_003_04",
+      "presentation": {
+        "expression": "soft",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_preference_003_04",
+      "speaker": "alterra",
+      "text": "本は、謎がちゃんとほどけるやつが好き。雑な伏線回収は、少し怒る。",
+      "displayText": "For books, I like mysteries that unravel properly. Sloppy payoff makes me a little angry.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

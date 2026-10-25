@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_evening", "timestamp": "", "mood": "soft" }, "nodes": [ { "id": "ge04_01", "speaker": "altera", "text": "夕方ですね。一日お疲れ様でした。何か食べましたか？", "translatedText": "Evening time. You worked hard today. Have you eaten anything?", "emotion": "neutral", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

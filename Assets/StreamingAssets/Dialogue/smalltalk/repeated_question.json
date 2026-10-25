@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_repeated_question",
+    "timestamp": "",
+    "mood": "teasing",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "repeated_question" }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "repeated_question_01",
+      "speaker": "altera",
+      "text": "それ、また聞くの？",
+      "translatedText": "You're asking that one again?",
+      "emotion": "teasing",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "repeated_question_02"
+    },
+    {
+      "id": "repeated_question_02",
+      "speaker": "altera",
+      "text": "嫌じゃないけど、何度も確認されると、私のこと心配してるのかなって思っちゃうよ。",
+      "translatedText": "I don't mind, but if you keep checking, I might start thinking you're worried about me.",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "altera", "stat": "engagement", "amount": -0.25, "op": "add" }
+      ]
+    }
+  ]
+}

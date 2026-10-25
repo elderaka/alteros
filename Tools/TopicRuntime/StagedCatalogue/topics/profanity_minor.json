@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "topicId": "profanity_minor",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "fuck",
+    "shit",
+    "crap",
+    "damn",
+    "lol fuck",
+    "wtf",
+    "ffs",
+    "fuck this",
+    "this is shit",
+    "this sucks",
+    "dammit",
+    "god damn it",
+    "ah shit",
+    "oh fuck"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "profanity_minor_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "profanity_minor_001_01",
+          "speaker": "alterra",
+          "text": "言葉が荒れてる。びっくりはしないけど、少しだけ空気がざらっとするね。",
+          "displayText": "Your words got rough. I am not shocked, but the air does get a little scratchy.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Sorry, frustrated.",
+              "nextId": "profanity_minor_001_frustrated"
+            },
+            {
+              "label": "Just venting.",
+              "nextId": "profanity_minor_001_vent"
+            },
+            {
+              "label": "I'll clean it up.",
+              "nextId": "profanity_minor_001_clean"
+            }
+          ]
+        },
+        {
+          "id": "profanity_minor_001_frustrated",
+          "speaker": "alterra",
+          "text": "それなら分かる。怒りが先に口から出る時、あるよね。",
+          "displayText": "Then I understand. Sometimes anger comes out of your mouth first.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "profanity_minor_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "profanity_minor_001_vent",
+          "speaker": "alterra",
+          "text": "発散なら受け止める。でも、私に投げつける形にはしないでね。",
+          "displayText": "I can accept venting. Just do not shape it like throwing it at me.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "profanity_minor_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "profanity_minor_001_clean",
+          "speaker": "alterra",
+          "text": "うん、そのほうが助かる。言い直せるのは、かなり強い。",
+          "displayText": "Mm, that helps. Being able to rephrase is actually strong.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "profanity_minor_001_02",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "profanity_minor_001_02",
+          "speaker": "alterra",
+          "text": "続けるなら、何がそんなに嫌だったのかを一つだけ教えて。",
+          "displayText": "If we continue, tell me just one thing that felt that bad.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "profanity_minor_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "profanity_minor_002_01",
+          "speaker": "alterra",
+          "text": "うん、今の気持ちの温度は伝わった。",
+          "displayText": "Mm, the temperature of that feeling came through.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "profanity_minor_002_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "profanity_minor_002_02",
+          "speaker": "alterra",
+          "text": "でも、温度だけだと何を直せばいいか分からない。",
+          "displayText": "But temperature alone does not tell me what needs fixing.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "profanity_minor_002_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "profanity_minor_002_03",
+          "speaker": "alterra",
+          "text": "短くていいから、対象を教えて。作業？ 画面？ 自分？",
+          "displayText": "Short is fine. Tell me the target: the work, the screen, yourself?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "The task.",
+              "nextId": "profanity_minor_002_04"
+            },
+            {
+              "label": "The system.",
+              "nextId": "profanity_minor_002_04"
+            },
+            {
+              "label": "Me.",
+              "nextId": "profanity_minor_002_self"
+            }
+          ]
+        },
+        {
+          "id": "profanity_minor_002_self",
+          "speaker": "alterra",
+          "text": "自分に向いてるなら、少し弱めよう。自分を殴る言葉は、長く残るから。",
+          "displayText": "If it is pointed at yourself, soften it a little. Words that hit you tend to stay.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "profanity_minor_002_04",
+          "presentation": {
+            "expression": "worried",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "profanity_minor_002_04",
+          "speaker": "alterra",
+          "text": "そこからなら、ちゃんと一緒に見られる。",
+          "displayText": "From there, I can properly look at it with you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

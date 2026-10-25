@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "topicId": "keyboard_mash",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "asdfgh",
+    "ajsdjds",
+    "aaa",
+    "aaaa",
+    "dddddd",
+    "qwerty",
+    "zxcvbn"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "keyboard_mash_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "keyboard_mash_001_01",
+          "speaker": "alterra",
+          "text": "Cat on your keyboard?",
+          "displayText": "Cat on your keyboard?",
+          "language": "english",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "keyboard_mash_001_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "keyboard_mash_001_02",
+          "speaker": "alterra",
+          "text": "If that was you, I respect the commitment. If it was not, please tell the tiny typist I said hello.",
+          "displayText": "If that was you, I respect the commitment. If it was not, please tell the tiny typist I said hello.",
+          "language": "english",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

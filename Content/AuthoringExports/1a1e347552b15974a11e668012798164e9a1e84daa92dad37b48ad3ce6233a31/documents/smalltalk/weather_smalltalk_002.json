@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_weather_smalltalk_002",
+    "timestamp": "",
+    "mood": "bright",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "weather_smalltalk"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "weather_smalltalk",
+      "patterns": [
+        "nice weather",
+        "weather is nice",
+        "clear day",
+        "sunny day",
+        "it is sunny"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "weather_smalltalk",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "weather_smalltalk_002_01",
+      "speaker": "altera",
+      "text": "天気がいいんだ。そういう日は、少しだけ窓のほうを見たくなる。",
+      "translatedText": "The weather is nice. On days like that, I want to look toward the window a little.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_002_02"
+    },
+    {
+      "id": "weather_smalltalk_002_02",
+      "speaker": "altera",
+      "text": "作業の前に、光を一回だけ浴びてきてもいいよ。戻ってくるなら。",
+      "translatedText": "Before working, you can go get a little light. As long as you come back.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

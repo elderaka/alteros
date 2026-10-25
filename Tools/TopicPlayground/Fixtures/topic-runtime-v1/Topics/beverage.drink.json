@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "topicId": "beverage.drink",
+  "menuLabel": "Take a water break",
+  "prompt": "A small, low-pressure hydration break.",
+  "anchors": [
+    "I'm thirsty and could use some water.",
+    "Let's take a water break together.",
+    "It's time for a drink.",
+    "I need to hydrate.",
+    "Can you remind me to get a glass of water?",
+    "Maybe we should make some tea."
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 60,
+  "scenarios": [
+    {
+      "scenarioId": "station_break",
+      "priority": 10,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "all",
+        "children": [
+          { "kind": "stat", "children": [], "statId": "alterra.hydration", "operation": "at_most", "value": 30, "key": "", "expected": true, "startHour": -1, "endHour": -1, "objectKind": "" },
+          {
+            "kind": "object",
+            "children": [
+              { "kind": "objectFlag", "children": [], "statId": "", "operation": "", "value": 0, "key": "drinkable", "expected": true, "startHour": -1, "endHour": -1, "objectKind": "" },
+              { "kind": "objectNumber", "children": [], "statId": "", "operation": "at_least", "value": 1, "key": "water_level", "expected": true, "startHour": -1, "endHour": -1, "objectKind": "" }
+            ],
+            "statId": "", "operation": "", "value": 0, "key": "", "expected": true, "startHour": -1, "endHour": -1, "objectKind": "dispenser"
+          }
+        ],
+        "statId": "", "operation": "", "value": 0, "key": "", "expected": true, "startHour": -1, "endHour": -1, "objectKind": ""
+      },
+      "modifiers": [
+        {
+          "condition": { "kind": "fact", "children": [], "statId": "", "operation": "", "value": 0, "key": "user_confirmed.has_bottle", "expected": true, "startHour": -1, "endHour": -1, "objectKind": "" },
+          "amount": 1
+        }
+      ],
+      "consumptionNodeId": "sip",
+      "nodes": [
+        { "id": "start", "speaker": "alterra", "text": "Let's take a quick water break.", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "sip", "presentation": { "expression": "gentle", "animation": "" }, "choices": [] },
+        { "id": "sip", "speaker": "alterra", "text": "There we go. Small sips count.", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "end", "presentation": { "expression": "smile", "animation": "" }, "choices": [] },
+        { "id": "end", "speaker": "alterra", "text": "Ready when you are.", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "", "presentation": { "expression": "gentle", "animation": "" }, "choices": [] }
+      ]
+    },
+    {
+      "scenarioId": "hydration_prompt",
+      "priority": 5,
+      "baseWeight": 1,
+      "condition": { "kind": "stat", "children": [], "statId": "alterra.hydration", "operation": "at_most", "value": 30, "key": "", "expected": true, "startHour": -1, "endHour": -1, "objectKind": "" },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        { "id": "start", "speaker": "alterra", "text": "Want to grab some water when you have a moment?", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "", "presentation": { "expression": "gentle", "animation": "" }, "choices": [] }
+      ]
+    },
+    {
+      "scenarioId": "casual_a",
+      "priority": 1,
+      "baseWeight": 2,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        { "id": "start", "speaker": "alterra", "text": "Tea sounds nice. What kind do you like?", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "", "presentation": { "expression": "curious", "animation": "" }, "choices": [] }
+      ]
+    },
+    {
+      "scenarioId": "casual_b",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        { "id": "start", "speaker": "alterra", "text": "A cozy drink makes a good pause.", "displayText": "", "language": "en", "voice": "alterra", "audioKey": "", "nextId": "", "presentation": { "expression": "smile", "animation": "" }, "choices": [] }
+      ]
+    }
+  ]
+}

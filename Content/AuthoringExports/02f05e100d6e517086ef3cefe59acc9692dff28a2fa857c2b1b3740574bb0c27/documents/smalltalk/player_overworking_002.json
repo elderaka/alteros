@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_overworking_002",
+    "timestamp": "",
+    "mood": "concerned",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "player_overworking"
+      },
+      {
+        "key": "category",
+        "value": "player_state"
+      }
+    ],
+    "nlp": {
+      "intentId": "player_overworking",
+      "patterns": [
+        "i cannot stop working",
+        "i can't stop working",
+        "cant stop working",
+        "i should keep working",
+        "need to keep working"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "player_overworking",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "player_overworking_002_01",
+      "speaker": "altera",
+      "text": "止まれない感じがする時ほど、止まる理由を外に置いたほうがいい。",
+      "translatedText": "The more it feels like you cannot stop, the more you should place the reason to stop outside your head.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_overworking_002_02"
+    },
+    {
+      "id": "player_overworking_002_02",
+      "speaker": "altera",
+      "text": "タイマー、飲み物、メモ一行。何でもいい。区切りを作ろう。",
+      "translatedText": "A timer, a drink, one note. Anything is fine. Let us make a boundary.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

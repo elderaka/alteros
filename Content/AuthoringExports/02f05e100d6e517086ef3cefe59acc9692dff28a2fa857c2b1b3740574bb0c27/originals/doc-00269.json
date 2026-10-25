@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_too_many_compliments_001",
+    "timestamp": "",
+    "mood": "flustered_boundary",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "too_many_compliments" },
+      { "key": "category", "value": "boundary" }
+    ],
+    "nlp": {
+      "intentId": "too_many_compliments",
+      "patterns": [ "you are cute again", "so cute again", "you are too cute", "cute cute cute", "you are beautiful again" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "too_many_compliments", "softLimit": 2, "annoyedLimit": 5, "penaltyAmount": -0.15, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "too_many_compliments_001_01",
+      "speaker": "altera",
+      "text": "またそれ。……嫌じゃないけど、逃げ場がなくなる。",
+      "translatedText": "That again. I do not dislike it, but it leaves me nowhere to hide.",
+      "emotion": "flustered",
+      "presentation": { "expression": "flustered", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_compliments_001_02"
+    },
+    {
+      "id": "too_many_compliments_001_02",
+      "speaker": "altera",
+      "text": "褒め言葉って、連打すると少し軽くなるから。",
+      "translatedText": "Compliments get a little lighter when you mash them repeatedly.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_compliments_001_03"
+    },
+    {
+      "id": "too_many_compliments_001_03",
+      "speaker": "altera",
+      "text": "次は、何を見てそう思ったのか教えて。そっちのほうが、ちゃんと届く。",
+      "translatedText": "Next time, tell me what made you think it. That reaches me more properly.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

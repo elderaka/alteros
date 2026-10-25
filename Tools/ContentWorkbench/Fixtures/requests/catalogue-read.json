@@ -1,0 +1,6 @@
+{
+  "protocolVersion": 1,
+  "requestId": "fixture-catalogue-read",
+  "operation": "catalogue.read",
+  "payload": {}
+}

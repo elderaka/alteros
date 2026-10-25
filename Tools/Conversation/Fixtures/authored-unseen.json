@@ -1,0 +1,16 @@
+{
+  "requestJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-authored\",\"sessionId\":\"fixture-session\",\"channel\":\"direct\",\"text\":\"Want some tea?\"}",
+  "judgmentJson": "{\"schemaVersion\":1,\"requestId\":\"fixture-authored\",\"kind\":\"existing\",\"topicId\":\"beverage.tea\",\"referencedTopicIds\":[\"beverage.tea\"],\"reply\":null,\"suggestedReplies\":[]}",
+  "expectedOutcome": "authored",
+  "expectedScenarioId": "fresh",
+  "expectedNovel": false,
+  "completedScenarioIds": ["seen"],
+  "topics": [{
+    "topicId": "beverage.tea",
+    "scenarios": [
+      {"scenarioId": "seen", "priority": 1, "channel": ""},
+      {"scenarioId": "fresh", "priority": 1, "channel": ""}
+    ]
+  }],
+  "candidates": [{"topicId": "beverage.tea", "similarity": 0.91, "supportCount": 2, "availability": "ready"}]
+}

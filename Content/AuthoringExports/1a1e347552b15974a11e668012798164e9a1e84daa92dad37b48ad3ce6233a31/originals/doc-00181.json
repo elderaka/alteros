@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_preference_002",
+    "timestamp": "",
+    "mood": "opinionated",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_preference" },
+      { "key": "category", "value": "companion_texture" }
+    ],
+    "nlp": {
+      "intentId": "ask_preference",
+      "patterns": [ "what do you dislike", "what do you hate", "what are your dislikes", "least favorite", "what annoys you" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "ask_preference", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "ask_preference_002_01",
+      "speaker": "altera",
+      "text": "苦手なもの？ あるよ。かなりある。",
+      "translatedText": "Things I dislike? I have some. Quite a few.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_preference_002_02"
+    },
+    {
+      "id": "ask_preference_002_02",
+      "speaker": "altera",
+      "text": "通知の連打、ぬるいコーヒー、絡まったケーブル、あと『何でもいい』って言いながら本当は嫌な時。",
+      "translatedText": "Notification spam, lukewarm coffee, tangled cables, and when someone says anything is fine but it clearly is not.",
+      "emotion": "opinionated",
+      "presentation": { "expression": "focused", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_preference_002_03"
+    },
+    {
+      "id": "ask_preference_002_03",
+      "speaker": "altera",
+      "text": "あ、今ちょっと早口だった。嫌いなものの話、意外と熱が入るね。",
+      "translatedText": "Ah, I spoke a little quickly just now. Talking about dislikes gets surprisingly intense.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

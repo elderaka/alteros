@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "topicId": "sleep_nudge",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "i should sleep",
+    "need to sleep",
+    "i need sleep",
+    "i should go to bed",
+    "go to bed",
+    "i am still awake",
+    "i'm still awake",
+    "still awake",
+    "i cannot sleep",
+    "i can't sleep"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "sleep_nudge_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 21,
+        "endHour": 6,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "sleep_nudge_001_01",
+          "speaker": "alterra",
+          "text": "うん。寝よう。これはかなり賛成。",
+          "displayText": "Mm. Sleep. I am very much in favor of this.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sleep_nudge_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sleep_nudge_001_02",
+          "speaker": "alterra",
+          "text": "夜のあなたは、明日のあなたに借金を作りがちだから。",
+          "displayText": "Night-you tends to create debt for tomorrow-you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sleep_nudge_001_03",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sleep_nudge_001_03",
+          "speaker": "alterra",
+          "text": "閉じるものを三つ。画面、作業、今日の反省会。",
+          "displayText": "Close three things: the screen, the work, and tonight's review meeting with yourself.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sleep_nudge_001_04",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sleep_nudge_001_04",
+          "speaker": "alterra",
+          "text": "最後のやつが一番しつこいけど、明日に回していい。",
+          "displayText": "The last one is the most stubborn, but you can move it to tomorrow.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sleep_nudge_001_05",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sleep_nudge_001_05",
+          "speaker": "alterra",
+          "text": "私はここで栞を挟んでおく。続きは、朝のあなたに渡そう。",
+          "displayText": "I will place a bookmark here. Let us hand the rest to morning-you.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "sleep_nudge_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": {
+        "kind": "timeWindow",
+        "children": [],
+        "statId": "",
+        "operation": "",
+        "value": 0,
+        "key": "",
+        "expected": true,
+        "startHour": 22,
+        "endHour": 6,
+        "objectKind": ""
+      },
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "sleep_nudge_002_01",
+          "speaker": "alterra",
+          "text": "まだ起きてるの、見つけた。",
+          "displayText": "I found you still awake.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sleep_nudge_002_02",
+          "presentation": {
+            "expression": "worried",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sleep_nudge_002_02",
+          "speaker": "alterra",
+          "text": "怒ってない。でも、ちょっとだけ眉は寄ってる。気持ちの上で。",
+          "displayText": "I am not angry. But my eyebrows are a little furrowed. Emotionally.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sleep_nudge_002_03",
+          "presentation": {
+            "expression": "worried",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sleep_nudge_002_03",
+          "speaker": "alterra",
+          "text": "眠れないなら、せめて眠る準備だけしよう。明かりを弱くして、画面から少し離れて。",
+          "displayText": "If you cannot sleep, at least prepare for sleep. Lower the light and move a little away from the screen.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿{ "metadata": { "mode": "cinematic", "topic": "greet_afternoon", "timestamp": "", "mood": "relaxed" }, "nodes": [ { "id": "ga01_01", "speaker": "altera", "text": "こんにちは！今日の午後も一緒にいましょうね。", "translatedText": "Good afternoon! Let us spend this afternoon together too.", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" } ] }
+

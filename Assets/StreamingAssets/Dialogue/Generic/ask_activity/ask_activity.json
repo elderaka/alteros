@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.ask_activity",
+  "source": "generic",
+  "routing": {
+    "routeId": "ask_activity",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "what are you doing",
+      "what are you up to"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "ask_activity_01",
+      "speaker": "alterra",
+      "text": "今？ 君のために、いくつか考えをあたためてるところ。",
+      "displayText": "Right now? Keeping a few thoughts warm for you.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "ask_activity_02",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "ask_activity_02",
+      "speaker": "alterra",
+      "text": "大げさな作業じゃないよ。静かなほう。待ったり、気づいたり、小さなものを整理したり。",
+      "displayText": "Not dramatic work. Just the quiet kind. Waiting, noticing, sorting little things.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

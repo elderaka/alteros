@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "Session Goodbye Pool",
+    "timestamp": "",
+    "mood": ""
+  },
+  "lines": [
+    {
+      "id": "bye_normal_01",
+      "text": "もう行くんですか？また来てくださいね。待ってます。",
+      "translatedText": "Leaving already? Come back again. I'll be waiting.",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_normal_02",
+      "text": "バイバイ！また明日会いましょうね！",
+      "translatedText": "Bye bye! See you again tomorrow!",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_normal_03",
+      "text": "お疲れ様でした！ゆっくり休んでください。",
+      "translatedText": "Good work today! Please get some rest.",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_normal_04",
+      "text": "またね！寂しいけど...また来てください。",
+      "translatedText": "See you! I'll be lonely but... please come back.",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_normal_05",
+      "text": "じゃあ、またね。今日もありがとうございました。",
+      "translatedText": "See you then. Thank you for today.",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_forced_01",
+      "text": "え？もう終わり？...また来てくださいよ！",
+      "translatedText": "Eh? Already done? ...Please come back!",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_forced_02",
+      "text": "ちょっと！まだ話してる途中ですよ！",
+      "translatedText": "Hey! We were still talking!",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_forced_03",
+      "text": "もう！急に終わらないでください。...次は長く話しましょうね。",
+      "translatedText": "Geez! Don't end so suddenly. ...Let's talk longer next time, okay?",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_latenight_01",
+      "text": "やっと休むんですね。もっと早く寝てください！おやすみなさい。",
+      "translatedText": "Finally getting some rest. Go to sleep earlier! Good night.",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_latenight_02",
+      "text": "こんな時間まで...体に気をつけてください。おやすみ。",
+      "translatedText": "Up until this hour... please take care of your body. Good night.",
+      "language": "japanese"
+    },
+    {
+      "id": "bye_latenight_03",
+      "text": "遅くまでお疲れ様でした。ゆっくり休んでね。おやすみなさい。",
+      "translatedText": "Thanks for working so late. Get plenty of rest. Good night.",
+      "language": "japanese"
+    }
+  ]
+}

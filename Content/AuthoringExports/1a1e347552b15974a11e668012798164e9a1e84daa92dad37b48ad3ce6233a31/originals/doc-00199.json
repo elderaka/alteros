@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_bored_003",
+    "timestamp": "",
+    "mood": "soft_playful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_bored" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_bored",
+      "patterns": [ "entertain me", "i need entertainment", "make me less bored", "i am restless", "i'm restless" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_bored", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_bored_003_01",
+      "speaker": "altera",
+      "text": "娯楽係に任命された気配がする。えっと、急に責任が重い。",
+      "translatedText": "I sense that I have been appointed entertainment officer. Um, that is suddenly a heavy responsibility.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_bored_003_02"
+    },
+    {
+      "id": "player_bored_003_02",
+      "speaker": "altera",
+      "text": "でもいいよ。まず、退屈が眠い退屈なのか、何かしたい退屈なのか見分けよう。",
+      "translatedText": "But okay. First, let us tell whether this is sleepy boredom or wants-to-do-something boredom.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

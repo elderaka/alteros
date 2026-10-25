@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "mode": "ambient",
+    "topic": "topic_tts_waiting",
+    "timestamp": "",
+    "mood": "thoughtful"
+  },
+  "lines": [
+    {
+      "id": "topic_tts_01",
+      "text": "んー、言い方を整えてるところ。",
+      "translatedText": "Mm, I'm just putting the phrasing together.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_tts_02",
+      "text": "もう少しで声にできそう。",
+      "translatedText": "I can almost put it into words.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    },
+    {
+      "id": "topic_tts_03",
+      "text": "ちょっと待ってね。ちゃんと話したいから。",
+      "translatedText": "Give me a second. I want to say it properly.",
+      "language": "japanese",
+      "playCount": 0,
+      "lastPlayTime": 0,
+      "isGenerated": false,
+      "topic": "",
+      "triggerConditions": []
+    }
+  ]
+}

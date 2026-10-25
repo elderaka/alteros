@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "contexts": [
+    {
+      "fixtureId": "sit-together/no-table",
+      "runId": "fixture-no-table",
+      "turnId": "workbench-synthetic",
+      "revision": 1,
+      "topicIds": ["topic.sit_together"],
+      "expressions": ["gentle", "smile"],
+      "capabilities": [{ "capabilityId": "synthetic.sit_together", "argumentBindings": [] }],
+      "objects": [
+        { "objectId": "seat.player", "kind": "seat" },
+        { "objectId": "seat.alterra", "kind": "seat" }
+      ],
+      "waitConditions": [],
+      "topicContext": {
+        "localHour": -1,
+        "stats": [],
+        "facts": [{ "key": "fixture.furniture.table_context", "isKnown": true, "value": false }],
+        "objectsComplete": true,
+        "objects": []
+      },
+      "fixtureState": { "state": "available", "reasonKey": "table_optional" }
+    },
+    {
+      "fixtureId": "sit-together/table",
+      "runId": "fixture-table",
+      "turnId": "workbench-synthetic",
+      "revision": 1,
+      "topicIds": ["topic.sit_together"],
+      "expressions": ["gentle", "smile"],
+      "capabilities": [
+        { "capabilityId": "synthetic.sit_together", "argumentBindings": [] },
+        { "capabilityId": "synthetic.table_context", "argumentBindings": [] }
+      ],
+      "objects": [
+        { "objectId": "seat.player", "kind": "seat" },
+        { "objectId": "seat.alterra", "kind": "seat" },
+        { "objectId": "table.center", "kind": "table" }
+      ],
+      "waitConditions": [],
+      "topicContext": {
+        "localHour": -1,
+        "stats": [],
+        "facts": [{ "key": "fixture.furniture.table_context", "isKnown": true, "value": true }],
+        "objectsComplete": true,
+        "objects": []
+      },
+      "fixtureState": { "state": "available", "reasonKey": "table_context_present" }
+    },
+    {
+      "fixtureId": "sit-together/wrong-facing",
+      "runId": "fixture-wrong-facing",
+      "turnId": "workbench-synthetic",
+      "revision": 1,
+      "topicIds": ["topic.sit_together"],
+      "expressions": ["gentle", "smile"],
+      "capabilities": [],
+      "objects": [
+        { "objectId": "seat.player", "kind": "seat" },
+        { "objectId": "seat.alterra", "kind": "seat" },
+        { "objectId": "table.center", "kind": "table" }
+      ],
+      "waitConditions": [],
+      "topicContext": {
+        "localHour": -1,
+        "stats": [],
+        "facts": [{ "key": "fixture.furniture.table_context", "isKnown": true, "value": false }],
+        "objectsComplete": true,
+        "objects": []
+      },
+      "fixtureState": { "state": "unavailable", "reasonKey": "wrong_facing" }
+    },
+    {
+      "fixtureId": "sit-together/occupied",
+      "runId": "fixture-occupied",
+      "turnId": "workbench-synthetic",
+      "revision": 1,
+      "topicIds": ["topic.sit_together"],
+      "expressions": ["gentle", "smile"],
+      "capabilities": [],
+      "objects": [
+        { "objectId": "seat.player", "kind": "seat" },
+        { "objectId": "seat.alterra", "kind": "seat" },
+        { "objectId": "table.center", "kind": "table" }
+      ],
+      "waitConditions": [],
+      "topicContext": {
+        "localHour": -1,
+        "stats": [],
+        "facts": [{ "key": "fixture.furniture.table_context", "isKnown": true, "value": false }],
+        "objectsComplete": true,
+        "objects": []
+      },
+      "fixtureState": { "state": "unavailable", "reasonKey": "point_occupied" }
+    },
+    {
+      "fixtureId": "sit-together/unknown",
+      "runId": "fixture-unknown",
+      "turnId": "workbench-synthetic",
+      "revision": 1,
+      "topicIds": ["topic.sit_together"],
+      "expressions": ["gentle", "smile"],
+      "capabilities": [],
+      "objects": [],
+      "waitConditions": [],
+      "topicContext": {
+        "localHour": -1,
+        "stats": [],
+        "facts": [{ "key": "fixture.furniture.table_context", "isKnown": false, "value": false }],
+        "objectsComplete": false,
+        "objects": []
+      },
+      "fixtureState": { "state": "unknown", "reasonKey": "evidence_unknown" }
+    },
+    {
+      "fixtureId": "workbench/action-basic",
+      "runId": "preview-action-run",
+      "turnId": "preview-action-turn",
+      "revision": 1,
+      "topicIds": [],
+      "expressions": [],
+      "capabilities": [
+        { "capabilityId": "scenario.activity_sequence", "argumentBindings": [] },
+        { "capabilityId": "scenario.complete", "argumentBindings": [] }
+      ],
+      "objects": [],
+      "waitConditions": [],
+      "topicContext": { "localHour": -1, "stats": [], "facts": [], "objectsComplete": true, "objects": [] },
+      "fixtureState": { "state": "available", "reasonKey": "trusted_safe_sequence_primitives" }
+    },
+    {
+      "fixtureId": "workbench/proof",
+      "runId": "preview-proof-run",
+      "turnId": "preview-proof-turn",
+      "revision": 1,
+      "topicIds": [],
+      "expressions": ["cheerful"],
+      "capabilities": [
+        { "capabilityId": "scenario.activity_sequence", "argumentBindings": [] },
+        { "capabilityId": "scenario.complete", "argumentBindings": [] },
+        { "capabilityId": "movement.near_player", "argumentBindings": [] },
+        { "capabilityId": "dialogue.bark", "argumentBindings": [{ "name": "dialogueId", "values": ["dialogue.tv.approach", "dialogue.tv.arrival", "dialogue.locate.arrival", "dialogue.fetch.arrival"] }] },
+        { "capabilityId": "furniture.reserve_nearest", "argumentBindings": [
+          { "name": "useId", "values": ["tv.power", "dispenser.collect", "window.power"] },
+          { "name": "functionId", "values": ["power.set", "dispenser.collect_mock"] }
+        ] }
+      ],
+      "objects": [
+        { "objectId": "fixture.tv.main", "kind": "furniture_instance" },
+        { "objectId": "fixture.tv.second", "kind": "furniture_instance" },
+        { "objectId": "fixture.dispenser.main", "kind": "furniture_instance" },
+        { "objectId": "fixture.dispenser.second", "kind": "furniture_instance" },
+        { "objectId": "fixture.window.main", "kind": "furniture_instance" }
+      ],
+      "waitConditions": [],
+      "topicContext": { "localHour": -1, "stats": [], "facts": [], "objectsComplete": true, "objects": [] },
+      "fixtureState": { "state": "available", "reasonKey": "detached_activity_proof" },
+      "previewState": {
+        "layoutRevision": 1, "gameRevision": 1, "playerId": "preview.player",
+        "furniture": [
+          { "instanceId": "fixture.tv.main", "definitionId": "furniture.tv.basic", "usePointId": "point.use", "useId": "tv.power", "usePointRevision": 1, "instanceRevision": 1, "powerKnown": true, "powerState": "Off", "available": true, "occupied": true, "reservationOwnerId": "", "distanceToPlayer": 1.0 },
+          { "instanceId": "fixture.tv.second", "definitionId": "furniture.tv.second", "usePointId": "point.use", "useId": "tv.power", "usePointRevision": 1, "instanceRevision": 1, "powerKnown": true, "powerState": "Off", "available": true, "occupied": false, "reservationOwnerId": "", "distanceToPlayer": 2.0 },
+          { "instanceId": "fixture.dispenser.main", "definitionId": "furniture.water_dispenser", "usePointId": "point.use", "useId": "dispenser.collect", "usePointRevision": 1, "instanceRevision": 1, "powerKnown": false, "powerState": "", "available": true, "occupied": false, "reservationOwnerId": "", "distanceToPlayer": 1.0 },
+          { "instanceId": "fixture.dispenser.second", "definitionId": "furniture.water_dispenser", "usePointId": "point.use", "useId": "dispenser.collect", "usePointRevision": 1, "instanceRevision": 1, "powerKnown": false, "powerState": "", "available": true, "occupied": false, "reservationOwnerId": "", "distanceToPlayer": 2.0 },
+          { "instanceId": "fixture.window.main", "definitionId": "furniture.window.basic", "usePointId": "point.use", "useId": "window.power", "usePointRevision": 1, "instanceRevision": 1, "powerKnown": true, "powerState": "Off", "available": true, "occupied": false, "reservationOwnerId": "", "distanceToPlayer": 1.5 }
+        ],
+        "items": [{ "itemId": "item.water_glass", "quantity": 0 }, { "itemId": "item.herbal_tea", "quantity": 0 }],
+        "returnAvailable": true, "barkVisible": true
+      }
+    },
+    {
+      "fixtureId": "workbench/no-resources",
+      "runId": "preview-no-resources-run",
+      "turnId": "preview-no-resources-turn",
+      "revision": 1,
+      "topicIds": [], "expressions": ["cheerful"],
+      "capabilities": [
+        { "capabilityId": "scenario.activity_sequence", "argumentBindings": [] },
+        { "capabilityId": "scenario.complete", "argumentBindings": [] },
+        { "capabilityId": "furniture.reserve_nearest", "argumentBindings": [
+          { "name": "useId", "values": ["tv.power", "dispenser.collect"] },
+          { "name": "functionId", "values": ["power.set", "dispenser.collect_mock"] }
+        ] }
+      ],
+      "objects": [], "waitConditions": [],
+      "topicContext": { "localHour": -1, "stats": [], "facts": [], "objectsComplete": true, "objects": [] },
+      "fixtureState": { "state": "unavailable", "reasonKey": "no_matching_furniture" },
+      "previewState": { "layoutRevision": 1, "gameRevision": 1, "playerId": "preview.player",
+        "furniture": [], "items": [{ "itemId": "item.water_glass", "quantity": 0 }],
+        "returnAvailable": true, "barkVisible": true }
+    },
+    {
+      "fixtureId": "workbench/furniture",
+      "runId": "preview-furniture-run",
+      "turnId": "preview-furniture-turn",
+      "revision": 1,
+      "topicIds": [],
+      "expressions": [],
+      "capabilities": [],
+      "objects": [{ "objectId": "fixture.tv.main", "kind": "furniture_instance" }],
+      "waitConditions": [],
+      "topicContext": {
+        "localHour": -1,
+        "stats": [],
+        "facts": [],
+        "objectsComplete": true,
+        "objects": []
+      },
+      "fixtureState": { "state": "available", "reasonKey": "exact_tv_function_binding" },
+      "previewState": {
+        "layoutRevision": 1,
+        "gameRevision": 1,
+        "playerId": "preview.player",
+        "furniture": [{
+          "instanceId": "fixture.tv.main", "definitionId": "furniture.tv.basic",
+          "usePointId": "point.use", "useId": "tv.power", "usePointRevision": 1,
+          "instanceRevision": 1, "powerKnown": true, "powerState": "Off",
+          "available": true, "occupied": false, "reservationOwnerId": "preview-furniture-run"
+        }],
+        "items": [{ "itemId": "item.water_glass", "quantity": 0 }, { "itemId": "item.herbal_tea", "quantity": 0 }],
+        "returnAvailable": true,
+        "barkVisible": true
+      }
+    }
+  ]
+}

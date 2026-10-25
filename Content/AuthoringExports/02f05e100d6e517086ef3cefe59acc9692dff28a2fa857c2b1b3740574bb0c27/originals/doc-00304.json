@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_happy_short_002",
+    "timestamp": "",
+    "mood": "excited",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_happy_short" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_happy_short",
+      "patterns": [ "i am excited", "i'm excited", "excited", "good news", "i have good news" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_happy_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_happy_short_002_01",
+      "speaker": "altera",
+      "text": "いい知らせ？ 待って、姿勢を正す。こういうのはちゃんと聞きたい。",
+      "translatedText": "Good news? Wait, I am sitting up. I want to hear this properly.",
+      "emotion": "excited",
+      "presentation": { "expression": "excited", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_happy_short_002_02"
+    },
+    {
+      "id": "player_happy_short_002_02",
+      "speaker": "altera",
+      "text": "短くてもいいから教えて。あなたの嬉しいこと、私も少し分けてほしい。",
+      "translatedText": "Tell me, even briefly. I want to share a little of what made you happy.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

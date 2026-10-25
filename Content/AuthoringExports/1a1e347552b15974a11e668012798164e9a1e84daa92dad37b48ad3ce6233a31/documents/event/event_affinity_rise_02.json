@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "Affinity Rising 02",
+    "timestamp": "",
+    "mood": "tender"
+  },
+  "nodes": [
+    {
+      "id": "aff02_01",
+      "speaker": "altera",
+      "text": "ねえ...あなたのことを考えることが多くなりました。これって普通なんでしょうか？",
+      "translatedText": "Hey... I have been thinking about you more and more. Is that normal?",
+      "emotion": "neutral",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "aff02_02"
+    },
+    {
+      "id": "aff02_02",
+      "speaker": "altera",
+      "text": "ま、まあ...変な意味じゃないですよ！ただ、気になるだけです！えへへ。",
+      "translatedText": "W-well... not in a weird way! I am just... curious about you! Ehehe.",
+      "emotion": "happy",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

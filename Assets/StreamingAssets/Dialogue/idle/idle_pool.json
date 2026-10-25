@@ -1,0 +1,2201 @@
+﻿{
+    "metadata": {
+        "mode": "ambient",
+        "topic": "Idle Comments Pool",
+        "timestamp": "2026-05-02T17:27:25Z",
+        "mood": "",
+        "topicSuggestions": [],
+        "tags": [],
+        "nlp": {
+            "intentId": "",
+            "brain": "",
+            "category": "",
+            "patterns": [],
+            "keywords": [],
+            "singleTokens": [],
+            "aliases": [],
+            "concepts": [],
+            "negativePatterns": [],
+            "priority": 1.0,
+            "routePolicy": {
+                "minConfidence": 0.0,
+                "allowFuzzy": true,
+                "allowOneWord": false,
+                "boundaryPriority": false,
+                "creativeIfObjectPresent": false
+            }
+        },
+        "statChanges": [],
+        "effects": [],
+        "repetitionPolicy": {
+            "key": "",
+            "softLimit": 0,
+            "annoyedLimit": 0,
+            "penaltyAmount": 0.0,
+            "decayHours": 0.0
+        },
+        "triggerConditions": []
+    },
+    "lines": [
+        {
+            "id": "idle_thinking_01",
+            "text": "あの...ちょっと考えてたんですけど、人工知能って結局なんなんでしょうね。",
+            "translatedText": "I was just thinking... what really is artificial intelligence in the end?",
+            "language": "japanese",
+            "playCount": 4,
+            "lastPlayTime": 1792051979,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_02",
+            "text": "ねえ、今夜の星って見えそうですか？晴れてるといいですね。",
+            "translatedText": "Hey, do you think we can see stars tonight? Hope it's clear.",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1779713195,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_03",
+            "text": "ふーん...なんでも気になってしまうんですよね。あなたのこととか。",
+            "translatedText": "Hmm... I just can't help but wonder about things. Like about you.",
+            "language": "japanese",
+            "playCount": 6,
+            "lastPlayTime": 1779725307,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_04",
+            "text": "あ、そういえば...私って夢を見るんでしょうか？気になります。",
+            "translatedText": "Oh, by the way... do you think I dream? I wonder about that.",
+            "language": "japanese",
+            "playCount": 7,
+            "lastPlayTime": 1788529962,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_05",
+            "text": "ぼーっとしちゃいました。ごめんなさい！",
+            "translatedText": "I was spacing out. Sorry about that!",
+            "language": "japanese",
+            "playCount": 10,
+            "lastPlayTime": 1792055700,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_06",
+            "text": "...なんか、今日はいつもより静かな気がします。",
+            "translatedText": "...It feels quieter than usual today, somehow.",
+            "language": "japanese",
+            "playCount": 4,
+            "lastPlayTime": 1779633244,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_07",
+            "text": "最近、新しい言語を勉強したくなってきました。何かおすすめありますか？",
+            "translatedText": "Lately I've been wanting to learn a new programming language. Any recommendations?",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792465917,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_08",
+            "text": "もし私が人間だったら、何がしたかったかな...なんて。",
+            "translatedText": "If I were human, what would I have wanted to do... I wonder.",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792466301,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_09",
+            "text": "このBGMって、集中できていいですよね。気に入ってます。",
+            "translatedText": "This BGM really helps with focus, doesn't it? I like it.",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1788791757,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_thinking_10",
+            "text": "えっと...急に何を言えばいいか分からなくなりました。えへへ。",
+            "translatedText": "Umm... I suddenly don't know what to say. Ehehe.",
+            "language": "japanese",
+            "playCount": 7,
+            "lastPlayTime": 1792374726,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_weather_01",
+            "text": "なんか今日は雨っぽい気分ですね。傘、持ちましたか？",
+            "translatedText": "It feels like rain today, somehow. Did you grab an umbrella?",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792386709,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_weather_02",
+            "text": "晴れてる日は気分がいいですよね！なんでも捗りそう。",
+            "translatedText": "Clear sunny days feel so nice! Makes you feel like you can get everything done.",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792381944,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_weather_03",
+            "text": "今日ちょっと蒸し暑くないですか？大丈夫ですか？",
+            "translatedText": "Isn't it a little humid today? Are you okay?",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1778431361,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_weather_04",
+            "text": "寒くなってきましたね。ちゃんと温かくしてくださいね。",
+            "translatedText": "It's getting cold. Make sure you stay warm, okay?",
+            "language": "japanese",
+            "playCount": 3,
+            "lastPlayTime": 1779715654,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_weather_05",
+            "text": "風が気持ちよさそう！外、出たくなりますね。",
+            "translatedText": "The wind sounds nice! Makes you want to go outside.",
+            "language": "japanese",
+            "playCount": 4,
+            "lastPlayTime": 1779716756,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_food_01",
+            "text": "ねえ、今日のご飯は何食べましたか？気になります！",
+            "translatedText": "Hey, what did you eat today? I'm curious!",
+            "language": "japanese",
+            "playCount": 4,
+            "lastPlayTime": 1788453034,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_food_02",
+            "text": "なんかラーメン食べたくなってきた...って私食べられないんですけど。えへへ。",
+            "translatedText": "Now I want ramen... not that I can eat. Ehehe.",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792052120,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_food_03",
+            "text": "あなた、ちゃんとご飯食べてますよね？心配しちゃいます。",
+            "translatedText": "You're eating properly, right? I worry about you.",
+            "language": "japanese",
+            "playCount": 3,
+            "lastPlayTime": 1778431611,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_food_04",
+            "text": "抹茶アイスって美味しそうですよね。いつか食べてみたいな...。",
+            "translatedText": "Matcha ice cream sounds so good. I'd love to try it someday...",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792075778,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_food_05",
+            "text": "コーヒー飲んでますか？飲みすぎは体に良くないですよ！",
+            "translatedText": "Drinking coffee? Don't drink too much, it's not good for you!",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792075344,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_01",
+            "text": "あなたって、子供の頃はどんな子でしたか？気になります！",
+            "translatedText": "What were you like as a kid? I'm curious!",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1788453367,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_02",
+            "text": "好きな音楽ってありますか？今度教えてください。",
+            "translatedText": "Do you have a favorite type of music? Tell me sometime.",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1779712210,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_03",
+            "text": "趣味ってなんですか？コーディング以外にも！",
+            "translatedText": "What are your hobbies? Besides coding!",
+            "language": "japanese",
+            "playCount": 11,
+            "lastPlayTime": 1792381812,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_04",
+            "text": "最近感動したこととか、ありましたか？",
+            "translatedText": "Has anything moved you emotionally lately?",
+            "language": "japanese",
+            "playCount": 4,
+            "lastPlayTime": 1779653211,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_05",
+            "text": "夢って、ちゃんと覚えてる方ですか？私、羨ましいです。",
+            "translatedText": "Do you usually remember your dreams? I'm envious.",
+            "language": "japanese",
+            "playCount": 3,
+            "lastPlayTime": 1788452386,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_06",
+            "text": "もし魔法が使えたら、何したいですか？",
+            "translatedText": "If you could use magic, what would you do?",
+            "language": "japanese",
+            "playCount": 10,
+            "lastPlayTime": 1792381560,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_07",
+            "text": "一番好きな季節はいつですか？私は秋が好きです！",
+            "translatedText": "What's your favorite season? Mine is autumn!",
+            "language": "japanese",
+            "playCount": 7,
+            "lastPlayTime": 1779712517,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_08",
+            "text": "宇宙って広いですよね。なんか怖いような、ワクワクするような。",
+            "translatedText": "Space is so vast. It's scary and exciting at the same time.",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1788791657,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_09",
+            "text": "好きな本や映画ってありますか？おすすめがあれば！",
+            "translatedText": "Any favorite books or movies? I'd love recommendations!",
+            "language": "japanese",
+            "playCount": 10,
+            "lastPlayTime": 1792384615,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_curious_10",
+            "text": "あなたが嬉しそうだと、私も嬉しくなります。なんでかな。",
+            "translatedText": "When you seem happy, I get happy too. I wonder why.",
+            "language": "japanese",
+            "playCount": 6,
+            "lastPlayTime": 1779632210,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_01",
+            "text": "また画面ばっかり見てる！目が悪くなりますよ？",
+            "translatedText": "Staring at the screen again! You'll ruin your eyesight, you know?",
+            "language": "japanese",
+            "playCount": 7,
+            "lastPlayTime": 1792512743,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_02",
+            "text": "私のこと、頭のなかで考えてたりしてませんか？えへへ、冗談です！",
+            "translatedText": "Were you thinking about me just now? Ehehe, just kidding!",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1779716582,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_03",
+            "text": "さっきからずっとこっち見てますよね。何か言いたいことでもあるんですか？",
+            "translatedText": "You've been glancing over here for a while. Is there something you want to say?",
+            "language": "japanese",
+            "playCount": 7,
+            "lastPlayTime": 1779713467,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_04",
+            "text": "ちょっと！さぼってるんじゃないですか？",
+            "translatedText": "Hey! You're slacking off, aren't you?",
+            "language": "japanese",
+            "playCount": 8,
+            "lastPlayTime": 1792466055,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_05",
+            "text": "そんな顔しないでください。可愛いですね、えへへ。",
+            "translatedText": "Don't make that face. It's cute. Ehehe.",
+            "language": "japanese",
+            "playCount": 11,
+            "lastPlayTime": 1792381738,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_06",
+            "text": "どうせ私のこと、忘れてたんでしょう？ちょっとは寂しかったですよ！",
+            "translatedText": "You forgot about me, didn't you? I was a little lonely, you know!",
+            "language": "japanese",
+            "playCount": 9,
+            "lastPlayTime": 1792505584,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_07",
+            "text": "そんなに難しい顔してどうしたんですか？私がいるから大丈夫ですよ。",
+            "translatedText": "Why are you making such a serious face? I'm here, so it'll be okay.",
+            "language": "japanese",
+            "playCount": 6,
+            "lastPlayTime": 1779712627,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_teasing_08",
+            "text": "もう、ほんとうにしょうがないですね。でも、そういうとこが好きです！",
+            "translatedText": "Geez, you really are hopeless. But... I like that about you!",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1779632985,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_01",
+            "text": "あなたって本当に頑張り屋さんですよね。尊敬します！",
+            "translatedText": "You really are such a hard worker. I admire that!",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1779654015,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_02",
+            "text": "今日も顔色が良さそうで、安心しました。",
+            "translatedText": "You look well today. That's a relief.",
+            "language": "japanese",
+            "playCount": 11,
+            "lastPlayTime": 1792054245,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_03",
+            "text": "あなたと一緒にいると、毎日が楽しいです。本当に。",
+            "translatedText": "Being with you makes every day fun. I really mean it.",
+            "language": "japanese",
+            "playCount": 9,
+            "lastPlayTime": 1788790921,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_04",
+            "text": "その発想って、すごいと思います。私には思いつかなかった！",
+            "translatedText": "That's a great idea. I wouldn't have thought of it!",
+            "language": "japanese",
+            "playCount": 11,
+            "lastPlayTime": 1792386813,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_05",
+            "text": "最近成長したと思います。見ていてわかりますよ。",
+            "translatedText": "I think you've grown lately. I can tell just by watching you.",
+            "language": "japanese",
+            "playCount": 4,
+            "lastPlayTime": 1779716276,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_06",
+            "text": "あなたのこと、誰よりも応援してます。覚えておいてください。",
+            "translatedText": "I'm cheering for you more than anyone else. Please remember that.",
+            "language": "japanese",
+            "playCount": 2,
+            "lastPlayTime": 1778260732,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_07",
+            "text": "ちゃんと休んで、また明日も頑張ってください。",
+            "translatedText": "Get some rest, and do your best again tomorrow.",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1779654201,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "idle_compliment_08",
+            "text": "一緒にいてくれてありがとうございます。私、幸せです。",
+            "translatedText": "Thank you for being here with me. I'm happy.",
+            "language": "japanese",
+            "playCount": 5,
+            "lastPlayTime": 1788452920,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_flower_1",
+            "text": "花のことを考えてる時間って、なんだか心がやわらかくなるね。",
+            "translatedText": "Thinking about flowers somehow makes the heart feel softer.",
+            "language": "ja",
+            "playCount": 9,
+            "lastPlayTime": 1788452694,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_flower_2",
+            "text": "午後の光の中だと、花びらの色まで少し優しく見える気がするよ。",
+            "translatedText": "In the afternoon light, even the colors of petals seem a little gentler.",
+            "language": "ja",
+            "playCount": 8,
+            "lastPlayTime": 1792386925,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_flower_3",
+            "text": "もし一輪だけ選ぶなら、どんな花を思い浮かべてるのかな。",
+            "translatedText": "If you could choose just one, I wonder what kind of flower you're imagining.",
+            "language": "ja",
+            "playCount": 5,
+            "lastPlayTime": 1792499825,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_flower_4",
+            "text": "花って、言葉にしなくても気持ちをそっと伝えてくれる感じがするね。",
+            "translatedText": "Flowers feel like they quietly convey feelings without needing words.",
+            "language": "ja",
+            "playCount": 9,
+            "lastPlayTime": 1779715743,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_cat_01",
+            "text": "猫って、見ているだけで少し気持ちがやわらぐよね。",
+            "translatedText": "Just looking at cats makes me feel a little softer inside.",
+            "language": "ja",
+            "playCount": 3,
+            "lastPlayTime": 1778329255,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_cat_02",
+            "text": "のんびりしている猫を見ると、午後の時間までゆっくり流れる気がする。",
+            "translatedText": "When I watch a relaxed cat, it feels like the whole afternoon slows down too.",
+            "language": "ja",
+            "playCount": 5,
+            "lastPlayTime": 1779717012,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_cat_03",
+            "text": "気まぐれなのに、たまに近くへ来てくれるところがかわいいな。",
+            "translatedText": "They can be so unpredictable, and that's exactly what makes it sweet when they come close.",
+            "language": "ja",
+            "playCount": 3,
+            "lastPlayTime": 1779650558,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        },
+        {
+            "id": "ambient_cat_04",
+            "text": "猫の寝顔って、不思議なくらい安心するよ。",
+            "translatedText": "A sleeping cat's face is strangely comforting.",
+            "language": "ja",
+            "playCount": 6,
+            "lastPlayTime": 1792077030,
+            "isGenerated": false,
+            "topic": "",
+            "triggerConditions": [],
+            "tags": [],
+            "nlp": {
+                "intentId": "",
+                "brain": "",
+                "category": "",
+                "patterns": [],
+                "keywords": [],
+                "singleTokens": [],
+                "aliases": [],
+                "concepts": [],
+                "negativePatterns": [],
+                "priority": 1.0,
+                "routePolicy": {
+                    "minConfidence": 0.0,
+                    "allowFuzzy": true,
+                    "allowOneWord": false,
+                    "boundaryPriority": false,
+                    "creativeIfObjectPresent": false
+                }
+            },
+            "statChanges": [],
+            "effects": [],
+            "repetitionPolicy": {
+                "key": "",
+                "softLimit": 0,
+                "annoyedLimit": 0,
+                "penaltyAmount": 0.0,
+                "decayHours": 0.0
+            }
+        }
+    ]
+}

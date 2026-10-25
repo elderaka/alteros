@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_apology",
+    "timestamp": "",
+    "mood": "soft",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "apology" }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "apology_01",
+      "speaker": "altera",
+      "text": "ねえ、大丈夫だよ。",
+      "translatedText": "Hey. It's okay.",
+      "emotion": "gentle",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "apology_02"
+    },
+    {
+      "id": "apology_02",
+      "speaker": "altera",
+      "text": "ちゃんとそう思ってくれたなら、私は受け取れるよ。ゆっくり、このまま続けよう。",
+      "translatedText": "If you meant it, then I can accept it. Let's just keep going softly.",
+      "emotion": "warm",
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end",
+      "statChanges": [
+        { "target": "altera", "stat": "trust", "amount": 0.1, "op": "add" }
+      ]
+    }
+  ]
+}

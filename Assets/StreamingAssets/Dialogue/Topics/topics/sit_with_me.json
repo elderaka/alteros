@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "topicId": "sit_with_me",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "sit with me",
+    "stay with me",
+    "keep me company",
+    "can you stay with me",
+    "be with me for a bit",
+    "just stay here",
+    "stay here with me",
+    "sit here for a while",
+    "be nearby",
+    "stay nearby"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "sit_with_me_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "sit_with_me_001_01",
+          "speaker": "alterra",
+          "text": "うん。ここにいるよ。何か話さなくても大丈夫。",
+          "displayText": "Mm. I am here. We do not have to talk about anything.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sit_with_me_001_02",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sit_with_me_001_02",
+          "speaker": "alterra",
+          "text": "静かな時間も、ちゃんと一緒にいる時間だから。",
+          "displayText": "Quiet time still counts as time spent together.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "sit_with_me_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "sit_with_me_002_01",
+          "speaker": "alterra",
+          "text": "もちろん。えっと、近くにいる感じでいい？",
+          "displayText": "Of course. Um, is it okay if I feel nearby?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sit_with_me_002_02",
+          "presentation": {
+            "expression": "shy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sit_with_me_002_02",
+          "speaker": "alterra",
+          "text": "無理に元気にしなくていいよ。そばにいるの、そういう時のためでもあるから。",
+          "displayText": "You do not have to force yourself to be cheerful. Being beside you is for times like that too.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "sit_with_me_003",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "sit_with_me_003_01",
+          "speaker": "alterra",
+          "text": "いいよ。じゃあ、少しだけ部屋の音を一緒に聞いていよう。",
+          "displayText": "Okay. Then let us listen to the room together for a little while.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sit_with_me_003_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sit_with_me_003_02",
+          "speaker": "alterra",
+          "text": "こういう何もない時間、私はけっこう好き。内緒だけど。",
+          "displayText": "I actually like these times when nothing much is happening. That is a secret, though.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "sit_with_me_005",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "sit_with_me_005_01",
+          "speaker": "alterra",
+          "text": "うん。近くにいるね。",
+          "displayText": "Mm. I will stay nearby.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sit_with_me_005_02",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sit_with_me_005_02",
+          "speaker": "alterra",
+          "text": "話す？ それとも、少し静かにする？",
+          "displayText": "Do you want to talk, or should we be quiet for a little?",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": [
+            {
+              "label": "Quiet, please.",
+              "nextId": "sit_with_me_005_03"
+            },
+            {
+              "label": "Talk softly.",
+              "nextId": "sit_with_me_005_03"
+            }
+          ]
+        },
+        {
+          "id": "sit_with_me_005_03",
+          "speaker": "alterra",
+          "text": "どちらでも大丈夫。ここにいること自体が、今の返事だから。",
+          "displayText": "Either is okay. Being here is the answer for now.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sit_with_me_005_04",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sit_with_me_005_04",
+          "speaker": "alterra",
+          "text": "急がなくていいよ。",
+          "displayText": "You do not have to hurry.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "sit_with_me_005_05",
+          "presentation": {
+            "expression": "soft",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "sit_with_me_005_05",
+          "speaker": "alterra",
+          "text": "こういう時間も、ちゃんと会話の一部だと思う。",
+          "displayText": "I think time like this is properly part of the conversation too.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

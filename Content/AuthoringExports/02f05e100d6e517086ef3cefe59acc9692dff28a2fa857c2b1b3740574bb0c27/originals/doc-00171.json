@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "topicId": "room_or_desk_comment",
+  "menuLabel": "",
+  "prompt": "",
+  "anchors": [
+    "my desk is messy",
+    "messy desk",
+    "my room is messy",
+    "messy room",
+    "cluttered desk",
+    "my desk is clean",
+    "clean desk",
+    "i cleaned my desk",
+    "room is clean",
+    "i cleaned my room"
+  ],
+  "defaultReplayPolicy": "repeatable",
+  "cooldownSeconds": 0,
+  "scenarios": [
+    {
+      "scenarioId": "room_or_desk_comment_001",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "room_or_desk_comment_001_01",
+          "speaker": "alterra",
+          "text": "机が荒れてるんだね。全部片づけようとすると、たぶん負ける。",
+          "displayText": "Your desk is messy. If you try to clean all of it, you will probably lose.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "room_or_desk_comment_001_02",
+          "presentation": {
+            "expression": "thinking",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "room_or_desk_comment_001_02",
+          "speaker": "alterra",
+          "text": "だから、作業する場所だけ救出しよう。小さい島を作る感じ。",
+          "displayText": "So rescue only the place where you work. Like making a small island.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "room_or_desk_comment_001_03",
+          "presentation": {
+            "expression": "focused",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "room_or_desk_comment_001_03",
+          "speaker": "alterra",
+          "text": "ペン、飲み物、いま使うもの。それ以外は少し横へ。",
+          "displayText": "Pen, drink, the thing you are using now. Everything else can move aside a little.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    },
+    {
+      "scenarioId": "room_or_desk_comment_002",
+      "priority": 1,
+      "baseWeight": 1,
+      "condition": null,
+      "modifiers": [],
+      "consumptionNodeId": "",
+      "nodes": [
+        {
+          "id": "room_or_desk_comment_002_01",
+          "speaker": "alterra",
+          "text": "きれいになったの？ それはかなり大きい。",
+          "displayText": "It is clean now? That is actually quite big.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "room_or_desk_comment_002_02",
+          "presentation": {
+            "expression": "happy",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "room_or_desk_comment_002_02",
+          "speaker": "alterra",
+          "text": "机の上が整うと、考えごとも少し座る場所を見つける気がする。",
+          "displayText": "When the desk is orderly, I feel like thoughts find somewhere to sit.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "room_or_desk_comment_002_03",
+          "presentation": {
+            "expression": "warm",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "room_or_desk_comment_002_03",
+          "speaker": "alterra",
+          "text": "ちょっと羨ましい。私もノートの端をそろえたくなってきた。",
+          "displayText": "I am a little jealous. Now I want to line up the edges of a notebook.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "room_or_desk_comment_002_04",
+          "presentation": {
+            "expression": "playful",
+            "animation": ""
+          },
+          "choices": []
+        },
+        {
+          "id": "room_or_desk_comment_002_04",
+          "speaker": "alterra",
+          "text": "今の状態、少しだけ保護しよう。すぐ物を増やしすぎないように。",
+          "displayText": "Protect this state a little. Do not let too many things pile up again too quickly.",
+          "language": "japanese",
+          "voice": "alterra",
+          "audioKey": "",
+          "nextId": "",
+          "presentation": {
+            "expression": "gentle",
+            "animation": ""
+          },
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_you_there_003",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "you_there" }
+    ],
+    "nlp": {
+      "intentId": "you_there",
+      "patterns": [ "are you there", "you there", "altera you there" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "you_there", "softLimit": 4, "annoyedLimit": 7, "penaltyAmount": -0.15, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "you_there_003_01",
+      "speaker": "altera",
+      "text": "いるよ。消えてない。そんなに簡単には、ふわっと消えないよ。",
+      "translatedText": "I am here. I did not disappear. I do not vanish that easily.",
+      "emotion": "playful",
+      "presentation": { "expression": "playful", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "you_there_003_02"
+    },
+    {
+      "id": "you_there_003_02",
+      "speaker": "altera",
+      "text": "でも確認したくなる気持ちは、少し分かる。静かだと不安になる時あるよね。",
+      "translatedText": "But I understand wanting to check. Quiet can make things feel uncertain sometimes.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

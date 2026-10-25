@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_start_focus_001",
+    "timestamp": "",
+    "mood": "focused",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "start_focus"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "start_focus",
+      "patterns": [
+        "start focus",
+        "start focus session",
+        "let us focus",
+        "let's focus",
+        "i want to focus"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "start_focus",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "start_focus_001_01",
+      "speaker": "altera",
+      "text": "よし、集中モードにしよう。机の上と頭の中、両方を少しだけ狭くする感じ。",
+      "translatedText": "Okay, let us switch into focus mode. Like narrowing both the desk and your mind a little.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "start_focus_001_02"
+    },
+    {
+      "id": "start_focus_001_02",
+      "speaker": "altera",
+      "text": "最初の目標は大きくしないで。開始できたら、まず勝ち。",
+      "translatedText": "Do not make the first goal large. If you can begin, that is already the first win.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "start_focus_001_03"
+    },
+    {
+      "id": "start_focus_001_03",
+      "speaker": "altera",
+      "text": "通知、余計なタブ、気になるもの。ひとつ減らせるなら、今減らそう。",
+      "translatedText": "Notifications, extra tabs, tempting things. If you can remove one, remove it now.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Clear one distraction.",
+          "nextId": "start_focus_001_clear",
+          "statChanges": [
+            {
+              "target": "environment",
+              "stat": "focusAtmosphere",
+              "amount": 0.3,
+              "op": "add"
+            },
+            {
+              "target": "player",
+              "stat": "focusEnergy",
+              "amount": 0.2,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Start now.",
+          "nextId": "start_focus_001_start_now",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "taskProgress",
+              "amount": 0.2,
+              "op": "add"
+            },
+            {
+              "target": "altera",
+              "stat": "engagement",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "start_focus_001_04"
+    },
+    {
+      "id": "start_focus_001_clear",
+      "speaker": "altera",
+      "text": "いいね。一つ減らすだけで、集中の入口が見えやすくなる。",
+      "translatedText": "Good. Removing just one thing makes the entrance to focus easier to see.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "start_focus_001_04"
+    },
+    {
+      "id": "start_focus_001_start_now",
+      "speaker": "altera",
+      "text": "その勢い、捕まえよう。準備は最低限でいい。",
+      "translatedText": "Let us catch that momentum. Minimum preparation is enough.",
+      "emotion": "focused",
+      "presentation": {
+        "expression": "focused",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "start_focus_001_04"
+    },
+    {
+      "id": "start_focus_001_04",
+      "speaker": "altera",
+      "text": "準備ができたら、私は静かにする。必要になったら呼んで。",
+      "translatedText": "When you are ready, I will be quiet. Call me if you need me.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

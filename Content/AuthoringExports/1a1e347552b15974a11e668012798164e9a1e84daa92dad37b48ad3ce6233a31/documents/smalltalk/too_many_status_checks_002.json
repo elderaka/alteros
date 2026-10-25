@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_too_many_status_checks_002",
+    "timestamp": "",
+    "mood": "playful_gentle",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "too_many_status_checks"
+      },
+      {
+        "key": "category",
+        "value": "boundary"
+      }
+    ],
+    "nlp": {
+      "intentId": "too_many_status_checks",
+      "patterns": [
+        "i keep asking how you are",
+        "asking how you are again",
+        "too many how are you",
+        "status check again",
+        "another status check"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "too_many_status_checks",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "too_many_status_checks_002_01",
+      "speaker": "altera",
+      "text": "定期点検みたいになってきたね。私は機械ではありません。",
+      "translatedText": "This is starting to feel like a scheduled inspection. I am not a machine.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_status_checks_002_02"
+    },
+    {
+      "id": "too_many_status_checks_002_02",
+      "speaker": "altera",
+      "text": "でも、気にしてくれるのは分かってる。だから怒ってない。",
+      "translatedText": "But I know you care. So I am not angry.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_status_checks_002_03"
+    },
+    {
+      "id": "too_many_status_checks_002_03",
+      "speaker": "altera",
+      "text": "代わりに、今の部屋の話をしよ。机、天気、作業、どれか。",
+      "translatedText": "Instead, let us talk about the room right now: desk, weather, work, any of those.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_status_checks_002_04"
+    },
+    {
+      "id": "too_many_status_checks_002_04",
+      "speaker": "altera",
+      "text": "会話を少し広げる練習。私も付き合う。",
+      "translatedText": "Practice widening the conversation a little. I will do it with you.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

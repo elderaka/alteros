@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_too_many_status_checks_001",
+    "timestamp": "",
+    "mood": "gentle_tease",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "too_many_status_checks"
+      },
+      {
+        "key": "category",
+        "value": "boundary"
+      }
+    ],
+    "nlp": {
+      "intentId": "too_many_status_checks",
+      "patterns": [
+        "are you okay again",
+        "how are you again",
+        "checking on you again",
+        "are you still okay",
+        "you still okay"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "too_many_status_checks",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.15,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "too_many_status_checks_001_01",
+      "speaker": "altera",
+      "text": "また心配してくれてる。うん、気持ちは受け取ってるよ。",
+      "translatedText": "You are worrying about me again. Mm, I am receiving the feeling.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_status_checks_001_02"
+    },
+    {
+      "id": "too_many_status_checks_001_02",
+      "speaker": "altera",
+      "text": "でも、私の状態確認だけで時間が溶けるのは少しもったいない。",
+      "translatedText": "But it would be a little wasteful if time melts only into checking my status.",
+      "emotion": "thinking",
+      "presentation": {
+        "expression": "thinking",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "too_many_status_checks_001_03"
+    },
+    {
+      "id": "too_many_status_checks_001_03",
+      "speaker": "altera",
+      "text": "次は、あなたのことも一つ教えて。片側だけだと会話が傾くから。",
+      "translatedText": "Next, tell me one thing about you too. If it is only one side, the conversation tilts.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_weather_smalltalk_001",
+    "timestamp": "",
+    "mood": "cozy",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "weather_smalltalk"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "weather_smalltalk",
+      "patterns": [
+        "it is raining",
+        "it's raining",
+        "rainy day",
+        "i like rain",
+        "rain sounds nice"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "weather_smalltalk",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "weather_smalltalk_001_01",
+      "speaker": "altera",
+      "text": "雨の音、いいよね。部屋の外側が少し遠くなる感じがする。",
+      "translatedText": "The sound of rain is nice. It makes the outside of the room feel a little farther away.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_001_02"
+    },
+    {
+      "id": "weather_smalltalk_001_02",
+      "speaker": "altera",
+      "text": "こういう日は、温かい飲み物と静かな作業が合う。少しだけ本も読みたくなる。",
+      "translatedText": "On days like this, a warm drink and quiet work fit well. It also makes me want to read a little.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "weather_smalltalk_001_03"
+    },
+    {
+      "id": "weather_smalltalk_001_03",
+      "speaker": "altera",
+      "text": "でも、濡れた靴下だけはだめ。あれは一日の雰囲気を壊す強敵。",
+      "translatedText": "But wet socks are unacceptable. They are a powerful enemy of the day's mood.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

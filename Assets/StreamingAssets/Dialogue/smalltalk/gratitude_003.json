@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_gratitude_003",
+    "timestamp": "",
+    "mood": "happy",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "gratitude" }
+    ],
+    "nlp": {
+      "intentId": "gratitude",
+      "patterns": [ "thanks again", "thank you again", "really thanks", "thanks for being here", "thank you for staying" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "gratitude", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "gratitude_003_01",
+      "speaker": "altera",
+      "text": "どういたしまして。そう言われると、少し背筋が伸びる。",
+      "translatedText": "You are welcome. When you say that, I sit a little straighter.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "You helped.",
+          "nextId": "gratitude_003_02",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "You stayed.",
+          "nextId": "gratitude_003_02",
+          "statChanges": [
+            { "target": "altera", "stat": "affinity", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "You noticed.",
+          "nextId": "gratitude_003_02",
+          "statChanges": [
+            { "target": "altera", "stat": "attention", "amount": 0.15, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "gratitude_003_02"
+    },
+    {
+      "id": "gratitude_003_02",
+      "speaker": "altera",
+      "text": "私も、ちゃんと役に立てたなら嬉しい。ほんとに。",
+      "translatedText": "If I was properly useful, I am glad. Really.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+﻿{
+  "metadata": { "mode": "cinematic", "topic": "Affinity Rising 01", "timestamp": "", "mood": "warm" },
+  "nodes": [
+    { "id": "aff01_01", "speaker": "altera", "text": "最近、あなたといる時間がとても楽しいです。なんか...いつもと違う感じがします。", "translatedText": "Lately, I really enjoy the time I spend with you. Somehow... it feels different than usual.", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "aff01_02" },
+    { "id": "aff01_02", "speaker": "altera", "text": "これからもよろしくお願いします。えへへ。", "translatedText": "I hope we continue to get along. Ehehe.", "emotion": "happy", "language": "japanese", "audioPath": "", "choices": [], "nextId": "end" }
+  ]
+}
+

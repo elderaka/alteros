@@ -1,0 +1,65 @@
+{
+  "scenarioId": "m3.follow_me.test",
+  "topicId": "m3_testbox",
+  "entryStepId": "ask_to_follow",
+  "steps": [
+    {
+      "id": "ask_to_follow",
+      "kind": "ask",
+      "questionId": "follow_confirmation",
+      "question": { "id": "follow_confirmation", "text": "一緒に行こうか？", "displayText": "Would you like me to follow?", "language": "japanese", "expression": "gentle" },
+      "options": [
+        { "optionId": "yes", "label": "Yes", "value": "yes", "nextStepId": "follow" },
+        { "optionId": "no", "label": "No", "value": "no", "nextStepId": "declined" }
+      ],
+      "allowFreeText": false,
+      "skipNextStepId": "declined",
+      "cancelNextStepId": "declined"
+    },
+    {
+      "id": "follow",
+      "kind": "action",
+      "capabilityId": "movement.follow_player",
+      "arguments": [{ "name": "target", "value": "player" }],
+      "successNextStepId": "wait_until_stopped",
+      "failureNextStepId": "could_not_start"
+    },
+    {
+      "id": "wait_until_stopped",
+      "kind": "wait",
+      "activityId": "movement.follow_player",
+      "conditionId": "m3.activity_terminal",
+      "objective": "Keep following until the player stops or the activity ends.",
+      "successNextStepId": "finished",
+      "failureNextStepId": "finished"
+    },
+    {
+      "id": "finished",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "finished", "text": "フォローはここまでにするね。", "displayText": "I'll stop following for now.", "language": "japanese", "expression": "gentle" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "could_not_start",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "could_not_start", "text": "今はフォローを始められなかったよ。", "displayText": "I couldn't start following this time.", "language": "japanese", "expression": "thinking" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    {
+      "id": "declined",
+      "kind": "dialogue",
+      "beats": [
+        { "id": "declined", "text": "わかった。また今度ね。", "displayText": "All right, maybe another time.", "language": "japanese", "expression": "gentle" }
+      ],
+      "nextStepId": "end",
+      "closeExchange": false
+    },
+    { "id": "end", "kind": "end", "outcome": "completed", "closeExchange": false }
+  ]
+}

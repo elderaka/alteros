@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_proud_001",
+    "timestamp": "",
+    "mood": "proud",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_proud" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_proud",
+      "patterns": [ "i did it", "did it", "i finished", "finished it", "i completed it" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_proud", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_proud_001_01",
+      "speaker": "altera",
+      "text": "やった。ちゃんと終わらせたんだね。",
+      "translatedText": "You did it. You actually finished it.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_proud_001_02"
+    },
+    {
+      "id": "player_proud_001_02",
+      "speaker": "altera",
+      "text": "すぐ次に行かないで。今の一行、ちゃんとチェックを入れよう。",
+      "translatedText": "Do not jump to the next thing immediately. Let us actually check off this line.",
+      "emotion": "proud",
+      "presentation": { "expression": "proud", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Celebrate a little.",
+          "nextId": "player_proud_001_celebrate",
+          "statChanges": [
+            { "target": "player", "stat": "focusProgress", "amount": 0.5, "op": "add" },
+            { "target": "altera", "stat": "affinity", "amount": 0.15, "op": "add" }
+          ]
+        },
+        {
+          "label": "Next step.",
+          "nextId": "player_proud_001_next",
+          "statChanges": [
+            { "target": "player", "stat": "taskProgress", "amount": 0.25, "op": "add" },
+            { "target": "altera", "stat": "engagement", "amount": 0.1, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "player_proud_001_03"
+    },
+    {
+      "id": "player_proud_001_celebrate",
+      "speaker": "altera",
+      "text": "賛成。小さく祝おう。大げさじゃなくて、ちゃんと。",
+      "translatedText": "Agreed. Let us celebrate a little. Not dramatically, but properly.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_proud_001_03"
+    },
+    {
+      "id": "player_proud_001_next",
+      "speaker": "altera",
+      "text": "次に行くんだね。いいよ。でも、今の達成を踏み台扱いしすぎないで。",
+      "translatedText": "You are moving to the next thing. Okay. But do not treat this accomplishment as only a stepping stone.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_proud_001_03"
+    },
+    {
+      "id": "player_proud_001_03",
+      "speaker": "altera",
+      "text": "はい、ここで小さく拍手。音は出ないけど、気持ちはかなり出してる。",
+      "translatedText": "Here, a small clap. There is no sound, but the feeling is very much there.",
+      "emotion": "happy",
+      "presentation": { "expression": "happy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

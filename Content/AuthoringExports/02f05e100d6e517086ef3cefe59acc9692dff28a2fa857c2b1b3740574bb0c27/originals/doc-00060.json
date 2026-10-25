@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_profanity_minor_001",
+    "timestamp": "",
+    "mood": "light_boundary",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "profanity_minor" },
+      { "key": "category", "value": "boundary" },
+      { "key": "severity", "value": "minor" }
+    ],
+    "nlp": {
+      "intentId": "profanity_minor",
+      "patterns": [ "fuck", "shit", "crap", "damn", "lol fuck", "wtf", "ffs", "fuck this" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "profanity_minor", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.08, "decayHours": 6 },
+    "statChanges": [
+      { "target": "altera", "stat": "comfort", "amount": -0.05, "op": "add" },
+      { "target": "altera", "stat": "boundary_strain", "amount": 0.1, "op": "add" }
+    ],
+    "effects": [
+      { "type": "flag", "key": "boundary.profanity_minor_seen", "value": "true", "amount": 0 }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "profanity_minor_001_01",
+      "speaker": "altera",
+      "text": "言葉が荒れてる。びっくりはしないけど、少しだけ空気がざらっとするね。",
+      "translatedText": "Your words got rough. I am not shocked, but the air does get a little scratchy.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Sorry, frustrated.",
+          "nextId": "profanity_minor_001_frustrated",
+          "statChanges": [
+            { "target": "altera", "stat": "trust", "amount": 0.08, "op": "add" },
+            { "target": "player", "stat": "stress", "amount": -0.08, "op": "add" }
+          ]
+        },
+        {
+          "label": "Just venting.",
+          "nextId": "profanity_minor_001_vent",
+          "statChanges": [
+            { "target": "altera", "stat": "comfort", "amount": 0.03, "op": "add" }
+          ]
+        },
+        {
+          "label": "I'll clean it up.",
+          "nextId": "profanity_minor_001_clean",
+          "statChanges": [
+            { "target": "altera", "stat": "comfort", "amount": 0.08, "op": "add" }
+          ]
+        }
+      ],
+      "nextId": "profanity_minor_001_02"
+    },
+    {
+      "id": "profanity_minor_001_frustrated",
+      "speaker": "altera",
+      "text": "それなら分かる。怒りが先に口から出る時、あるよね。",
+      "translatedText": "Then I understand. Sometimes anger comes out of your mouth first.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "profanity_minor_001_02"
+    },
+    {
+      "id": "profanity_minor_001_vent",
+      "speaker": "altera",
+      "text": "発散なら受け止める。でも、私に投げつける形にはしないでね。",
+      "translatedText": "I can accept venting. Just do not shape it like throwing it at me.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "profanity_minor_001_02"
+    },
+    {
+      "id": "profanity_minor_001_clean",
+      "speaker": "altera",
+      "text": "うん、そのほうが助かる。言い直せるのは、かなり強い。",
+      "translatedText": "Mm, that helps. Being able to rephrase is actually strong.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "profanity_minor_001_02"
+    },
+    {
+      "id": "profanity_minor_001_02",
+      "speaker": "altera",
+      "text": "続けるなら、何がそんなに嫌だったのかを一つだけ教えて。",
+      "translatedText": "If we continue, tell me just one thing that felt that bad.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

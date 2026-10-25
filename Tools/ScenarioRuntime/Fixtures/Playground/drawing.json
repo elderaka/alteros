@@ -1,0 +1,22 @@
+{
+  "runId": "playground-drawing",
+  "turnId": "fixture-turn-drawing",
+  "definition": {
+    "scenarioId": "playground-drawing",
+    "topicId": "drawing_together",
+    "entryStepId": "invite",
+    "steps": [
+      { "id": "invite", "kind": "dialogue", "beats": [{ "id": "invite", "text": "一緒に描こう。", "displayText": "Let's draw together.", "language": "japanese", "expression": "happy" }], "nextStepId": "draw", "closeExchange": false },
+      { "id": "draw", "kind": "action", "capabilityId": "fixture.activity.drawing_together", "arguments": [{ "name": "targetObjectId", "value": "fixture-drawing-table" }], "successNextStepId": "wait-seat", "failureNextStepId": "unavailable" },
+      { "id": "wait-seat", "kind": "wait", "activityId": "simulated-drawing", "conditionId": "fixture.player_at_adjacent_seat", "objective": "Join Alterra at the drawing table.", "successNextStepId": "wrap-up", "failureNextStepId": "unavailable" },
+      { "id": "wrap-up", "kind": "dialogue", "beats": [{ "id": "wrap", "text": "何を描こうか？", "displayText": "What should we draw?", "language": "japanese", "expression": "curious" }], "nextStepId": "end", "closeExchange": true },
+      { "id": "unavailable", "kind": "end", "outcome": "failed", "closeExchange": true },
+      { "id": "end", "kind": "end", "outcome": "completed", "closeExchange": true }
+    ]
+  },
+  "events": [
+    { "nowSeconds": 1, "input": { "kind": "dialogue_complete", "runId": "playground-drawing", "stepId": "invite" } },
+    { "nowSeconds": 2, "input": { "kind": "condition_met", "runId": "playground-drawing", "stepId": "wait-seat", "activityId": "simulated-playground-drawing", "conditionId": "fixture.player_at_adjacent_seat" } },
+    { "nowSeconds": 3, "input": { "kind": "dialogue_complete", "runId": "playground-drawing", "stepId": "wrap-up" } }
+  ]
+}

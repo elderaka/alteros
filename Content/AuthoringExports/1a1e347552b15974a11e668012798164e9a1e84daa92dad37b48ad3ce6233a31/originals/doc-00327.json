@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_task_help_short_001",
+    "timestamp": "",
+    "mood": "helpful",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_task_help_short" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "ask_task_help_short",
+      "patterns": [ "help me with a task", "help me with this task", "can you help me start", "help me start this", "help me begin" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "ask_task_help_short", "softLimit": 5, "annoyedLimit": 10, "penaltyAmount": -0.05, "decayHours": 6 }
+  },
+  "nodes": [
+    {
+      "id": "ask_task_help_short_001_01",
+      "speaker": "altera",
+      "text": "もちろん。まず、タスクを一文にしてみよう。",
+      "translatedText": "Of course. First, try making the task into one sentence.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_task_help_short_001_02"
+    },
+    {
+      "id": "ask_task_help_short_001_02",
+      "speaker": "altera",
+      "text": "曖昧なままだと、手が止まりやすいから。名前をつけるところから手伝う。",
+      "translatedText": "If it stays vague, your hands freeze more easily. I will help you name it first.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

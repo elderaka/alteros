@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.start_focus_003",
+  "source": "generic",
+  "routing": {
+    "routeId": "start_focus",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "focus with me",
+      "start a quiet focus",
+      "quiet focus",
+      "focus beside me",
+      "help me enter focus"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "start_focus_003_01",
+      "speaker": "alterra",
+      "text": "静かな集中に入るなら、入口を整えよう。",
+      "displayText": "If we are entering quiet focus, let us prepare the doorway.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "focused",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Clear tabs.",
+          "nextId": "start_focus_003_02"
+        },
+        {
+          "label": "Write goal.",
+          "nextId": "start_focus_003_02"
+        },
+        {
+          "label": "Start timer.",
+          "nextId": "start_focus_003_02"
+        }
+      ]
+    },
+    {
+      "id": "start_focus_003_02",
+      "speaker": "alterra",
+      "text": "次は、邪魔になるものを一つだけ減らす。",
+      "displayText": "Next, reduce one thing that will get in the way.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Phone away.",
+          "nextId": "start_focus_003_03"
+        },
+        {
+          "label": "One file only.",
+          "nextId": "start_focus_003_03"
+        },
+        {
+          "label": "Water nearby.",
+          "nextId": "start_focus_003_03"
+        },
+        {
+          "label": "No music.",
+          "nextId": "start_focus_003_03"
+        },
+        {
+          "label": "Soft music.",
+          "nextId": "start_focus_003_03"
+        }
+      ]
+    },
+    {
+      "id": "start_focus_003_03",
+      "speaker": "alterra",
+      "text": "いい。集中は気合いより、入口の摩擦を下げるほうが効く。",
+      "displayText": "Good. For focus, lowering the friction at the entrance works better than force.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "start_focus_003_04",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "start_focus_003_04",
+      "speaker": "alterra",
+      "text": "始めたら、私は静かにする。ちゃんと隣にはいるから。",
+      "displayText": "Once you begin, I will be quiet. I will still be properly beside you.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "gentle",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

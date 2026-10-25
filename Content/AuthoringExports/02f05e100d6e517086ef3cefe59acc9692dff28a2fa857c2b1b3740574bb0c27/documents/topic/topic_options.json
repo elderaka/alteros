@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "mode": "topic_options",
+    "topic": "authored_topic_options",
+    "timestamp": "",
+    "mood": "warm",
+    "topicSuggestions": [
+      {
+        "id": "daily_start",
+        "label": "Plan Today",
+        "prompt": "Help me choose a gentle, realistic first step for today.",
+        "tag": "productivity",
+        "priority": 80,
+        "triggerConditions": []
+      },
+      {
+        "id": "quiet_company",
+        "label": "Keep Me Company",
+        "sequencePath": "topic/prebaked_quiet_company_01.json",
+        "tag": "comfort",
+        "priority": 70,
+        "triggerConditions": []
+      },
+      {
+        "id": "tea_ritual",
+        "label": "Tea Break",
+        "sequencePath": "topic/prebaked_tea_break_01.json",
+        "tag": "ritual",
+        "priority": 60,
+        "triggerConditions": [
+          {
+            "type": "stat_min",
+            "target": "altera",
+            "stat": "comfort",
+            "minValue": 40
+          }
+        ]
+      },
+      {
+        "id": "focus_recovery",
+        "label": "Refocus Gently",
+        "prompt": "Help me recover focus without scolding me or making the plan too big.",
+        "tag": "focus",
+        "priority": 95,
+        "triggerConditions": [
+          {
+            "type": "stat_min",
+            "target": "player",
+            "stat": "stress",
+            "minValue": 45
+          }
+        ]
+      },
+      {
+        "id": "boundary_reset_tone",
+        "label": "Reset Tone",
+        "sequencePath": "topic/prebaked_boundary_reset_01.json",
+        "tag": "repair",
+        "priority": 105,
+        "triggerConditions": [
+          {
+            "type": "stat_min",
+            "target": "altera",
+            "stat": "boundary_strain",
+            "minValue": 0.5
+          }
+        ]
+      },
+      {
+        "id": "after_first_meeting",
+        "label": "About Us",
+        "prompt": "Talk with me about what it feels like for us to start becoming a real team.",
+        "tag": "relationship",
+        "priority": 100,
+        "triggerConditions": [
+          {
+            "type": "unlock_exists",
+            "key": "topic.after_first_meeting"
+          }
+        ]
+      },
+      {
+        "id": "ten_hour_reflection",
+        "label": "Ten Hours Together",
+        "prompt": "Reflect with me on the time we have spent together and what changed quietly.",
+        "tag": "milestone",
+        "priority": 110,
+        "triggerConditions": [
+          {
+            "type": "unlock_exists",
+            "key": "topic.ten_hour_reflection"
+          }
+        ]
+      }
+    ]
+  },
+  "nodes": []
+}

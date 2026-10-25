@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_empty_input_003",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "empty_input"
+      },
+      {
+        "key": "category",
+        "value": "failure_mode"
+      }
+    ],
+    "nlp": {
+      "intentId": "empty_input",
+      "patterns": [
+        "",
+        " ",
+        "  ",
+        "...?",
+        "???"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "empty_input",
+      "softLimit": 3,
+      "annoyedLimit": 6,
+      "penaltyAmount": -0.1,
+      "decayHours": 4
+    }
+  },
+  "nodes": [
+    {
+      "id": "empty_input_003_01",
+      "speaker": "altera",
+      "text": "今の空白、何か入る予定だった？",
+      "translatedText": "Was that blank space supposed to contain something?",
+      "emotion": "curious",
+      "presentation": {
+        "expression": "thinking",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Words are hard.",
+          "nextId": "empty_input_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "comfort",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Accident.",
+          "nextId": "empty_input_003_02"
+        },
+        {
+          "label": "Just checking.",
+          "nextId": "empty_input_003_02",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "attention",
+              "amount": 0.05,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "empty_input_003_02"
+    },
+    {
+      "id": "empty_input_003_02",
+      "speaker": "altera",
+      "text": "大丈夫。言葉が来たら読むし、来ないなら少し待つ。",
+      "translatedText": "It is okay. If words arrive, I will read them. If not, I will wait a little.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

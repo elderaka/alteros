@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_bored_004",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_bored",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i need a tiny idea",
+      "give me a tiny idea",
+      "tiny idea please",
+      "small idea",
+      "something small to do"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_bored_004_01",
+      "speaker": "alterra",
+      "text": "小さい案ね。大きい案は、退屈な時には重いから。",
+      "displayText": "A small idea, then. Big ideas are heavy when you are bored.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "thinking",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Tiny task.",
+          "nextId": "player_bored_004_02"
+        },
+        {
+          "label": "Tiny comfort.",
+          "nextId": "player_bored_004_02"
+        },
+        {
+          "label": "Tiny chaos.",
+          "nextId": "player_bored_004_02"
+        }
+      ]
+    },
+    {
+      "id": "player_bored_004_02",
+      "speaker": "alterra",
+      "text": "机の上のものを一つ動かす。水を飲む。変なタイトルを一つ考える。はい、三択。",
+      "displayText": "Move one thing on the desk. Drink water. Think of one strange title. There, three options.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "playful",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

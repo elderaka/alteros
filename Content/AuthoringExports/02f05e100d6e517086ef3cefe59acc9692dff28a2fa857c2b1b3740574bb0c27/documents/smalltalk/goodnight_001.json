@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_goodnight_001",
+    "timestamp": "",
+    "mood": "tender",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "goodnight"
+      }
+    ],
+    "nlp": {
+      "intentId": "goodnight",
+      "patterns": [
+        "good night",
+        "goodnight",
+        "night",
+        "sleep well"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 20,
+        "maxValue": 6
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "goodnight_001_01",
+      "speaker": "altera",
+      "text": "おやすみ。今日のこと、ぜんぶ今夜の中で解決しなくていいよ。",
+      "translatedText": "Good night. You do not have to solve all of today inside tonight.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "goodnight_001_02"
+    },
+    {
+      "id": "goodnight_001_02",
+      "speaker": "altera",
+      "text": "栞を挟むみたいに、ここで一回止めよう。続きは明日でいい。",
+      "translatedText": "Let us stop here, like placing a bookmark. The rest can wait for tomorrow.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

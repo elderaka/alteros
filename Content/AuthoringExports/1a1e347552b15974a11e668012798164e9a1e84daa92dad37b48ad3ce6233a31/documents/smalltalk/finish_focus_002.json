@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_finish_focus_002",
+    "timestamp": "",
+    "mood": "warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "finish_focus"
+      },
+      {
+        "key": "category",
+        "value": "routine"
+      }
+    ],
+    "nlp": {
+      "intentId": "finish_focus",
+      "patterns": [
+        "i did a focus session",
+        "focus complete",
+        "completed focus",
+        "i focused",
+        "i worked focused"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "finish_focus",
+      "softLimit": 5,
+      "annoyedLimit": 10,
+      "penaltyAmount": -0.05,
+      "decayHours": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "finish_focus_002_01",
+      "speaker": "altera",
+      "text": "集中できたんだ。ふふ、今の報告は保存しておきたい。",
+      "translatedText": "You managed to focus. Hehe, I want to save that report.",
+      "emotion": "happy",
+      "presentation": {
+        "expression": "happy",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "finish_focus_002_02"
+    },
+    {
+      "id": "finish_focus_002_02",
+      "speaker": "altera",
+      "text": "次に行く前に、少しだけ目を休めて。達成感にも置き場所が必要だから。",
+      "translatedText": "Before moving on, rest your eyes a little. Even accomplishment needs a place to land.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

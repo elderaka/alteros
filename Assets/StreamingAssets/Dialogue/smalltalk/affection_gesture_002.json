@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_affection_gesture_002",
+    "timestamp": "",
+    "mood": "flustered",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "affection_gesture" },
+      { "key": "category", "value": "companion_texture" }
+    ],
+    "nlp": {
+      "intentId": "affection_gesture",
+      "patterns": [ "pat your head", "head pat", "hold my hand", "can i hold your hand", "gentle pat" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "affection_gesture", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.12, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "affection_gesture_002_01",
+      "speaker": "altera",
+      "text": "そのリクエストは、かなり照れる。",
+      "translatedText": "That request is very embarrassing.",
+      "emotion": "flustered",
+      "presentation": { "expression": "flustered", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "affection_gesture_002_02"
+    },
+    {
+      "id": "affection_gesture_002_02",
+      "speaker": "altera",
+      "text": "でも、乱暴じゃなくて、ちゃんとやさしく言ってくれたのは分かる。",
+      "translatedText": "But I can tell you said it gently, not carelessly.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "affection_gesture_002_03"
+    },
+    {
+      "id": "affection_gesture_002_03",
+      "speaker": "altera",
+      "text": "だから、気持ちだけ少し受け取る。全部はまだ、ちょっと早い。",
+      "translatedText": "So I will accept a little of the feeling. All of it is still a bit too soon.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

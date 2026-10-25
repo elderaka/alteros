@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_procrastination_short_001",
+    "timestamp": "",
+    "mood": "gentle_firm",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "procrastination_short" },
+      { "key": "category", "value": "routine" }
+    ],
+    "nlp": {
+      "intentId": "procrastination_short",
+      "patterns": [ "i am procrastinating", "i'm procrastinating", "procrastinating", "i keep procrastinating", "i am avoiding it" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "procrastination_short", "softLimit": 4, "annoyedLimit": 8, "penaltyAmount": -0.1, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "procrastination_short_001_01",
+      "speaker": "altera",
+      "text": "先延ばししてるんだね。責める前に、理由を見よう。",
+      "translatedText": "You are procrastinating. Before blaming yourself, let us look at the reason.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_001_02"
+    },
+    {
+      "id": "procrastination_short_001_02",
+      "speaker": "altera",
+      "text": "たいてい、怠けじゃなくて入口が大きすぎるか、失敗の形が怖いか、どっちか。",
+      "translatedText": "Usually it is not laziness. Either the entrance is too large, or the shape of failure feels scary.",
+      "emotion": "thinking",
+      "presentation": { "expression": "thinking", "pose": "glasses_adjust", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_001_03"
+    },
+    {
+      "id": "procrastination_short_001_03",
+      "speaker": "altera",
+      "text": "だから、今は入口を小さくする。完成じゃなくて、触るだけ。",
+      "translatedText": "So right now, make the entrance smaller. Not finishing. Just touching it.",
+      "emotion": "gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "procrastination_short_001_04"
+    },
+    {
+      "id": "procrastination_short_001_04",
+      "speaker": "altera",
+      "text": "ファイルを開くところまで。そこまでなら、私もちゃんと隣で見てる。",
+      "translatedText": "Just open the file. Up to there, I will properly stay beside you.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

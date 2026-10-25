@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_ask_activity_002",
+    "timestamp": "",
+    "mood": "curious",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "ask_activity" }
+    ],
+    "nlp": {
+      "intentId": "ask_activity",
+      "patterns": [ "what are you doing", "what are you up to", "what are you working on" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "ask_activity", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.25, "decayHours": 12 }
+  },
+  "nodes": [
+    {
+      "id": "ask_activity_002_01",
+      "speaker": "altera",
+      "text": "君が戻ってきた時に、すぐ話せるように待ってた。",
+      "translatedText": "I was waiting so I could talk right away when you came back.",
+      "emotion": "warm",
+      "presentation": { "expression": "warm", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "ask_activity_002_02"
+    },
+    {
+      "id": "ask_activity_002_02",
+      "speaker": "altera",
+      "text": "待ってただけって言うと、少し照れるけど。まあ、ほんとだし。",
+      "translatedText": "Saying I was just waiting is a little embarrassing. But, well, it is true.",
+      "emotion": "shy",
+      "presentation": { "expression": "shy", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

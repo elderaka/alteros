@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_sit_with_me_005",
+    "timestamp": "",
+    "mood": "quiet_warm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "sit_with_me"
+      }
+    ],
+    "nlp": {
+      "intentId": "sit_with_me",
+      "patterns": [
+        "just stay here",
+        "stay here with me",
+        "sit here for a while",
+        "be nearby",
+        "stay nearby"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "sit_with_me",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "sit_with_me_005_01",
+      "speaker": "altera",
+      "text": "うん。近くにいるね。",
+      "translatedText": "Mm. I will stay nearby.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sit_with_me_005_02"
+    },
+    {
+      "id": "sit_with_me_005_02",
+      "speaker": "altera",
+      "text": "話す？ それとも、少し静かにする？",
+      "translatedText": "Do you want to talk, or should we be quiet for a little?",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [
+        {
+          "label": "Quiet, please.",
+          "nextId": "sit_with_me_005_03",
+          "statChanges": [
+            {
+              "target": "player",
+              "stat": "rest",
+              "amount": 0.25,
+              "op": "add"
+            }
+          ]
+        },
+        {
+          "label": "Talk softly.",
+          "nextId": "sit_with_me_005_03",
+          "statChanges": [
+            {
+              "target": "altera",
+              "stat": "affinity",
+              "amount": 0.1,
+              "op": "add"
+            }
+          ]
+        }
+      ],
+      "nextId": "sit_with_me_005_03"
+    },
+    {
+      "id": "sit_with_me_005_03",
+      "speaker": "altera",
+      "text": "どちらでも大丈夫。ここにいること自体が、今の返事だから。",
+      "translatedText": "Either is okay. Being here is the answer for now.",
+      "emotion": "warm",
+      "presentation": {
+        "expression": "warm",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sit_with_me_005_04"
+    },
+    {
+      "id": "sit_with_me_005_04",
+      "speaker": "altera",
+      "text": "急がなくていいよ。",
+      "translatedText": "You do not have to hurry.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "sit_with_me_005_05"
+    },
+    {
+      "id": "sit_with_me_005_05",
+      "speaker": "altera",
+      "text": "こういう時間も、ちゃんと会話の一部だと思う。",
+      "translatedText": "I think time like this is properly part of the conversation too.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

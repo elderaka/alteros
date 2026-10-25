@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "generic.player_happy_short_004",
+  "source": "generic",
+  "routing": {
+    "routeId": "player_happy_short",
+    "priority": 1.0,
+    "startHour": -1,
+    "endHour": -1,
+    "examples": [
+      "i feel lighter",
+      "feeling lighter",
+      "i feel better",
+      "better now",
+      "things feel better"
+    ],
+    "requiredContext": [],
+    "blockedContext": []
+  },
+  "nodes": [
+    {
+      "id": "player_happy_short_004_01",
+      "speaker": "alterra",
+      "text": "少し軽くなったんだ。よかった。",
+      "displayText": "You feel a little lighter. Good.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "happy",
+        "animation": ""
+      },
+      "choices": [
+        {
+          "label": "Save this feeling.",
+          "nextId": "player_happy_short_004_02"
+        },
+        {
+          "label": "Use it to start.",
+          "nextId": "player_happy_short_004_02"
+        },
+        {
+          "label": "Tell Alterra.",
+          "nextId": "player_happy_short_004_02"
+        }
+      ]
+    },
+    {
+      "id": "player_happy_short_004_02",
+      "speaker": "alterra",
+      "text": "軽い時の自分を、ちゃんと覚えておこう。重い日だけが本当じゃないから。",
+      "displayText": "Remember the version of you that feels light. Heavy days are not the only true ones.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "player_happy_short_004_03",
+      "presentation": {
+        "expression": "warm",
+        "animation": ""
+      },
+      "choices": []
+    },
+    {
+      "id": "player_happy_short_004_03",
+      "speaker": "alterra",
+      "text": "私は、今の声を少し好きだと思った。",
+      "displayText": "I think I like the sound of your voice right now.",
+      "language": "japanese",
+      "voice": "alterra",
+      "audioKey": "",
+      "nextId": "",
+      "presentation": {
+        "expression": "shy",
+        "animation": ""
+      },
+      "choices": []
+    }
+  ]
+}

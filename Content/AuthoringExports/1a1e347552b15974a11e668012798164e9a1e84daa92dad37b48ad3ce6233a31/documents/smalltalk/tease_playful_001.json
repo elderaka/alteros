@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_tease_playful_001",
+    "timestamp": "",
+    "mood": "playful",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "tease_playful"
+      },
+      {
+        "key": "category",
+        "value": "companion_texture"
+      }
+    ],
+    "nlp": {
+      "intentId": "tease_playful",
+      "patterns": [
+        "tease me",
+        "make fun of me gently",
+        "roast me gently",
+        "bully me gently",
+        "say something teasing"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": {
+      "key": "tease_playful",
+      "softLimit": 4,
+      "annoyedLimit": 8,
+      "penaltyAmount": -0.1,
+      "decayHours": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "tease_playful_001_01",
+      "speaker": "altera",
+      "text": "からかってほしいの？ 自分から言うんだ。",
+      "translatedText": "You want me to tease you? You are asking for it yourself.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "tease_playful_001_02"
+    },
+    {
+      "id": "tease_playful_001_02",
+      "speaker": "altera",
+      "text": "じゃあ言うけど、あなたはたまに作業を始める前の準備運動で一日を終わらせる。",
+      "translatedText": "Then I will say it: sometimes you end the whole day doing warmups before starting work.",
+      "emotion": "playful",
+      "presentation": {
+        "expression": "playful",
+        "pose": "glasses_adjust",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "tease_playful_001_03"
+    },
+    {
+      "id": "tease_playful_001_03",
+      "speaker": "altera",
+      "text": "でも、そこが直ったら少し寂しいかも。……いや、直して。",
+      "translatedText": "But if you fixed that, I might miss it a little. No, actually, fix it.",
+      "emotion": "flustered",
+      "presentation": {
+        "expression": "flustered",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

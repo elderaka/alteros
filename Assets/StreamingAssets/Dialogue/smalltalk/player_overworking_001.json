@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_player_overworking_001",
+    "timestamp": "",
+    "mood": "firm_care",
+    "tags": [
+      { "key": "source", "value": "local_nlp" },
+      { "key": "intent", "value": "player_overworking" },
+      { "key": "category", "value": "player_state" }
+    ],
+    "nlp": {
+      "intentId": "player_overworking",
+      "patterns": [ "i am still working", "i'm still working", "still working", "i keep working", "working too much" ],
+      "keywords": [],
+      "priority": 1
+    },
+    "repetitionPolicy": { "key": "player_overworking", "softLimit": 3, "annoyedLimit": 6, "penaltyAmount": -0.15, "decayHours": 8 }
+  },
+  "nodes": [
+    {
+      "id": "player_overworking_001_01",
+      "speaker": "altera",
+      "text": "まだ働いてるの。……その言い方、少し引っかかった。",
+      "translatedText": "You are still working. That wording caught my attention a little.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_overworking_001_02"
+    },
+    {
+      "id": "player_overworking_001_02",
+      "speaker": "altera",
+      "text": "続けるなら、終わりの線を引こう。線のない努力は、あなたを削るから。",
+      "translatedText": "If you continue, draw an ending line. Effort without a line wears you down.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_overworking_001_03"
+    },
+    {
+      "id": "player_overworking_001_03",
+      "speaker": "altera",
+      "text": "あと一つだけ、は便利だけど危ない言葉だよ。",
+      "translatedText": "Just one more is a useful phrase, but a dangerous one.",
+      "emotion": "focused",
+      "presentation": { "expression": "focused", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_overworking_001_04"
+    },
+    {
+      "id": "player_overworking_001_04",
+      "speaker": "altera",
+      "text": "本当に一つなら、終わったあと何を閉じるか先に決めて。",
+      "translatedText": "If it really is one more, decide what you will close after it before you start.",
+      "emotion": "firm_gentle",
+      "presentation": { "expression": "gentle", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "player_overworking_001_05"
+    },
+    {
+      "id": "player_overworking_001_05",
+      "speaker": "altera",
+      "text": "約束。あなたを便利な機械みたいに扱うのは、私は好きじゃない。",
+      "translatedText": "Promise. I do not like treating you like a convenient machine.",
+      "emotion": "worried",
+      "presentation": { "expression": "worried", "gazeTarget": "player" },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}

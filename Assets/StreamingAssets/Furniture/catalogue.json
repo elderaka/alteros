@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "1.0.0",
+  "lengthUnit": "m",
+  "angleUnit": "deg",
+  "coordinateConvention": "unity_local_y_up_positive_z_forward",
+  "definitions": [
+    {
+      "definitionId": "furniture.seat.basic",
+      "displayNameKey": "furniture.seat.basic",
+      "category": "seat",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -0.28, "y": 0, "z": -0.28 }, "maximum": { "x": 0.28, "y": 0.9, "z": 0.28 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": true,
+      "points": [ { "pointId": "seat", "pointTypeId": "seat.sit", "localPosition": { "x": 0, "y": 0.45, "z": 0 }, "localFacing": { "x": 0, "y": 0, "z": 1 }, "useIds": [] } ]
+    },
+    {
+      "definitionId": "furniture.table.general",
+      "displayNameKey": "furniture.table.general",
+      "category": "table",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -0.6, "y": 0, "z": -0.4 }, "maximum": { "x": 0.6, "y": 0.78, "z": 0.4 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": true,
+      "points": [ { "pointId": "surface.main", "pointTypeId": "table.surface", "localPosition": { "x": 0, "y": 0.75, "z": 0 }, "localFacing": { "x": 0, "y": 0, "z": 1 }, "useIds": [] } ]
+    },
+    {
+      "definitionId": "furniture.table.study",
+      "displayNameKey": "furniture.table.study",
+      "category": "table",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -0.7, "y": 0, "z": -0.35 }, "maximum": { "x": 0.7, "y": 0.78, "z": 0.35 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": true,
+      "points": [ { "pointId": "surface.work", "pointTypeId": "table.workspace", "localPosition": { "x": 0, "y": 0.75, "z": 0 }, "localFacing": { "x": 0, "y": 0, "z": 1 }, "useIds": [] } ]
+    },
+    {
+      "definitionId": "furniture.bed.basic",
+      "displayNameKey": "furniture.bed.basic",
+      "category": "bed",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -1, "y": 0, "z": -1.1 }, "maximum": { "x": 1, "y": 0.65, "z": 1.1 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": true,
+      "points": [
+        { "pointId": "rest.surface", "pointTypeId": "bed.rest_surface", "localPosition": { "x": 0, "y": 0.55, "z": 0 }, "localFacing": { "x": 0, "y": 0, "z": 1 }, "useIds": [] },
+        { "pointId": "rest.entry", "pointTypeId": "bed.rest_entry", "localPosition": { "x": 0, "y": 0, "z": 1.2 }, "localFacing": { "x": 0, "y": 0, "z": -1 }, "useIds": [] }
+      ]
+    },
+    {
+      "definitionId": "furniture.water_dispenser",
+      "displayNameKey": "furniture.water_dispenser",
+      "category": "dispenser",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -0.25, "y": 0, "z": -0.25 }, "maximum": { "x": 0.25, "y": 1.4, "z": 0.25 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": true,
+      "points": [ { "pointId": "drink", "pointTypeId": "dispenser.use", "localPosition": { "x": 0, "y": 0.95, "z": 0.25 }, "localFacing": { "x": 0, "y": 0, "z": 1 }, "useIds": [ "needs.drink_water" ] } ]
+    },
+    {
+      "definitionId": "furniture.tv.basic",
+      "displayNameKey": "furniture.tv.basic",
+      "category": "tv",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -0.7, "y": 0, "z": -0.25 }, "maximum": { "x": 0.7, "y": 1.2, "z": 0.25 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": true,
+      "points": [ { "pointId": "view.target", "pointTypeId": "tv.view_target", "localPosition": { "x": 0, "y": 0.8, "z": 0 }, "localFacing": { "x": 0, "y": 0, "z": -1 }, "useIds": [] } ]
+    },
+    {
+      "definitionId": "furniture.window.basic",
+      "displayNameKey": "furniture.window.basic",
+      "category": "window",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -0.8, "y": -0.6, "z": -0.08 }, "maximum": { "x": 0.8, "y": 0.6, "z": 0.08 } },
+      "supportKinds": [ "wallOpening" ],
+      "blocksNavigation": false,
+      "points": [ { "pointId": "window.opening", "pointTypeId": "window.opening", "localPosition": { "x": 0, "y": 0, "z": 0 }, "localFacing": { "x": 0, "y": 0, "z": 1 }, "useIds": [] } ]
+    },
+    {
+      "definitionId": "furniture.carpet.basic",
+      "displayNameKey": "furniture.carpet.basic",
+      "category": "carpet",
+      "scalePolicy": "fixed",
+      "defaultScale": { "x": 1, "y": 1, "z": 1 },
+      "localBounds": { "minimum": { "x": -1, "y": 0, "z": -1 }, "maximum": { "x": 1, "y": 0.03, "z": 1 } },
+      "supportKinds": [ "roomFloor" ],
+      "blocksNavigation": false,
+      "points": []
+    }
+  ],
+  "relationshipRules": [
+    { "relationshipRuleId": "relationship.seat.face_pair", "kind": "seatFacePair", "pointTypeIds": [ "seat.sit" ], "broadPhaseRadiusMeters": 2.5, "minimumDistanceMeters": 0.65, "maximumDistanceMeters": 2.2, "maximumFacingErrorDegrees": 30, "maximumHeightDifferenceMeters": 0.2, "lateralAllowanceMeters": 0 },
+    { "relationshipRuleId": "relationship.seat_pair.table_context", "kind": "seatPairTableContext", "pointTypeIds": [ "seat.sit", "table.surface" ], "broadPhaseRadiusMeters": 2.5, "minimumDistanceMeters": 0, "maximumDistanceMeters": 2.2, "maximumFacingErrorDegrees": 30, "maximumHeightDifferenceMeters": 0.35, "lateralAllowanceMeters": 0.35 },
+    { "relationshipRuleId": "relationship.seat.workspace", "kind": "seatWorkspace", "pointTypeIds": [ "seat.sit", "table.workspace" ], "broadPhaseRadiusMeters": 2, "minimumDistanceMeters": 0, "maximumDistanceMeters": 1.6, "maximumFacingErrorDegrees": 45, "maximumHeightDifferenceMeters": 0.2, "lateralAllowanceMeters": 0.45 },
+    { "relationshipRuleId": "relationship.seat.viewing", "kind": "seatViewing", "pointTypeIds": [ "seat.sit", "tv.view_target" ], "broadPhaseRadiusMeters": 5, "minimumDistanceMeters": 0.5, "maximumDistanceMeters": 5, "maximumFacingErrorDegrees": 35, "maximumHeightDifferenceMeters": 1, "lateralAllowanceMeters": 0 }
+  ],
+  "capabilities": [
+    { "capabilityId": "needs.drink_water", "requiredPointTypeIds": [ "dispenser.use" ], "requiredUseIds": [ "needs.drink_water" ] },
+    { "capabilityId": "social.sit_together", "requiredPointTypeIds": [ "seat.sit" ], "requiredUseIds": [] },
+    { "capabilityId": "activity.use_workspace", "requiredPointTypeIds": [ "table.workspace" ], "requiredUseIds": [] },
+    { "capabilityId": "activity.watch_tv", "requiredPointTypeIds": [ "tv.view_target" ], "requiredUseIds": [] },
+    { "capabilityId": "activity.rest", "requiredPointTypeIds": [ "bed.rest_surface" ], "requiredUseIds": [] }
+  ],
+  "legacyAliases": [
+    { "legacyId": "testbox.water_dispenser", "definitionId": "furniture.water_dispenser" },
+    { "legacyId": "testbox.water_dispenser.drink", "definitionId": "furniture.water_dispenser", "pointId": "drink" }
+  ]
+}
+

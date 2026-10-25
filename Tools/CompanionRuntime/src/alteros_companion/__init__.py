@@ -1,0 +1,1 @@
+"""Private AlterOS companion sidecar."""

@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "mode": "cinematic",
+    "topic": "smalltalk_greeting_afternoon_002",
+    "timestamp": "",
+    "mood": "calm",
+    "tags": [
+      {
+        "key": "source",
+        "value": "local_nlp"
+      },
+      {
+        "key": "intent",
+        "value": "greeting_afternoon"
+      }
+    ],
+    "nlp": {
+      "intentId": "greeting_afternoon",
+      "patterns": [
+        "good afternoon",
+        "afternoon",
+        "hey this afternoon"
+      ],
+      "keywords": [],
+      "priority": 1
+    },
+    "triggerConditions": [
+      {
+        "type": "time_range",
+        "minValue": 12,
+        "maxValue": 17
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "greeting_afternoon_002_01",
+      "speaker": "altera",
+      "text": "こんにちは。まだ少し明るいね。こういう時間、嫌いじゃないよ。",
+      "translatedText": "Good afternoon. It is still a little bright. I do not dislike this kind of hour.",
+      "emotion": "soft",
+      "presentation": {
+        "expression": "soft",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "greeting_afternoon_002_02"
+    },
+    {
+      "id": "greeting_afternoon_002_02",
+      "speaker": "altera",
+      "text": "焦らないで。午後は、巻き返しじゃなくて立て直しでいいから。",
+      "translatedText": "Do not rush. Afternoon does not have to be a comeback. It can just be a reset.",
+      "emotion": "gentle",
+      "presentation": {
+        "expression": "gentle",
+        "gazeTarget": "player"
+      },
+      "language": "japanese",
+      "audioPath": "",
+      "choices": [],
+      "nextId": "end"
+    }
+  ]
+}
